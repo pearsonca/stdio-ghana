@@ -4,13 +4,13 @@
   margin-right:1em;
 }
 
+.top_nav li:hover {
+  background-color:#D3D3D3;
+}
+
 .top_nav li.top_nav_active {
   color:white;
   background-color:black;
-}
-
-.top_nav li:hover {
-  background-color:#D3D3D3;
 }
 
 .top_nav {
