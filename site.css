@@ -1,3 +1,11 @@
 .top_nav li {
   display: inline-block;
 }
+
+.top_nav li:first-child {
+  margin-left: auto;
+}
+
+.top_nav li:last-child {
+  margin-rightt: auto;
+}
