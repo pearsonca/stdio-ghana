@@ -2,10 +2,7 @@
   display: inline-block;
 }
 
-.top_nav li:first-child {
+.top_nav {
   margin-left: auto;
-}
-
-.top_nav li:last-child {
-  margin-rightt: auto;
+  margin-right: auto;
 }
