@@ -1,7 +1,10 @@
+---
+activeClass: 'class="top_nav_active"'
+---
 <ul>
-  <li id="home_page">Home</li>
-  <li id="instructors_page">Instructors</li>
-  <li id="syllabi_page">Syllabi</li>
-  <li id="reports_page">Reports</li>
-  <li id="projects_page">Projects</li>
+  <li id="index_page" {% if page.url contains 'index.html'; activeClass; endif %}>Home</li>
+  <li id="instructors_page" {% if page.url contains 'instructors.html'; activeClass; endif %}>Instructors</li>
+  <li id="syllabi_page" {% if page.url contains 'syllabi.html'; activeClass; endif %}>Syllabi</li>
+  <li id="reports_page" {% if page.url contains 'reports.html'; activeClass; endif %}>Reports</li>
+  <li id="projects_page" {% if page.url contains 'projects.html'; activeClass; endif %}>Projects</li>
 </ul>
