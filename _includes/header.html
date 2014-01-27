@@ -2,9 +2,4 @@
   {% for nPage in site.navPages %}{% capture pageUrl %}{{nPage}}.html{% endcapture %}
   <li id="{{ nPage }}_page" {% if page.url contains pageUrl %}{{ site.activeClass }}{% endif %}>{{ nPage | upcase }}</li>
   {% endfor %}
-  
-  <!--<li id="instructors_page" {% if page.url contains 'instructors.html' %}{{ site.activeClass }}{% endif %}>Instructors</li>
-  <li id="syllabi_page" {% if page.url contains 'syllabi.html'%}{{ site.activeClass }}{% endif %}>Syllabi</li>
-  <li id="reports_page" {% if page.url contains 'reports.html'%}{{ site.activeClass }}{% endif %}>Reports</li>
-  <li id="projects_page" {% if page.url contains 'projects.html'%}{{ site.activeClass }}{% endif %}>Projects</li>-->
 </ul>
