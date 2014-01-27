@@ -9,6 +9,10 @@
   background-color:black;
 }
 
+.top_nav li:hover {
+  background-color:light-grey;
+}
+
 .top_nav {
   text-align: center;
 }
