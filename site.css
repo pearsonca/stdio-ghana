@@ -1,8 +1,9 @@
 .top_nav li {
   display: inline-block;
+  margin-left:1em;
+  margin-right:1em;
 }
 
 .top_nav {
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
