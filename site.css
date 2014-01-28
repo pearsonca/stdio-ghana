@@ -19,3 +19,7 @@
 .top_nav {
   text-align: center;
 }
+.main {
+  margin-left: auto;
+  margin-right: auto;
+}
