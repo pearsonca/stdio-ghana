@@ -1,18 +1,16 @@
 .top_nav li {
   display: inline-block;
-  margin-left:1em;
-  margin-right:1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 1em;
 }
-
 .top_nav li:hover {
-  background-color:#D3D3D3;
+  background-color: #D3D3D3;
 }
-
-.top_nav li.top_nav_active {
-  color:white;
-  background-color:black;
+.top_nav li.active {
+  color: white;
+  background-color: black;
 }
-
 .top_nav {
   text-align: center;
 }
