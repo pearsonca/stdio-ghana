@@ -1,5 +1,6 @@
 <ul class="top_nav">
   {% for nPage in site.navPages %}{% capture pageUrl %}{{nPage}}.html{% endcapture %}
-  <li id="{{ nPage }}_page" {% if page.url contains pageUrl %}{{ site.activeClass }}{% endif %}>{{ nPage | upcase }}</li>
+  <li id="{{ nPage }}_page" {% if page.url contains pageUrl %}{{ site.activeClass }}{% endif %}>
+  <a href="{{ pageUrl }}">{{ nPage | upcase }}</a></li>
   {% endfor %}
 </ul>
