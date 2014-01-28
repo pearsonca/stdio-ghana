@@ -11,6 +11,10 @@
   color: white;
   background-color: black;
 }
+.top_nav li a {
+  text-decoration: none;
+  color: inherit;
+}
 .top_nav {
   text-align: center;
 }
