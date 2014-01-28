@@ -2,7 +2,6 @@
   display: inline-block;
   margin-left: 1em;
   margin-right: 1em;
-  padding: 1em;
 }
 .top_nav li:hover {
   background-color: #D3D3D3;
@@ -14,6 +13,7 @@
 .top_nav li a {
   text-decoration: none;
   color: inherit;
+  padding: 1em;
 }
 .top_nav {
   text-align: center;
