@@ -1,5 +1,5 @@
 baseurl: /stdio-ghana
-activeClass: class="top_nav_active"
+activeClass: class="active"
 navPages:
  - index
  - instructors
