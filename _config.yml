@@ -1,7 +1,6 @@
 baseurl: /stdio-ghana
 activeClass: class="active"
 navPages:
- - index
  - instructors
  - syllabi
  - reports
