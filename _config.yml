@@ -1,4 +1,4 @@
-baseurl: /stdio-ghana
+baseurl: "http://pearsonca.github.io/stdio-ghana"
 activeClass: class="active"
 navPages:
  - instructors
