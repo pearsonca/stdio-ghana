@@ -1,14 +1,14 @@
-Mon: (warmup slot) Overview / What is a computer / what is SE
-(AM slot) Python Basics
-(PM slot) Tools
-(project time) org teams, pick projects, have them do initial setup
-(project repo + commit permissions), have them set milestones + generic
-issues
-Tue:
-(AM) Flow Control
-(PM) Framing a Problem
-(project time) translate their project description to requirements (via a
-diagram)
+Mon
+: (warmup slot) Overview / What is a computer / what is SE
+: (AM slot) Python Basics
+: (PM slot) Tools
+: (project time) org teams, pick projects, have them do initial setup (project repo + commit permissions), have them set milestones + generic issues
+
+Tue
+: (AM) Flow Control
+: (PM) Framing a Problem
+: (project time) translate their project description to requirements (via a diagram)
+
 Wed:
 (AM) Python Advanced
 (PM) Testing
