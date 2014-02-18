@@ -11,15 +11,15 @@ Day rhythm : warmup, language session, lunch, engineering session, team project 
 Day | Slot | Activity | Instructor
 ---:|:----:|----------|-----------
 Mon | warmup | Overview / What is Comp? / How is Babby Formed? / What is SE?
- | AM | Py Variables and Functions - The Basics
+ | AM | Py Variables and Functions - The Basics | Seifu / Deanne
  | PM | Development Tools
  | project | Organize teams, projects; teams do initial setup
 Tue | warmup | TBD
- | AM | Py Flow Control
+ | AM | Py Flow Control | Dane
  | PM | Framing a Problem
  | project | Translate project into rough diagram, then requirements, then back
 Wed | warmup | TBD
- | AM | Py Variables and Functions - Advanced Topics
+ | AM | Py Variables and Functions - Advanced Topics | Seifu / Deanne
  | PM | Testing
  | project | Translate requirements into some appropriate tests
 Thur | warmup | TBD
