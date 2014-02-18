@@ -28,7 +28,7 @@ Thur | warmup | TBD
  | project | Choose style conventions, use them while implementing resolution to some tests
 Fri | warmup | Command Line Tricks | Dane/Tom
  | AM | Py File IO
- | PM | Not Reinventing the Wheel
+ | PM | Reuse | Jonathon
  | project | Identify libraries that could improve project implementation
 Sat/Sun | TBD | class trip, one instructor reboot meeting, half day of availability for team support
 Mon | warmup | TBD
