@@ -10,7 +10,7 @@ Day rhythm : warmup, language session, lunch, engineering session, team project 
 
 Day | Slot | Activity | Instructor
 ---:|:----:|----------|-----------
-Mon | warmup | Overview / What is Comp? / How is Babby Formed? / What is SE?
+Mon | warmup | Overview / What is Comp? / What is SE?
  | AM | Py Variables and Functions - The Basics | Seifu / Deanne
  | PM | Development Tools
  | project | Organize teams, projects; teams do initial setup
@@ -24,10 +24,10 @@ Wed | warmup | TBD
  | project | Translate requirements into some appropriate tests
 Thur | warmup | TBD
  | AM | Debugging
- | PM | Team Communication via the Code
+ | PM | Best Practices
  | project | Choose style conventions, use them while implementing resolution to some tests
-Fri | warmup | TBD
- | AM | Py Advanced IO
+Fri | warmup | Command Line Tricks | Dane/Tom
+ | AM | Py File IO
  | PM | Not Reinventing the Wheel
  | project | Identify libraries that could improve project implementation
 Sat/Sun | TBD | class trip, one instructor reboot meeting, half day of availability for team support
