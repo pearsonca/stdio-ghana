@@ -1,3 +1,6 @@
+shorthand - Py = Python
+
+
 Day | Slot | Activity | Instructor
 ---:|:----:|----------|-----------
 Mon | warmup | Overview / What is Comp? / What is SE?
@@ -20,9 +23,9 @@ Sat/Sun | TBD | class trip, one instructor reboot meeting, half day of availabil
 Mon | AM | Py OOP Syntax
  | PM | Effective OOP
  | project | = implementation / focused sessions from here on
-Tue | AM | Python + C++
+Tue | AM | Py + C++
  | PM | User Interfaces
-Wed | AM | Python + MPI
+Wed | AM | Py + MPI
  | PM | Distributed Computing
 Thur | AM | Open Lang Topic (e.g., Py Qt)
  | PM | Open Eng Topic (e.g., integrated test / build / deploy)
