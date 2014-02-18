@@ -1,44 +1,30 @@
-Mon
-: (warmup slot) Overview / What is a computer / what is SE
-: (AM slot) Python Basics
-: (PM slot) Tools
-: (project time) org teams, pick projects, have them do initial setup (project repo + commit permissions), have them set milestones + generic issues
-
-Tue
-: (AM) Flow Control
-: (PM) Framing a Problem
-: (project time) translate their project description to requirements (via a diagram)
-
-Wed:
-(AM) Python Advanced
-(PM) Testing
-(project time) translate requirements into some right-sized tests
-Thur:
-(AM) Debugging
-(PM) Style Standards
-(project time) agree on some style conventions, implement to resolve some
-tests using them
-Fri:
-(AM) Advanced IO
-(PM) Libraries
-(project time) figure out what library support will make projects go faster
-
-Sat/Sun: class trip, one instructor reboot meeting, half day of
-availability for team support
-
-Mon:
-(AM) Python OOP
-(PM) Effective OOP
-(project time) is implementation / focused sessions from here on
-Tue:
-(AM) Python + C++
-(PM) User Interfaces
-Wed:
-(AM) Python + MPI
-(PM) Distributed Computing
-Thur:
-(AM) Open Language Topic
-(PM) Open Engineering Topic
-Fri
-(AM) Demonstrations
-(PM) Course Feedback / Pictures / etc
+Day | Slot | Activity | Instructor
+---:|:----:|----------|-----------
+Mon | warmup | Overview / What is Comp? / What is SE?
+ | AM | Py Var and Fun Basics
+ | PM | Development Tools
+ | project | Org. teams, projects, teams do initial setup
+Tue | AM | Py Flow Control
+ | PM | Framing a Problem
+ | project | translate project into rough diagram, then requirements, then back
+Wed | AM | Py Var and Fun Adv.
+ | PM | Testing
+ | project | translate requirements into some right-sized tests
+Thur | AM | Debugging
+ | PM | Coding with Style / Standards
+ | project | agree on some style conventions, practice them implementing resolution to some tests
+Fri | AM | Py Adv. IO
+ | PM | Not Reinventing the Wheel
+ | project | identify libraries that could improve project implementation
+Sat/Sun | TBD | class trip, one instructor reboot meeting, half day of availability for team support
+Mon | AM | Py OOP Syntax
+ | PM | Effective OOP
+ | project | = implementation / focused sessions from here on
+Tue | AM | Python + C++
+ | PM | User Interfaces
+Wed | AM | Python + MPI
+ | PM | Distributed Computing
+Thur | AM | Open Lang Topic (e.g., Py Qt)
+ | PM | Open Eng Topic (e.g., integrated test / build / deploy)
+Fri | AM | Team Demos
+ | PM | Course Feedback / Pictures / etc
