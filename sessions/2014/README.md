@@ -19,7 +19,7 @@ Wed | AM | Py Var and Fun Adv.
  | PM | Testing
  | project | translate requirements into some right-sized tests
 Thur | AM | Debugging
- | PM | Coding with Style / Standards
+ | PM | Team Communication via the Code
  | project | agree on some style conventions, practice them implementing resolution to some tests
 Fri | AM | Py Adv. IO
  | PM | Not Reinventing the Wheel
