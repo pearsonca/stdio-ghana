@@ -30,7 +30,8 @@ Mon | AM | Py OOP Syntax
  | project | = implementation / focused sessions from here on
 Tue | AM | Py + C++
  | PM | User Interfaces
-Wed | AM | Py + MPI
+Wed | warmup | discuss open topics 
+ | AM | Py + MPI
  | PM | Distributed Computing
 Thur | AM | Open Lang Topic (e.g., Py Qt)
  | PM | Open Eng Topic (e.g., integrated test / build / deploy)
