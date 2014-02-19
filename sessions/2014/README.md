@@ -36,11 +36,11 @@ Mon | warmup | TBD
  | PM | Effective OOP
  | project | Implementation - independent sessions from here on
 Tue | warmup | TBD
- | AM | Py + C++
- | PM | User Interfaces
+ | AM | Py + C++ | Tom
+ | PM | User Interfaces | Tom
 Wed | warmup | discuss open topics 
- | AM | Py + MPI
- | PM | Distributed Computing
+ | AM | Py + OpenMP |
+ | PM | Distributed Computing |
 Thur | warmup | TBD
  | AM | Open Language Topic (e.g., Py Qt)
  | PM | Open Engineering Topic (e.g., integrated test / build / deploy)
