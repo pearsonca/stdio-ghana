@@ -10,7 +10,7 @@ Day rhythm : warmup, language session, lunch, engineering session, team project 
 
 Day | Slot | Activity | Instructor
 ---:|:----:|----------|-----------
-Mon | warmup | Overview / What is Comp? / What is SE?
+Mon | warmup | Overview / What is Comp? / What is SE? | Carl et al.
  | AM | Py Variables and Functions - The Basics | Seifu / Deanne
  | PM | Development Tools
  | project | Organize teams, projects; teams do initial setup
