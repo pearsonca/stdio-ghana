@@ -6,6 +6,6 @@
   {% for nPage in site.navPages %}
   <li id="{{ nPage }}_page"
   {% if page.url contains nPage %}{{ site.activeClass }}{% endif %}>
-  <a href="{{ site.url }}/{{ nPage }}">{{ nPage | upcase }}</a></li>
+  <a href="{{ site.url }}/{{ nPage }}/">{{ nPage | upcase }}</a></li>
   {% endfor %}
 </ul>
