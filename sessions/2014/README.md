@@ -11,7 +11,7 @@ Day rhythm : warmup, language session, lunch, engineering session, team project 
 Day | Slot | Activity | Instructor
 ---:|:----:|----------|-----------
 Mon | warmup | Overview / What is Comp? / What is SE? | Carl et al.
- | AM | Py Variables and Functions - The Basics | Seifu / Deanne
+ | AM | Py Variables and Functions - The Basics | Deanne / Seifu
  | PM | Development Tools | Carl
  | project | Organize teams, projects; teams do initial setup
 Tue | warmup | TBD
@@ -19,15 +19,15 @@ Tue | warmup | TBD
  | PM | Framing a Problem | Carl / Jonathon
  | project | Translate project into rough diagram, then requirements, then back
 Wed | warmup | TBD
- | AM | Py Variables and Functions - Advanced Topics | Seifu / Deanne
+ | AM | Py Variables and Functions - Advanced Topics | Deanne / Seifu
  | PM | Testing | Carl / Jonathon
  | project | Translate requirements into some appropriate tests
 Thur | warmup | TBD
  | AM | Debugging | Dane / Deanne / Seifu
- | PM | Best Practices | Jonathon
+ | PM | Best Practices | Jonathon / Tom
  | project | Choose style conventions, use them while implementing resolution to some tests
 Fri | warmup | Command Line Tricks | Dane+Tom
- | AM | Py File IO | Deanne
+ | AM | Py File IO | Deanne / Tom
  | PM | Reuse | Dane / Jonathon
  | project | Identify libraries that could improve project implementation
 Sat/Sun | TBD | class trip, one instructor reboot meeting, half day of availability for team support
@@ -39,8 +39,8 @@ Tue | warmup | TBD
  | AM | Py + C++ | Dane / Tom
  | PM | User Interfaces | Tom
 Wed | warmup | discuss open topics 
- | AM | Py + OpenMP | Carl / ?
- | PM | Distributed Computing | Carl / ?
+ | AM | Py + OpenMP | Tom
+ | PM | Distributed Computing | Carl
 Thur | warmup | TBD
  | AM | Open Language Topic (e.g., Py Qt)
  | PM | Open Engineering Topic (e.g., integrated test / build / deploy)
