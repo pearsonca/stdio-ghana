@@ -42,9 +42,9 @@ Wed | warmup | discuss open topics
  | AM | Py + OpenMP | Tom
  | PM | Distributed Computing | Carl
 Thur | warmup | TBD
- | AM | Open Language Topic (e.g., Py Qt)
- | PM | Open Engineering Topic (e.g., integrated test / build / deploy)
+ | AM | Open Language Topic (e.g., Py Qt) | TBD
+ | PM | Open Engineering Topic (e.g., integrated test / build / deploy) | TBD
  | project | wrap for demo
 Fri | warmup | TBD
- | AM | Team Demos
- | PM | Course Feedback / Pictures / etc
+ | AM | Team Demos | All
+ | PM | Course Feedback / Pictures / etc | All
