@@ -12,7 +12,7 @@ Day | Slot | Activity | Instructor
 ---:|:----:|----------|-----------
 Mon | warmup | Overview / What is Comp? / What is SE? | Carl [Jonathon] et al.
  | AM | Py Variables and Functions - The Basics | Deanne [Seifu]
- | PM | Development Tools | Carl [?]
+ | PM | Development Tools | Carl [Dane]
  | project | Organize teams, projects; teams do initial setup
 Tue | warmup | TBD
  | AM | Py Flow Control | Dane [Jonathon]
