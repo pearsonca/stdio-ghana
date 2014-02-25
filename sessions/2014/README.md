@@ -23,20 +23,20 @@ Wed | warmup | TBD
  | PM | Testing | Carl / Jonathon
  | project | Translate requirements into some appropriate tests
 Thur | warmup | TBD
- | AM | Debugging | Deanne / Seifu
+ | AM | Debugging | Dane / Deanne / Seifu
  | PM | Best Practices | Jonathon
  | project | Choose style conventions, use them while implementing resolution to some tests
 Fri | warmup | Command Line Tricks | Dane+Tom
  | AM | Py File IO | Deanne
- | PM | Reuse | Jonathon
+ | PM | Reuse | Dane / Jonathon
  | project | Identify libraries that could improve project implementation
 Sat/Sun | TBD | class trip, one instructor reboot meeting, half day of availability for team support
 Mon | warmup | TBD
- | AM | Py OOP Syntax | Carl / Deanne / Seifu / Jonathon
+ | AM | Py OOP Syntax | Carl / Dane / Deanne / Seifu / Jonathon
  | PM | Effective OOP | Carl / Deanne / Seifu / Jonathon
  | project | Implementation - independent sessions from here on
 Tue | warmup | TBD
- | AM | Py + C++ | Tom
+ | AM | Py + C++ | Dane / Tom
  | PM | User Interfaces | Tom
 Wed | warmup | discuss open topics 
  | AM | Py + OpenMP | Carl / ?
