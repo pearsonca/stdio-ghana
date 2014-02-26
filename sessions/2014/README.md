@@ -39,7 +39,7 @@ Tue | warmup | TBD
  | AM | Py + C++ | Dane [Tom]
  | PM | User Interfaces | Tom [Seifu]
 Wed | warmup | discuss open topics 
- | AM | Py + OpenMP | Tom [Carl]
+ | AM | Parallel Python | Tom [Carl]
  | PM | Distributed Computing | Carl [Tom]
 Thur | warmup | TBD
  | AM | Open Language Topic (e.g., Py Qt) | TBD
