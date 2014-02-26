@@ -32,7 +32,14 @@ Fri | warmup | Command Line Tricks | Dane+Tom
  | project | Identify libraries that could improve project implementation
 Sat/Sun | TBD | class trip, one instructor reboot meeting, half day of availability for team support
 Mon | warmup | TBD
- | AM | Parallel Python | Tom [Carl]
+ | AM | Py OOP Syntax | Seifu [Jonathon]
+ | PM | Effective OOP | Carl [Seifu]
+ | project | Implementation - independent sessions from here on
+Tue | warmup | TBD
+ | AM | Py + C++ | Dane [Tom]
+ | PM | User Interfaces | Tom [Seifu]
+Wed | warmup | discuss open topics 
+ | AM | Py + OpenMP | Tom [Carl]
  | PM | Distributed Computing | Carl [Tom]
 Thur | warmup | TBD
  | AM | Open Language Topic (e.g., Py Qt) | TBD
