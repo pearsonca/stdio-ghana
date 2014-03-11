@@ -137,6 +137,8 @@ Thus code is typically reused in an ad hoc fashion, obtained from developers in 
 <section>
 
 Design Patterns:  The purpose of software is to solve problems!  If code you need to solve a problem has been written before, surely the problem has been solved before.  Or at least a piece of the problem…
+</section>
+<section>
 
 What is a Design Pattern?
 
@@ -144,24 +146,32 @@ What is a Design Pattern?
 -	Can be implemented in (almost) any language.
 
 The original and famous Design Patterns book (Design Patterns: Elements of Reusable Object-Oriented Software) contained 23 patterns, with additional ones identified since.  I will briefly cover 2 example patterns today.
+</section>
+<section>
 
 The Factory Pattern
 
 The factory pattern creates objects that inherit from an abstract class.  The actual subclass is not decided until runtime.  As long as the subclasses implement the required interface(s), they can be handled identically by the rest of the program while retaining the characteristics of the subclass.
 
 Example: An audio editing program that needs to handle different audio formats with the same set of functions.  So regardless of the audio type (.au, .wav, .mp3, etc.), you can get a generic audio object that can be handled by the program in the same way.
+</section>
+<section>
 
 Strategy Pattern.
 
 The strategy pattern allows the behavior of an function to be changeable at runtime.  This is done by defining a common interface that a family of functions implements.  As the state of the program or an object changes, its function implementation can be changed appropriately 
 
 Example: Combat video game where shooter changes weapons.  The same function dude.shoot() is called, but the behavior is different.
+</section>
+<section>
 
 The use of Design Patterns is controversial for two main reasons.
 
 •	The Design Pattern is needed to correct a flaw in the programming language.
 •	Design Patterns can be misused and unnecessarily increase complexity of the code.
  
+</section>
+<section>
 
 
 Exercise:
