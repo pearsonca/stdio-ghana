@@ -57,3 +57,14 @@ Thur | warmup | TBD
 Fri | warmup | TBD
  | AM | Team Demos | All
  | PM | Course Feedback / Pictures / etc | All
+
+
+Warmup | Instructor | Focus
+:-----:|:----------:|:------:
+Bowling | Carl | developing requirements
+Project Euler | Tom | math / programming
+Logic Gates | Dane | logic / objects?
+ | Jonathon |
+ | Seifu |
+ | Deanne |
+The Telephone (programming) game | |
