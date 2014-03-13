@@ -3,6 +3,10 @@ stdio-ghana
 
 Repository for course materials
 
+view course site at: http://pearsonca.github.io/stdio-ghana/
+
+applications for 2014: http://goo.gl/d68nbg
+
 To edit / create sessions:
  1. go the the sessions/YYYY/$session folder
  2. the `index.html` file is the main session slides
