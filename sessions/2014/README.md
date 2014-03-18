@@ -15,7 +15,7 @@ Mon | warmup | Overview / What is Comp? / What is SE? | Carl [Jonathon] et al.
  | PM | Development Tools | Carl [Dane]
  | project | Organize teams, projects; teams do initial setup
  | social | personal computer setup
-Tue | warmup | TBD
+Tue | warmup | Bowling | Carl
  | AM | Py Flow Control | Dane [Jonathon]
  | PM | Framing a Problem | Jonathon [Carl]
  | project | Translate project into rough diagram, then requirements, then back
@@ -63,8 +63,9 @@ Warmup | Instructor | Focus
 :-----:|:----------:|:------:
 Bowling | Carl | developing requirements
 Project Euler | Tom | math / programming
-Logic Gates | Dane | logic / objects?
- | Jonathon |
+CL Tricks | Dane | logic / objects?
+20 questions | Jonathon |
  | Seifu |
  | Deanne |
+Digital Logic Gates | | 
 The Telephone (programming) game | |
