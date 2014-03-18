@@ -20,7 +20,7 @@ Tue | warmup | Bowling | Carl
  | PM | Framing a Problem | Jonathon [Carl]
  | project | Translate project into rough diagram, then requirements, then back
  | social | instructor project discussion
-Wed | warmup | TBD
+Wed | warmup | Project Euler | Deanne
  | AM | Py Variables and Functions - Advanced Topics | Seifu [Deanne]
  | PM | Testing | Carl [Jonathon]
  | project | Translate requirements into some appropriate tests
@@ -62,10 +62,19 @@ Fri | warmup | TBD
 Warmup | Instructor | Focus
 :-----:|:----------:|:------:
 Bowling | Carl | developing requirements
-Project Euler | Tom | math / programming
+Project Euler | Deanne | math / programming
 CL Tricks | Dane | logic / objects?
 20 questions | Jonathon |
- | Seifu |
- | Deanne |
-Digital Logic Gates | | 
-The Telephone (programming) game | |
+Security | Dane |
+The Telephone (programming) game | Carl |
+Project Euler, part II | Seifu |
+
+Socials | Instructor |
+:-----:|:----------:|
+Soccer beforehand, US v. Ghana | Dane
+Edison | Carl
+Board Games | Deanne
+Movies | 
+Group Cookout | Seifu
+Improv / Speaking games |
+Student tour guides |
