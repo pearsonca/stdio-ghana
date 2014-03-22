@@ -17,7 +17,7 @@ Mon | warmup | Overview / What is Comp? / What is SE? | Carl [Jonathon] et al.
  | social | personal computer setup
 Tue | warmup | Bowling | Carl
  | AM | Py Flow Control | Dane [Jonathon]
- | PM | Framing a Problem | Jonathon [Carl]
+ | PM | Software Requirements | Jonathon [Carl]
  | project | Translate project into rough diagram, then requirements, then back
  | social | instructor project discussion
 Wed | warmup | Project Euler | Deanne
