@@ -1,5 +1,6 @@
 baseurl: "http://pearsonca.github.io/stdio-ghana"
 activeClass: class="active"
+highlighter: pygments
 navPages:
  - instructors
  - syllabi
