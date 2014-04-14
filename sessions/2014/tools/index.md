@@ -2,24 +2,17 @@
 layout: presentation
 year: 2014
 ---
-
-<section>
-
+{{ site.data.slide.startmd }}
 # Tools
-## Instructors
-## Carl, Dane
+### Instructors: Carl, Dane
+{{ site.data.slide.endmd }}
 
-</section>
-
-<section>
-
+<section markdown="block">
 ## What Do You Need to Code?
-
 <aside>
-QA with students about what capabilities they need to have while coding (e.g. syntax highlighting, version control),
+notes: QA with students about what capabilities they need to have while coding (e.g. syntax highlighting, version control),
 and what tools they use to get those.
 </aside>
-
 </section>
 
 <section>

@@ -1,4 +1,5 @@
 baseurl: "http://pearsonca.github.io/stdio-ghana"
+markdown: kramdown
 activeClass: class="active"
 highlighter: pygments
 navPages:

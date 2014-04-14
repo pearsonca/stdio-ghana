@@ -1,0 +1,4 @@
+start: "<section>"
+end: "</section>"
+startmd: "<section data-markdown><script type='text/template'>"
+endmd: "</script></section>"
