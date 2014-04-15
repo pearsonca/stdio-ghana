@@ -2,60 +2,88 @@
 layout: presentation
 year: 2014
 ---
-{{ site.data.slide.startmd }}
+<section markdown="block">
 # Tools
+
 ### Instructors: Carl, Dane
-{{ site.data.slide.endmd }}
+</section>
 
 <section markdown="block">
 ## What Do You Need to Code?
-<aside>
-notes: QA with students about what capabilities they need to have while coding (e.g. syntax highlighting, version control),
-and what tools they use to get those.
+
+<aside class="notes">
+Ask students what they need to code, e.g.
+- file system interaction,
+- syntax highlighting,
+- "spell" checking for code (aka static analysis),
+- version control,
+- compile / run integration
+- console / interpreter
+Ask what tools they use to satisfy those needs.
+How did they learn about them?
 </aside>
+
 </section>
 
-<section>
-
+<section markdown="block">
 ## File System Tools
 
-<aside>
-cover create, delete, copy, move, remove, plus locating python / libraries, environment variables
-</aside>
+<aside class="notes">
+cover create, delete, copy, move, remove,
 
+plus locating python / libraries,
+
+environment variables
+</aside>
 </section>
 
-<section>
+<section markdown="block">
+## Code Editors
 
-## Code Editor
+[vim](http://www.vim.org/docs.php) and [pycharm](http://www.jetbrains.com/pycharm/)
 
-<aside>
-discuss text editing options, cover how to use text editor smartly
-(search, goto line numbers), taking advantage of syntax highlighting, smart identation
+<aside class="notes" markdown="block">
+where to find these,
+
+quick cover of critical features:
+ - load, save, discard
+ - search, by phrase / to line
+ - find and replace
+ - config?
 </aside>
-
 </section>
 
-<section>
-
-<section>
+<section markdown="block">
 ## Version Control
 
-<aside>
-go over git basics, have them setup accounts, create a helloworld project
+[git](http://git-scm.com/) at [github](https://github.com/)
+
+<aside class="notes">
+create account first, create a helloghana project
+
+QA: what is the point of version control?
+ - keeping track of changes
+ - provide a way for people to work together
+
+How does git + github accomplish this
+ - push / pull / merge
+ - branches: work on separate things in parallel, then merge them into master
+ as they mature
+ - fast forward
+
+do some git at command line, do some in gui?
 </aside>
 
 </section>
 
-<section>
-
-git notes
-
-</section>
-
-</section>
-
-<section>
+<section markdown="block">
 ## Project / Team Tools
-<aside>share commit access, assign issues, make changes, do some reverts</aside>
+
+<aside class="notes">
+QA: How do you plan *your* work currently?  How do you work with teammates?
+ - need to keep track of what needs to be done, when, by whom
+ - options for sharing work?
+
+do: share commit access on helloghana, create milestones, assign issues
+</aside>
 </section>
