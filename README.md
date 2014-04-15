@@ -15,3 +15,11 @@ To edit / create sessions:
  5. for non-slide content (e.g., if you need the students to download some prepared content for an exercise), add it to this directory as well.
 
 To run the site locally, install jekyll according to GH instructions, then clone the repository.  In the root of the clone, call `jekyll serve --baseurl ""`
+
+Notes on making session slides:
+- if you use `<section markdown="block">` for slides + `.md` instead of `.html`
+extension, [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) syntax should just work.
+- may need to wary of mixing that with code highlighting
+- if you use `<aside class="notes"> ... </aside>`, you can write notes
+- the notes may also use markdown, if you add the `markdown="block"` attribute
+to the aside element.
