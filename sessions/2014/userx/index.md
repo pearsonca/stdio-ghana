@@ -34,17 +34,13 @@ Command line interface (CLI):
 - Arguments passed after program name
 
 -- ls -lh
-
 -- tar -czvvf my_new_tar_file.tgz ./*
 
 - Interactive UI
-
 -- fdisk
 
 - Special cases:
-
 -- servers
-
 -- supercomputers
 </section>
 
