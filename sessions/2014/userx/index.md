@@ -2,29 +2,29 @@
 layout: presentation
 year: 2014
 ---
-<section>
+<section markdown="block">
 	<h1>User Interfaces</h1>
 </section>
 
-<section>
+<section markdown="block">
 What are we talking about?
 
 Whenever we write code, we have some user in mind who will interact with it via some an interface.
 How do you interact with (your own? someone elses?) software?
 </section>
 
-<section>
+<section markdown="block">
 What broad kinds of interfaces are there?
 What kinds of users are there?
 </section>
 
-<section>
+<section markdown="block">
 No interface:
 - Click program icon
 - Type name, press <enter>
 </section>
 
-<section>
+<section markdown="block">
 Command line interface (CLI):
 - Arguments passed after program name
 -- ls -lh
@@ -36,12 +36,12 @@ Command line interface (CLI):
 -- supercomputers
 </section>
 
-<section>
+<section markdown="block">
 What makes CLI software easy/hard to use?
 [Look at some documentation for some CLI utilities, try to complete a couple specific tasks]
 </section>
 
-<section>
+<section markdown="block">
 Graphical user interface (GUI):
 - Common operating systems
 -- Windows, OS X, Gnome/KDE/XFCE for linux
@@ -54,17 +54,17 @@ Graphical user interface (GUI):
 -- Touch screens
 </section>
 
-<section>
+<section markdown="block">
 What makes GUI software easy/hard to use?
 [Compare some interfaces, e.g. Yahoo & Google, Notepad & Word]
 </section>
 
-<section>
+<section markdown="block">
 Simple software should have a simple interface.
 Should complex software have a complex interface?
 </section>
 
-<section>
+<section markdown="block">
 Creating simple interfaces for complex software is hard!
 Broad principles:
 - Know your users and what they know
@@ -72,21 +72,21 @@ Broad principles:
 - Exploit psychology and culture
 </section>
 
-<section>
+<section markdown="block">
 Know your users.  Are they:
 - Kids or adults
 - One time or long term users
 - Novices or experienced programmers
 </section>
 
-<section>
+<section markdown="block">
 Know your users (cont.)
 - Make common things easy
 - Create basic/advanced alternative interfaces [Examples?]
 - Create customizable interfaces [Examples?]
 </section>
 
-<section>
+<section markdown="block">
 Exploit familiar interface patterns
 - What does flipping a switch do?
 - What does turning a dial do?
@@ -94,20 +94,20 @@ Exploit familiar interface patterns
 [What are some more examples of ingrained controls?]
 </section>
 
-<section>
+<section markdown="block">
 Exploit familiar interface patterns (cont.)
 - Command line tools: reuse familiar flags!
 [Find some CL tools, compare the flags and their meanings.]
 </section>
 
-<section>
+<section markdown="block">
 Exploit psychology and culture
 - If you step into an unfamiliar room, where do you look first for the light switch?
 - How do you choose whether to push or pull a door?
 - If something is flashing red, what does that mean? Other colors?
 </section>
 
-<section>
+<section markdown="block">
 Exploit psychology (cont.)
 - Put things where people will naturally look for them
 -- Controls near the thing they control
@@ -116,12 +116,12 @@ Exploit psychology (cont.)
 - Use good documentation/pop up messages to target subtle or misleading controls
 </section>
 
-<section>
+<section markdown="block">
 Having many controls that are poorly organized can obscure the useful ones
 Having excessive documentation for things that are obvious or unnecessary for the user can obscure the useful information
 </section>
 
-<section>
+<section markdown="block">
 When you don't know how to make something better, find some guinea pigs!
 Ask *them* what they expect to happen when they use your software.
 </section>
