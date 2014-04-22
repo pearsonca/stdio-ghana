@@ -22,19 +22,29 @@ What kinds of users are there?
 
 <section markdown="block">
 No interface:
+
 - Click program icon
-- Type name, press <enter>
+
+- Type name, press ENTER
 </section>
 
 <section markdown="block">
 Command line interface (CLI):
+
 - Arguments passed after program name
+
 -- ls -lh
+
 -- tar -czvvf my_new_tar_file.tgz ./*
+
 - Interactive UI
+
 -- fdisk
+
 - Special cases:
+
 -- servers
+
 -- supercomputers
 </section>
 
