@@ -2,13 +2,15 @@
   display: inline-block;
   margin-left: 1em;
   margin-right: 1em;
+  color: #191970;
+  border-radius: 5px;
 }
 .top_nav li:hover {
-  background-color: #D3D3D3;
+  background-color: #c5b358;
 }
 .top_nav li.active {
-  color: white;
-  background-color: black;
+  color: #fff44f;
+  background-color: #191970;
 }
 .top_nav li a {
   text-decoration: none;

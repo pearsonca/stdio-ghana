@@ -1,16 +1,23 @@
+@dark: #191970;
+@light: #FFF44F;
+@paledark: #191970;
+@palelight: #C5B358;
+
 .top_nav li {
 
   display : inline-block;
   margin-left : 1em;
   margin-right : 1em;
-  
+  color: @dark;
+  border-radius: 5px;
+
   &:hover {
-    background-color : #D3D3D3;
+    background-color : @palelight;
   }
   
   &.active {
-    color : white;
-    background-color : black;
+    color : @light;
+    background-color : @dark;
   }
 
   a { 
