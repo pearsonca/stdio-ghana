@@ -3,11 +3,11 @@ layout: presentation
 year: 2014
 ---
 <section markdown="block">
-	# User Interfaces
+# User Interfaces
 </section>
 
 <section markdown="block">
-## What are we talking about?
+### What are we talking about?
 
 Whenever we write code, we have some user in mind who will interact with it via some an interface.
 
