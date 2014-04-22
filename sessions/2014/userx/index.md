@@ -3,18 +3,20 @@ layout: presentation
 year: 2014
 ---
 <section markdown="block">
-	<h1>User Interfaces</h1>
+	#User Interfaces
 </section>
 
 <section markdown="block">
 What are we talking about?
 
 Whenever we write code, we have some user in mind who will interact with it via some an interface.
+
 How do you interact with (your own? someone elses?) software?
 </section>
 
 <section markdown="block">
 What broad kinds of interfaces are there?
+
 What kinds of users are there?
 </section>
 
