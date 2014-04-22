@@ -1,2 +1,2 @@
 #!/bin/bash
-jekyll serve baseurl=""
+jekyll serve --baseurl=""
