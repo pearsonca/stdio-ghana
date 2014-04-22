@@ -1,12 +1,15 @@
 .top_nav li {
   display: inline-block;
-  margin-left: 1em;
-  margin-right: 1em;
-  color: #191970;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  color: #c5b358;
   border-radius: 5px;
 }
 .top_nav li:hover {
-  background-color: #c5b358;
+  background-color: #fff44f;
+  color: #191970;
 }
 .top_nav li.active {
   color: #fff44f;
@@ -15,14 +18,31 @@
 .top_nav li a {
   text-decoration: none;
   color: inherit;
-  padding: 1em;
+  padding: 0.5em;
   display: block;
 }
 .top_nav {
   text-align: center;
+  background-color: #313157;
+  padding: 0px;
+  font-size: 1.5em;
 }
 .main {
   width: 50em;
   margin-left: auto;
   margin-right: auto;
+  padding: 1em;
+  color: #FFFFFF;
+  background-color: #1A1A1A;
+}
+.main a {
+  text-decoration: none;
+  color: inherit;
+}
+.main a:hover {
+  text-decoration: underline;
+}
+body {
+  background-color: black;
+  font-family: sans-serif;
 }
