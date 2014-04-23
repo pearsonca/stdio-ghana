@@ -34,6 +34,10 @@
   padding: 1em;
   color: #FFFFFF;
   background-color: #1A1A1A;
+  border-width: 4px;
+  border-color: #0A0A0A;
+  border-style: solid;
+  border-radius: 5px;
 }
 .main a {
   text-decoration: none;
@@ -45,4 +49,5 @@
 body {
   background-color: black;
   font-family: sans-serif;
+  margin: 0px;
 }
