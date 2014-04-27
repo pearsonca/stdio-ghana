@@ -1,4 +1,4 @@
-baseurl: "http://pearsonca.github.io/stdio-ghana"
+baseurl: "http://localhost:4000"
 markdown: kramdown
 activeClass: class="active"
 highlighter: pygments
