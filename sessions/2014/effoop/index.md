@@ -11,7 +11,7 @@ instructors:
 <aside class="notes" markdown="block">
 QA with students; I'd say the gist of it is that thinking with objects lets one *do* software engineering.  Goal of this session would be to have the students experience some ways in which objects enable best practices
 </aside>
-<section>
+</section>
 
 <section markdown="block">
 ###Do Not Repeat Yourself
