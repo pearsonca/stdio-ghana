@@ -22,8 +22,8 @@ The software engineering team must understand what the customer wants out of the
 know what to build.
 </section>
 
-<section data-background="requirements_toon.jpg" markdown="block">
-
+<section markdown="block">
+![requirements joke](requirements_toon.jpg "Requirements as a Swingset")
 </section>
 
 <section markdown="block">
