@@ -4,6 +4,14 @@ Activity: Very quickly go through elicitation, analysis and specification phases
 
 Deliverable: Proposal describing approach.  Ensure that software requirements as understood are addressed in proposal.  Do not attempt to use formal specification language.
 
+Approach:
+
+Elicit. Organize software function around use cases.
+
+Seperate requirements into functional and non-functional.
+
+Analysis.  Look for contradictions and obviously wrong requirements.
+
 Remember to follow the guidance for elicitation and Brooks' warnings.
 
 Chief Executive Officer
