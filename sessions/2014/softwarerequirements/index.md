@@ -22,10 +22,7 @@ The software engineering team must understand what the customer wants out of the
 know what to build.
 </section>
 
-<section>
-
-<img src="requirements_toon.jpg" WIDTH=513 HEIGHT=594>
-
+<section data-background="requirements_toon.jpg" data-background-width=513 data-background-height=594>
 </section>
 
 <section markdown="block">
