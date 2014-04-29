@@ -79,7 +79,7 @@ Secrets -
 * Is not looking forward to the increase in her workload.  Science editor is primarily a writer, not a technologist. Wants new system to be as easy as possible to use.
 * She is not aware that marketing wants a seperate page for multiple topic areas (Biology, Physics, Information Tech, etc.)  She thinks it is just one page per language.
 
-
+ 
 Information Technology Director
 
 Stated requirements - 
