@@ -45,9 +45,9 @@ Tue | warmup | TBD
  | AM | Py + C++ | Dane [Tom]
  | PM | User Interfaces | Tom [Seifu]
  | social | instructor project discussion
-Wed | warmup | discuss open topics 
- | AM | Parallel Python | Tom [Carl]
- | PM | Distributed Computing | Carl [Tom]
+Wed | warmup | discuss open topics
+ | AM | Distributed Computing | Carl [?]
+ | PM | Parallel Python | ? [Carl]
  | social | group dinner
 Thur | warmup | TBD
  | AM | Open Language Topic (e.g., Py Qt) | TBD
@@ -74,7 +74,7 @@ Socials | Instructor |
 Soccer beforehand, US v. Ghana | Dane
 Edison | Carl
 Board Games | Deanne
-Movies | 
+Movies |
 Group Cookout | Seifu
 Improv / Speaking games |
 Student tour guides |

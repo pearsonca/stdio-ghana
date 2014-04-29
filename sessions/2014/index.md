@@ -33,8 +33,8 @@ elements:
    uri: pycpp
  - name: User Interfaces
    uri: userx
- - name: Parallel Python
-   uri: pymp
  - name: Distributed Computing
    uri: distrib
+ - name: Parallel Python
+   uri: pymp
 ---
