@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+{% include head.liquid %}
+<body>
+{% include header.liquid %}
+<div class="main">
+{{ content }}
+{% for item in page.elements %}
+{% capture elem %}
+[{{ item.name }}]({% if page.absolute %}{{ item.uri }}{% else %}{{ site.baseurl }}/{{ page.base }}/{{ item.uri }}{% endif %})
+{% endcapture %}
+{{ elem | markdownify }}
+
+{% endfor %}
+</div>
+</body>
+</html>
