@@ -57,7 +57,7 @@ year: 2014
 <section>
 	<h3>Class Mutability</h3>
 	<p>Classes are mutable in general. To mimic immutability you can do something like this:</p>
-	{%highlight py%}
+	{% highlight py %}
 	class Immutable(object):
      		"""An immutable class with a single attribute 'value'."""
      		def __setattr__(self, *args):
@@ -67,7 +67,7 @@ year: 2014
          		# we can no longer use self.value = value to store the instance data
          		# so we must explicitly call the superclass
          		super(Immutable, self).__setattr__('value', value)
-         {% endhighlight}
+         {% endhighlight %}
 </section>
 <section>
 	<h3>Optional/Deafult Arguments in Functions</h3>
