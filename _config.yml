@@ -4,7 +4,7 @@ activeClass: class="active"
 highlighter: pygments
 navPages:
  - instructors
- - syllabi
+ - sessions
  - reports
  - projects
  - misc
