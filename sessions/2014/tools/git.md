@@ -7,23 +7,27 @@ title: git
 
 <aside class="notes" markdown="block">
 Q\&A (1-2ish min per person, up to 10ish minutes - for people not inclined to answer, no-opt out with \"give 1 example, say one good thing about it, one bad thing\")
+
 - what projects do you work on with other people?
 - how do you share that work?
 - what's good about those methods?  what problems you see?
 - trying to incorporate their comments / improvements / etc into the work?
 
 Discussion should elicit work like
+
 - documents, small transformation programs / scripts (i.e., potentially single file)
 - items with dependencies; e.g., a report with a figure that is produced from some spreadsheet,
 programs with some minimal objects, or scripts that make use of some other utility code
 - work with many separable dependencies
 
 Solutions for sharing might range from
+
 - print the work, have them comment on it in pen and ink
 - email the file / files back and forth
 - shared drive / cloud sharing solution
 
 Expected Pros/Cons
+
 - pro: expediency, obvious artefact (piece of paper, specific email)
 - con: no log of what people said, lots of duplicate work, possible to misplace / mix up artefacts
 
