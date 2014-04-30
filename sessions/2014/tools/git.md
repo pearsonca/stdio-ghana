@@ -18,12 +18,13 @@ title: git
 VC addresses those problems by establishing a formal language for working with people
 (including future / past snapshots of yourself).
 
-All provides a few basic notions:
+All provides few basic notions:
+
 - what is the current version
 - what is the history leading up to that?
 - who made which changes?
 
-`git` provides one twist -- alternative versions -- and then things to do with them.
+`git` provides one twist, **alternative versions**, and then tools to use them.
 </aside>
 </section>
 
@@ -42,6 +43,7 @@ All provides a few basic notions:
 ##Parallel Git
 <aside class="notes" markdown="block">
 - Q&A about branches:
+
  * they represent parallel work
  * like parallel computation, best when shared state can be avoided
  * how to avoid that kind of shared state? that's a long discussion - the point of a software engineering course
