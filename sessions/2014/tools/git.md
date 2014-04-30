@@ -25,6 +25,7 @@ All provides a few basic notions:
 
 `git` provides one twist -- alternative versions -- and then things to do with them.
 </aside>
+</section>
 
 <section markdown="block">
 ##Serial Git
