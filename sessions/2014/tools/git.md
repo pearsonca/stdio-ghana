@@ -4,11 +4,13 @@ title: git
 ---
 <section markdown="block">
 ##What do you work on?
+
 <aside class="notes" markdown="block">
 - what projects do you work on with other people?
 - how do you share that work?
 - what problems do you run into when trying to share the work?
 - trying to incorporate their comments / improvements / etc into the work?
+
 </aside>
 </section>
 
@@ -36,6 +38,7 @@ All provides few basic notions:
 - first local changes, then commit + push
 - then remote changes (via web interface) and commit (with insta-push)
 - then local changes (pre pull) and show conflicts resolution
+
 </aside>
 </section>
 
@@ -44,9 +47,10 @@ All provides few basic notions:
 <aside class="notes" markdown="block">
 - Q&A about branches:
 
- * they represent parallel work
- * like parallel computation, best when shared state can be avoided
- * how to avoid that kind of shared state? that's a long discussion - the point of a software engineering course
+    * they represent parallel work
+    * like parallel computation, best when shared state can be avoided
+    * how to avoid that kind of shared state? that's a long discussion - the point of a software engineering course
+    
 - using forks, initiate pull requests
 - need some pulls that can be unproblematically parallel
 - then show how some create the need for merging
