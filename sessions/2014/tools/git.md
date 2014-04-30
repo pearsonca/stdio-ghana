@@ -30,7 +30,7 @@ All provides a few basic notions:
 <section markdown="block">
 ##Serial Git
 <aside class="notes" markdown="block">
-- fork hellogroup project (e.g., this repo?)
+- fork [hellogit](https://github.com/pearsonca/hellogit) project
 - have people make some series of changes, locally and remotely
 - first local changes, then commit + push
 - then remote changes (via web interface) and commit (with insta-push)
@@ -52,6 +52,14 @@ All provides a few basic notions:
 </section>
 
 <section markdown="block">
+##Effective Habits
+<aside class="notes" markdown="block">
+- commit, commit, commit
+- afraid to commit b/c fiddling around, not sure, etc?  branch, and then commit, commit, commit
+</aside>
+</section>
+
+<section markdown="block">
 ##Troubleshooting
 <aside class="notes" markdown="block">
 - first mantra: don't panic - you are using distributed version control.
@@ -62,5 +70,17 @@ practically impossible to destroy work unless you set out to destroy work
 - easiest sol'n duplicate the stuff you're trying to hold on to
 - rewind the source until config isn't screwed
 - careful cut and paste back from the duplicated stuff back into what you have
+</aside>
+</section>
+
+<section markdown="block">
+##Organizing with Github
+<aside class="notes" markdown="block">
+Github offers additional work organization tools:
+ - issues - things that need to be done / fixed / etc; can be assigned to individuals
+ - milestones - collections of issues
+
+separate from version control aspect, but VC aware.  Can use commit messages to link issue resolution
+with particular commit / pull request
 </aside>
 </section>
