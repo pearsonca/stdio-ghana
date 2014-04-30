@@ -82,40 +82,44 @@ Steps:
 The problems are typical to doing actual work, and are really a byproduct of the typical series / parallel
 problem.  Activity is to highlight how `git` address parallel \"problem\": branches.
 
-- Q&A about branches:
+- a branch represents parallel work
+- like parallel computation, best when shared state can be avoided
+- how to avoid that kind of shared state? that's a long discussion - the point of a software engineering course
 
-    * they represent parallel work
-    * like parallel computation, best when shared state can be avoided
-    * how to avoid that kind of shared state? that's a long discussion - the point of a software engineering course
-    
-- using forks, initiate pull requests
+Activities:
+  
+- using forks from previous work, initiate pull requests
 - need some pulls that can be unproblematically parallel
-- then show how some create the need for merging
+- ask participants to work together to create commits they think will cause conflicts
+- use these to show merge resolution
 
+N.b.: branches don't eliminate the need for resolving differences, but they make that activity its own \"thing\"
 </aside>
 </section>
 
 <section markdown="block">
 ##Effective Habits
+
 <aside class="notes" markdown="block">
+
+- have everything you can either in the repository or as explicitly expressed dependency in the repo
 - commit, commit, commit
 - afraid to commit b/c fiddling around, not sure, etc?  branch, and then commit, commit, commit
+- always start and end work with pull from / push to relevant branch
 
 </aside>
 </section>
 
 <section markdown="block">
 ##Troubleshooting
+
 <aside class="notes" markdown="block">
+
 - first mantra: don't panic - you are using distributed version control.
 practically impossible to destroy work unless you set out to destroy work
-- ways to avoid troubleshooting:
-
-    * start work by pulling, regularly push, and always finish work with a push
-    * work in branch
-    
-- easiest sol'n duplicate the stuff you're trying to hold on to
-- rewind the source until config isn't screwed
+- ways to avoid troubleshooting: use the habits we just discussed
+- if you didn't: easiest sol'n duplicate the stuff you're trying to hold on to
+- rewind the source until it isn't screwed, possibly copying out anything that needs to be preserved
 - careful cut and paste back from the duplicated stuff back into what you have
 
 </aside>
@@ -123,12 +127,15 @@ practically impossible to destroy work unless you set out to destroy work
 
 <section markdown="block">
 ##Organizing with Github
+
 <aside class="notes" markdown="block">
-Github offers additional work organization tools:
+Github is not version control.  It offers version control.  Additionally, it offers work organization tools
+and GUIs:
+
  - issues - things that need to be done / fixed / etc; can be assigned to individuals
  - milestones - collections of issues
 
 separate from version control aspect, but VC aware.  Can use commit messages to link issue resolution
-with particular commit / pull request
+with particular commit / pull request.
 </aside>
 </section>
