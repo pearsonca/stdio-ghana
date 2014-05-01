@@ -1,0 +1,229 @@
+---
+layout: presentation
+year: 2014
+---
+
+<section>
+  <h3>Software Requirements</h3>
+  <h5>Prerequisites: Basic Python Programming</h5>
+  <dt>Jonathon Parker</dt><dd>Employed at iBASEt</dd>
+  <dt>Carl Pearson</dt><dd>Postdoctoral Researcher, UF</dd>
+</section>
+
+<section>
+
+<p>Why Requirements?
+<br/><br/>
+<p align="left">Unless you are purely a hobbyist or a student, software projects are undertaken because an organization needs the software to increase productivity of workers or to perform a task that cannot be done economically by a human worker.
+<br/><br/>
+<p align="left">The software engineering team must understand what the customer wants out of the software, so that they know what to build.
+
+</section>
+
+<section>
+
+<img src="requirements_toon.jpg" WIDTH=513 HEIGHT=594>
+
+</section>
+
+<section>
+
+<p>Motivational Quotation #1
+<br/><br/>
+<p align="left">&quot;The hardest part of building a software system is deciding precisely what to build.  No other part of the conceptual work is so difficult as establishing the detailed technical requirements... No other part of the work so cripples the resulting system if done wrong.  No other part is more difficult to rectify later.&quot;
+	
+</section>
+<section>
+
+<p>Motivational Quotation #2
+<br/><br/>
+<p align="left">&quot;Therefore the most important function that software builders do for their clients is the iterative extraction and refinement of the product requirements.  For the truth is, the clients do not know what they want.  They usually do not know what questions must be answered, and they almost never have thought of the problem in the detail that must be specified.&quot;
+<br/><br/>
+<p align="left">Brooks, Fred P. (1986). &quot;No Silver Bullet - Essence and Accident in Software Engineering.&quot; Proceedings of the IFIP Tenth World Computing Conference: 1069-1076.
+	
+</section>
+<section>
+
+<p>What is a Software Requirement?
+<br/><br/>
+<p align="left">A condition or capability needed by a customer to solve a problem or achieve an objective, or needed to satisfy a contract or other formal document.
+
+</section>
+<section>
+
+<p>Two types of software requirements.
+<br/><br/>
+<p align="left">Functional requirement: What the customer wants the software to do.
+<br/><br/>
+<p align="left">Nonfunctional requirement: Places constraints on how the software meets requirements.
+
+</section>
+
+<section>
+
+<p>Important Note...
+<br/><br/>
+<p align="left">Study of the issues surrounding software requirements could be the content of a semester long course, a dissertation, or a book.
+
+<p align="left">There are many different software development <b><i>methodologies</i></b>, with proponents of particular methods often (bitterly) disagreeing with each other on the subject.  
+
+<p align="left">Each software development methodology has its own style of handling software requirements.
+
+</section>
+<section>
+
+<p>Thus, I cannot cover them all in one lesson.
+<br/><br/>
+<p align="left">I can, however, briefly give you my opinion on the subject of methodologies. They are situationally dependent.  For certain projects, methodology A can have great success, for other projects the best choice might be methodology B.  Some methodologies that would be ideal cannot be implemented due to external factors, such as contracts.
+
+</section>
+<section>
+
+<p>So, it is good to read up on or experience many from the following list:
+<br/><br/>
+
+<table>
+<tr>
+<td>
+<ul>
+<li>Waterfall</li>
+<li>Prototype model</li>
+<li>Iterative</li>
+<li>Spiral</li>
+<li>Scrum</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>RUP</li>
+<li>XP</li>
+<li>Agile</li>
+<li>TDD</li>
+<li>FDD</li>
+</ul>
+</td>
+</tr>
+</table>
+
+</section>
+
+<section>
+
+<p>Another important definition!
+<br/><br/>
+<p align="left">Use Case: A description of important interactions between an actor (usually a person) and the software system.  These interactions must yield a result of value to the actor.  Sometimes diagrams are used to illustrate a use case, but these are rarely sufficient.
+<br/><br/>
+<p>Use cases are a primary means of discovering requirements.
+
+</section>
+
+<section>
+
+<p>Software Requirements can be broken into 5 Phases
+<br/><br/>
+<ul>
+<li>Elicitation</li>
+<li>Analysis</li>
+<li>Specification</li>
+<li>Validation</li>
+<li>Management</li>
+</ul>
+</section>
+
+<section>
+<p>Elicitation: Uncovering customer needs and wants and nonfunctional requirements.
+<br/><br/>
+<p align="left">Multiple sources of information can be used.
+<br/><br/>
+<ul>
+<li>Stakeholder Needs - They may have overlapping or disjoint sets of needs.</li>
+<li>Stakeholder Goals - How do the stakeholders see the software benefiting the organization?</li>
+<li>Domain Knowledge - What is common business practice in this industry?</li>
+<li>Operation and organizational environment - Is there consistency or conflicts?</li>
+</ul>
+
+</section>
+
+<section>
+
+<p>Multiple techniques can be used for elicitation.
+<br/><br/>
+<ul>
+<li>Interviews - 1v1 </li>
+<li>Facilitated meetings - groups </li>
+<li>Observation - of how proposed users currently perform tasks to be handled by the software </li>
+<li>Scenarios - Software developers describing sets of use cases to the customer.  This can identify misperceptions early on and uncover new requirements. </li>
+</ul>
+<br/><br/>
+<p align="left">These techniques require skill and experience.  This is a different skill set from writing functioning code!
+	
+</section>
+
+<section>
+
+<p>Analysis: The study of requirements to determine if a system can be built from them.
+<br/><br/>
+<p>Common flaws include requirements that:
+<ul>
+<li>contradict</li>
+<li>are incomplete</li>
+<li>are vague</li>
+<li>are obviously wrong</li>
+</ul>
+
+</section>
+<section>
+
+<p>Specification:  The formal capture of the requirements into a properly formatted document.  
+<br/><br/>
+<p>Requirements must be:
+<ul>
+<li>Specific - clear, concise and exclusive</li>
+<li>Correct - must accurately describe the system function</li>
+<li>Complete - must describe everything about the system</li>
+<li>Consistent - non-contradictory or not-exclusive of other requirements</li>
+<li>Attainable - possible for software to meet this goal</li>
+<li>Verifiable - can we test that the requirement has been met?</li>
+</ul>
+
+</section>
+
+<section>
+
+<p>Validation: An agreement by the customers that the requirements meet their needs.
+<br/><br/>
+<p align="left">This is typically accomplished by the customer reading and agreeing to the specification.
+
+</section>
+<section>
+
+<p>Management.  
+<br/><br/>
+<p align="left">Why would you need to manage requirements after the specification is validated by the customer?
+
+</section>
+ 
+<section>
+
+<p>Two of the many good reasons.
+<br/><br/>
+<p align="left">Because requirements can <b>CHANGE</b> during a project!  When changes to requirements occur, this can necessitate changes to other requirements and code already written.
+<br/><br/>
+<p align="left">Because the completion of requirements must be accounted for and tested before the project is delivered.  One or more members of the development team must verify that all requirements are completed and tested.
+<br/><br/>
+<p>A successful project will have one or more subject matter experts on the entire set of requirements.
+
+</section>
+<section>
+
+<p>Class Exercise
+<br/><br/>
+<p align="left">The class is broken up into teams, each of which is competing for a software development project.
+<br/><br/>
+<p align="left">The software project will automate a marketing initiative for a science magazine/website.  Each team will elicit software requirements, analyze them and draft a specification. 
+<br/><br/>
+<p align="left">Each instructor will role-play a stakeholder and can be interviewed by each team seperately for 10 minutes.
+<br/><br/>
+<p align="left">The team that creates the best specification wins the contract.
+
+</section>

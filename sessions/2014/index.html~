@@ -1,0 +1,25 @@
+---
+year: 2014
+---
+<!doctype html>
+<html>
+<body>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/overview/">Overview</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/basics/">Py Variables and Functions - The Basics</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/tools/">Development Tools</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/flowcontrol/">Flow Control</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/softwarerequirements/">Software Requirements</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/advanced/">Py Variables and Functions - Advanced Topics</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/testing/">Testing</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/debugging/">Debugging</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/bestpractices/">Best Practices</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/pyio/">Python IO</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/reuse/">Reuse</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/pyoop/">Python OOP</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/effoop/">Effective OOP</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/pycpp/">Python + C++</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/userx/">User Interfaces</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/pymp/">Parallel Python</a></p>
+<p><a href="{{ site.baseurl }}/sessions/{{ page.year }}/distrib/">Distributed Computing</a></p>
+</body>
+</html>

@@ -52,7 +52,7 @@ Elicitable requirements -
 * The "breaking news" is whatever the lead article happens to be that day.
 * The aggregated content sites have articles based on interest (Biology, Physics, Information Tech, etc.)
 * Not all users speak English.  Some speak Chinese and Spanish.  E-mails will need to be translated to their native language.
-* An outside vendor is providing leads (names, e-mail addresses) on potential new users.
+* A third party vendor is providing leads (e-mail) on new users.
 
 Secrets - 
 
@@ -100,7 +100,7 @@ Elicitable requirements/information -
 
 Secrets - 
 
-* Marketing never told him about purchasing leads from an outside vendor.
+* Marketing never told him about purchasing leads from a third party vendor.
 * Not happy about marketing selling the CEO about this idea without involving him.  Feels his staff could handle this just fine.
 
 
@@ -108,16 +108,16 @@ Secrets -
 
 Answers Student Teams could potentially get - bonus points if they discover ones not listed
 
-Functional - these are broken into requirements that support particular use cases
+Functional - these are broken into components
 
-**E-mailer sends e-mails
+**E-mailer
 Must be able to generate 3 different types of e-mails
 Must be possible to schedule when e-mails are sent
 Must detect preferred language of subscriber and send e-mail in that language.
 Must be integrated with MySQL, Exim, the ad copy and links to content.
 
-**User creates e-mail content(This is the toughest requirement because none of the stakeholders realize they need it)
-User must be able to create advertising copy/boilerplate for an e-mail based on send date/language/topic combo.
+**E-mail content selector (This is the toughest requirement because none of the stakeholders realize they need it)
+Must be possible to create advertising copy/boilerplate for e-mail based on send date-language-topic combo.
 
 **Web page content selector/generator
 Must be possible to schedule when web pages are generated.
@@ -129,7 +129,7 @@ Desirable that it be integrated with Django CMS.
 Desirable that it send an e-mail reminder to generate page.
 Desirable that an integrated machine translator be used for gisting page content.
 
-**Outside vendor lead integrator
+**Third party lead integrator
 Script?  GUI?  Possibilities are wide open.
 
 Non functional
@@ -145,8 +145,6 @@ What issues need to be resolved?
 
 How is e-mail content captured?
 How are third-party leads integrated into the system?
-How are the moving parts coordinated?
-Marketing and science editor have different ideas about web page content generation.
-IT uninformed about outside vendor data.
+
 
 
