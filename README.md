@@ -15,7 +15,7 @@ To edit / create sessions:
  5. for non-slide content (e.g., if you need the students to download some prepared content for an exercise), add it to this directory as well.
  6. for markdown slides: we are using the [kramdown](http://kramdown.gettalong.org/syntax.html) engine; detailed documentation in the link
 
-To run the site locally, install jekyll according to GH instructions, then clone the repository.  In the root of the clone, call `jekyll serve --baseurl ""`.  If on a system with bash scripting available (typical *nix system, Windows with Powerbash or the like installed), you may simply `./run.sh`
+To run the site locally, install jekyll according to GH instructions, then clone the repository.  In the root of the clone, call `jekyll serve --watch --baseurl ""`.  If on a system with bash scripting available (typical *nix system, Windows with Powerbash or the like installed), you may simply `./run.sh`
 
 Notes on making session slides:
 - if you use `<section markdown="block">` for slides + `.md` instead of `.html`
