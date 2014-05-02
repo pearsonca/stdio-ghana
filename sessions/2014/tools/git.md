@@ -102,10 +102,11 @@ N.b.: branches don't eliminate the need for resolving differences, but they make
 
 <aside class="notes" markdown="block">
 
-- have everything you can either in the repository or as explicitly expressed dependency in the repo
+- always start and end work with pull from / push to relevant branch
+- before push, always pull from relevant branch (often enforced by `sync` if you use a GUI)
 - commit, commit, commit
 - afraid to commit b/c fiddling around, not sure, etc?  branch, and then commit, commit, commit
-- always start and end work with pull from / push to relevant branch
+- have everything you can either in the repository or as explicitly expressed dependency in the repo
 
 </aside>
 </section>
