@@ -56,13 +56,39 @@ I will not cover all of these today.  I would like to cover Common Naming Conven
 i, j, k are often used as integers; c, d, e are often used as characters; s is often used as a string.
 </section>
 
-<section>
-Show some code here that is properly formatted
+<section markdown="block">
+~~~
+import os
+import sys
+import subprocess
+import math
+import nltk
+import plain
+
+class ProcessedPost(object):
+  def __init__(self, file_name=None, class_name=None, raw_dist=None):
+  self.file_name = file_name
+  self.class_name = class_name
+  self.raw_dist = raw_dist
+  self.processed = nltk.FreqDist()
+
+def main():
+  base_dir = sys.argv[1]
+  out_file_path = sys.argv[2]
+  posts = []
+  global_dist = nltk.FreqDist()
+  
+  for path, sub_dirs, file_path in os.walk(base_dir):
+    for sub_dir in sub_dirs:
+
+~~~
+. . .
+
 </section>
 
 <section markdown="block">
 <h5>Engineering Practices</h5>
-There are legions of them.  Here are a few...
+There are legions of them.  Here are a few . . .
 </section>
 
 <section markdown="block">
@@ -95,31 +121,32 @@ Minimize Coupling - Coupling is when a section of code depends on another sectio
 
 <section markdown="block">
 
-About common sense, YAGNI contraversy.
+These are Best Practices, not a set of laws.  
 
-Sometimes you do need to repeat yourself.
+There are times a best practice can be disregarded.  When to do so comes with experience.  Often this is when one practice conflicts with another.
+
+With YAGNI, one may forsee future needs and build the code in such a way that supports these needs.  Or codes to test for errors that can`t occur, anticipating future changes in input.
+
+Sometimes you *do* need to repeat yourself.  It can happen that implementing DRY makes the code very difficult to follow.  What is more important, DRY or \"Don`t make me think\"?
 
 </section>
 
 <section markdown="block">
-<h5>For Object Oriented Programming</h5>
+<h5>For Object Oriented Programming (OOP)</h5>
+There are many good practices for OOP.  Two are discussed here.
 </section>
 
 <section markdown="block">
-Open/Closed Principle - Make sure objects you create are open for extension, but closed for
-modification.  Why is this important?  Keeping objects open for extension allows reuse of code
-that meets your or another programmer`s needs with addition of features.  Keeping objects
-closed for modifications prevents changes that could break use of that object elsewhere in the code.
-</section>
+Hide implementation details.
 
-<section markdown="block">
-Hide implementation details - Behind object methods and instantiation so that they are unaffected
-by changes elsewhere and vice versa.
+Use an object's methods and constructor to hide the details of its operation.  That way changes to the object will not affect the program and changes to the program will not affect the object.
 </section>
 
 <section markdown="block">
 Law of Demeter - Put simply, an object can only communicate with classes it inherits from, objects
 it contains, and objects passed by argument to a method.
+
+This law ensures minimal coupling, which was mentioned earlier.
 </section>
 
 <section markdown="block">
@@ -128,7 +155,7 @@ it contains, and objects passed by argument to a method.
 
 <section markdown="block">
 Refactor often - Refactoring is reorganizing your code to ensure the above principles are adhered
-to.  As a side benefit, it can also expose defects in the coding.  Remember to update your comments too!
+to.  As a side benefit, it can also expose defects in the coding.
 </section>
 
 <section markdown="block">
@@ -140,8 +167,15 @@ Code defensively - Think about what can go wrong and apply good practices approp
 </section>
 
 <section markdown="block">
-Assignment.  This code module is poorly designed.  Identify all design flaws.  Explain what problems the
-flaws can cause.  Modify the code to repair the flaws.  Defend your modifications.
+###Assignment.  
+
+Three poorly designed code modules will be provided.  For each code module:
+
+(a) Identify all design flaws.  
+(b) Explain what problems the flaws can cause.  
+(c) Modify the code to repair the flaws.  
+(d) Be prepared to justify your modifications.
+
 </section>
 
 

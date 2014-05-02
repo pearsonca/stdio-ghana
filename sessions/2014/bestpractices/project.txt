@@ -8,4 +8,5 @@
 
 #5 have function with unintended side effect.
 
+#6 code reaches into object and changes a value ignoring the constructor.
 
