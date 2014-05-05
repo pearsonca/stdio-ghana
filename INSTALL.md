@@ -1,3 +1,26 @@
+#Tom's Notes
+To get Jekyll running on a clean Ubuntu 14.04 install, open up a terminal and enter the following.  Lines starting with # are comments and don't need to be entered.
+~~~
+# Install git and the ruby dev packages
+sudo apt-get install git ruby1.9.1-dev  
+
+# Install jekyll and kramdown, a particular markdown parser we're using
+sudo gem install jekyll kramdown  
+
+# Assuming you're already in a good place to put the STDIO Ghana stuff:
+git clone https://github.com/pearsonca/stdio-ghana.git  
+
+# Now change to the directory that was just created by the last command
+cd stdio-ghana  
+
+# Start up the Jekyll server
+jekyll serve --watch --baseurl ""  
+
+# Now open up a web browser, type localhost:4000 in the location bar.
+# You have arrived.
+~~~
+
+#Jonathon's Notes
 The latest version of Jekyll requires a version of Ruby that is newer than what come pre-loaded on Ubunut 14.04.  I went round and round on this and can't remember the steps or what actually worked.  I think gem might also have been needed.  I am pretty sure the command "sudo apt-get install ruby1.9.3" did something positive for my system, but your milage might vary.
 
 Jekyll documentation should be looked at prior to use: http://jekyllrb.com/docs/usage/ The jekyll build and serve options described work well, but do not proscribe to my intuitive sense.  This resulted in complete deletion of my local git repository and creating a local website out of my entire home directory.  Fortunately, the error was easily-ish rectified.
