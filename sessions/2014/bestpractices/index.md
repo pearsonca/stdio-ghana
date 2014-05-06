@@ -54,6 +54,8 @@ I will not cover all of these today.  I would like to cover Common Naming Conven
 * pot_hole_case (often used for variables and functions)
 * Single characters are often used for short temporary variables such as indexes.  The characters
 i, j, k are often used as integers; c, d, e are often used as characters; s is often used as a string.
+<br /> <br />
+Always use descriptive names unless name is for a short temporary variable.
 </section>
 
 <section markdown="block">
@@ -61,29 +63,32 @@ i, j, k are often used as integers; c, d, e are often used as characters; s is o
 import os
 import sys
 import subprocess
-import math
 import nltk
 import plain
 
 class ProcessedPost(object):
-  def __init__(self, file_name=None, class_name=None, raw_dist=None):
+  def __init__(self, file_name=None, raw_dist=None):
   self.file_name = file_name
-  self.class_name = class_name
   self.raw_dist = raw_dist
   self.processed = nltk.FreqDist()
 
 def main():
   base_dir = sys.argv[1]
-  out_file_path = sys.argv[2]
   posts = []
   global_dist = nltk.FreqDist()
   
   for path, sub_dirs, file_path in os.walk(base_dir):
     for sub_dir in sub_dirs:
 
-~~~
-. . .
+...
 
+  weighted_terms = dict()
+
+  for p in posts:
+    keys = p.processed_posts.keys()
+    for k in keys:
+      if weighted_terms.has_key(k):
+~~~
 </section>
 
 <section markdown="block">
@@ -139,7 +144,7 @@ There are many good practices for OOP.  Two are discussed here.
 <section markdown="block">
 Hide implementation details.
 
-Use an object's methods and constructor to hide the details of its operation.  That way changes to the object will not affect the program and changes to the program will not affect the object.
+Use an object`s methods and constructor to hide the details of its operation.  That way changes to the object will not affect the program and changes to the program will not affect the object.
 </section>
 
 <section markdown="block">
@@ -169,7 +174,7 @@ Code defensively - Think about what can go wrong and apply good practices approp
 <section markdown="block">
 ###Assignment.  
 
-Three poorly designed code modules will be provided.  For each code module:
+Two poorly designed code modules will be provided.  This is not a debugging exercise.  The code runs and if there is a defect, it is due to design issues.  For each code module:
 
 (a) Identify all design flaws.  
 (b) Explain what problems the flaws can cause.  
