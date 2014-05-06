@@ -54,38 +54,52 @@ I will not cover all of these today.  I would like to cover Common Naming Conven
 * pot_hole_case (often used for variables and functions)
 * Single characters are often used for short temporary variables such as indexes.  The characters
 i, j, k are often used as integers; c, d, e are often used as characters; s is often used as a string.
+<br /> <br />
+Always use descriptive names unless name is for a short temporary variable.
 </section>
 
-<section>
-Show some code here that is properly formatted
+<section markdown="block">
+~~~
+import os
+import sys
+import subprocess
+import nltk
+import plain
+
+class ProcessedPost(object):
+  def __init__(self, file_name=None, raw_dist=None):
+  self.file_name = file_name
+  self.raw_dist = raw_dist
+  self.processed = nltk.FreqDist()
+
+def main():
+  base_dir = sys.argv[1]
+  posts = []
+  global_dist = nltk.FreqDist()
+  
+  for path, sub_dirs, file_path in os.walk(base_dir):
+    for sub_dir in sub_dirs:
+
+...
+
+  weighted_terms = dict()
+
+  for p in posts:
+    keys = p.processed_posts.keys()
+    for k in keys:
+      if weighted_terms.has_key(k):
+~~~
 </section>
 
 <section markdown="block">
 <h5>Engineering Practices</h5>
-</section>
-
-<section markdown="block">
-Don`t Make Me Think - Any code written should be easy to read and understood with the minimum
-effort required.  This is also relevant to GUI design.
-</section>
-
-<section markdown="block">
-Do the simplest thing that could possibly work - Avoid unnecessary complexity.  This supports \"Don`t Make Me Think\".
-</section>
-
-<section markdown="block">
-Abstraction Principle - Each significant piece of functionality in the program should be
-implemented in just one place in the source code.
-</section>
-
-<section markdown="block">
-Single Responsibility Principle - A component of code (class or function) should perform a single well defined task.
+There are legions of them.  Here are a few . . .
 </section>
 
 <section markdown="block">
 Don`t Repeat Yourself (DRY) - Any series of steps that are performed multiple times should be put
 into a programming construct such a loop, function or class.  That ensures the series of steps is
-performed the same way every time. This is related to the Abstraction Principle (mentioned earlier)
+performed the same way every time.
 </section>
 
 <section markdown="block">
@@ -96,35 +110,48 @@ and try to use it.
 </section>
 
 <section markdown="block">
-Minimize Coupling: Coupling is when a section of code depends on another section of code.  This most
-often happens when a variable is set with a value used much later on.  The danger is that a
-maintenance programmer might move a section of code outside its scope, which will break the code, or
-to a location within scope where the dependent variables have been set with inappropriate values.
+Don`t Make Me Think - Any code written should be easy to read and understood with the minimum
+effort required.  This concept is related to:
+
+Do The Simplest Thing That Could Possibly Work - Avoid unnecessary complexity.
 </section>
 
 <section markdown="block">
-Reuse:  Search built-in functions and libraries before implementing your own functions.
+Single Responsibility Principle - A component of code (class or function) should perform a single well defined task.  Code with unexpected side-effects can be overlooked by the maintenance programmer.
 </section>
 
 <section markdown="block">
-<h5>For Object Oriented Programming</h5>
+Minimize Coupling - Coupling is when a section of code depends on another section of code.  Coupling is an advanced topic and there are many types.  One dangerous type is \"content coupling\". In content coupling, changes to data values in one section of code can directly effect the behavior of another section of code.
 </section>
 
 <section markdown="block">
-Open/Closed Principle - Make sure objects you create are open for extension, but closed for
-modification.  Why is this important?  Keeping objects open for extension allows reuse of code
-that meets your or another programmer`s needs with addition of features.  Keeping objects
-closed for modifications prevents changes that could break use of that object elsewhere in the code.
+
+These are Best Practices, not a set of laws.  
+
+There are times a best practice can be disregarded.  When to do so comes with experience.  Often this is when one practice conflicts with another.
+
+With YAGNI, one may forsee future needs and build the code in such a way that supports these needs.  Or codes to test for errors that can`t occur, anticipating future changes in input.
+
+Sometimes you *do* need to repeat yourself.  It can happen that implementing DRY makes the code very difficult to follow.  What is more important, DRY or \"Don`t make me think\"?
+
 </section>
 
 <section markdown="block">
-Hide implementation details - Behind object methods and instantiation so that they are unaffected
-by changes elsewhere and vice versa.
+<h5>For Object Oriented Programming (OOP)</h5>
+There are many good practices for OOP.  Two are discussed here.
+</section>
+
+<section markdown="block">
+Hide implementation details.
+
+Use an object`s methods and constructor to hide the details of its operation.  That way changes to the object will not affect the program and changes to the program will not affect the object.
 </section>
 
 <section markdown="block">
 Law of Demeter - Put simply, an object can only communicate with classes it inherits from, objects
 it contains, and objects passed by argument to a method.
+
+This law ensures minimal coupling, which was mentioned earlier.
 </section>
 
 <section markdown="block">
@@ -133,7 +160,7 @@ it contains, and objects passed by argument to a method.
 
 <section markdown="block">
 Refactor often - Refactoring is reorganizing your code to ensure the above principles are adhered
-to.  As a side benefit, it can also expose defects in the coding.  Remember to update your comments too!
+to.  As a side benefit, it can also expose defects in the coding.
 </section>
 
 <section markdown="block">
@@ -145,8 +172,15 @@ Code defensively - Think about what can go wrong and apply good practices approp
 </section>
 
 <section markdown="block">
-Assignment.  This code module is poorly designed.  Identify all design flaws.  Explain what problems the
-flaws can cause.  Modify the code to repair the flaws.  Defend your modifications.
+###Assignment.  
+
+Three poorly designed code modules will be provided.  This is not a debugging exercise.  The code runs and if there is a defect, it is due to design issues.  For each code module:
+
+(a) Identify all design flaws.  
+(b) Explain what problems the flaws can cause.  
+(c) Modify the code to repair the flaws.  
+(d) Be prepared to justify your modifications.
+
 </section>
 
 

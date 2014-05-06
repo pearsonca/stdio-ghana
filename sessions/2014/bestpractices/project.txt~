@@ -1,9 +1,0 @@
-#1 find inconsistencies in code naming conventions
-
-#2 find cut and pasted code that can be combined into a single function that is called
-
-#3 have functions and variables with unclear or incorrect names
-
-#4 have function that is never called.
-
-
