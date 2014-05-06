@@ -3,6 +3,10 @@
 @paledark: #313157;
 @palelight: #C5B358;
 
+@tonedark: #FFFFFF;
+@tonemid: #0A0A0A;
+@tonelight: #1A1A1A;
+
 .top_nav li {
 
   display : inline-block;
@@ -17,13 +21,13 @@
     background-color : @light;
     color : @dark;
   }
-  
+
   &.active {
     color : @light;
     background-color : @dark;
   }
 
-  a { 
+  a {
 	text-decoration : none;
 	color : inherit;
 	padding : 0.5em;
@@ -40,23 +44,22 @@
 }
 
 .main {
-  
+
   width : 50em;
   margin-left : auto;
   margin-right : auto;
   padding : 1em;
-  color : #FFFFFF;
-  background-color : #1A1A1A;
+  color : @tonedark;
+  background-color : @tonelight;
   border-width: 4px;
-  border-color: #0A0A0A;
+  border-color: @tonemid;
   border-style: solid;
   border-radius: 5px;
 
   a {
-    text-decoration : none;
     color : inherit;
     &:hover {
-      text-decoration : underline;
+      background-color: @tonemid;
     }
   }
 

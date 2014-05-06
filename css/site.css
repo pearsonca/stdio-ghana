@@ -32,19 +32,18 @@
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
-  color: #FFFFFF;
-  background-color: #1A1A1A;
+  color: #ffffff;
+  background-color: #1a1a1a;
   border-width: 4px;
-  border-color: #0A0A0A;
+  border-color: #0a0a0a;
   border-style: solid;
   border-radius: 5px;
 }
 .main a {
-  text-decoration: none;
   color: inherit;
 }
 .main a:hover {
-  text-decoration: underline;
+  background-color: #0a0a0a;
 }
 body {
   background-color: black;
