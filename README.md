@@ -24,3 +24,6 @@ extension, [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Chea
 - if you use `<aside class="notes"> ... </aside>`, you can write notes
 - the notes may also use markdown, if you add the `markdown="block"` attribute
 to the aside element.
+
+##Kramdown Reference
+available [here](http://kramdown.gettalong.org/syntax.html)
