@@ -174,7 +174,7 @@ Code defensively - Think about what can go wrong and apply good practices approp
 <section markdown="block">
 ###Assignment.  
 
-Three poorly designed code modules will be provided.  This is not a debugging exercise.  The code runs and if there is a defect, it is due to design issues.  For each code module:
+Two poorly designed code modules will be provided.  This is not a debugging exercise.  The code runs and if there is a defect, it is due to design issues.  For each code module:
 
 (a) Identify all design flaws.  
 (b) Explain what problems the flaws can cause.  

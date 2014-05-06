@@ -103,8 +103,8 @@ performed the same way every time.
 </section>
 
 <section markdown="block">
-You aren`t going to need it (YAGNI) - Do not implement functionality until you need it.  The danger
-is if you don`t use it, the unused function may have a defect or maintenance changes elsewhere will
+You aren\'t going to need it (YAGNI) - Do not implement functionality until you need it.  The danger
+is if you don\'t use it, the unused function may have a defect or maintenance changes elsewhere will
 introduce a defect.  A maintenance programmer may see the previously unused function, believe it works
 and try to use it.
 </section>
