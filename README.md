@@ -1,11 +1,10 @@
-stdio-ghana
-===========
+#stdio-ghana
 
-Repository for course materials
+[view course site](http://pearsonca.github.io/stdio-ghana/)
 
-view course site at: http://pearsonca.github.io/stdio-ghana/
+[apply to participate](http://goo.gl/d68nbg)
 
-applications for 2014: http://goo.gl/d68nbg
+##Instructor Guidance
 
 To edit / create sessions:
  1. go the the sessions/YYYY/$session folder
@@ -27,3 +26,6 @@ to the aside element.
 
 ##Kramdown Reference
 available [here](http://kramdown.gettalong.org/syntax.html)
+
+##Integrated "Theme" Reference
+available [here](http://www.ece.rutgers.edu/~marsic/books/SE/projects/Restaurant/RestaurantAutomation.pdf)
