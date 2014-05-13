@@ -3,14 +3,14 @@ layout: presentation
 year: 2014
 ---
 <section markdown="block">
-###Software Engineering Best Practices
-<h5>Prerequisites: OOP, Testing, Debugging</h5>
+<h3 style="text-align:center">Software Engineering Best Practices</h3>
+<h5 style="text-align:center">Prerequisites: OOP, Testing, Debugging</h5>
 <dt>Jonathon Parker</dt><dd>Employed at iBASEt</dd>
 <dt>Somebody</dt><dd>Some university</dd>
 </section>
 
 <section markdown="block">
-What are \"Best Practices\"?
+<p style="text-align:center">What are "Best Practices"?</p>
 
 Approaches and techniques that reduce development time, improve quality and simplify maintenance.
 
@@ -18,16 +18,17 @@ Approaches and techniques that reduce development time, improve quality and simp
 </section>
 
 <section markdown="block">
-
-Why Maintenance?
+<p style="text-align:center">Why Maintenance?</p>
 
 The majority of the software lifecycle is spent in maintenance.  More time is spent correcting defects and adding features after the software is delivered than in its initial development.  Additionally, the same practices that simplify maintenance also support correcting defects in software during its initial development.
 </section>
+
 <section markdown="block">
 To this end, consider these practices:
 </section>
+
 <section markdown="block">
-<h5>Coding Conventions</h5>
+<h5 style="text-align:center">Coding Conventions</h5>
 
 A coding convention is a set of rules for writing and organizing code.  Following the set of
 rules will not guarantee good quality code.  The purpose of a coding convention is to communicate
@@ -42,9 +43,10 @@ You can have conventions for:
 * Indent style
 * Naming
 * Programming practices
+  
+<br />
 
 I will not cover all of these today.  I would like to cover Common Naming Conventions.
-
 </section>
 
 <section markdown="block">
@@ -54,7 +56,9 @@ I will not cover all of these today.  I would like to cover Common Naming Conven
 * pot_hole_case (often used for variables and functions)
 * Single characters are often used for short temporary variables such as indexes.  The characters
 i, j, k are often used as integers; c, d, e are often used as characters; s is often used as a string.
-<br /> <br />
+
+<br />
+
 Always use descriptive names unless name is for a short temporary variable.
 </section>
 
@@ -92,7 +96,9 @@ def main():
 </section>
 
 <section markdown="block">
-<h5>Engineering Practices</h5>
+<h5 style="text-align:center">Engineering Practices</h5>
+
+<br />
 There are legions of them.  Here are a few . . .
 </section>
 
@@ -103,8 +109,8 @@ performed the same way every time.
 </section>
 
 <section markdown="block">
-You aren`t going to need it (YAGNI) - Do not implement functionality until you need it.  The danger
-is if you don`t use it, the unused function may have a defect or maintenance changes elsewhere will
+You aren\'t going to need it (YAGNI) - Do not implement functionality until you need it.  The danger
+is if you don\'t use it, the unused function may have a defect or maintenance changes elsewhere will
 introduce a defect.  A maintenance programmer may see the previously unused function, believe it works
 and try to use it.
 </section>
@@ -125,25 +131,24 @@ Minimize Coupling - Coupling is when a section of code depends on another sectio
 </section>
 
 <section markdown="block">
-
-These are Best Practices, not a set of laws.  
+<p style="text-align:center">These are Best Practices, not a set of laws.</p>
 
 There are times a best practice can be disregarded.  When to do so comes with experience.  Often this is when one practice conflicts with another.
 
 With YAGNI, one may forsee future needs and build the code in such a way that supports these needs.  Or codes to test for errors that can`t occur, anticipating future changes in input.
 
 Sometimes you *do* need to repeat yourself.  It can happen that implementing DRY makes the code very difficult to follow.  What is more important, DRY or \"Don`t make me think\"?
-
 </section>
 
 <section markdown="block">
-<h5>For Object Oriented Programming (OOP)</h5>
+<h5 style="text-align:center">For Object Oriented Programming (OOP)</h5>  
+  
 There are many good practices for OOP.  Two are discussed here.
 </section>
 
 <section markdown="block">
-Hide implementation details.
-
+<center>Hide implementation details.</center>
+<br />
 Use an object`s methods and constructor to hide the details of its operation.  That way changes to the object will not affect the program and changes to the program will not affect the object.
 </section>
 
@@ -155,7 +160,7 @@ This law ensures minimal coupling, which was mentioned earlier.
 </section>
 
 <section markdown="block">
-<h5>Additional Practices</h5>
+<h5 style="text-align:center">Additional Practices</h5>
 </section>
 
 <section markdown="block">

@@ -5,10 +5,10 @@ title: Software Requirements
 ---
 
 <section markdown="block">
-###Software Requirements...Hello????
-  <h5>Prerequisites: Basic Python Programming</h5>
-  <dt>Jonathon Parker</dt><dd>Employed at iBASEt</dd>
-  <dt>Carl Pearson</dt><dd>Postdoctoral Researcher, UF</dd>
+###Software Requirements
+<h5>Prerequisites: Basic Python Programming</h5>
+<dt>Jonathon Parker</dt><dd>Employed at iBASEt</dd>
+<dt>Carl Pearson</dt><dd>Postdoctoral Researcher, UF</dd>
 </section>
 
 <section markdown="block">
@@ -24,7 +24,7 @@ the software, so that they know what to build.
 </section>
 
 <section markdown="block">
-![requirements joke](requirements_toon.jpg "Requirements as a Swingset")
+<img markdown="span" src="requirements_toon.jpg" WIDTH=513 HEIGHT=594 />
 </section>
 
 <section markdown="block">
