@@ -10,3 +10,7 @@ navPages:
  - reports
  - projects
  - misc
+exclude:
+ - run.sh
+ - INSTALL.md
+ - README.md
