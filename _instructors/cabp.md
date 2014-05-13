@@ -5,6 +5,6 @@ affiliation: University of Florida
 title: Post-doctoral Researcher
 email: cap10@ufl.edu
 image: cabp.png
-current: true
+status: current
 ---
 Test blurb.
