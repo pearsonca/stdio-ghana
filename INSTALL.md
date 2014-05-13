@@ -20,6 +20,18 @@ jekyll serve --watch --baseurl ""
 # You have arrived.
 ~~~
 
+#Carl Notes
+On OSX 10.9, clang is configured to hard crash on options it doesn't understand.
+There's an interesting discussion as to whether that makes sense or not, but to
+deal with this for `gem (install|update)`s that require building something:
+~~~ bash
+ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future" sudo -E gem update jekyll
+~~~
+
+the `ARCHFLAGS` part is essentially telling clang to not hard crash.  The `-E`
+argument to `sudo` is saying to use that environment variable.
+
+
 #Jonathon's Notes
 The latest version of Jekyll requires a version of Ruby that is newer than what come pre-loaded on Ubunut 14.04.  I went round and round on this and can't remember the steps or what actually worked.  I think gem might also have been needed.  I am pretty sure the command "sudo apt-get install ruby1.9.3" did something positive for my system, but your milage might vary.
 
