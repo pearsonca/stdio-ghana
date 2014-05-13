@@ -49,3 +49,22 @@ available [here](http://kramdown.gettalong.org/syntax.html)
 
 ##Integrated "Theme" Reference
 available [here](http://www.ece.rutgers.edu/~marsic/books/SE/projects/Restaurant/RestaurantAutomation.pdf)
+
+##Doing Site Editing w/ Atom
+The [atom.io](http://atom.io) editor is pretty great.  You can use atom for jekyll
+development in a convenient way:
+
+1. open a terminal, navigate to the project root, and then `./run.sh` to start
+the jekyll process.
+2. open atom, then open that root directory (clover-O on OSX).
+3. [one time]: install package that will do html previews (i.e., watch the html
+  file and reload it if it changes, also render it as it appears in a web browser).
+  @pearsonca uses "Atom Html Preview" package.
+4. open `_site/index.html` in atom, then activate preview of that page.  You may
+close the editing tab for index.html
+5. restrictions: html preview may not support all browser capabilities (e.g., no
+  back button)
+
+As you develop, jekyll will update the rendered files, and the preview plugin
+will reload them.  @pearsonca : I expect that there will soon be a plugin that also addresses
+the jekyll startup + provides the terminal output (e.g., when regens occur) in-editor.
