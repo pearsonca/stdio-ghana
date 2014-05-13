@@ -83,3 +83,16 @@ jekyll serve
 ~~~
 
 Note that in your browser you need to go to http:\\localhost:4000\stdio-ghana
+
+
+#Dane's Notes
+Tom's instructions are spot on above, with one exception.
+I used the 32-bit Ubuntu 14.04 OOB and when I attempted to run Jekyll, it failed due to missing a JavaScript runtime for Ruby.
+Apparently, there are several runtimes that will work. I chose Node.js because it's fairly well-known.
+~~~
+sudo apt-get install -y nodejs
+~~~
+After this, the server was up and running with no problem.
+
+Comment: It appears that links for the site are absolute vice relative. Clicking any link in the local jekyll-hosted site actually just sends you out to the main git.io site.  For testing, you need to edit the URLs directly.
+
