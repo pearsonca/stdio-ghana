@@ -40,3 +40,46 @@ Jekyll documentation should be looked at prior to use: http://jekyllrb.com/docs/
 SmartGit has a java dependency and an OOB Unbuntu install is not java-aware, even though java is loaded.  Again, I went around and around on this and am unsure what actually worked.  You might want to try "sudo update-alternatives --config java"  and look at this http://www.cs.cmu.edu/~help/unix_linux/ubuntu_java.html
 
 PyCharm was the most trouble free.  You just unpack the .gz file into your home directory.  There are more complex instructions if you want to install it to a usr or opt. I didn't do this, but we might want to for the student machines.  I think there is a java dependency, but I didn't run into the issue once SmartGit was loaded.
+
+#Seifu's Notes
+To make jekyll work on Windows 7 is a little bit of a pain. You need to make sure that you install only 
+* Python 2.5 or later (not Python 3!)
+* Ruby 1.9.3 (not earlier or later)
+* Ruby DevKit 1.9.3
+Those can be found at http://rubyinstaller.org/downloads/ and https://www.python.org/download/
+
+The first step is to make sure that Python and Ruby are in your Environment Path. You can check this on a CommandPromt via 
+~~~
+echo %PATH%
+~~~
+Or by right clicking on MyComputer and going to properties > Advanced system settings > Environment variables
+
+To test that the PATH is setup correctly in a CommandPrompt try running python and ruby by typing
+
+~~~
+python
+ruby
+~~~
+
+Once python  and ruby are installed you need to go to the directory that you installed the DevKit in. I suggest you put it in a directory called something like C:\DevKit and run the following:
+
+~~~
+cd C:\DevKit
+ruby dk.rb init
+ruby dk.rb install
+~~~
+
+Now you need to install jekyll and kramdown
+
+~~~
+gem install jekyll kramdown
+~~~
+
+Now you can cd to the git repo and serve from there
+
+~~~
+cd C:\Users\Documents\GitHub\stdio-ghana
+jekyll serve
+~~~
+
+Note that in your browser you need to go to http:\\localhost:4000\stdio-ghana
