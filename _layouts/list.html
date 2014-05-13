@@ -7,7 +7,7 @@
 {{ content }}
 {% for item in page.elements %}
 {% capture elem %}
-[{{ item.name }}]({% if page.absolute %}{{ item.uri }}{% else %}{{ site.absoluteurl }}{{ site.baseurl }}/{{ page.base }}/{{ item.uri }}{% endif %})
+[{{ item.name }}]({% if page.absolute %}{{ page.base }}{{ item.uri }}{% else %}{{ site.absoluteurl }}{{ site.baseurl }}/{{ page.base }}/{{ item.uri }}{% endif %})
 {% endcapture %}
 {{ elem | markdownify }}
 
