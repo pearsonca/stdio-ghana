@@ -23,52 +23,52 @@ the group cooking exchange)
 The detailed schedule is below:
 
 | Day | Slot | Activity | Instructor
----:|:----:|----------|-----------
+|----:|:----:|:---------|:----------
 | Mon | warmup | Overview | Carl
-| | AM | Python Variables and Functions, the Basics | Deanne
+|| AM | Python Variables and Functions, the Basics | Deanne
 || PM | Development Tools | Carl
-|-| project | Organize teams, projects; teams do initial setup
-|-| social | Personal computer setup
+|| project | Organize teams, projects; teams do initial setup
+|| social | Personal computer setup
 | Tue | warmup | Bowling | Carl
-|-| AM | Flow Control | Dane
-|-| PM | Software Requirements | Jonathon
-|-| project | Translate project into rough diagram, then requirements, then back
-|-| social | Instructor Project Demo: Edison | Carl
+|| AM | Flow Control | Dane
+|| PM | Software Requirements | Jonathon
+|| project | Translate project into rough diagram, then requirements, then back
+|| social | Instructor Project Demo: Edison | Carl
 | Wed | warmup | [Project Euler](http://projecteuler.net) | Deanne
-|-| AM | Python Variables and Functions, the Not-so-Basics | Seifu
-|-| PM | Testing | Carl
-|-| project | Translate requirements into some appropriate tests
-|-| social | Games Night | Deanne
+|| AM | Python Variables and Functions, the Not-so-Basics | Seifu
+|| PM | Testing | Carl
+|| project | Translate requirements into some appropriate tests
+|| social | Games Night | Deanne
 | Thu | warmup | 20 Questions | Jonathon
-|-| AM | Debugging | Dane [Deanne]
-|-| PM | Best Practices | Jonathon [Tom]
-|-| project | Pick conventions, use them while implementing resolution to some tests
-|-| social | instructor project discussion
+|| AM | Debugging | Dane
+|| PM | Best Practices | Jonathon
+|| project | Pick conventions, use them while implementing resolution to some tests
+|| social | instructor project discussion
 |Fri | warmup | Command Line Tricks | Dane
-|-| AM | Python IO | Deanne
-|-| PM | Reuse | Jonathon
-|-| project | Identify libraries that could improve project implementation
-|-| social | movie night
+|| AM | Python IO | Deanne
+|| PM | Reuse | Jonathon
+|| project | Identify libraries that could improve project implementation
+|| social | movie night
 | Sat | AM+PM | class trip
 | Sun | AM+PM | instructors available for scheduled meetings
 | Mon | warmup | Security | Dane
-|-| AM | Python OOP Syntax | Seifu
-|-| PM | Effective OOP | Carl
-|-| project | self-directed project implementation from here on
-|-| social | Football, then Ghana v. US World Cup game | Dane
+|| AM | Python OOP Syntax | Seifu
+|| PM | Effective OOP | Carl
+|| project | self-directed project implementation from here on
+|| social | Football, then Ghana v. US World Cup game | Dane
 | Tue | warmup | TBD
-|-| AM | Python + C++ | Dane
-|-| PM | User Interfaces | Seifu
-|-| social | technical presentation practice session
+|| AM | Python + C++ | Dane
+|| PM | User Interfaces | Seifu
+|| social | technical presentation practice session
 | Wed | warmup | discuss and pick open topics
-|-| AM | Distributed Computing | Carl
-|-| PM | Parallel Python | Carl
-|-| social | potluck dinner | Seifu
+|| AM | Distributed Computing | Carl
+|| PM | Parallel Python | Carl
+|| social | potluck dinner | Seifu
 | Thu | warmup | Telephone | Carl
-|-| AM | Open Language Topic (e.g., Python Qt) | TBD
-|-| PM | Open Engineering Topic (e.g., integrated test / build / deploy) | TBD
-|-| project | wrap for demo
-|-| social | none planned - last minute consultation with instructors
+|| AM | Open Language Topic (e.g., Python Qt) | TBD
+|| PM | Open Engineering Topic (e.g., integrated test / build / deploy) | TBD
+|| project | wrap for demo
+|| social | none planned - last minute consultation with instructors
 | Fri | warmup | light snacks, presentation setup
-|-| AM | Team Demos | All
-|-| PM | Lunch + Course Feedback / Pictures / etc | All
+|| AM | Team Demos | All
+|| PM | Lunch + Course Feedback / Pictures / etc | All

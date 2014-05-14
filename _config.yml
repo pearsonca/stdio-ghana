@@ -4,6 +4,7 @@ markdown: kramdown
 markdown_ext: md
 activeClass: class="active"
 highlighter: pygments
+encoding: utf-8
 navPages:
  - instructors
  - sessions
