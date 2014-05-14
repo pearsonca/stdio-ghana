@@ -9,6 +9,7 @@ navPages:
  - sessions
  - reports
  - projects
+ - schedule
  - misc
 exclude:
  - run.sh
