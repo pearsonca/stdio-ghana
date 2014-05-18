@@ -168,14 +168,47 @@ Example: Scientific application that processes different types of datasets.  The
 </section>
 
 <section markdown="block">
-Exercise 1:
+
+Exercise 1: Write a script to calculate the weekly pay for employees.  Where appropriate, use applicable Python library modules.
+
+Program should print out \"employee name: pay\" for each Employee
+
+The pay scale depends on number of years of service:
+
+0 to <2 = 500  
+4 to <8 = 1000  
+8 to <12 = 1100  
+12+   = 1200  
+
+you may assume 365 days = 1 year
 </section>
 
 <section markdown="block">
-Exercise 2:
+
+Some code to get you started.  It might need modification as you discover useful library modules:
+
+~~~
+class Employee():
+    def __init__(self, name, start_date):
+        self.name = name
+	self.start_date = start_date
+
+
+Andrew = Employee("Andrew", "2012/08/01")
+Barbara = Employee("Barbara", "2004/01/19")
+Clare = Employee("Clare", "2007/11/30")
+Daniel = Employee("Daniel", "2001/05/23")
+Edith = Employee("Edith", "2010/07/04")
+~~~
 </section>
 
 <section markdown="block">
-Exercise 3:
+Exercise 2: You are planning a large software system to be written in Python.  The system will monitor Twitter for tweets that mention particular types of activty.  These are environmental changes, damage or pollution.  The system will plot the location of the activity on Google Maps.
+
+Search PyPi for at least three useful packages that might assist you.
+
+<span style="opacity:0.0">python-twitter1.3.1, nltk, pykml 0.1.0</span>
+
 </section>
+
 

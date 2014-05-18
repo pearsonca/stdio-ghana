@@ -58,7 +58,7 @@ def print_object_list(object_list):
 
 int_object_list = list()
 str_object_list = list()
-cheese_list = ["Tilsit", "Stilton", "Emmental", "Cheshire"]
+cheese_list = ["Tislit", "Stilton", "Emmental", "Cheshire"]
 
 for i in range(1,5):
     int_object_list.append(IntegerObject(i))
@@ -95,7 +95,7 @@ int_object_list[2].value = "Cheddar"
 
 str_object_list[0].set_value("Wensleydale")
 #directly assigning value in object bypasses validity check
-str_object_list[1].value = "Norwegian Jarlsberg"
+str_object_list[1].value = "Norweigian Jarlsberg"
 #directly assigning value in object bypasses validity check
 str_object_list[2].value = 5
 
