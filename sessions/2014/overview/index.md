@@ -1,7 +1,6 @@
 ---
 layout: presentation
 year: 2014
-title: STDIO
 ---
 <section>
 	<h1>STDIO Ghana</h1>

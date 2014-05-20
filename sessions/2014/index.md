@@ -5,7 +5,7 @@ absolute: false
 elements:
  - name: Overview
    uri: overview
- - name: Py Variables and Functions, the Basics
+ - name: Python Variables and Functions, the Basics
    uri: basics
  - name: Development Tools
    uri: tools
@@ -13,7 +13,7 @@ elements:
    uri: flowcontrol
  - name: Software Requirements
    uri: softwarerequirements
- - name: Py Variables and Functions, the Not-so-Basics
+ - name: Python Variables and Functions, the Not-so-Basics
    uri: advanced
  - name: Testing
    uri: testing
