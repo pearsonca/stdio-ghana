@@ -1,10 +1,10 @@
 ---
 layout: blurb
-name: Carl A. B. Pearson
-affiliation: University of Florida
-title: Post-doctoral Researcher
-email: cap10@ufl.edu
-image: cabp.png
+name: Jonathon K. Parker
+affiliation: iBASEt
+title: Computer Scientist
+email: arkerpay.ghana@gmail.com
+image: parker.jpg
 status: current
 ---
-Test blurb.
+This is my bio.
