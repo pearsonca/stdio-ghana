@@ -1,0 +1,152 @@
+Project: Create software that will automatically generate webpages, e-mails, and/or text messages for a marketing campaign for a popular science magazine and website called "General Science".
+
+Activity: Very quickly go through elicitation, analysis and specification phases.
+
+Deliverable: Proposal describing approach.  Ensure that software requirements as understood are addressed in proposal.  Do not attempt to use formal specification language.
+
+Approach:
+
+Elicit. Organize software function around use cases.
+
+Seperate requirements into functional and non-functional.
+
+Analysis.  Look for contradictions and obviously wrong requirements.
+
+Remember to follow the guidance for elicitation and Brooks' warnings.
+
+Chief Executive Officer
+
+Stated requirements - 
+
+* Desire to reach current readers and new readers in North America, UK, and Asia with new marketing campaign.
+* Drive magazine subscribers and website users to site for advertising revenue.
+* Entice new users to visit the site.
+* Encourage website visitors to subscribe to magazine.
+* Encourage website visitors to purchase items from webstore.
+
+Elicitable requirements - 
+
+* We need a really good return on investment (ROI) - would like to increase online registrations by 50% and increase magazine subscriptions by 10%
+* CEO is a slick talker and will quite frankly make a best guess and refer the questioner to other employees for 'details'.
+
+Secrets - 
+
+* As former CFO, finance is his forte.  Will defer to others in company for details.
+* Magazine is in severe financial trouble.  Increase in revenue of 30% needed to keep magazine in business.  Additional magazine subscribers and page views are almost 100% increased margin.
+
+
+Director of Marketing
+
+Stated requirements - 
+
+* Want to contact magazine subscribers and website visitors three times a week.
+* Once a week they will be notified about breaking science news, once a week they will be notified about a page with information of interest to them and once a week it will be marketing with a link to something on sale in their webstore.
+* Potential new users will be contacted only once a week.
+* Subscribers and visitors need to be able select what type of science interests them.  They also need to be able to opt out.
+* They have about 700K subscribers and 300K additional registered users.
+
+Elicitable requirements - 
+
+* Website already requires registration.  That is how they know who the website visitors are.  Subscribers automatically receive registrations.
+* System needs to create the new websites with aggregated content once a week.
+* The "breaking news" is whatever the lead article happens to be that day.
+* The aggregated content sites have articles based on interest (Biology, Physics, Information Tech, etc.)
+* Not all users speak English.  Some speak Chinese and Spanish.  E-mails will need to be translated to their native language.
+* An outside vendor is providing leads (names, e-mail addresses) on potential new users.
+
+Secrets - 
+
+* He is not technically savvy.  Will not always use proper terms and will occasionally misuse terms. Does not understand or appreciate vigor required for software requirements.
+* He hasn't thought about how the marketing messages will be input into the system.
+* Is very fearful of losing his job if this project is not a success.
+
+
+Jr. Science Editor
+
+Stated requirements -
+
+* Needs tool to select articles for weekly aggregated websites from all relevant articles from the past week.
+* Can use CMS, but not that comfortable with it.  Would prefer tool autogenerate the pages.
+* There will be three seperate pages, one for English, one for Spanish and one for Chinese.
+
+Elicitable requirements/information - 
+
+* Would prefer system to remind her when to select content for websites.
+* Does not speak Spanish or Chinese.  The magazine has a translator for each language and three bilingual writers.
+* Her primary job is to edit the work of multiple science writers.  Each science writer handles multiple disciplines. For example, one writer handles both archeology and geology.
+* She uses Windows 7 as an OS.
+
+Secrets - 
+
+* Is not looking forward to the increase in her workload.  Science editor is primarily a writer, not a technologist. Wants new system to be as easy as possible to use.
+* She is not aware that marketing wants a seperate page for multiple topic areas (Biology, Physics, Information Tech, etc.)  She thinks it is just one page per language.
+
+ 
+Information Technology Director
+
+Stated requirements - 
+
+* The system must be compatible with our solution stack.  We use LAMP (Linux, Apache, MySQL and Python)
+* Django CMS is used by the website administrators, who work closely with the magazine article editors.
+* Uses Exim as a mail server.  Already have scripts to autosend e-mails for subscription renewals and the like.
+
+Elicitable requirements/information - 
+
+* The MySQL database has a table with magazine subscribers and a different table with website subscribers. 
+* Country where magazine incorporated has strict privacy laws.  Security is required for magazine and website subscribers.
+* Django CMS is Python based.
+* Has a staff consisting of a sysadmin, DBA, 2 website admins and IT support tech. The DBA and one of the website admins can write simple scripts and programs.
+* The webstore is completely outsourced.  They just maintain links on their site to it.
+
+Secrets - 
+
+* Marketing never told him about purchasing leads from an outside vendor.
+* Not happy about marketing selling the CEO about this idea without involving him.  Feels his staff could handle this just fine.
+
+
+----------------------------------------------------------------
+
+Answers Student Teams could potentially get - bonus points if they discover ones not listed
+
+Functional - these are broken into requirements that support particular use cases
+
+**E-mailer sends e-mails
+Must be able to generate 3 different types of e-mails
+Must be possible to schedule when e-mails are sent
+Must detect preferred language of subscriber and send e-mail in that language.
+Must be integrated with MySQL, Exim, the ad copy and links to content.
+
+**User creates e-mail content(This is the toughest requirement because none of the stakeholders realize they need it)
+User must be able to create advertising copy/boilerplate for an e-mail based on send date/language/topic combo.
+
+**Web page content selector/generator
+Must be possible to schedule when web pages are generated.
+Must be possible to create pages for a topic-language combo.
+Desirable that system automatically execute article query based on language-topic combo.
+Must be possible to select multiple articles from list/query.
+Must be possible to layout page using WYSIWYG.
+Desirable that it be integrated with Django CMS.
+Desirable that it send an e-mail reminder to generate page.
+Desirable that an integrated machine translator be used for gisting page content.
+
+**Outside vendor lead integrator
+Script?  GUI?  Possibilities are wide open.
+
+Non functional
+
+Interoperability - Backend processing portion must be compatible with LAMP setup and other existing applications.  Front end applications must work on a Windows 7 machine.
+Security - subscriber, registered user and lead PII must be protected IAW country regs.
+Scalability - system must be able to send in excess of 1 million e-mails in an evening while not taxing other running processes
+Capacity - system must be able to handle increased load of at least 20% to meet CEO's optimistic goals.
+Supportability - IT staff must be able to maintain the system.
+
+
+What issues need to be resolved?
+
+How is e-mail content captured?
+How are third-party leads integrated into the system?
+How are the moving parts coordinated?
+Marketing and science editor have different ideas about web page content generation.
+IT uninformed about outside vendor data.
+
+

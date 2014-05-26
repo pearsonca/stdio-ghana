@@ -1,0 +1,21 @@
+absoluteurl: http://stdio-ghana.github.io
+baseurl: ''
+markdown: kramdown
+markdown_ext: md
+activeClass: class="active"
+highlighter: pygments
+encoding: utf-8
+navPages:
+ - instructors
+ - sessions
+ - reports
+ - projects
+ - schedule
+ - misc
+exclude:
+ - run.sh
+ - INSTALL.md
+ - README.md
+collections:
+  instructors:
+    output: true

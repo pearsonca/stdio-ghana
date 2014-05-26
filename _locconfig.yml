@@ -1,0 +1,4 @@
+absoluteurl: http://localhost:4000
+baseurl: ''
+source: .
+destination: ../ghana-site

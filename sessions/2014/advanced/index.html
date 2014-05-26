@@ -1,0 +1,94 @@
+---
+layout: presentation
+year: 2014
+---
+<section>
+	<h1>STDIO Ghana</h1>
+	<h3><i>a course on</i></h3>
+	<h3>Software Engineering</h3>
+	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
+</section>
+<section>
+	<h1>Python advanced</h1>
+</section>
+<section>
+	<h2>Instructors</h2>
+	<dl>
+		<dt>Deanne McPherson</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
+		<dt>Seifu Chonde</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
+	</dl>
+</section>
+<section>
+	<h3>Python Basics Recap</h3>
+</section>
+<section>
+	<h3>Variable Scope</h3>
+</section>
+<section>
+	<h3>Exception Handling</h3>
+	<ul>
+		<li>try, except, while</li>
+		<li>try, except, else, finally</li>
+	</ul>
+</section>
+<section>
+	<h3>Comprehensions</h3>
+</section>
+<section>
+	
+	<h5>Creating Classes</h5>
+	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
+	{% highlight py %}
+	class ClassName:
+		#Optional class documentation string
+		class_suite	
+	{% endhighlight %}
+	
+</section>
+<section>
+	<h3>Methods and Functions</h3>
+</section>
+<section>
+	<h3>Object Mutabilitiy</h3>
+	<p>
+		Objects are either <i>mutable</i> or <i>immutable</i>. An immutable object will not allow changes to it after it is created. Examples of immutable objects are numbers, booleans, strings, tuples, and frozensets.
+	</p>
+</section>
+<section>
+	<h3>Class Mutability</h3>
+	<p>Classes are mutable in general. To mimic immutability you can do something like this:</p>
+	{% highlight py %}
+	class Immutable(object):
+     		"""An immutable class with a single attribute 'value'."""
+     		def __setattr__(self, *args):
+         		raise TypeError("can't modify immutable instance")
+		 __delattr__ = __setattr__
+     		def __init__(self, value):
+         		# we can no longer use self.value = value to store the instance data
+         		# so we must explicitly call the superclass
+         		super(Immutable, self).__setattr__('value', value)
+         {% endhighlight %}
+</section>
+<section>
+	<h5>Mutability Exercise</h5>
+</section>
+<section>
+	<h3>Optional/Deafult Arguments in Functions</h3>
+</section>
+<section>
+	<h5>Arguments Example 1</h5>
+</section>
+<section>
+	<h3>Variable-length Arguments</h3>
+</section>
+<section>
+	<h5>Arguments Example 2</h5>
+</section>
+<section>
+	<h3>Anonymous Functions and Uses</h3>
+</section>
+<section>
+	<h5>Functions Examples</h5>
+</section>
+
+

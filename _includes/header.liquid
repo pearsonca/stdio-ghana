@@ -1,0 +1,11 @@
+<ul class="top_nav">
+  <li id="home_page"
+  {% if page.url == "/index.html" %}{{ site.activeClass }}{% endif %}>
+  <a href="{{ site.absoluteurl }}{{ site.baseurl }}/">HOME</a>
+  </li>
+  {% for nPage in site.navPages %}
+  <li id="{{ nPage }}_page"
+  {% if page.url contains nPage %}{{ site.activeClass }}{% endif %}>
+  <a href="{{ site.absoluteurl }}{{ site.baseurl }}/{{ nPage }}/">{{ nPage | upcase }}</a></li>
+  {% endfor %}
+</ul>
