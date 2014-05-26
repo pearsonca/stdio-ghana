@@ -1,5 +1,5 @@
-absoluteurl: http://pearsonca.github.io
-baseurl: /stdio-ghana
+absoluteurl: http://stdio-ghana.github.io
+baseurl: ''
 markdown: kramdown
 markdown_ext: md
 activeClass: class="active"
