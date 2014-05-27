@@ -1,6 +1,6 @@
-Restaurant Automation in Python
+#Restaurant Automation in Python
 
-Problem
+####Problem
 Develop a list of (sub)classes and methods for this problem. Discuss how they would interact with each other.
 
 A large problem that restaurants face is that tickets are written on pieces of paper when an automated process is much better for tracking and management. The purpose of this project example is to help a restaurant coordinate their activities, improve productivity, and track business growth. 
