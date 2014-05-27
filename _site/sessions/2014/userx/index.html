@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/site.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/reveal.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://localhost:4000/js/site.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/head.min.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+  <h1 id="user-interfaces">User Interfaces</h1>
+</section>
+
+<section>
+  <h3 id="what-are-we-talking-about">What are we talking about?</h3>
+
+  <p>Whenever we write code, we have some user in mind who will interact with it via some an interface.</p>
+
+  <p>How do you interact with (your own? someone elses?) software?</p>
+</section>
+
+<section>
+  <p>What broad kinds of interfaces are there?</p>
+
+  <p>What kinds of users are there?</p>
+</section>
+
+<section>
+  <p>No interface:</p>
+
+  <ul>
+    <li>
+      <p>Click program icon</p>
+    </li>
+    <li>
+      <p>Type name, press ENTER</p>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <p>Command line interface (CLI):</p>
+
+  <ul>
+    <li>Arguments passed after program name</li>
+  </ul>
+
+  <p>– ls -lh
+– tar -czvvf my_new_tar_file.tgz ./*</p>
+
+  <ul>
+    <li>
+      <p>Interactive UI
+– fdisk</p>
+    </li>
+    <li>
+      <p>Special cases:
+– servers
+– supercomputers</p>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <p>What makes CLI software easy/hard to use?
+[Look at some documentation for some CLI utilities, try to complete a couple specific tasks]</p>
+</section>
+
+<section>
+  <p>Graphical user interface (GUI):
+- Common operating systems
+– Windows, OS X, Gnome/KDE/XFCE for linux
+- Most commercial or consumer-targeted software
+– Office
+– Photoshop
+– Firefox
+- Special cases:
+– Websites
+– Touch screens</p>
+</section>
+
+<section>
+  <p>What makes GUI software easy/hard to use?
+[Compare some interfaces, e.g. Yahoo &amp; Google, Notepad &amp; Word]</p>
+</section>
+
+<section>
+  <p>Simple software should have a simple interface.
+Should complex software have a complex interface?</p>
+</section>
+
+<section>
+  <p>Creating simple interfaces for complex software is hard!
+Broad principles:
+- Know your users and what they know
+- Exploit familiar interface patterns
+- Exploit psychology and culture</p>
+</section>
+
+<section>
+  <p>Know your users.  Are they:
+- Kids or adults
+- One time or long term users
+- Novices or experienced programmers</p>
+</section>
+
+<section>
+  <p>Know your users (cont.)
+- Make common things easy
+- Create basic/advanced alternative interfaces [Examples?]
+- Create customizable interfaces [Examples?]</p>
+</section>
+
+<section>
+  <p>Exploit familiar interface patterns
+- What does flipping a switch do?
+- What does turning a dial do?
+- Swiping? Ctrl + V? Clicking an ‘X’?
+[What are some more examples of ingrained controls?]</p>
+</section>
+
+<section>
+  <p>Exploit familiar interface patterns (cont.)
+- Command line tools: reuse familiar flags!
+[Find some CL tools, compare the flags and their meanings.]</p>
+</section>
+
+<section>
+  <p>Exploit psychology and culture
+- If you step into an unfamiliar room, where do you look first for the light switch?
+- How do you choose whether to push or pull a door?
+- If something is flashing red, what does that mean? Other colors?</p>
+</section>
+
+<section>
+  <p>Exploit psychology (cont.)
+- Put things where people will naturally look for them
+– Controls near the thing they control
+- Group related things
+- Hide confusing/misleading options
+- Use good documentation/pop up messages to target subtle or misleading controls</p>
+</section>
+
+<section>
+  <p>Having many controls that are poorly organized can obscure the useful ones
+Having excessive documentation for things that are obvious or unnecessary for the user can obscure the useful information</p>
+</section>
+
+<section>
+  <p>When you don’t know how to make something better, find some guinea pigs!
+Ask <em>them</em> what they expect to happen when they use your software.</p>
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://localhost:4000/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://localhost:4000/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://localhost:4000/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://localhost:4000/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://localhost:4000/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

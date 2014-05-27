@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/site.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/reveal.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://localhost:4000/js/site.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/head.min.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+  <h3 style="text-align:center">Software Engineering Best Practices</h3>
+  <h5 style="text-align:center">Prerequisites: OOP, Testing, Debugging</h5>
+  <dt>Jonathon Parker</dt>
+  <dd>Employed at iBASEt</dd>
+  <dt>Somebody</dt>
+  <dd>Some university</dd>
+</section>
+
+<section>
+  <p style="text-align:center">What are "Best Practices"?</p>
+
+  <p>Approaches and techniques that reduce development time, improve quality and simplify maintenance.</p>
+
+  <p>"Best Practices" could be the sole subject of a two week course!  The content in this lesson will focus on practices that simplify maintenance, though others will be discussed.</p>
+</section>
+
+<section>
+  <p style="text-align:center">Why Maintenance?</p>
+
+  <p>The majority of the software lifecycle is spent in maintenance.  More time is spent correcting defects and adding features after the software is delivered than in its initial development.  Additionally, the same practices that simplify maintenance also support correcting defects in software during its initial development.</p>
+</section>
+
+<section>
+  <p>To this end, consider these practices:</p>
+</section>
+
+<section>
+  <h5 style="text-align:center">Coding Conventions</h5>
+
+  <p>A coding convention is a set of rules for writing and organizing code.  Following the set of
+rules will not guarantee good quality code.  The purpose of a coding convention is to communicate
+intent between developers.  The actual convention used is not important; what is important is
+that it is adhered to.</p>
+</section>
+
+<section>
+  <p>You can have conventions for:</p>
+
+  <ul>
+    <li>Comments</li>
+    <li>Indent style</li>
+    <li>Naming</li>
+    <li>Programming practices</li>
+  </ul>
+
+  <p><br /></p>
+
+  <p>I will not cover all of these today.  I would like to cover Common Naming Conventions.</p>
+</section>
+
+<section>
+  <ul>
+    <li>UpperCamelCase (often used for classes)</li>
+    <li>lowerCamelCase (often used for class methods and variables)</li>
+    <li>CAPITAL_UNDERSCORE (often used for constants)</li>
+    <li>pot_hole_case (often used for variables and functions)</li>
+    <li>Single characters are often used for short temporary variables such as indexes.  The characters
+i, j, k are often used as integers; c, d, e are often used as characters; s is often used as a string.</li>
+  </ul>
+
+  <p><br /></p>
+
+  <p>Always use descriptive names unless name is for a short temporary variable.</p>
+</section>
+
+<section>
+  <pre><code>import os
+import sys
+import subprocess
+import nltk
+import plain
+
+class ProcessedPost(object):
+  def __init__(self, file_name=None, raw_dist=None):
+  self.file_name = file_name
+  self.raw_dist = raw_dist
+  self.processed = nltk.FreqDist()
+
+def main():
+  base_dir = sys.argv[1]
+  posts = []
+  global_dist = nltk.FreqDist()
+  
+  for path, sub_dirs, file_path in os.walk(base_dir):
+    for sub_dir in sub_dirs:
+
+...
+
+  weighted_terms = dict()
+
+  for p in posts:
+    keys = p.processed_posts.keys()
+    for k in keys:
+      if weighted_terms.has_key(k):
+</code></pre>
+</section>
+
+<section>
+  <h5 style="text-align:center">Engineering Practices</h5>
+
+  <p><br />
+There are legions of them.  Here are a few . . .</p>
+</section>
+
+<section>
+  <p>Don`t Repeat Yourself (DRY) - Any series of steps that are performed multiple times should be put
+into a programming construct such a loop, function or class.  That ensures the series of steps is
+performed the same way every time.</p>
+</section>
+
+<section>
+  <p>You aren't going to need it (YAGNI) - Do not implement functionality until you need it.  The danger
+is if you don't use it, the unused function may have a defect or maintenance changes elsewhere will
+introduce a defect.  A maintenance programmer may see the previously unused function, believe it works
+and try to use it.</p>
+</section>
+
+<section>
+  <p>Don`t Make Me Think - Any code written should be easy to read and understood with the minimum
+effort required.  This concept is related to:</p>
+
+  <p>Do The Simplest Thing That Could Possibly Work - Avoid unnecessary complexity.</p>
+</section>
+
+<section>
+  <p>Single Responsibility Principle - A component of code (class or function) should perform a single well defined task.  Code with unexpected side-effects can be overlooked by the maintenance programmer.</p>
+</section>
+
+<section>
+  <p>Minimize Coupling - Coupling is when a section of code depends on another section of code.  Coupling is an advanced topic and there are many types.  One dangerous type is "content coupling". In content coupling, changes to data values in one section of code can directly effect the behavior of another section of code.</p>
+</section>
+
+<section>
+  <p style="text-align:center">These are Best Practices, not a set of laws.</p>
+
+  <p>There are times a best practice can be disregarded.  When to do so comes with experience.  Often this is when one practice conflicts with another.</p>
+
+  <p>With YAGNI, one may forsee future needs and build the code in such a way that supports these needs.  Or codes to test for errors that can`t occur, anticipating future changes in input.</p>
+
+  <p>Sometimes you <em>do</em> need to repeat yourself.  It can happen that implementing DRY makes the code very difficult to follow.  What is more important, DRY or "Don`t make me think"?</p>
+</section>
+
+<section>
+  <h5 style="text-align:center">For Object Oriented Programming (OOP)</h5>
+
+  <p>There are many good practices for OOP.  Two are discussed here.</p>
+</section>
+
+<section>
+  <center>Hide implementation details.</center>
+  <p><br />
+Use an object`s methods and constructor to hide the details of its operation.  That way changes to the object will not affect the program and changes to the program will not affect the object.</p>
+</section>
+
+<section>
+  <p>Law of Demeter - Put simply, an object can only communicate with classes it inherits from, objects
+it contains, and objects passed by argument to a method.</p>
+
+  <p>This law ensures minimal coupling, which was mentioned earlier.</p>
+</section>
+
+<section>
+  <h5 style="text-align:center">Additional Practices</h5>
+</section>
+
+<section>
+  <p>Refactor often - Refactoring is reorganizing your code to ensure the above principles are adhered
+to.  As a side benefit, it can also expose defects in the coding.</p>
+</section>
+
+<section>
+  <p>Tools - Pick a small set of software engineering tools and learn them well.</p>
+</section>
+
+<section>
+  <p>Code defensively - Think about what can go wrong and apply good practices appropriately.</p>
+</section>
+
+<section>
+  <h5 style="text-align:center">Assignment</h5>
+
+  <p>Two poorly designed code modules will be provided.  This is not a debugging exercise.  The code runs and if there is a defect, it is due to design issues.  For each code module:</p>
+
+  <p>(a) Identify all design flaws.<br />
+(b) Explain what problems the flaws can cause.<br />
+(c) Modify the code to repair the flaws.<br />
+(d) Be prepared to justify your modifications.</p>
+
+</section>
+
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://localhost:4000/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://localhost:4000/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://localhost:4000/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://localhost:4000/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://localhost:4000/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

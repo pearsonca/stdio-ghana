@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/site.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/reveal.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://localhost:4000/js/site.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/head.min.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+  <h1 id="tools">Tools</h1>
+
+  <h3 id="instructors-carl-dane">Instructors: Carl, Dane</h3>
+</section>
+
+<section>
+  <h2 id="what-do-you-need-to-code">What Do You Need to Code?</h2>
+
+  <aside class="notes">
+Ask students what they need to code, e.g.
+- file system interaction,
+- syntax highlighting,
+- "spell" checking for code (aka static analysis),
+- version control,
+- compile / run integration
+- console / interpreter
+Ask what tools they use to satisfy those needs.
+How did they learn about them?
+</aside>
+
+</section>
+
+<section>
+  <h2 id="file-system-tools">File System Tools</h2>
+
+  <aside class="notes">
+cover create, delete, copy, move, remove,
+
+plus locating python / libraries,
+
+environment variables
+</aside>
+</section>
+
+<section>
+  <h2 id="code-editors">Code Editors</h2>
+
+  <p><a href="http://www.vim.org/docs.php">vim</a> and <a href="http://www.jetbrains.com/pycharm/">pycharm</a></p>
+
+  <aside class="notes">
+    <p>where to find these,</p>
+
+    <p>quick cover of critical features:
+ - load, save, discard
+ - search, by phrase / to line
+ - find and replace
+ - config?</p>
+  </aside>
+</section>
+
+<section>
+  <h2 id="version-control">Version Control</h2>
+
+  <p><a href="http://git-scm.com/">git</a> at <a href="https://github.com/">github</a></p>
+
+  <aside class="notes">
+create account first, create a helloghana project
+
+QA: what is the point of version control?
+ - keeping track of changes
+ - provide a way for people to work together
+
+How does git + github accomplish this
+ - push / pull / merge
+ - branches: work on separate things in parallel, then merge them into master
+ as they mature
+ - fast forward
+
+do some git at command line, do some in gui?
+</aside>
+
+</section>
+
+<section>
+  <h2 id="project--team-tools">Project / Team Tools</h2>
+
+  <aside class="notes">
+QA: How do you plan *your* work currently?  How do you work with teammates?
+ - need to keep track of what needs to be done, when, by whom
+ - options for sharing work?
+
+do: share commit access on helloghana, create milestones, assign issues
+</aside>
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://localhost:4000/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://localhost:4000/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://localhost:4000/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://localhost:4000/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://localhost:4000/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

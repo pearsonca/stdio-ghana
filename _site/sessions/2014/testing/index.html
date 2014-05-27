@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/site.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/reveal.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://localhost:4000/js/site.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/head.min.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+  <h1 id="testing">Testing</h1>
+
+  <h3 id="instructors-carl-jonathon">Instructors: Carl, Jonathon</h3>
+</section>
+
+<section>
+  <h2 id="how-do-you-test-code">How Do You Test Code?</h2>
+
+  <aside class="notes">
+QA: what they think testing means in software.  How does that relate to
+testing in other contexts?
+</aside>
+</section>
+
+<section>
+<section>
+    <h2 id="why-test">Why Test?</h2>
+    <aside class="notes">
+fundamentally not about proving software works, but rather finding that it doesn't work
+for conditions people care about.
+</aside>
+  </section>
+
+<section>
+    <h3 id="compare">Compare:</h3>
+
+    <ul>
+      <li>automated checking</li>
+      <li>testing</li>
+      <li>debugging</li>
+      <li>error handling</li>
+    </ul>
+
+    <aside class="notes">
+      <ul>
+        <li>automated: interpreter driven, only about syntax,
+not about <em>universe</em> program represents</li>
+        <li>testing: expressing program <em>universe</em>, check for satisfying its rules,
+also a way to communicate with other developers</li>
+        <li>debugging: about finding out what’s breaking where when you know something is wrong</li>
+      </ul>
+    </aside>
+  </section>
+
+</section>
+
+<section>
+  <h2 id="python-unit-testing">Python Unit Testing</h2>
+  <p><a href="https://docs.python.org/3.4/library/unittest.html">unittest</a>
+and <a href="https://docs.python.org/3.4/library/unittest.mock.html">unittest.mock</a></p>
+
+  <aside class="notes">
+exercise using those
+</aside>
+</section>
+
+<section>
+  <h2 id="testing-when-how">Testing: When? How?</h2>
+
+  <ul>
+    <li>pre/during development</li>
+    <li>debugging</li>
+    <li>automating</li>
+  </ul>
+
+  <aside class="notes">
+    <ul>
+      <li>during development: figuring out what to make, how to make it in small steps</li>
+      <li>during development: making sure everyone is on the same page</li>
+      <li>during debugging: describe what the problem actually is</li>
+      <li>long term value: future changes can be validated as not breaking established
+code</li>
+      <li>getting the right amount: testing is about being confident in results;
+impossible to be perfectly confident, need to figure out right level of concern,
+how to mitigate it via right amount of testing</li>
+    </ul>
+  </aside>
+
+</section>
+
+<section>
+  <h2 id="other-testing">Other Testing</h2>
+
+  <ul>
+    <li>design-by-contract</li>
+    <li>performance</li>
+    <li>error handling</li>
+    <li>stochastic</li>
+    <li>pen-and-paper</li>
+  </ul>
+
+  <aside class="notes">
+    <ul>
+      <li>design-by-contract: leverage static analysis / options for dynamic analysis</li>
+      <li>performance: big-O estimation, confirming algorithm satisfies that</li>
+      <li>performance: finding hottest spots + replacing them (rather than write
+  the whole thing in <code>C</code>)</li>
+      <li>error handling: expected errors (e.g., IO) versus usage errors (wrong arguments)
+also useful when fixing problems, communicating with other developers by having
+useful crash messages rather than basically random junk</li>
+      <li>stochastic: for simulations, verifying expected distributions</li>
+      <li>pen-and-paper: write down what you expect to observe, try the software
+why write it down? forces you to commit your expectations</li>
+    </ul>
+  </aside>
+
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://localhost:4000/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://localhost:4000/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://localhost:4000/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://localhost:4000/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://localhost:4000/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

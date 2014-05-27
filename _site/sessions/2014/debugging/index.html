@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/site.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/reveal.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://localhost:4000/js/site.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/head.min.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+	<h1>STDIO Ghana</h1>
+	<h3><i>a course on</i></h3>
+	<h3>Software Engineering</h3>
+	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
+</section>
+<section>
+	<h2>Debugging</h2>
+	<dl>
+		<dt>Dane Brown</dt><dd>Professor of Practice, USNA</dd>
+	</dl>
+</section>
+<section>
+	<h2>Motivation</h2>
+	<p>Two weeks, starting now.  Each day:</p>
+</section>
+<section>
+	<h2>Bug Types</h2>
+	<p>Syntax Error</p>
+	<p>Runtime Error</p>
+	<p>Logical Error</p>
+</section>
+<section>
+	<h2>Syntax Error</h2>
+	<p>Typo or improper use of code.</p>
+	<p>Compiler or interpreter will alert you prior to execution.</p>
+	<p>ie. Wrong number of arguments to a function</p>
+</section>
+<section>
+	<h2>Runtime Error</h2>
+	<p>Illegal implementation of code or routine, though syntactically correct.</p>
+	<p>Caught during execution, program will immediately crash or exit.</p>
+	<p>ie. Divide by 0</p>
+</section>
+<section>
+	<h2>Logical Error</h2>
+	<p>Execution completes without error, but behavior or results are unexpected.</p>
+	<p>ie. Wrong format string identifier</p>
+</section>
+<section>
+	<h2>Code Analysis</h2>
+	<p>White Box</p>
+	<p>Black Box</p>
+</section>
+<section>
+	<h2>White Box</h2>
+	<p>Source Code Review</p>
+</section>
+<section>
+	<h2>White Box</h2>
+	<p>Print Statements</p>
+</section>
+<section>
+	<h2>White Box</h2>
+	<p>Using a Debugger</p>
+</section>
+<section>
+	<h2>Black Box</h2>
+	<p>Static Analysis</p>
+</section>
+<section>
+	<h2>Black Box</h2>
+	<p>Fuzzing</p>
+</section>
+<section>
+	<h2>Tom's Article</h2>
+	<p>High Points</p>
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://localhost:4000/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://localhost:4000/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://localhost:4000/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://localhost:4000/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://localhost:4000/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

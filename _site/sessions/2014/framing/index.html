@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/site.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/reveal.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://localhost:4000/js/site.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/head.min.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+	<h3>Software Requirements</h3>
+	<h5>Prerequisites: Basic Python Programming</h5>
+	<dt>Jonathon Parker</dt><dd>Employed at iBASEt</dd>
+	<dt>Carl Pearson</dt><dd>Postdoctoral Researcher, UF</dd>
+</section>
+<section>
+
+Unless you are purely a hobbyist or a student, software projects are undertaken because an organization
+needs the software to increase productivity of workers or to perform a task that cannot be done by a human worker.
+
+The software engineering team must understand what the customer wants out of the software, so that they know
+what to build.
+
+</section>
+<section>
+
+Motivational Quotation #1
+
+“The hardest part of building a software system is deciding precisely what to build.  No other part of the conceptual 
+work is so difficult as establishing the detailed technical requirements … No other part of the work so cripples the 
+resulting system if done wrong.  No other part is more difficult to rectify later.”
+
+Brooks, Fred P. (1986). "No Silver Bullet — Essence and Accident in Software Engineering". Proceedings of the IFIP 
+Tenth World Computing Conference: 1069–1076.
+
+	
+</section>
+<section>
+
+Motivational Quotation #2
+
+“Therefore the most important function that software builders do for their clients is the iterative extraction and 
+refinement of the product requirements.  For the truth is, the clients do not know what they want.  They usually do 
+not know what questions must be answered, and they almost never have thought of the problem in the detail that must be 
+specified.”
+
+	
+</section>
+<section>
+
+A (semi-) formal definition of Software Requirement:
+
+A condition or capability needed by a user to solve a problem or achieve an objective, or needed to satisfy
+a contract or other formal document.
+
+</section>
+<section>
+
+
+Functional requirement – What the customer wants the software to do.
+
+Nonfunctional requirement – Places constraints on how the software meets requirements.
+
+</section>
+<section>
+
+
+Important Aside
+
+Study of the issues surrounding software requirements could be the content of a semester long course,
+a dissertation, a book.  There are many different software development methodologies, with proponents
+of particular methods (often) bitterly disagreeing with each other on the subject.  Each software
+development methodology has its own style of handling software requirements.
+
+</section>
+<section>
+
+
+Thus, I cannot cover them all in one lesson.
+
+I can, however, briefly give you my opinion on the subject of methodologies.  
+They are situationally dependent.  For certain projects, methodology A can have great success,
+for other projects the best choice might be methodology B.  Some methodologies that would be ideal cannot
+be implemented due to external factors, such as contracts.
+
+</section>
+<section>
+
+
+So, it is good to read up on or experience many from the following list: 
+<dl>
+<dt>Waterfall</dt>
+<dt>Prototype model</dt>
+<dt>Iterative</dt>
+<dt>Spiral</dt>
+<dt>Scrum</dt>
+<dt>RUP</dt>
+<dt>XP</dt>
+<dt>Agile</dt>
+<dt>TDD</dt>
+<dt>FDD</dt>
+</dl>
+
+</section>
+
+<section>
+
+
+Another important definition!
+
+Use Case: A description of important interactions between an actor (usually a person) and the software
+system.  These interactions must yield a result of value to the actor.  Sometimes diagrams are used to
+illustrate a use case, but these are rarely sufficient.
+
+</section>
+
+<section>
+
+Here is  a brief overview of the formal style used commonly in software engineering literature.
+
+</section>
+
+<section>
+
+
+Software Requirements can be broken into 5 Phases
+<dl>
+<dt>Elicitation</dt>
+<dt>Analysis</dt>
+<dt>Specification</dt>
+<dt>Validation</dt>
+<dt>Management</dt>
+</dl>
+</section>
+<section>
+
+
+Elicitation: Uncovering customer needs and wants and nonfunctional requirements.
+ 
+Multiple sources of information can be used.
+<dl>
+<dt>Stakeholders (May have different needs and you need to meet them all)</dt>
+<dt>Goals (How do the stakeholders see the software benefiting the organization?  Uncover nonfunctional
+requirements)</dt>
+<dt>Domain Knowledge (How is business done in this industry?)</dt>
+<dt>Operation and organizational environment (Consistency)</dt>
+</dl>
+</section>
+<section>
+
+Multiple techniques can be used:
+
+<dt>Interviews - 1v1 </dt><dt>
+Facilitated meetings - groups </dt><dt>
+Observation – of how proposed users currently perform tasks to be handled by the software </dt><dt>
+Scenarios – Software developers describing sets of use cases to the customer.  This can identify misperceptions early one and uncover new requirements. </dt><dt>
+
+	
+</section>
+
+<section>
+All of these techniques require skill and experience.  This is a different skill set from writing functioning code!
+</section>
+<section>
+
+Analysis.  In this phase, the requirements are studied to see if a system can be built from them.
+Common flaws include:
+<dl>
+<dt>Contradictions</dt>
+<dt>Incomplete</dt>
+<dt>Vague</dt>
+<dt>Obviously wrong.</dt>
+</dl>
+
+</section>
+<section>
+
+Specification.  Formal capture of the requirements into a properly formatted document.  Requirements must be:
+<dl>
+<dt>Specific – clear, concise and exclusive</dt>
+<dt>Correct – must accurately describe the system function</dt>
+<dt>Complete – must describe everything about the system</dt>
+<dt>Consistent – non-contradictory or not-exclusive of other requirements</dt>
+<dt>Attainable – possible for software to meet this goal</dt>
+<dt>Verifiable – can we test that the requirement has been met?</dt>
+</dl>
+
+</section>
+<section>
+
+
+Validation. The stakeholders agree that the requirement meet their needs.
+</section>
+<section>
+
+Management.  A successful project will have subject matter experts on the entire set of requirements.
+
+The development team must ensure all requirements are met and tested.
+</section>
+
+<section>
+Requirements can change (!) during a project.  When changes to requirements occur, this can
+necessitate changes to other requirements and code already written.  This adds to development time.
+It is critical that this additional time is accurately estimated.
+
+
+The need to translate the customer’s requirements to technical specifications.
+
+</section>
+<section>
+
+Exercise:
+
+The class is broken up into teams, each of which is competing for a software development project.  
+Each instructor is a stakeholder and can be interviewed for 10 minutes.  
+(This requires that each instructor will need to role-play and have different goals and priorities)
+Follow up questions may be asked at a roundtable discussion by all teams (round-robin).  
+The team that best describes the system wins the contract.
+
+
+
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://localhost:4000/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://localhost:4000/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://localhost:4000/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://localhost:4000/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://localhost:4000/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

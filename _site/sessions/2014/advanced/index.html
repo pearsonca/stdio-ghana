@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/site.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/reveal.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://localhost:4000/js/site.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/head.min.js"></script>
+  <script type="text/javascript" src="http://localhost:4000/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+	<h1>STDIO Ghana</h1>
+	<h3><i>a course on</i></h3>
+	<h3>Software Engineering</h3>
+	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
+</section>
+<section>
+	<h1>Python advanced</h1>
+</section>
+<section>
+	<h2>Instructors</h2>
+	<dl>
+		<dt>Deanne McPherson</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
+		<dt>Seifu Chonde</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
+	</dl>
+</section>
+<section>
+	<h3>Python Basics Recap</h3>
+</section>
+<section>
+	<h3>Variable Scope</h3>
+</section>
+<section>
+	<h3>Exception Handling</h3>
+	<ul>
+		<li>try, except, while</li>
+		<li>try, except, else, finally</li>
+	</ul>
+</section>
+<section>
+	<h3>Comprehensions</h3>
+</section>
+<section>
+	
+	<h5>Creating Classes</h5>
+	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
+	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
+		<span class="c">#Optional class documentation string</span>
+		<span class="n">class_suite</span></code></pre></div>
+	
+</section>
+<section>
+	<h3>Methods and Functions</h3>
+</section>
+<section>
+	<h3>Object Mutabilitiy</h3>
+	<p>
+		Objects are either <i>mutable</i> or <i>immutable</i>. An immutable object will not allow changes to it after it is created. Examples of immutable objects are numbers, booleans, strings, tuples, and frozensets.
+	</p>
+</section>
+<section>
+	<h3>Class Mutability</h3>
+	<p>Classes are mutable in general. To mimic immutability you can do something like this:</p>
+	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">Immutable</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+     		<span class="sd">&quot;&quot;&quot;An immutable class with a single attribute &#39;value&#39;.&quot;&quot;&quot;</span>
+     		<span class="k">def</span> <span class="nf">__setattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+         		<span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s">&quot;can&#39;t modify immutable instance&quot;</span><span class="p">)</span>
+		 <span class="n">__delattr__</span> <span class="o">=</span> <span class="n">__setattr__</span>
+     		<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+         		<span class="c"># we can no longer use self.value = value to store the instance data</span>
+         		<span class="c"># so we must explicitly call the superclass</span>
+         		<span class="nb">super</span><span class="p">(</span><span class="n">Immutable</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__setattr__</span><span class="p">(</span><span class="s">&#39;value&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></pre></div>
+</section>
+<section>
+	<h5>Mutability Exercise</h5>
+</section>
+<section>
+	<h3>Optional/Deafult Arguments in Functions</h3>
+</section>
+<section>
+	<h5>Arguments Example 1</h5>
+</section>
+<section>
+	<h3>Variable-length Arguments</h3>
+</section>
+<section>
+	<h5>Arguments Example 2</h5>
+</section>
+<section>
+	<h3>Anonymous Functions and Uses</h3>
+</section>
+<section>
+	<h5>Functions Examples</h5>
+</section>
+
+
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://localhost:4000/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://localhost:4000/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://localhost:4000/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://localhost:4000/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://localhost:4000/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>
