@@ -148,34 +148,33 @@ year: 2014
 
 <section>
 	{% highlight python %}
-	class Parent:        # define parent class
-	   parentAttr = 100
-	   def __init__(self):
-	      print "Calling parent constructor"
+	class Employee:
+	    'Common base for all employees'
+	    empCount = 0
+	    
+	    def __init__(self, name, salary, isWorking):
+	        self.name = name
+	        self.salary = salary
+	        self.isWorking = isWorking
+	        Employee.empCount += 1
 	
-	   def parentMethod(self):
-	      print 'Calling parent method'
-	
-	   def setAttr(self, attr):
-	      Parent.parentAttr = attr
-	
-	   def getAttr(self):
-	      print "Parent attribute :", Parent.parentAttr
-	
-	class Child(Parent): # define child class
-	   def __init__(self):
-	      print "Calling child constructor"
-	
-	   def childMethod(self):
-	      print 'Calling child method'
-	
-	c = Child()          # instance of child
-	c.childMethod()      # child calls its method
-	c.parentMethod()     # calls parent's method
-	c.setAttr(200)       # again call parent's method
-	c.getAttr()          # again call parent's method
+	class Cook(Employee):
+	    'Common base for all cooks'
+	    cookCount
+	    
+	    def __init__(self,name,salary,isWorking, specialty):
+	        Employee.__init__(self,name, salary,isWorking)
+	        self.specialty=specialty
+	        Cook.cookCount += 1
+	    
+	    def displayCook(self):
+	        print "Name: ", self.name, ", Salary: ", self.salary, ", Is Working: ", self.isWorking, ", Specialty: ", self.specialty
+
+	cook1 = Cook("bob", "salary", False, "specialty")
+	cook1.displayCook()
+	emp1 = Employee(“emp1”, “salary”, False)
+	emp1.displayCook()
 	{% endhighlight %}
-	<p> This returns: Calling child constructor <br>Calling child method<br>Calling parent method<br>Parent attribute : 200 </p>
 
 </section>
 <section>
@@ -199,6 +198,6 @@ year: 2014
 	
 </section>
 <section>
-	<h5>Example</h5>
-	Passing functions as variables to other functions
+	<h5>Determine the Clases Example</h5>
+	
 </section>
