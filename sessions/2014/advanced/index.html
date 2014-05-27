@@ -35,11 +35,11 @@ year: 2014
 	    def __init__(self, initial_balance=0):
 	        self.balance = initial_balance
 	    def deposit(self, amount):
- 	       self.balance += amount
- 	   def withdraw(self, amount):
- 	       self.balance -= amount
-  	  def overdrawn(self):
-    	    return self.balance < 0
+	        self.balance += amount
+	    def withdraw(self, amount):
+	        self.balance -= am
+	    def overdrawn(self):
+	        return self.balance < 0
 	my_account = BankAccount(15)
 	my_account.withdraw(5)
 	print my_account.balance
@@ -53,7 +53,7 @@ year: 2014
 	</ul>
 
 	<aside class ="notes">
-	An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the program’s instructions. When you are uncertain if your code will raise an exception you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
+	An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the programï¿½s instructions. When you are uncertain if your code will raise an exception you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
 	</aside>
 </section>
 
@@ -112,22 +112,22 @@ Concise way to create lists.
 <section>
 	{% highlight py %}
 	# You can either use loops:
-squares = []
-
-for x in range(10):
-    squares.append(x**2)
-
-
-# Or you can use list comprehensions to get the same result:
-squares2 = [x**2 for x in range(10)]
+	squares = []
 	
+	for x in range(10):
+	    squares.append(x**2)
+	
+	
+	# Or you can use list comprehensions to get the same result:
+	squares2 = [x**2 for x in range(10)]
+		
 	{% endhighlight %}
 </section>
 
 <section>
 	{% highlight py %}
 	 [x+y for x in [10,30,50] for y in [20,40,60]]
-	 [30, 50, 70, 50, 70, 90, 70, 90, 110]	
+	 #[30, 50, 70, 50, 70, 90, 70, 90, 110]	
 	{% endhighlight %}
 </section>
 
