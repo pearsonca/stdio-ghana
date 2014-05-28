@@ -1,6 +1,9 @@
 ---
 layout: presentation
 title: Software Engineering Reuse
+authors:
+ - parker
+ - dab
 year: 2014
 ---
 <section markdown="block">
@@ -61,7 +64,7 @@ Example:  You need to calculate absolute values of numbers in your code module. 
 
 The math module documentation provides the following information:
 
-~~~
+~~~ python
 math.fabs(x)
 Return the absolute value of x.
 ~~~
@@ -69,7 +72,7 @@ Return the absolute value of x.
 Which you access by importing the module by typing the important statement in the header of your Python script
 and later in your code call fabs(x) with:
 
-~~~
+~~~ python
 import math
 ...  
 y = math.fabs(x)
@@ -199,7 +202,7 @@ you may assume 365 days = 1 year
 
 Some code to get you started.  It might need modification as you discover useful library modules:
 
-~~~
+~~~ python
 class Employee():
     def __init__(self, name, start_date):
         self.name = name
@@ -219,7 +222,8 @@ Exercise 2: You are planning a large software system to be written in Python.  T
 
 Search PyPi for at least three useful packages that might assist you.
 
-<span style="opacity:0.0">python-twitter1.3.1, nltk, pykml 0.1.0</span>
+python-twitter1.3.1, nltk, pykml 0.1.0
+{: .fragment}
 
 </section>
 
