@@ -1,8 +1,13 @@
 # courtesy of guidance at http://davidensinger.com/
 
-task :default => 'commit_deploy'
+task :default => 'all'
 
-desc "Commit _site/"
+desc "build _site/"
+task :build do
+  puts system("jekyll build") ? "Success" : "Failed"
+end
+
+desc "commit _site/"
 task :commit do
   puts "\n## Staging modified files"
   puts system("git add -A") ? "Success" : "Failed"
@@ -12,7 +17,7 @@ task :commit do
   puts system("git push origin source") ? "Success" : "Failed"
 end
 
-desc "Deploy _site/ to master branch"
+desc "deploy _site/"
 task :deploy do
   puts "\n## Deleting master branch"
   status = system("git branch -D master")
@@ -31,6 +36,6 @@ task :deploy do
   puts status ? "Success" : "Failed"
 end
 
-desc "Commit and deploy _site/"
-task :commit_deploy => [:commit, :deploy] do
+desc "build, commit, and deploy _site/"
+task :all => [:build, :commit, :deploy] do
 end
