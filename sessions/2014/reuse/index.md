@@ -64,19 +64,19 @@ Example:  You need to calculate absolute values of numbers in your code module. 
 
 The math module documentation provides the following information:
 
-~~~ python
+{% highlight python %}
 math.fabs(x)
-Return the absolute value of x.
-~~~
+# Return the absolute value of x.
+{% endhighlight %}
 
 Which you access by importing the module by typing the important statement in the header of your Python script
 and later in your code call fabs(x) with:
 
-~~~ python
+{% highlight python %}
 import math
 ...  
 y = math.fabs(x)
-~~~
+{% endhighlight %}
 </section>
 
 <section markdown="block">
