@@ -1,4 +1,4 @@
-task :default => 'commit_deploy'
+task :default => ':commit_deploy'
 
 desc "Commit _site/"
 task :commit do
