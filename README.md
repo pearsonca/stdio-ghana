@@ -1,6 +1,6 @@
 #stdio-ghana
 
-[view course site](http://pearsonca.github.io/stdio-ghana/)
+[view course site](http://stdio-ghana.github.io/)
 
 [apply to participate](http://goo.gl/d68nbg)
 
