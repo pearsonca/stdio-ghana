@@ -19,12 +19,20 @@ When you sit down to write a module of code, there is a very strong probability 
 </section>
 
 <section markdown="block">
-<h5 style="text-align:center">Types of Reuse</h5>
-Libraries - The programming language authors or a third party has built the functionality into the language or a module of code you can reference.
+#####Types of Reuse
 
-Code Reuse - A module of code written by you or a member on your team can be reused with little or no modification to solve a new problem.
+Libraries
+: The programming language authors or a third party has built the functionality into the language or a module of code you can reference.
+{: .fragment}
 
-Pattern Reuse - The type of problem you are trying to solve has been solved before.  The strategy used to solve it can be reused and implemented in any programming language.
+Code Reuse
+: A module of code written by you or a member on your team can be reused with little or no modification to solve a new problem.
+{: .fragment}
+
+Pattern Reuse
+: The type of problem you are trying to solve has been solved before.  The strategy used to solve it can be reused and implemented in any programming language.
+{: .fragment}
+
 </section>
 
 <section markdown="block">
