@@ -26,17 +26,30 @@
 	</dl>
 </section>
 <section>
-	<h2>Python Introduction</h2>
-	<p>Brief discussion on advantages of Python and similarities to other languages</p>
+	<p2>Why use Python?</p2>
 </section>
 <section>
 	<h2>Basic Syntax</h2>
-	<ul>
-		<li>Lines & Indentation</li>
-		<li>Print</li>
-		<li>Case-sensativity</li>
-		<li>Reserved words</li>
-	</ul>
+	<div class="highlight"><pre><code class="py"><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">localtime</span>
+
+	<span class="n">activities</span> <span class="o">=</span> <span class="p">{</span><span class="mi">8</span><span class="p">:</span> <span class="s">&#39;Sleeping&#39;</span><span class="p">,</span>
+        	      <span class="mi">9</span><span class="p">:</span> <span class="s">&#39;Commuting&#39;</span><span class="p">,</span>
+        	      <span class="mi">17</span><span class="p">:</span> <span class="s">&#39;Working&#39;</span><span class="p">,</span>
+        	      <span class="mi">18</span><span class="p">:</span> <span class="s">&#39;Commuting&#39;</span><span class="p">,</span>
+        	      <span class="mi">20</span><span class="p">:</span> <span class="s">&#39;Eating&#39;</span><span class="p">,</span>
+        	      <span class="mi">22</span><span class="p">:</span> <span class="s">&#39;Resting&#39;</span> <span class="p">}</span>
+
+	<span class="n">time_now</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
+	<span class="n">hour</span> <span class="o">=</span> <span class="n">time_now</span><span class="o">.</span><span class="n">tm_hour</span>
+
+	<span class="k">for</span> <span class="n">activity_time</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">activities</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+    	<span class="k">if</span> <span class="n">hour</span> <span class="o">&lt;</span> <span class="n">activity_time</span><span class="p">:</span>
+        	<span class="k">print</span> <span class="n">activities</span><span class="p">[</span><span class="n">activity_time</span><span class="p">]</span>
+        	<span class="k">break</span>
+	<span class="k">else</span><span class="p">:</span>
+    	<span class="k">print</span> <span class="s">&#39;Unknown or sleeping!&#39;</span></code></pre></div>
+</Section>
+<Section>
 	<h2>Variable Types</h2>
 	<ul>
 		<li>Numbers: Integer, Float, Boolean, Long, Complex</li>

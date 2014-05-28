@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title></title>
+  <title>Software Engineering Reuse</title>
   <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
   <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
   <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
@@ -13,7 +13,7 @@
 <body>
 <div class="reveal"><div class="slides">
 <section>
-<h2></h2>	
+<h2>Software Engineering Reuse</h2>	
 </section>
 <section>
   <h3 style="text-align:center">Software Engineering Reuse</h3>
@@ -25,17 +25,30 @@
 </section>
 
 <section>
-  <h5 style="text-align:center">Why Reuse?</h5>
-  <p>When you sit down to write a module of code, there is a very strong probability that you are NOT the first person in the world to need that module.  In most of these cases, the functionality you need has already been written and available for you to use.  This saves you time and the module usually has been rigorously tested for errors.</p>
+  <h5 id="why-reuse">Why Reuse?</h5>
+
+  <p class="fragment">When you sit down to write a module of code, there is a very strong probability that you are NOT the first person in the world to need that module.  In most of these cases, the functionality you need has already been written and available for you to use.  This saves you time and the module usually has been rigorously tested for errors.</p>
+
 </section>
 
 <section>
-  <h5 style="text-align:center">Types of Reuse</h5>
-  <p>Libraries - The programming language authors or a third party has built the functionality into the language or a module of code you can reference.</p>
+  <h5 id="types-of-reuse">Types of Reuse</h5>
 
-  <p>Code Reuse - A module of code written by you or a member on your team can be reused with little or no modification to solve a new problem.</p>
+  <dl class="fragment">
+    <dt>Libraries</dt>
+    <dd>The programming language authors or a third party has built the functionality into the language or a module of code you can reference.</dd>
+  </dl>
 
-  <p>Pattern Reuse - The type of problem you are trying to solve has been solved before.  The strategy used to solve it can be reused and implemented in any programming language.</p>
+  <dl class="fragment">
+    <dt>Code Reuse</dt>
+    <dd>A module of code written by you or a member on your team can be reused with little or no modification to solve a new problem.</dd>
+  </dl>
+
+  <dl class="fragment">
+    <dt>Pattern Reuse</dt>
+    <dd>The type of problem you are trying to solve has been solved before.  The strategy used to solve it can be reused and implemented in any programming language.</dd>
+  </dl>
+
 </section>
 
 <section>
@@ -66,17 +79,16 @@
 
   <p>The math module documentation provides the following information:</p>
 
-  <pre><code>math.fabs(x)
-Return the absolute value of x.
-</code></pre>
+  <div class="highlight"><pre><code class="python"><span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="c"># Return the absolute value of x.</span></code></pre></div>
 
   <p>Which you access by importing the module by typing the important statement in the header of your Python script
 and later in your code call fabs(x) with:</p>
 
-  <pre><code>import math
-...  
-y = math.fabs(x)
-</code></pre>
+  <div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">math</span>
+<span class="o">...</span>  
+<span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></div>
+
 </section>
 
 <section>
@@ -209,7 +221,7 @@ The strategy pattern allows the behavior of an function to be changeable at runt
 
   <p>Some code to get you started.  It might need modification as you discover useful library modules:</p>
 
-  <pre><code>class Employee():
+  <pre><code class="language-python">class Employee():
     def __init__(self, name, start_date):
         self.name = name
 	self.start_date = start_date
@@ -228,7 +240,7 @@ Edith = Employee("Edith", "2010/07/04")
 
   <p>Search PyPi for at least three useful packages that might assist you.</p>
 
-  <p><span style="opacity:0.0">python-twitter1.3.1, nltk, pykml 0.1.0</span></p>
+  <p class="fragment">python-twitter1.3.1, nltk, pykml 0.1.0</p>
 
 </section>
 
