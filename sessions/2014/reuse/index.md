@@ -13,7 +13,9 @@ year: 2014
 <section markdown="block">
 #####Why Reuse?
 
-When you sit down to write a module of code, there is a very strong probability that you are NOT the first person in the world to need that module.  In most of these cases, the functionality you need has already been written and available for you to use.  This saves you time and the module usually has been rigorously tested for errors.{:.fragment}
+When you sit down to write a module of code, there is a very strong probability that you are NOT the first person in the world to need that module.  In most of these cases, the functionality you need has already been written and available for you to use.  This saves you time and the module usually has been rigorously tested for errors.
+{: .fragment}
+
 </section>
 
 <section markdown="block">
