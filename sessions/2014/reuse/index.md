@@ -1,5 +1,9 @@
 ---
 layout: presentation
+title: Software Engineering Reuse
+authors:
+ - parker
+ - dab
 year: 2014
 ---
 <section markdown="block">
@@ -10,17 +14,28 @@ year: 2014
 </section>
 
 <section markdown="block">
-<h5 style="text-align:center">Why Reuse?</h5>
+#####Why Reuse?
+
 When you sit down to write a module of code, there is a very strong probability that you are NOT the first person in the world to need that module.  In most of these cases, the functionality you need has already been written and available for you to use.  This saves you time and the module usually has been rigorously tested for errors.
+{: .fragment}
+
 </section>
 
 <section markdown="block">
-<h5 style="text-align:center">Types of Reuse</h5>
-Libraries - The programming language authors or a third party has built the functionality into the language or a module of code you can reference.
+#####Types of Reuse
 
-Code Reuse - A module of code written by you or a member on your team can be reused with little or no modification to solve a new problem.
+Libraries
+: The programming language authors or a third party has built the functionality into the language or a module of code you can reference.
+{: .fragment}
 
-Pattern Reuse - The type of problem you are trying to solve has been solved before.  The strategy used to solve it can be reused and implemented in any programming language.
+Code Reuse
+: A module of code written by you or a member on your team can be reused with little or no modification to solve a new problem.
+{: .fragment}
+
+Pattern Reuse
+: The type of problem you are trying to solve has been solved before.  The strategy used to solve it can be reused and implemented in any programming language.
+{: .fragment}
+
 </section>
 
 <section markdown="block">
@@ -49,19 +64,19 @@ Example:  You need to calculate absolute values of numbers in your code module. 
 
 The math module documentation provides the following information:
 
-~~~
+{% highlight python %}
 math.fabs(x)
-Return the absolute value of x.
-~~~
+# Return the absolute value of x.
+{% endhighlight %}
 
 Which you access by importing the module by typing the important statement in the header of your Python script
 and later in your code call fabs(x) with:
 
-~~~
+{% highlight python %}
 import math
 ...  
 y = math.fabs(x)
-~~~
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -187,7 +202,7 @@ you may assume 365 days = 1 year
 
 Some code to get you started.  It might need modification as you discover useful library modules:
 
-~~~
+~~~ python
 class Employee():
     def __init__(self, name, start_date):
         self.name = name
@@ -207,7 +222,8 @@ Exercise 2: You are planning a large software system to be written in Python.  T
 
 Search PyPi for at least three useful packages that might assist you.
 
-<span style="opacity:0.0">python-twitter1.3.1, nltk, pykml 0.1.0</span>
+python-twitter1.3.1, nltk, pykml 0.1.0
+{: .fragment}
 
 </section>
 

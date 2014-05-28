@@ -11,12 +11,8 @@ year: 2014
 <section>
 	<h2>Instructors</h2>
 	<dl>
-		<dt>Carl Pearson</dt><dd>Postdoctoral Researcher, UF</dd>
-		<dt>Tom Hladish</dt><dd>Postdoctoral Researcher, UF</dd>
-		<dt>Dane Brown</dt><dd>Professor of Practice, USNA</dd>
-		<dt>Jonathon Parker</dt><dd>Employed at</dd>
-		<dt>Deanne McPherson</dt><dd>Graduate Student, Eng. something PSU</dd>
-		<dt>Seifu Chonde</dt><dd>Graduate Student, Eng. something PSU</dd>
+		<dt>Seifu Chonde</dt><dd>Graduate Student, PSU</dd>
+		<dt>Deanne McPherson</dt><dd>Graduate Student, PSU</dd>
 	</dl>
 </section>
 
@@ -86,6 +82,14 @@ year: 2014
 	      print "Name : ", self.name,  ", Salary: ", self.salary
 	 {% endhighlight %}
 
+	<aside class="notes">
+	 	<li><b>Class:</b>A user-defined prototype for an object that gives the object some attributes defined for any object of the class. The attributes are data members (class variables and instance variables) and methods. Methods are accessed via dot programming notation.</li>
+		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
+		<li><b>Instance:</b>An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.</li>
+		<li><b>Instantiation:</b>The creation of an instance of a class.</li>
+		<li><b>Method:</b>A special kind of function that is defined in a class definition.</li>
+		<li><b>Object:</b>A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods.</li>
+	</aside>
 </section>
 
 <section>
@@ -114,7 +118,7 @@ year: 2014
 		<li>Adding an attribute e.g. emp1.age = 7</li>
 		<li>Modifying an attribute e.g. emp1.age = 8</li>
 		<li>Deleting an attribute e.g. del emp1.age</li>
-		<li></li>
+		<br>
 		<li>Can also use getattr(obj.name[, default]) to acess the attribute</li>
 		<li>hasattr(obj,name) to check if an attribute exists</li>
 		<li>setattr(obj,name,value) to set an attribute. This creates an attribute if it doesnt exist</li>
@@ -124,7 +128,12 @@ year: 2014
 
 <section>
 	<h5>Python Built-Ins</h5>
-	<p>Python builds in __dict__ dictionary containing class namespace; __doc__ documentation string; __module__ name in which class is defined</p>
+	<p>Python builds in 
+	<ul>
+	<li>__dict__ dictionary containing class namespace</li>
+	<li>__doc__ documentation string</li>
+	<li>__module__ name in which class is defined</li>
+	</ul></p>
 </section>
 <section>
 	<h5>Inheritance and Subclassing</h5>
@@ -139,34 +148,33 @@ year: 2014
 
 <section>
 	{% highlight python %}
-	class Parent:        # define parent class
-	   parentAttr = 100
-	   def __init__(self):
-	      print "Calling parent constructor"
+	class Employee:
+	    'Common base for all employees'
+	    empCount = 0
+	    
+	    def __init__(self, name, salary, isWorking):
+	        self.name = name
+	        self.salary = salary
+	        self.isWorking = isWorking
+	        Employee.empCount += 1
 	
-	   def parentMethod(self):
-	      print 'Calling parent method'
-	
-	   def setAttr(self, attr):
-	      Parent.parentAttr = attr
-	
-	   def getAttr(self):
-	      print "Parent attribute :", Parent.parentAttr
-	
-	class Child(Parent): # define child class
-	   def __init__(self):
-	      print "Calling child constructor"
-	
-	   def childMethod(self):
-	      print 'Calling child method'
-	
-	c = Child()          # instance of child
-	c.childMethod()      # child calls its method
-	c.parentMethod()     # calls parent's method
-	c.setAttr(200)       # again call parent's method
-	c.getAttr()          # again call parent's method
+	class Cook(Employee):
+	    'Common base for all cooks'
+	    cookCount
+	    
+	    def __init__(self,name,salary,isWorking, specialty):
+	        Employee.__init__(self,name, salary,isWorking)
+	        self.specialty=specialty
+	        Cook.cookCount += 1
+	    
+	    def displayCook(self):
+	        print "Name: ", self.name, ", Salary: ", self.salary, ", Is Working: ", self.isWorking, ", Specialty: ", self.specialty
+
+	cook1 = Cook("bob", "salary", False, "specialty")
+	cook1.displayCook()
+	emp1 = Employee(“emp1”, “salary”, False)
+	emp1.displayCook()
 	{% endhighlight %}
-	<p> This returns: Calling child constructor <br>Calling child method<br>Calling parent method<br>Parent attribute : 200 </p>
 
 </section>
 <section>
@@ -190,6 +198,6 @@ year: 2014
 	
 </section>
 <section>
-	<h5>Example</h5>
-	Passing functions as variables to other functions
+	<h5>Determine the Clases Example</h5>
+	
 </section>
