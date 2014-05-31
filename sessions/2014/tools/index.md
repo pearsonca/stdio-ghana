@@ -1,13 +1,11 @@
 ---
 layout: presentation
 year: 2014
+title: Tools
+instructors:
+ - Carl
+ - Dane
 ---
-<section markdown="block">
-# Tools
-
-### Instructors: Carl, Dane
-</section>
-
 <section markdown="block">
 ## What Do You Need to Code?
 

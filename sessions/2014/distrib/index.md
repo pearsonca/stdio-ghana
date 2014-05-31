@@ -6,7 +6,7 @@ instructors:
  - Carl
 ---
 <section markdown="block">
-## What is a computer?
+## Revisit: what is a computer?
 
 <aside class="notes" markdown="block">
 Previous discussion will probably emphasis "serial" thinking.
