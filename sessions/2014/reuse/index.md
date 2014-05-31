@@ -1,17 +1,11 @@
 ---
 layout: presentation
 title: Software Engineering Reuse
-authors:
- - parker
- - dab
+instructors:
+ - Jonathon
+ - Dane
 year: 2014
 ---
-<section markdown="block">
-<h3 style="text-align:center">Software Engineering Reuse</h3>
-<h5 style="text-align:center">Prerequisites: Object Oriented Programming</h5>
-<dt>Jonathon Parker</dt><dd>Employed at iBASEt</dd>
-<dt>Dane Brown</dt><dd>Professor of Practice, USNA</dd>
-</section>
 
 <section markdown="block">
 #####Why Reuse?
@@ -46,9 +40,9 @@ The phrase that comes to mind for this situation is:
 
 <section markdown="block">
 <h5 style="text-align:center">Libraries</h5>
-  
+
 Python Standard Library - This library comes with every release of Python.  There are so many modules we could spend a full 2 weeks getting familiar with them.  A non-exhaustive list includes packages for:
-  
+
  * Strings
  * Data types
  * Mathematics
@@ -56,7 +50,7 @@ Python Standard Library - This library comes with every release of Python.  Ther
  * File System interaction
  * Data Archiving and Persistence
  * Communications (especially Internet protocols)
- * And much, much more!	
+ * And much, much more!
 </section>
 
 <section markdown="block">
@@ -226,5 +220,3 @@ python-twitter1.3.1, nltk, pykml 0.1.0
 {: .fragment}
 
 </section>
-
-

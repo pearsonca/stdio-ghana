@@ -1,22 +1,11 @@
 ---
 layout: presentation
 year: 2014
+title: Python OOP
+instructors:
+ - Seifu
+ - Deanne
 ---
-<section>
-	<h1>STDIO Ghana</h1>
-	<h3><i>a course on</i></h3>
-	<h3>Software Engineering</h3>
-	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
-</section>
-<section>
-	<h2>Instructors</h2>
-	<dl>
-		<dt>Seifu Chonde</dt><dd>Graduate Student, PSU</dd>
-		<dt>Deanne McPherson</dt><dd>Graduate Student, PSU</dd>
-	</dl>
-</section>
-
-
 <section>
 	<h5>Activity</h5>
 	This will include dictionarys and lists
@@ -31,7 +20,7 @@ year: 2014
 		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
 		<li><b>Instance:</b>An individual object of a certain class.</li>
 	</ul>
-	
+
 	<aside class="notes">
 	 	<li><b>Class:</b>A user-defined prototype for an object that gives the object some attributes defined for any object of the class. The attributes are data members (class variables and instance variables) and methods. Methods are accessed via dot programming notation.</li>
 		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
@@ -43,15 +32,15 @@ year: 2014
 </section>
 
 <section>
-	
+
 	<h5>Creating Classes</h5>
 	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
 	{% highlight py %}
 	class ClassName:
 		#Optional class documentation string
-		class_suite	
+		class_suite
 	{% endhighlight %}
-	
+
 	<aside class="notes">
 		class: ClassName
 		Inheritance: class_suite
@@ -59,25 +48,25 @@ year: 2014
 </section>
 
 <section>
-	
+
 	<h5>Employee Class Example</h5>
 	{% highlight python %}
 	class Employee:
 	   #Common base class for all employees
 	   empCount = 0 #this is a class variable accessed by Employee.empCount
-	
+
 	   def __init__(self, name, salary):
 	      #this is the class constructor/initialization method called
 	      #when an instance is created
 	      self.name = name
 	      self.salary = salary
 	      Employee.empCount += 1
-	   
+
 	   def displayCount(self):
-	     #all methods start with self as an argument;however, when 
+	     #all methods start with self as an argument;however, when
 	     #you call a method python adds self to your list
 	     print "Total Employee %d" % Employee.empCount
-	
+
 	   def displayEmployee(self):
 	      print "Name : ", self.name,  ", Salary: ", self.salary
 	 {% endhighlight %}
@@ -106,10 +95,10 @@ year: 2014
 	<p>You can invoke an internal method of an instantiated object using the dot operator</p>
 	{% highlight python %}
 	#This executes print Name : , self.name,  , Salary: , self.salary
-	emp1.displayEmployee() 
+	emp1.displayEmployee()
 	print "total Employee %d" % Employee.empCount
 	{% endhighlight %}
-	
+
 </section>
 
 <section>
@@ -128,7 +117,7 @@ year: 2014
 
 <section>
 	<h5>Python Built-Ins</h5>
-	<p>Python builds in 
+	<p>Python builds in
 	<ul>
 	<li>__dict__ dictionary containing class namespace</li>
 	<li>__doc__ documentation string</li>
@@ -151,22 +140,22 @@ year: 2014
 	class Employee:
 	    'Common base for all employees'
 	    empCount = 0
-	    
+
 	    def __init__(self, name, salary, isWorking):
 	        self.name = name
 	        self.salary = salary
 	        self.isWorking = isWorking
 	        Employee.empCount += 1
-	
+
 	class Cook(Employee):
 	    'Common base for all cooks'
 	    cookCount
-	    
+
 	    def __init__(self,name,salary,isWorking, specialty):
 	        Employee.__init__(self,name, salary,isWorking)
 	        self.specialty=specialty
 	        Cook.cookCount += 1
-	    
+
 	    def displayCook(self):
 	        print "Name: ", self.name, ", Salary: ", self.salary, ", Is Working: ", self.isWorking, ", Specialty: ", self.specialty
 
@@ -184,20 +173,20 @@ year: 2014
 	   def __init__(self, a, b):
 	      self.a = a
 	      self.b = b
-	
+
 	   def __str__(self):
 	      return 'Vector (%d, %d)' % (self.a, self.b)
-	   
+
 	   def __add__(self,other):
 	      return Vector(self.a + other.a, self.b + other.b)
-	
+
 	v1 = Vector(2,10)
 	v2 = Vector(5,-2)
 	print v1 + v2 'This prints Vector(7,8)'
 	{% endhighlight %}
-	
+
 </section>
 <section>
 	<h5>Determine the Clases Example</h5>
-	
+
 </section>

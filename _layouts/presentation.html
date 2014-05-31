@@ -13,7 +13,9 @@
 <body>
 <div class="reveal"><div class="slides">
 <section>
-<h2>{{ page.title }}</h2>	
+<h2>{{ page.title }}</h2>
+{% if page.subtitle %}<h3><em>{{ page.subtitle }}</em></h3>{% endif %}
+{% if page.instructors %}{{ page.instructors | join: ', ' }}{% endif %}
 </section>
 {{ content }}
 </div></div>

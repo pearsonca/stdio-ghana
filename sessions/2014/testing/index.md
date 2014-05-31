@@ -1,6 +1,10 @@
 ---
 layout: presentation
 year: 2014
+title: Testing
+instructors:
+ - Carl
+ - Jonathon
 ---
 <section markdown="block">
 # Testing

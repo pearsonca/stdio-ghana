@@ -1,6 +1,14 @@
 ---
 layout: presentation
 year: 2014
+title: STDIO Ghana
+subtitle: a course on Software Engineering
+instructors:
+ - Carl
+ - Dane
+ - Deanne
+ - Jonathon
+ - Seifu
 ---
 <section>
 	<h1>STDIO Ghana</h1>

@@ -1,24 +1,11 @@
 ---
 layout: presentation
 year: 2014
+title: Python Advanced
+instructors:
+ - Seifu
+ - Deanne
 ---
-<section>
-	<h1>STDIO Ghana</h1>
-	<h3><i>a course on</i></h3>
-	<h3>Software Engineering</h3>
-	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
-</section>
-<section>
-	<h1>Python advanced</h1>
-</section>
-<section>
-	<h2>Instructors</h2>
-	<dl>
-		<dt>Seifu Chonde</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
-		<dt>Deanne McPherson</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
-
-	</dl>
-</section>
 <section>
 	<h3>Python Basics Recap</h3>
 	<ol>
@@ -30,7 +17,7 @@ year: 2014
 </section>
 <section>
 	<h3>Variable Scope</h3>
-	
+
 	{% highlight py %}
 	class BankAccount(object):
 	    def __init__(self, initial_balance=0):
@@ -45,7 +32,7 @@ year: 2014
 	my_account.withdraw(5)
 	print my_account.balance
 	{% endhighlight %}
-	
+
 </section>
 
 
@@ -109,7 +96,7 @@ year: 2014
 	<h3>Comprehensions</h3>
 Concise way to create lists.
 	{% highlight py %}
-	mylist = [expression(i) for i in old_list if filter(i)]	
+	mylist = [expression(i) for i in old_list if filter(i)]
 	{% endhighlight %}
 </section>
 
@@ -119,7 +106,7 @@ Concise way to create lists.
 	squares = []
 	for x in range(10):
 	    squares.append(x**2)
-	
+
 	# Or you can use list comprehensions to get the same result:
 	squares2 = [x**2 for x in range(10)]
 	{% endhighlight %}
@@ -128,7 +115,7 @@ Concise way to create lists.
 <section>
 	{% highlight py %}
 	 [x+y for x in [10,30,50] for y in [20,40,60]]
-	 #[30, 50, 70, 50, 70, 90, 70, 90, 110]	
+	 #[30, 50, 70, 50, 70, 90, 70, 90, 110]
 	{% endhighlight %}
 </section>
 
@@ -227,15 +214,15 @@ Concise way to create lists.
 </section>
 
 <section>
-	
+
 	<h5>Creating Classes</h5>
 	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
 	{% highlight py %}
 	class ClassName:
 		#Optional class documentation string
-		class_suite	
+		class_suite
 	{% endhighlight %}
-	
+
 </section>
 <section>
 	<h5>Class Example</h5>
@@ -253,14 +240,14 @@ Concise way to create lists.
 	{% highlight py %}
 	class Employee:
 	    'Common base for all employees'
-	    
+
 	    def __init__(self, name, salary = 20):
 	        self.name = name
 	        self.salary = salary
-	        
+
 	    def displayEmployee(self):
 	        print "Name: ", self.name, ", Salary: ", self.salary
-	
+
 	emp1 = Employee('name')
 	emp1.displayEmployee()
 	emp2 = Employee('name2', 25)
@@ -275,19 +262,19 @@ Concise way to create lists.
 	{% highlight py %}
 	Class Employee:
 	    'Common base for all employees'
-	
+
 	    def __init__(self, name, salary = 20):
 	        self.name = name
 	        self.salary = salary
-	
+
 	    def displayEmployee(self):
 	        print "Name: ", self.name, ", Salary: ", self.salary
-	
+
 	def printEmployees(*varEmployees):
 	    for emp in varEmployees:
 	        if isinstance(emp, Employee):
 	            emp.displayEmployee()
-	
+
 	emp1 = Employee('name')
 	emp2 = Employee('name2', 25)
 	printEmployees(emp1, emp2)
@@ -304,7 +291,7 @@ Concise way to create lists.
 	#or
 	g = lambda x: x**2
 	print g(8)
-	
+
 	#guess the output here then try it!
 	def make_incrementor (n): return lambda x:x +n
 	f = make_incrementor(2)
@@ -313,5 +300,3 @@ Concise way to create lists.
 	print make_incrementor(22)(33)
 	{% endhighlight %}
 </section>
-
-

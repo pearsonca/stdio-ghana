@@ -1,11 +1,10 @@
 ---
 layout: presentation
 year: 2014
+title: User Interfaces
+instructors:
+ - Seifu
 ---
-<section markdown="block">
-# User Interfaces
-</section>
-
 <section markdown="block">
 ### What are we talking about?
 
