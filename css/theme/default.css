@@ -56,6 +56,23 @@ body {
   margin: 0 0 0 1em;
 }
 
+.reveal dl {
+  display: block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal dt {
+  float: left;
+  clear: both;
+  margin-right:0.5em;
+  font-weight:bold;
+}
+
+.reveal dt::after {
+  content:":"
+}
+
 /*********************************************
  * LINKS
  *********************************************/
