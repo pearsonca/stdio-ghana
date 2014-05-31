@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title></title>
+  <title>Python OOP</title>
   <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
   <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
   <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
@@ -13,28 +13,24 @@
 <body>
 <div class="reveal"><div class="slides">
 <section>
-<h2></h2>	
-</section>
-<section>
-	<h1>STDIO Ghana</h1>
-	<h3><i>a course on</i></h3>
-	<h3>Software Engineering</h3>
-	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
-</section>
-<section>
-	<h2>Instructors</h2>
-	<dl>
-		<dt>Seifu Chonde</dt><dd>Graduate Student, PSU</dd>
-		<dt>Deanne McPherson</dt><dd>Graduate Student, PSU</dd>
-	</dl>
-</section>
+<h2>Python OOP</h2>
 
-
+Seifu, Deanne
+</section>
 <section>
 	<h5>Activity</h5>
-	This will include dictionarys and lists
+	Make lists of main dishes, side dishes, and drinks. (beef, pork, goat, sheep, chicken, fish); (akple, kenkey/dokonu, fufu, omo tuo); (water, juice, soda). Make a dictionary that has the type of food, name, and amount inventory.
 </section>
 
+<section>
+	<h5>Why Object Oriented Programming</h5>
+	<ul>
+	<li>Common data and functions (inheritance)</li><li>Protect data (encapsulation)</li></ul>
+	<aside class="notes" block="markdown">
+	Say I run a restaurant where I have several employees that have the same set of attributes that I care about; perform similar tasks; get paid certain amounts; etc. It is convenient to have template code that each instance (employee) can inherit quickly and I can reuse.
+	At the end of this I will make you all determine objects for a real-world problem.
+	</aside>
+</section>
 
 <section>
 	<h5>Overview of OOP Terminology</h5>
@@ -44,7 +40,7 @@
 		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
 		<li><b>Instance:</b>An individual object of a certain class.</li>
 	</ul>
-	
+
 	<aside class="notes">
 	 	<li><b>Class:</b>A user-defined prototype for an object that gives the object some attributes defined for any object of the class. The attributes are data members (class variables and instance variables) and methods. Methods are accessed via dot programming notation.</li>
 		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
@@ -56,13 +52,13 @@
 </section>
 
 <section>
-	
+
 	<h5>Creating Classes</h5>
 	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
 	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
 		<span class="c">#Optional class documentation string</span>
 		<span class="n">class_suite</span></code></pre></div>
-	
+
 	<aside class="notes">
 		class: ClassName
 		Inheritance: class_suite
@@ -70,24 +66,24 @@
 </section>
 
 <section>
-	
+
 	<h5>Employee Class Example</h5>
 	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
 	   <span class="c">#Common base class for all employees</span>
 	   <span class="n">empCount</span> <span class="o">=</span> <span class="mi">0</span> <span class="c">#this is a class variable accessed by Employee.empCount</span>
-	
+
 	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">):</span>
 	      <span class="c">#this is the class constructor/initialization method called</span>
 	      <span class="c">#when an instance is created</span>
 	      <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 	      <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
 	      <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span> <span class="o">+=</span> <span class="mi">1</span>
-	   
+
 	   <span class="k">def</span> <span class="nf">displayCount</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-	     <span class="c">#all methods start with self as an argument;however, when </span>
+	     <span class="c">#all methods start with self as an argument;however, when</span>
 	     <span class="c">#you call a method python adds self to your list</span>
 	     <span class="k">print</span> <span class="s">&quot;Total Employee </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span>
-	
+
 	   <span class="k">def</span> <span class="nf">displayEmployee</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 	      <span class="k">print</span> <span class="s">&quot;Name : &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>  <span class="s">&quot;, Salary: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">salary</span></code></pre></div>
 
@@ -112,9 +108,9 @@
 	<h5>Using a class</h5>
 	<p>You can invoke an internal method of an instantiated object using the dot operator</p>
 	<div class="highlight"><pre><code class="python"><span class="c">#This executes print Name : , self.name,  , Salary: , self.salary</span>
-	<span class="n">emp1</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span> 
+	<span class="n">emp1</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span>
 	<span class="k">print</span> <span class="s">&quot;total Employee </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span></code></pre></div>
-	
+
 </section>
 
 <section>
@@ -133,7 +129,7 @@
 
 <section>
 	<h5>Python Built-Ins</h5>
-	<p>Python builds in 
+	<p>Python builds in
 	<ul>
 	<li>__dict__ dictionary containing class namespace</li>
 	<li>__doc__ documentation string</li>
@@ -153,22 +149,22 @@
 	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
 	    <span class="s">&#39;Common base for all employees&#39;</span>
 	    <span class="n">empCount</span> <span class="o">=</span> <span class="mi">0</span>
-	    
+
 	    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span> <span class="n">isWorking</span><span class="p">):</span>
 	        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 	        <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
 	        <span class="bp">self</span><span class="o">.</span><span class="n">isWorking</span> <span class="o">=</span> <span class="n">isWorking</span>
 	        <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span> <span class="o">+=</span> <span class="mi">1</span>
-	
+
 	<span class="k">class</span> <span class="nc">Cook</span><span class="p">(</span><span class="n">Employee</span><span class="p">):</span>
 	    <span class="s">&#39;Common base for all cooks&#39;</span>
 	    <span class="n">cookCount</span>
-	    
+
 	    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">salary</span><span class="p">,</span><span class="n">isWorking</span><span class="p">,</span> <span class="n">specialty</span><span class="p">):</span>
 	        <span class="n">Employee</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span><span class="n">isWorking</span><span class="p">)</span>
 	        <span class="bp">self</span><span class="o">.</span><span class="n">specialty</span><span class="o">=</span><span class="n">specialty</span>
 	        <span class="n">Cook</span><span class="o">.</span><span class="n">cookCount</span> <span class="o">+=</span> <span class="mi">1</span>
-	    
+
 	    <span class="k">def</span> <span class="nf">displayCook</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 	        <span class="k">print</span> <span class="s">&quot;Name: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;, Salary: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">salary</span><span class="p">,</span> <span class="s">&quot;, Is Working: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">isWorking</span><span class="p">,</span> <span class="s">&quot;, Specialty: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">specialty</span>
 
@@ -184,21 +180,24 @@
 	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 	      <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
 	      <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
-	
+
 	   <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 	      <span class="k">return</span> <span class="s">&#39;Vector (</span><span class="si">%d</span><span class="s">, </span><span class="si">%d</span><span class="s">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
-	   
+
 	   <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">other</span><span class="p">):</span>
 	      <span class="k">return</span> <span class="n">Vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
-	
+
 	<span class="n">v1</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
 	<span class="n">v2</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
-	<span class="k">print</span> <span class="n">v1</span> <span class="o">+</span> <span class="n">v2</span> <span class="s">&#39;This prints Vector(7,8)&#39;</span></code></pre></div>
-	
+	<span class="k">print</span> <span class="n">v1</span> <span class="o">+</span> <span class="n">v2</span> <span class="c">#This prints &#39;Vector(7,8)&#39;</span></code></pre></div>
+
 </section>
 <section>
-	<h5>Determine the Clases Example</h5>
-	
+<h5>Override Example</h5>
+Write an override that compares two Vectors to see if they are the same by comparing the coordinates.
+</section>
+<section>
+	<h5>Determine the Classes Example</h5>
 </section>
 
 </div></div>
