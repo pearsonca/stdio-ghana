@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+	<h1>Python basics</h1>
+</section>
+<section>
+	<h2>Instructors</h2>
+	<dl>
+		<dt>Deanne McPherson</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
+		<dt>Seifu Chonde</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
+	</dl>
+</section>
+<section>
+	<h2>Python Introduction</h2>
+	<p>Brief discussion on advantages of Python and similarities to other languages</p>
+</section>
+<section>
+	<h2>Basic Syntax</h2>
+	<ul>
+		<li>Lines & Indentation</li>
+		<li>Print</li>
+		<li>Case-sensativity</li>
+		<li>Reserved words</li>
+	</ul>
+	<h2>Variable Types</h2>
+	<ul>
+		<li>Numbers: Integer, Float, Boolean, Long, Complex</li>
+		<li>String</li>
+		<li>List</li>
+		<li>Tuple</li>
+		<li>Dictionary</li>
+	</ul>
+	
+</section>
+<section>
+	<h2>Basic Operators</h2>
+	
+	<h2>Numbers</h2>
+	<p>+, -, *, /, %, **, //</p>
+	<h2>Strings</h2>
+	<h5>Comparison</h5>
+	<p>==, !=, <>, >, <, <=, >= </p>
+	<h5>Assignment</h5>
+	<p>=, +=, -=,*=, /=, %=, **=, //=</p>
+	
+</section>
+<section>
+	<h2>If, else, nested ifs</h2>
+	
+</section>
+<section>
+	<h3>While loops for loops</h3>
+	
+	<h3>nested loops</h3>
+	
+	<h3>loop control</h3>
+	
+</section>
+<section>
+	<h3>Lists</h3>
+	
+</section>
+<section>
+	<h3>Dictionary</h3>
+	
+</section>
+<section>
+	<h3>Introduction to Functions</h3>
+	<p>A function includes the 'def' keyword </p>
+	<div class="highlight"><pre><code class="python"><span class="s">&#39;Arguments are optional in the function&#39;</span>
+	<span class="k">def</span> <span class="nf">functionName</span> <span class="p">(</span><span class="n">optArg1</span><span class="p">,</span><span class="n">optArg2</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+		<span class="s">&#39;set 	something&#39;</span>
+		<span class="s">&#39;return something&#39;</span>
+		<span class="s">&#39;print 	something&#39;</span></code></pre></div>
+</section>
+<section>
+	<h3>Some examples</h3>
+	<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">printFunction</span> <span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">greeting</span><span class="p">):</span>
+		<span class="k">print</span> <span class="s">&quot;Hello, </span><span class="si">%s</span><span class="s">, From My Function, I wish you </span><span class="si">%s</span><span class="s">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">greeting</span><span class="p">)</span><span class="s">&quot;</span></code></pre></div>
+	<br>
+	<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">sumFunction</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+		<span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span></code></pre></div>
+
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <title>Parallel Python</title>
+  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2>Parallel Python</h2>	
+</section>
+<section>
+  <p><a href="http://www.parallelpython.com/content/view/15/30/#QUICKSMP">Parallel Python Quickstart</a></p>
+</section>
+
+<section>
+  <h2 id="familiar">Familiar?</h2>
+  <aside class="notes">
+    <p>Looks exactly like the Java <code>Executor -&gt; Future</code> model.</p>
+
+    <p>Find some other good syntax comparisons based on their langs.</p>
+  </aside>
+</section>
+
+<section>
+  <h2 id="on-a-compute-cluster">On a Compute Cluster</h2>
+</section>
+
+<section>
+  <p>Exercise to demonstrate speed advantage</p>
+</section>
+
+<section>
+  <p>Exercise to demonstrate shared state concerns</p>
+</section>
+
+<section>
+  <h2 id="pure-python--parallel-vs-c">Pure Python + Parallel vs. C++?</h2>
+  <aside class="notes">
+    <p>When does it make sense to deal with parallelizing your code vs finding a c/cpp
+library and using it?</p>
+  </aside>
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

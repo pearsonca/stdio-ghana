@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <title>Effective OOP</title>
+  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2>Effective OOP</h2>	
+</section>
+<section>
+  <h3 id="why-use-objects">Why Use Objects?</h3>
+  <aside class="notes">
+    <p>QA with students; I’d say the gist of it is that thinking with objects lets one
+<em>do</em> software engineering.  Goal of this session would be to have the students
+experience some ways in which objects enable best practices.</p>
+  </aside>
+</section>
+
+<section>
+  <h3 id="dividing-work">Dividing Work</h3>
+
+  <aside class="notes">
+    <p>interfaces / contracts as a way to divy up a job</p>
+
+    <ul>
+      <li>describes which side does what</li>
+      <li>having them lets you focus on one piece at a time</li>
+      <li>or if working in a team, dividing up work between developers</li>
+      <li>disciplined use keeps you from entangling ideas too much</li>
+      <li>when used with good API thinking, also a powerful way to communicate about
+a data structure</li>
+    </ul>
+
+    <p>Use some of the Python OOP syntax to have take something bad and make it good?</p>
+  </aside>
+
+</section>
+
+<section>
+  <h3 id="do-not-repeat-yourself">Do Not Repeat Yourself</h3>
+
+  <aside class="code">
+    <p>Using abstract classes to provide facade.  Using generics
+(aka, typing / interfaces) to writing algorithms once (e.g., sorting)</p>
+  </aside>
+</section>
+
+<section>
+  <h3 id="thinking-with-tests">Thinking with Tests</h3>
+
+  <aside class="notes">
+    <p>Revisit mock objects.</p>
+
+    <p>If you’ve translated requirements into tests, and then digested those
+requirements into a series of tests, also corresponding with tests,
+can think of combination of interface + tests as being the specification
+for objects.</p>
+  </aside>
+</section>
+
+<section>
+  <h3 id="self-documenting-code">Self Documenting Code</h3>
+  <aside class="notes">
+    <p>Objects are a means of saying these things go together.</p>
+
+    <p>Also, a way to make other things not be concerned with the details.  Let’s
+the code speak more to what it’s doing.</p>
+  </aside>
+</section>
+
+<section>
+  <h2 id="opp-danger-zone">OPP Danger Zone</h2>
+</section>
+
+<section>
+  <h2 id="too-much-magic">Too Much Magic</h2>
+
+  <aside class="notes">
+    <p>When things are too abstracted to be able to figure out what’s going on where.</p>
+
+    <p>Hard to debug problems – often because interpreter reports errors in strange
+places.</p>
+  </aside>
+</section>
+
+<section>
+  <h2 id="inheritence-vs-composition">Inheritence vs Composition</h2>
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

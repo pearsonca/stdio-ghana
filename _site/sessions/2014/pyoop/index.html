@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+	<h1>STDIO Ghana</h1>
+	<h3><i>a course on</i></h3>
+	<h3>Software Engineering</h3>
+	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
+</section>
+<section>
+	<h2>Instructors</h2>
+	<dl>
+		<dt>Carl Pearson</dt><dd>Postdoctoral Researcher, UF</dd>
+		<dt>Tom Hladish</dt><dd>Postdoctoral Researcher, UF</dd>
+		<dt>Dane Brown</dt><dd>Professor of Practice, USNA</dd>
+		<dt>Jonathon Parker</dt><dd>Employed at</dd>
+		<dt>Deanne McPherson</dt><dd>Graduate Student, Eng. something PSU</dd>
+		<dt>Seifu Chonde</dt><dd>Graduate Student, Eng. something PSU</dd>
+	</dl>
+</section>
+
+
+<section>
+	<h5>Activity</h5>
+	This will include dictionarys and lists
+</section>
+
+
+<section>
+	<h5>Overview of OOP Terminology</h5>
+	<p>Reference tutorialspoint</p>
+	<ul>
+		<li><b>Class:</b>A user-defined prototype for an object.</li>
+		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
+		<li><b>Instance:</b>An individual object of a certain class.</li>
+	</ul>
+	
+	<aside class="notes">
+	 	<li><b>Class:</b>A user-defined prototype for an object that gives the object some attributes defined for any object of the class. The attributes are data members (class variables and instance variables) and methods. Methods are accessed via dot programming notation.</li>
+		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
+		<li><b>Instance:</b>An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.</li>
+		<li><b>Instantiation:</b>The creation of an instance of a class.</li>
+		<li><b>Method:</b>A special kind of function that is defined in a class definition.</li>
+		<li><b>Object:</b>A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods.</li>
+	</aside>
+</section>
+
+<section>
+	
+	<h5>Creating Classes</h5>
+	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
+	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
+		<span class="c">#Optional class documentation string</span>
+		<span class="n">class_suite</span></code></pre></div>
+	
+	<aside class="notes">
+		class: ClassName
+		Inheritance: class_suite
+	</aside>
+</section>
+
+<section>
+	
+	<h5>Employee Class Example</h5>
+	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+	   <span class="c">#Common base class for all employees</span>
+	   <span class="n">empCount</span> <span class="o">=</span> <span class="mi">0</span> <span class="c">#this is a class variable accessed by Employee.empCount</span>
+	
+	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">):</span>
+	      <span class="c">#this is the class constructor/initialization method called</span>
+	      <span class="c">#when an instance is created</span>
+	      <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+	      <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
+	      <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span> <span class="o">+=</span> <span class="mi">1</span>
+	   
+	   <span class="k">def</span> <span class="nf">displayCount</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	     <span class="c">#all methods start with self as an argument;however, when </span>
+	     <span class="c">#you call a method python adds self to your list</span>
+	     <span class="k">print</span> <span class="s">&quot;Total Employee </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span>
+	
+	   <span class="k">def</span> <span class="nf">displayEmployee</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">print</span> <span class="s">&quot;Name : &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>  <span class="s">&quot;, Salary: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">salary</span></code></pre></div>
+
+</section>
+
+<section>
+	<h5>Creating an object instance</h5>
+	<p>Simply create instances of a class by calling the class name and passing whatever arguements __init__ accepts</p>
+	<div class="highlight"><pre><code class="python"><span class="c">#Create an Employee named Carl with a salary of 20</span>
+	<span class="n">emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">&quot;Carl&quot;</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span></code></pre></div>
+</section>
+
+<section>
+	<h5>Using a class</h5>
+	<p>You can invoke an internal method of an instantiated object using the dot operator</p>
+	<div class="highlight"><pre><code class="python"><span class="c">#This executes print Name : , self.name,  , Salary: , self.salary</span>
+	<span class="n">emp1</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span> 
+	<span class="k">print</span> <span class="s">&quot;total Employee </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span></code></pre></div>
+	
+</section>
+
+<section>
+	<h5>Going beyond the basics</h5>
+	<ul>
+		<li>Adding an attribute e.g. emp1.age = 7</li>
+		<li>Modifying an attribute e.g. emp1.age = 8</li>
+		<li>Deleting an attribute e.g. del emp1.age</li>
+		<li></li>
+		<li>Can also use getattr(obj.name[, default]) to acess the attribute</li>
+		<li>hasattr(obj,name) to check if an attribute exists</li>
+		<li>setattr(obj,name,value) to set an attribute. This creates an attribute if it doesnt exist</li>
+		<li>delattr(obj,name) to delete an attribute.</li>
+	</ul>
+</section>
+
+<section>
+	<h5>Python Built-Ins</h5>
+	<p>Python builds in __dict__ dictionary containing class namespace; __doc__ documentation string; __module__ name in which class is defined</p>
+</section>
+<section>
+	<h5>Inheritance and Subclassing</h5>
+	<p>In many programs it will be useful to have parent classes that can be used in child classes. The new, child class will inherit the methods and attributes of its parents class. Additionally, the child may include overrides. Let's look at an example.</p>
+	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">SubClassName</span> <span class="p">(</span><span class="n">ParentClass1</span><span class="p">[,</span><span class="n">ParentClass2</span><span class="p">,</span> <span class="o">...</span><span class="p">]):</span>
+		<span class="c">#Optional class documentation string#</span>
+		<span class="n">class_suite</span></code></pre></div>
+	<p>Derived classes are written similar to their base classes</p>
+</section>
+
+<section>
+	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">Parent</span><span class="p">:</span>        <span class="c"># define parent class</span>
+	   <span class="n">parentAttr</span> <span class="o">=</span> <span class="mi">100</span>
+	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">print</span> <span class="s">&quot;Calling parent constructor&quot;</span>
+	
+	   <span class="k">def</span> <span class="nf">parentMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">print</span> <span class="s">&#39;Calling parent method&#39;</span>
+	
+	   <span class="k">def</span> <span class="nf">setAttr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
+	      <span class="n">Parent</span><span class="o">.</span><span class="n">parentAttr</span> <span class="o">=</span> <span class="n">attr</span>
+	
+	   <span class="k">def</span> <span class="nf">getAttr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">print</span> <span class="s">&quot;Parent attribute :&quot;</span><span class="p">,</span> <span class="n">Parent</span><span class="o">.</span><span class="n">parentAttr</span>
+	
+	<span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Parent</span><span class="p">):</span> <span class="c"># define child class</span>
+	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">print</span> <span class="s">&quot;Calling child constructor&quot;</span>
+	
+	   <span class="k">def</span> <span class="nf">childMethod</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">print</span> <span class="s">&#39;Calling child method&#39;</span>
+	
+	<span class="n">c</span> <span class="o">=</span> <span class="n">Child</span><span class="p">()</span>          <span class="c"># instance of child</span>
+	<span class="n">c</span><span class="o">.</span><span class="n">childMethod</span><span class="p">()</span>      <span class="c"># child calls its method</span>
+	<span class="n">c</span><span class="o">.</span><span class="n">parentMethod</span><span class="p">()</span>     <span class="c"># calls parent&#39;s method</span>
+	<span class="n">c</span><span class="o">.</span><span class="n">setAttr</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>       <span class="c"># again call parent&#39;s method</span>
+	<span class="n">c</span><span class="o">.</span><span class="n">getAttr</span><span class="p">()</span>          <span class="c"># again call parent&#39;s method</span></code></pre></div>
+	<p> This returns: Calling child constructor <br>Calling child method<br>Calling parent method<br>Parent attribute : 200 </p>
+
+</section>
+<section>
+	<p>Overriding methods can be useful</p>
+	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">Vector</span><span class="p">:</span>
+	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+	      <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
+	      <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+	
+	   <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">return</span> <span class="s">&#39;Vector (</span><span class="si">%d</span><span class="s">, </span><span class="si">%d</span><span class="s">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
+	   
+	   <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">other</span><span class="p">):</span>
+	      <span class="k">return</span> <span class="n">Vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
+	
+	<span class="n">v1</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+	<span class="n">v2</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+	<span class="k">print</span> <span class="n">v1</span> <span class="o">+</span> <span class="n">v2</span> <span class="s">&#39;This prints Vector(7,8)&#39;</span></code></pre></div>
+	
+</section>
+<section>
+	<h5>Example</h5>
+	Passing functions as variables to other functions
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

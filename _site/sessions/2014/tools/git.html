@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+  <title>git</title>
+  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2>git</h2>	
+</section>
+<section>
+  <h2 id="what-do-you-work-on">What do you work on?</h2>
+
+  <aside class="notes">
+    <p>Q&amp;A (1-2ish min per person, up to 10ish minutes - for people not inclined to answer, no-opt out with "give 1 example, say one good thing about it, one bad thing")</p>
+
+    <ul>
+      <li>what projects do you work on with other people?</li>
+      <li>how do you share that work?</li>
+      <li>what’s good about those methods?  what problems you see?</li>
+      <li>trying to incorporate their comments / improvements / etc into the work?</li>
+    </ul>
+
+    <p>Discussion should elicit work like</p>
+
+    <ul>
+      <li>documents, small transformation programs / scripts (i.e., potentially single file)</li>
+      <li>items with dependencies; e.g., a report with a figure that is produced from some spreadsheet,
+programs with some minimal objects, or scripts that make use of some other utility code</li>
+      <li>work with many separable dependencies</li>
+    </ul>
+
+    <p>Solutions for sharing might range from</p>
+
+    <ul>
+      <li>print the work, have them comment on it manually</li>
+      <li>email the file / files back and forth</li>
+      <li>shared drive / cloud sharing solution</li>
+      <li>saving multiple versions with modified file names, like XYZ_MMDDYY_FML.txt</li>
+    </ul>
+
+    <p>Expected Pros/Cons</p>
+
+    <ul>
+      <li>pro: expediency, obvious artefact (piece of paper, specific email)</li>
+      <li>con: no log of what people said, lots of duplicate work, possible to misplace / mix up artefacts</li>
+    </ul>
+
+  </aside>
+</section>
+
+<section>
+  <h2 id="version-control">Version Control</h2>
+  <aside class="notes">
+    <p>Q&amp;A: show of hands on who has heard of version control + some specific tools: cvs, svn/subversion, git, mercurial</p>
+
+    <p>Argument: VC addresses those problems by establishing a formal language for working with people
+(including future / past snapshots of yourself).  Pros of formal language: powerful shorthand for common tasks, possible to build tools on top of that expression; cons: have to learn it, plenty of crappy implementations, and can get complicated for not-so common tasks</p>
+
+    <p>Any version control tool you are likely to see searching for one provides few basic notions:</p>
+
+    <ul>
+      <li>what is the reference "thing"</li>
+      <li>what is the current version of that thing</li>
+      <li>what is the history leading up to the current thing</li>
+      <li>who did what during that history</li>
+    </ul>
+
+    <p><code>git</code> provides one additional twist, <strong>alternative versions</strong>, and then tools to use them.  The are some other
+implementation advantages, but that’s all under the hood.</p>
+
+  </aside>
+</section>
+
+<section>
+  <h2 id="serial-git">Serial Git</h2>
+
+  <aside class="notes">
+    <p>Go over the notion of a linear version control.  Point is to have people do "series" work, from multiple locations.
+Show that series work can still have "parallel" issues creep in.</p>
+
+    <p>Steps:</p>
+
+    <ul>
+      <li>fork <a href="https://github.com/pearsonca/hellogit">hellogit</a> project</li>
+      <li>have people make some series of changes, locally and remotely</li>
+      <li>first local changes, then commit + push</li>
+      <li>then remote changes (via web interface) and commit (with insta-push)</li>
+      <li>then local changes (pre pull) and show conflicts resolution</li>
+      <li>have people share commit access, do some changes to the same thing at the same time, show collisions</li>
+    </ul>
+
+  </aside>
+</section>
+
+<section>
+  <h2 id="parallel-git">Parallel Git</h2>
+
+  <aside class="notes">
+    <p>The problems are typical to doing actual work, and are really a byproduct of the typical series / parallel
+problem.  Activity is to highlight how <code>git</code> address parallel "problem": branches.</p>
+
+    <ul>
+      <li>a branch represents parallel work</li>
+      <li>like parallel computation, best when shared state can be avoided</li>
+      <li>how to avoid that kind of shared state? that’s a long discussion - the point of a software engineering course</li>
+    </ul>
+
+    <p>Activities:</p>
+
+    <ul>
+      <li>using forks from previous work, initiate pull requests</li>
+      <li>need some pulls that can be unproblematically parallel</li>
+      <li>ask participants to work together to create commits they think will cause conflicts</li>
+      <li>use these to show merge resolution</li>
+    </ul>
+
+    <p>N.b.: branches don’t eliminate the need for resolving differences, but they make that activity its own "thing"</p>
+  </aside>
+</section>
+
+<section>
+  <h2 id="effective-habits">Effective Habits</h2>
+
+  <aside class="notes">
+
+    <ul>
+      <li>always start and end work with pull from / push to relevant branch</li>
+      <li>before push, always pull from relevant branch (often enforced by <code>sync</code> if you use a GUI)</li>
+      <li>commit, commit, commit</li>
+      <li>afraid to commit b/c fiddling around, not sure, etc?  branch, and then commit, commit, commit</li>
+      <li>have everything you can either in the repository or as explicitly expressed dependency in the repo</li>
+    </ul>
+
+  </aside>
+</section>
+
+<section>
+  <h2 id="troubleshooting">Troubleshooting</h2>
+
+  <aside class="notes">
+
+    <ul>
+      <li>first mantra: don’t panic - you are using distributed version control.
+practically impossible to destroy work unless you set out to destroy work</li>
+      <li>ways to avoid troubleshooting: use the habits we just discussed</li>
+      <li>if you didn’t: easiest sol’n duplicate the stuff you’re trying to hold on to</li>
+      <li>rewind the source until it isn’t screwed, possibly copying out anything that needs to be preserved</li>
+      <li>careful cut and paste back from the duplicated stuff back into what you have</li>
+    </ul>
+
+  </aside>
+</section>
+
+<section>
+  <h2 id="organizing-with-github">Organizing with Github</h2>
+
+  <aside class="notes">
+    <p>Github is not version control.  It offers version control.  Additionally, it offers work organization tools
+and GUIs:</p>
+
+    <ul>
+      <li>issues - things that need to be done / fixed / etc; can be assigned to individuals</li>
+      <li>milestones - collections of issues</li>
+    </ul>
+
+    <p>separate from version control aspect, but VC aware.  Can use commit messages to link issue resolution
+with particular commit / pull request.</p>
+  </aside>
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

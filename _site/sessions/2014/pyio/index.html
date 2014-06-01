@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+	<h1>Python I/O</h1>
+	<h3><i></i></h3>
+	<h3></h3>
+	<p></p>
+</section>
+<section>
+	<h2>Instructor</h2>
+	<dl>
+
+		<dt>Deanne McPherson</dt><dd></dd>
+
+	</dl>
+</section>
+<section>
+	<h2>Basics</h2>
+	<p>File object</p>
+	<p><dt>open and/or create file</dt></p>
+	<p><i>close file</i></p>
+	<p><i>Reading file</i></p>
+	<p><i>Read line by line of a txt file</i></p>
+</section>
+<section>
+	<h2>Examples</h1>
+	<h3><i>To include basic text file</i></h3>
+	<h3><i>Include a csv file</i></h3>
+	<h3><include excel file<i></include></h3>
+	<h3><i>Dealing with column headers</i></h3>
+</section>
+<section>
+	<h2>File management</h2>
+	<h3><i>Splitting and joining files</i></h3>
+</section>
+<section>
+	<h2>Application</h2>
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2></h2>	
+</section>
+<section>
+<h3 style="text-align:center">Software Requirements</h3>
+<h5 style="text-align:center">Prerequisites: Basic Python Programming</h5>
+<dt>Jonathon Parker</dt><dd>Employed at iBASEt</dd>
+<dt>Carl Pearson</dt><dd>Postdoctoral Researcher, UF</dd>
+</section>
+
+<section>
+<center>Why Requirements?</center>
+<br/>
+<p align="left">Unless you are purely a hobbyist or a student, software projects are undertaken because an organization needs the software to increase productivity of workers or to perform a task that cannot be done economically by a human worker.
+<br/>
+<p align="left">The software engineering team must understand what the customer wants out of the software, so that they know what to build.
+</section>
+
+<section>
+<img src="requirements_toon.jpg" WIDTH=513 HEIGHT=594>
+</section>
+
+<section>
+<center>Motivational Quotation #1</center>
+<br/>
+<p align="left">&quot;The hardest part of building a software system is deciding precisely what to build.  No other part of the conceptual work is so difficult as establishing the detailed technical requirements... No other part of the work so cripples the resulting system if done wrong.  No other part is more difficult to rectify later.&quot;
+</section>
+
+<section>
+<center>Motivational Quotation #2</center>
+<br/>
+<p align="left">&quot;Therefore the most important function that software builders do for their clients is the iterative extraction and refinement of the product requirements.  For the truth is, the clients do not know what they want.  They usually do not know what questions must be answered, and they almost never have thought of the problem in the detail that must be specified.&quot;
+<br/><br/>
+<p align="left">Brooks, Fred P. (1986). &quot;No Silver Bullet - Essence and Accident in Software Engineering.&quot; Proceedings of the IFIP Tenth World Computing Conference: 1069-1076.
+</section>
+
+<section>
+<center>What is a Software Requirement?</center>
+<br/>
+<p align="left">A condition or capability needed by a customer to solve a problem or achieve an objective, or needed to satisfy a contract or other formal document.
+</section>
+
+<section>
+<center>Two types of software requirements.</center>
+<br/>
+<p align="left">Functional requirement: What the customer wants the software to do.
+<br/>
+<p align="left">Nonfunctional requirement: Places constraints on how the software meets requirements.
+</section>
+
+<section>
+<center>Important Note...</center>
+<br/>
+<p align="left">Study of the issues surrounding software requirements could be the content of a semester long course, a dissertation, or a book.
+<p align="left">There are many different software development <b><i>methodologies</i></b>, with proponents of particular methods often (bitterly) disagreeing with each other on the subject.
+<p align="left">Each software development methodology has its own style of handling software requirements.
+</section>
+
+<section>
+<center>Thus, I cannot cover them all in one lesson.</center>
+<br/>
+<p align="left">I can, however, briefly give you my opinion on the subject of methodologies. They are situationally dependent.  For certain projects, methodology A can have great success, for other projects the best choice might be methodology B.  Some methodologies that would be ideal cannot be implemented due to external factors, such as contracts.
+</section>
+
+<section>
+<p>So, it is good to read up on or experience many from the following list:
+<br/><br/>
+<center>
+<table>
+<tr>
+<td>
+<ul>
+<li>Waterfall</li>
+<li>Prototype model</li>
+<li>Iterative</li>
+<li>Spiral</li>
+<li>Scrum</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>RUP</li>
+<li>XP</li>
+<li>Agile</li>
+<li>TDD</li>
+<li>FDD</li>
+</ul>
+</td>
+</tr>
+</table>
+</center>
+</section>
+
+<section>
+<center>Another important definition!</center>
+<br/>
+<p align="left">Use Case: A description of important interactions between an actor (usually a person) and the software system.  These interactions must yield a result of value to the actor.  Sometimes diagrams are used to illustrate a use case, but these are rarely sufficient.
+<br/>
+<p align="left">Use cases are a primary means of discovering requirements.
+</section>
+
+<section>
+<center>Software Requirements can be broken into 5 Phases</center>
+<br/>
+<ul>
+<li>Elicitation</li>
+<li>Analysis</li>
+<li>Specification</li>
+<li>Validation</li>
+<li>Management</li>
+</ul>
+</section>
+
+<section>
+<p>Elicitation: Uncovering customer needs and wants and nonfunctional requirements.
+<br/>
+<p align="left">Multiple sources of information can be used.
+<br/>
+<ul>
+<li>Stakeholder Needs - They may have overlapping or disjoint sets of needs.</li>
+<li>Stakeholder Goals - How do the stakeholders see the software benefiting the organization?</li>
+<li>Domain Knowledge - What is common business practice in this industry?</li>
+<li>Operation and organizational environment - Is there consistency or conflicts?</li>
+</ul>
+</section>
+
+<section>
+<p>Multiple techniques can be used for elicitation.
+<br/>
+<ul>
+<li>Interviews - 1v1 </li>
+<li>Facilitated meetings - groups </li>
+<li>Observation - of how proposed users currently perform tasks to be handled by the software </li>
+<li>Scenarios - Software developers describing sets of use cases to the customer.  This can identify misperceptions early on and uncover new requirements. </li>
+</ul>
+<br/>
+<p align="left">These techniques require skill and experience.  This is a different skill set from writing functioning code!
+</section>
+
+<section>
+<p>Analysis: The study of requirements to determine if a system can be built from them.
+<br/>
+<p>Common flaws include requirements that:
+<ul>
+<li>contradict</li>
+<li>are incomplete</li>
+<li>are vague</li>
+<li>are obviously wrong</li>
+</ul>
+</section>
+
+<section>
+<p>Specification:  The formal capture of the requirements into a properly formatted document.  
+<br/>
+<p>Requirements must be:
+<ul>
+<li>Specific - clear, concise and exclusive</li>
+<li>Correct - must accurately describe the system function</li>
+<li>Complete - must describe everything about the system</li>
+<li>Consistent - non-contradictory or not-exclusive of other requirements</li>
+<li>Attainable - possible for software to meet this goal</li>
+<li>Verifiable - can we test that the requirement has been met?</li>
+</ul>
+</section>
+
+<section>
+<p>Validation: An agreement by the customers that the requirements meet their needs.
+<br/>
+<p align="left">This is typically accomplished by the customer reading and agreeing to the specification.
+</section>
+
+<section>
+<p>Management.  
+<br/>
+<p align="left">Why would you need to manage requirements after the specification is validated by the customer?
+</section>
+ 
+<section>
+<p>Two of the many good reasons.
+<br/>
+<p align="left">Because requirements can <b>CHANGE</b> during a project!  When changes to requirements occur, this can necessitate changes to other requirements and code already written.
+<br/>
+<p align="left">Because the completion of requirements must be accounted for and tested before the project is delivered.  One or more members of the development team must verify that all requirements are completed and tested.
+<br/>
+<p>A successful project will have one or more subject matter experts on the entire set of requirements.
+</section>
+
+<section>
+<center>Class Exercise</center>
+<br/>
+<p align="left">The class is broken up into four teams.
+<br/>
+<p align="left">Each team has been invited to compete to work on a software project for "General Science", a science magazine/website.
+<br/>
+<p align="left"> The invitation describes that the software will automatically generate webpages, e-mails, and/or text messages for a marketing campaign.
+</section>
+
+<section>
+<center>Class Exercise 2</center>
+<br/>
+<p align="left">Each team will elicit software requirements, analyze them and draft a specification. 
+<br/>
+<p align="left">Each instructor will role-play a stakeholder and can be interviewed by each team seperately for 10 minutes.
+<br/>
+<p align="left">The team that creates the best specification wins the contract.
+</section>
+
+<section>
+<center>Class Exercise 3</center>
+<br/>
+<p align="left">The following "General Science" stakeholders are available for an interview.
+<br/>
+<ul>
+<li>Chief Executive Officer</li>
+<li>Director of Marketing</li>
+<li>Jr. Science Editor</li>
+<li>Information Technology Director</li>
+</ul>
+</section>
+
+<section>
+<center>Class Exercise 4</center>
+<br/>
+<p align="left">Deliverable: Proposal describing approach.  Ensure that software requirements as understood are addressed in proposal.
+<br/>
+<p align="left">Recommendations:
+<ul>
+<li>Elicit requirements from stakeholders using guidance from slide(s).</li>
+<li>Organize software functions around use cases.</li>
+<li>Seperate requirements into functional and non-functional.</li>
+<li>Look for contradictions and obviously wrong requirements.</li>
+</ul>
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>

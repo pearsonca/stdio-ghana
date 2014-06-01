@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <title>Distributed Computing</title>
+  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section>
+<h2>Distributed Computing</h2>	
+</section>
+<section>
+  <h2 id="what-is-a-computer">What is a computer?</h2>
+
+  <aside class="notes">
+    <p>Previous discussion will probably emphasis “serial” thinking.</p>
+
+    <p>This time highlight the “internet” perspective - when you visit
+a website, that’s your computer talking to another computer.  When
+you load two websites, they don’t always give you all the information
+at the same time.  That’s asynchrony</p>
+  </aside>
+</section>
+
+<section>
+  <h2 id="synchronous">Synchronous</h2>
+
+  <p>vs.</p>
+
+  <h2 id="asynchronous">Asynchronous</h2>
+  <aside class="notes">
+    <p>Quick vocab check.  Then exercise on with groups manually calculating things
+in series vs parallel.</p>
+  </aside>
+
+</section>
+
+<section>
+  <h2 id="what-made-the-parallel-version-easy">What made the parallel version easy?</h2>
+
+  <aside class="notes">
+    <p>Aside from simplicity of operation (do a sum or product, probably)</p>
+
+    <ul>
+      <li>None of the divided pieces depended on the others.</li>
+      <li>the divided pieces were identical</li>
+      <li>the integration step looked exactly like the divided steps</li>
+    </ul>
+
+  </aside>
+</section>
+
+<section>
+  <h2 id="problems-with-shared-state">Problems with Shared State?</h2>
+
+  <aside class="notes">
+    <p>Again, some pen-and-paper exercises.  Dining philosophers?  Repeat the
+earlier exercise, but with a tweak on where they record results.</p>
+
+    <p>Highlight:</p>
+
+    <ul>
+      <li>resource contention</li>
+      <li>result overwrites</li>
+    </ul>
+
+  </aside>
+</section>
+
+<section>
+  <p>High level concepts available when shared state can be avoided:</p>
+
+  <ul>
+    <li>filter, map</li>
+    <li>fold (plain, left, and right), scan</li>
+  </ul>
+
+  <p>Ways to avoid shared state</p>
+
+  <ul>
+    <li>zip, join</li>
+    <li>flatten</li>
+  </ul>
+
+  <aside class="notes">
+    <p>Q&amp;A about the concepts.  Write a dummy API for these concepts, have them
+implement something using it.</p>
+  </aside>
+
+</section>
+
+</div></div>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+</body>
+</html>
