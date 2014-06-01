@@ -3,7 +3,7 @@ layout: blurb
 name: Dane A. Brown
 affiliation: United States Naval Academy
 title: Professor of the Practice
-image: dab.png
+image: dab.jpg
 status: current
 ---
 Test blurb.
