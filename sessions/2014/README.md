@@ -36,7 +36,7 @@ Fri | warmup | Command Line Tricks | Dane+Tom
  | project | Identify libraries that could improve project implementation
  | social | movie night
 Sat/Sun | TBD | class trip, instructor recalibration meeting, half day of free project support
-Mon | warmup | TBD
+Mon | warmup | 20 Questions [Jonathon]
  | AM | Py OOP Syntax | Seifu [Jonathon]
  | PM | Effective OOP | Carl [Seifu]
  | project | Implementation - independent sessions from here on

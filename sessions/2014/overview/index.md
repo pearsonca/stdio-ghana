@@ -1,118 +1,241 @@
 ---
 layout: presentation
 year: 2014
+title: STDIO Ghana
+subtitle: a course on Software Engineering
+instructors:
+ - Carl
+ - Dane
+ - Deanne
+ - Jonathon
+ - Seifu
 ---
-<section>
-	<h1>STDIO Ghana</h1>
-	<h3><i>a course on</i></h3>
-	<h3>Software Engineering</h3>
-	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
-</section>
-<section>
-	<h2>Instructors</h2>
-	<dl>
-		<dt>Carl Pearson</dt><dd>Postdoctoral Researcher, UF</dd>
-		<dt>Tom Hladish</dt><dd>Postdoctoral Researcher, UF</dd>
-		<dt>Dane Brown</dt><dd>Professor of Practice, USNA</dd>
-		<dt>Jonathon Parker</dt><dd>Employed at</dd>
-		<dt>Deanne McPherson</dt><dd>Graduate Student, Eng. something PSU</dd>
-		<dt>Seifu Chonde</dt><dd>Graduate Student, Eng. something PSU</dd>
-	</dl>
-</section>
-<section>
-	<h2>Overview</h2>
-	<p>Two weeks, starting now.  Each day:</p>
-	<p>9 AM: Warm-up, then Python Language Session</p>
-	<p>noon: break for lunch</p>
-	<p>1 PM: Engineering Session, then team work on project.</p>
-	<p>5 PM: break for the day</p>
-	<p>Evening: optional social event - games, movies, instructor presentations</p>
-	<h2>Last Day: Team Demonstrations</h2>
-</section>
-<section>
-<h1>Week 1</h1>
-<table><thead>
-<tr><th>Warmup</th><th>Python</th><th>Eng. Session</th><th>Team Task</th><th>Social</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td>This!</td>
-  <td><a href="{{ site.absoluteurl }}{{ site.baseurl }}/sessions/{{ year }}/basics/" target="_blank">Basics</a></td>
-  <td><a href="tools.html" target="_blank">Tools</a></td>
-  <td><a href="proj.html#day0" target="_blank">set teams / projects</a></td>
-  <td><a href="soc.html#day0" target="_blank">set up personal machines</a></td>
-</tr>
-<tr>
-  <td><a href="https://projecteuler.net/" target="_blank">Proj. Euler</a></td>
-  <td>IO</td>
-  <td>Data in Practice</td>
-  <td><a href="proj.html#day1" target="_blank">Flow Diagrams</a></td>
-  <td><a href="soc.html#day1" target="_blank">Games!</a></td>
-</tr>
-<tr>
-  <td><a href="warmup.html#day2" target="_blank">Games!</a></td>
-  <td>Advanced</td>
-  <td>Tests + Objects</td>
-  <td><a href="proj.html#day2" target="_blank">Tests</a></td>
-  <td><a href="#">Carl Presents: Edison</a></td>
-</tr>
-<tr>
-  <td><a href="https://projecteuler.net/" target="_blank">Proj. Euler Redux</a></td>
-  <td>CLI</td>
-  <td>Interfaces</td>
-  <td><a href="proj.html#day3" target="_blank">Free work</a></td>
-  <td><a href="#">Tom Presents: EpiFire</a></td>
-</tr>
-<tr>
-  <td><a href="#" target="_blank">Logic Gates</a></td>
-  <td>Talking to C++</td>
-  <td>Debugging + Performance</td>
-  <td><a href="proj.html#day3" target="_blank">Free work</a></td>
-  <td><a href="#">Week 1 Wrap</a></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section>
-<h1>Week 2</h1>
-<table><thead>
-<tr><th>Warmup</th><th>Python</th><th>Eng. Session</th><th>Team Task</th><th>Social</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td></td>
-  <td><a href="basics.html" target="_blank">Basics</a></td>
-  <td><a href="tools.html" target="_blank">Tools</a></td>
-  <td><a href="proj.html#day0" target="_blank">set teams / projects</a></td>
-  <td><a href="http://www.fifa.com/worldcup/matches/" target="_blank">Ghana v. US World Cup Match</a></td>
-</tr>
-<tr>
-  <td><a href="https://projecteuler.net/" target="_blank">Proj. Euler</a></td>
-  <td>IO</td>
-  <td>Data in Practice</td>
-  <td><a href="proj.html#day1" target="_blank">Flow Diagrams</a></td>
-  <td><a href="soc.html#day1" target="_blank">Games!</a></td>
-</tr>
-<tr>
-  <td><a href="warmup.html#day2" target="_blank">Games!</a></td>
-  <td>Advanced</td>
-  <td>Tests + Objects</td>
-  <td><a href="proj.html#day2" target="_blank">Tests</a></td>
-  <td><a href="#">Carl Presents: Edison</a></td>
-</tr>
-<tr>
-  <td><a href="https://projecteuler.net/" target="_blank">Proj. Euler Redux</a></td>
-  <td>CLI</td>
-  <td>Interfaces</td>
-  <td><a href="proj.html#day3" target="_blank">Free work</a></td>
-  <td><a href="#">Tom Presents: EpiFire</a></td>
-</tr>
-<tr>
-  <td colspan="2">Presentations</td>
+<section markdown="block">
+##Overview
 
-  <td colspan="2">Group Lunch + Feedback Session</td>
-  <td>Coordinate Continuing Projects</td>
-</tr>
-</tbody>
-</table>
+Two weeks, starting now.  Each day:
+
+- 9 AM: Warm-up, then Python Language Session
+- noon: break for lunch
+- 1 PM: resume with Engineering Session, then team work on project.
+- a bit before 5 PM: team brief on progress + feedback
+- 5 PM: end of coursework
+- Evening (6-6:30 PM): optional social event
+
+On the last day of the course, team demos
+</section>
+
+<section markdown="block">
+####Week 1: Monday
+
+Warmup
+: This!
+
+Language Session
+: [Python Basics](/sessions/{{ year }}/basics/)
+
+Engineering Session
+: [Tools](/sessions/{{ year }}/tools/)
+
+Team Task
+: setup teams, pick projects, organize repositories
+
+Social
+: Setup personal machines
+
+</section>
+
+<section markdown="block">
+####Week 1: Tuesday
+
+Warmup
+: Bowling
+
+Language Session
+: [Flow Control](/sessions/{{ year }}/flowcontrol/)
+
+Engineering Session
+: [Software Requirements](/sessions/{{ year }}/softwarerequirements/)
+
+Team Task
+: project requirements
+
+Social
+: Instructor Project Demo: Edison
+
+</section>
+
+<section markdown="block">
+####Week 1: Wednesday
+
+Warmup
+: [Proj. Euler](https://projecteuler.net/)
+
+Language Session
+: [Python Not-so-Basics](/sessions/{{ year }}/advanced/)
+
+Engineering Session
+: [Testing](/sessions/{{ year }}/testing/)
+
+Team Task
+: convert requirements into tests
+
+Social
+: Games Night
+
+</section>
+
+<section markdown="block">
+####Week 1: Thursday
+
+Warmup
+: [20 Questions](20Q.html)
+
+Language Session
+: [Debugging](/sessions/{{ year }}/debugging/)
+
+Engineering Session
+: [Best Practices](/sessions/{{ year }}/bestpractices/)
+
+Team Task
+: think about how best practices apply to project, implement some tests
+
+Social
+: Instructor Project Discussion
+
+</section>
+
+<section markdown="block">
+####Week 1: Friday
+
+Warmup
+: Command Line Tricks
+
+Language Session
+: [Python IO](/sessions/{{ year }}/pyio/)
+
+Engineering Session
+: [Reuse](/sessions/{{ year }}/reuse/)
+
+Team Task
+: identify libraries useful to project
+
+Social
+: Movie Night
+
+</section>
+
+<section markdown="block">
+####Week 2: Monday
+
+Warmup
+: Security
+
+Language Session
+: [Python OOP Syntax](/sessions/{{ year }}/pyoop/)
+
+Engineering Session
+: [Effective OOP](/sessions/{{ year }}/effoop/)
+
+Team Task
+: self-directed project implementation from here on
+
+Social
+: Football, then Ghana v. US World Cup game
+
+</section>
+
+<section markdown="block">
+####Week 2: Tuesday
+
+Warmup
+: Project Euler, redux
+
+Language Session
+: [Python + C++](/sessions/{{ year }}/pycpp/)
+
+Engineering Session
+: [User Interfaces](/sessions/{{ year }}/userx/)
+
+Social
+: technical presentation practice session
+
+</section>
+
+<section markdown="block">
+####Week 2: Wednesday
+
+Warmup
+: Discuss open topics
+
+Engineering Session
+: [Distributed Computing](/sessions/{{ year }}/distrib/)
+
+Language Session
+: [Parallel Python](/sessions/{{ year }}/pymp/)
+
+Social
+: potluck dinner
+
+</section>
+
+<section markdown="block">
+####Week 2: Thursday
+
+Warmup
+: Telephone Game
+
+Language Session
+: Open session TBD by class
+
+Engineering Session
+: Open session TBD by class
+
+Social
+: none planned; instructors available for demo preparation assistance
+
+</section>
+
+<section markdown="block">
+####Week 2: Friday
+
+Warmup
+: light snacks, presentation setup
+
+Morning
+: Team Demonstrations
+
+Afternoon
+: Lunch, course feedback, pictures, instructors depart for airport
+
+</section>
+
+<section markdown="block">
+###The Method of This Course
+
+<aside class="notes" markdown="block">
+What would we doing in a typical day in one of your other classes?
+
+Make clear our expectations in this class:
+
+ - "audience" questions will asked regularly: you need to try to answer, and be honest
+ about your knowledge; okay to be wrong, not okay to try to hide it
+ - the instructors will disagree: most of these points, there isn't a "right"
+ answer
+ - there will be lots of doing
+
+</aside>
+
+</section>
+
+<section markdown="block">
+###Tell Everyone Your Name, and One Thing About Yourself
+
+####Then: ask us anything
+</section>
+
+<section markdown="block">
+###What is a Computer?
+
+###What is Software Engineering?
 </section>

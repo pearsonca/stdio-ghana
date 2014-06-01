@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<<<<<<< HEAD
   <title></title>
   <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
   <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
@@ -9,10 +10,21 @@
   <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
   <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+=======
+  <title>Python Basics</title>
+  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </head>
 <body>
 <div class="reveal"><div class="slides">
 <section>
+<<<<<<< HEAD
 <h2></h2>	
 </section>
 <section>
@@ -37,6 +49,40 @@
 		<li>Case-sensativity</li>
 		<li>Reserved words</li>
 	</ul>
+=======
+<h2>Python Basics</h2>
+
+Deanne, Seifu
+</section>
+<section>
+	<p1>Why use Python?</p1>
+</section>
+<section>
+	<h2>Basic Syntax</h2>
+	<div class="highlight"><pre><code class="py"><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">localtime</span>
+
+	<span class="n">activities</span> <span class="o">=</span> <span class="p">{</span><span class="mi">8</span><span class="p">:</span> <span class="s">&#39;Sleeping&#39;</span><span class="p">,</span>
+        	      <span class="mi">9</span><span class="p">:</span> <span class="s">&#39;Commuting&#39;</span><span class="p">,</span>
+        	      <span class="mi">17</span><span class="p">:</span> <span class="s">&#39;Working&#39;</span><span class="p">,</span>
+        	      <span class="mi">18</span><span class="p">:</span> <span class="s">&#39;Commuting&#39;</span><span class="p">,</span>
+        	      <span class="mi">20</span><span class="p">:</span> <span class="s">&#39;Eating&#39;</span><span class="p">,</span>
+        	      <span class="mi">22</span><span class="p">:</span> <span class="s">&#39;Resting&#39;</span> <span class="p">}</span>
+
+	<span class="n">time_now</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
+	<span class="n">hour</span> <span class="o">=</span> <span class="n">time_now</span><span class="o">.</span><span class="n">tm_hour</span>
+
+	<span class="k">for</span> <span class="n">activity_time</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">activities</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
+    	<span class="k">if</span> <span class="n">hour</span> <span class="o">&lt;</span> <span class="n">activity_time</span><span class="p">:</span>
+        	<span class="k">print</span> <span class="n">activities</span><span class="p">[</span><span class="n">activity_time</span><span class="p">]</span>
+        	<span class="k">break</span>
+	<span class="k">else</span><span class="p">:</span>
+    	<span class="k">print</span> <span class="s">&#39;Unknown or sleeping!&#39;</span></code></pre></div>
+</section>
+<section>
+	<h2> Just testing</h2>
+</section>
+<section>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 	<h2>Variable Types</h2>
 	<ul>
 		<li>Numbers: Integer, Float, Boolean, Long, Complex</li>
@@ -45,11 +91,19 @@
 		<li>Tuple</li>
 		<li>Dictionary</li>
 	</ul>
+<<<<<<< HEAD
 	
 </section>
 <section>
 	<h2>Basic Operators</h2>
 	
+=======
+
+</section>
+<section>
+	<h2>Basic Operators</h2>
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 	<h2>Numbers</h2>
 	<p>+, -, *, /, %, **, //</p>
 	<h2>Strings</h2>
@@ -57,6 +111,7 @@
 	<p>==, !=, <>, >, <, <=, >= </p>
 	<h5>Assignment</h5>
 	<p>=, +=, -=,*=, /=, %=, **=, //=</p>
+<<<<<<< HEAD
 	
 </section>
 <section>
@@ -78,6 +133,29 @@
 <section>
 	<h3>Dictionary</h3>
 	
+=======
+
+</section>
+<section>
+	<h2>If, else, nested ifs</h2>
+
+</section>
+<section>
+	<h3>While loops for loops</h3>
+
+	<h3>nested loops</h3>
+
+	<h3>loop control</h3>
+
+</section>
+<section>
+	<h3>Lists</h3>
+
+</section>
+<section>
+	<h3>Dictionary</h3>
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 <section>
 	<h3>Introduction to Functions</h3>
@@ -117,12 +195,21 @@
 
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
+<<<<<<< HEAD
 			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
 			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+=======
+			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 		]
 	});
 </script>

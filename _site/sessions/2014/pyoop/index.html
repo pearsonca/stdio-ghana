@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<<<<<<< HEAD
   <title></title>
   <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
   <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
@@ -9,10 +10,21 @@
   <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
   <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+=======
+  <title>Python OOP</title>
+  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </head>
 <body>
 <div class="reveal"><div class="slides">
 <section>
+<<<<<<< HEAD
 <h2></h2>	
 </section>
 <section>
@@ -40,6 +52,27 @@
 </section>
 
 
+=======
+<h2>Python OOP</h2>
+
+Seifu, Deanne
+</section>
+<section>
+	<h5>Activity</h5>
+	Make lists of main dishes, side dishes, and drinks. (beef, pork, goat, sheep, chicken, fish); (akple, kenkey/dokonu, fufu, omo tuo); (water, juice, soda). Make a dictionary that has the type of food, name, and amount inventory.
+</section>
+
+<section>
+	<h5>Why Object Oriented Programming</h5>
+	<ul>
+	<li>Common data and functions (inheritance)</li><li>Protect data (encapsulation)</li></ul>
+	<aside class="notes" block="markdown">
+	Say I run a restaurant where I have several employees that have the same set of attributes that I care about; perform similar tasks; get paid certain amounts; etc. It is convenient to have template code that each instance (employee) can inherit quickly and I can reuse.
+	At the end of this I will make you all determine objects for a real-world problem.
+	</aside>
+</section>
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 <section>
 	<h5>Overview of OOP Terminology</h5>
 	<p>Reference tutorialspoint</p>
@@ -48,7 +81,11 @@
 		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
 		<li><b>Instance:</b>An individual object of a certain class.</li>
 	</ul>
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 	<aside class="notes">
 	 	<li><b>Class:</b>A user-defined prototype for an object that gives the object some attributes defined for any object of the class. The attributes are data members (class variables and instance variables) and methods. Methods are accessed via dot programming notation.</li>
 		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
@@ -60,13 +97,21 @@
 </section>
 
 <section>
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 	<h5>Creating Classes</h5>
 	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
 	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
 		<span class="c">#Optional class documentation string</span>
 		<span class="n">class_suite</span></code></pre></div>
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 	<aside class="notes">
 		class: ClassName
 		Inheritance: class_suite
@@ -74,18 +119,27 @@
 </section>
 
 <section>
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 	<h5>Employee Class Example</h5>
 	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
 	   <span class="c">#Common base class for all employees</span>
 	   <span class="n">empCount</span> <span class="o">=</span> <span class="mi">0</span> <span class="c">#this is a class variable accessed by Employee.empCount</span>
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">):</span>
 	      <span class="c">#this is the class constructor/initialization method called</span>
 	      <span class="c">#when an instance is created</span>
 	      <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 	      <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
 	      <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span> <span class="o">+=</span> <span class="mi">1</span>
+<<<<<<< HEAD
 	   
 	   <span class="k">def</span> <span class="nf">displayCount</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 	     <span class="c">#all methods start with self as an argument;however, when </span>
@@ -95,6 +149,25 @@
 	   <span class="k">def</span> <span class="nf">displayEmployee</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 	      <span class="k">print</span> <span class="s">&quot;Name : &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>  <span class="s">&quot;, Salary: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">salary</span></code></pre></div>
 
+=======
+
+	   <span class="k">def</span> <span class="nf">displayCount</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	     <span class="c">#all methods start with self as an argument;however, when</span>
+	     <span class="c">#you call a method python adds self to your list</span>
+	     <span class="k">print</span> <span class="s">&quot;Total Employee </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span>
+
+	   <span class="k">def</span> <span class="nf">displayEmployee</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">print</span> <span class="s">&quot;Name : &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>  <span class="s">&quot;, Salary: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">salary</span></code></pre></div>
+
+	<aside class="notes">
+	 	<li><b>Class:</b>A user-defined prototype for an object that gives the object some attributes defined for any object of the class. The attributes are data members (class variables and instance variables) and methods. Methods are accessed via dot programming notation.</li>
+		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
+		<li><b>Instance:</b>An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.</li>
+		<li><b>Instantiation:</b>The creation of an instance of a class.</li>
+		<li><b>Method:</b>A special kind of function that is defined in a class definition.</li>
+		<li><b>Object:</b>A unique instance of a data structure that's defined by its class. An object comprises both data members (class variables and instance variables) and methods.</li>
+	</aside>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 
 <section>
@@ -108,9 +181,15 @@
 	<h5>Using a class</h5>
 	<p>You can invoke an internal method of an instantiated object using the dot operator</p>
 	<div class="highlight"><pre><code class="python"><span class="c">#This executes print Name : , self.name,  , Salary: , self.salary</span>
+<<<<<<< HEAD
 	<span class="n">emp1</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span> 
 	<span class="k">print</span> <span class="s">&quot;total Employee </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span></code></pre></div>
 	
+=======
+	<span class="n">emp1</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span>
+	<span class="k">print</span> <span class="s">&quot;total Employee </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span></code></pre></div>
+
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 
 <section>
@@ -119,7 +198,11 @@
 		<li>Adding an attribute e.g. emp1.age = 7</li>
 		<li>Modifying an attribute e.g. emp1.age = 8</li>
 		<li>Deleting an attribute e.g. del emp1.age</li>
+<<<<<<< HEAD
 		<li></li>
+=======
+		<br>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 		<li>Can also use getattr(obj.name[, default]) to acess the attribute</li>
 		<li>hasattr(obj,name) to check if an attribute exists</li>
 		<li>setattr(obj,name,value) to set an attribute. This creates an attribute if it doesnt exist</li>
@@ -129,7 +212,16 @@
 
 <section>
 	<h5>Python Built-Ins</h5>
+<<<<<<< HEAD
 	<p>Python builds in __dict__ dictionary containing class namespace; __doc__ documentation string; __module__ name in which class is defined</p>
+=======
+	<p>Python builds in
+	<ul>
+	<li>__dict__ dictionary containing class namespace</li>
+	<li>__doc__ documentation string</li>
+	<li>__module__ name in which class is defined</li>
+	</ul></p>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 <section>
 	<h5>Inheritance and Subclassing</h5>
@@ -141,6 +233,7 @@
 </section>
 
 <section>
+<<<<<<< HEAD
 	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">Parent</span><span class="p">:</span>        <span class="c"># define parent class</span>
 	   <span class="n">parentAttr</span> <span class="o">=</span> <span class="mi">100</span>
 	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -168,6 +261,34 @@
 	<span class="n">c</span><span class="o">.</span><span class="n">setAttr</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>       <span class="c"># again call parent&#39;s method</span>
 	<span class="n">c</span><span class="o">.</span><span class="n">getAttr</span><span class="p">()</span>          <span class="c"># again call parent&#39;s method</span></code></pre></div>
 	<p> This returns: Calling child constructor <br>Calling child method<br>Calling parent method<br>Parent attribute : 200 </p>
+=======
+	<div class="highlight"><pre><code class="python"><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+	    <span class="s">&#39;Common base for all employees&#39;</span>
+	    <span class="n">empCount</span> <span class="o">=</span> <span class="mi">0</span>
+
+	    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span> <span class="n">isWorking</span><span class="p">):</span>
+	        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+	        <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
+	        <span class="bp">self</span><span class="o">.</span><span class="n">isWorking</span> <span class="o">=</span> <span class="n">isWorking</span>
+	        <span class="n">Employee</span><span class="o">.</span><span class="n">empCount</span> <span class="o">+=</span> <span class="mi">1</span>
+
+	<span class="k">class</span> <span class="nc">Cook</span><span class="p">(</span><span class="n">Employee</span><span class="p">):</span>
+	    <span class="s">&#39;Common base for all cooks&#39;</span>
+	    <span class="n">cookCount</span>
+
+	    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">salary</span><span class="p">,</span><span class="n">isWorking</span><span class="p">,</span> <span class="n">specialty</span><span class="p">):</span>
+	        <span class="n">Employee</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span><span class="n">isWorking</span><span class="p">)</span>
+	        <span class="bp">self</span><span class="o">.</span><span class="n">specialty</span><span class="o">=</span><span class="n">specialty</span>
+	        <span class="n">Cook</span><span class="o">.</span><span class="n">cookCount</span> <span class="o">+=</span> <span class="mi">1</span>
+
+	    <span class="k">def</span> <span class="nf">displayCook</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	        <span class="k">print</span> <span class="s">&quot;Name: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;, Salary: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">salary</span><span class="p">,</span> <span class="s">&quot;, Is Working: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">isWorking</span><span class="p">,</span> <span class="s">&quot;, Specialty: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">specialty</span>
+
+	<span class="n">cook1</span> <span class="o">=</span> <span class="n">Cook</span><span class="p">(</span><span class="s">&quot;bob&quot;</span><span class="p">,</span> <span class="s">&quot;salary&quot;</span><span class="p">,</span> <span class="bp">False</span><span class="p">,</span> <span class="s">&quot;specialty&quot;</span><span class="p">)</span>
+	<span class="n">cook1</span><span class="o">.</span><span class="n">displayCook</span><span class="p">()</span>
+	<span class="n">emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="err">“</span><span class="n">emp1</span><span class="err">”</span><span class="p">,</span> <span class="err">“</span><span class="n">salary</span><span class="err">”</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+	<span class="n">emp1</span><span class="o">.</span><span class="n">displayCook</span><span class="p">()</span></code></pre></div>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 
 </section>
 <section>
@@ -176,6 +297,7 @@
 	   <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 	      <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
 	      <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+<<<<<<< HEAD
 	
 	   <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 	      <span class="k">return</span> <span class="s">&#39;Vector (</span><span class="si">%d</span><span class="s">, </span><span class="si">%d</span><span class="s">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
@@ -191,6 +313,26 @@
 <section>
 	<h5>Example</h5>
 	Passing functions as variables to other functions
+=======
+
+	   <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	      <span class="k">return</span> <span class="s">&#39;Vector (</span><span class="si">%d</span><span class="s">, </span><span class="si">%d</span><span class="s">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
+
+	   <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">other</span><span class="p">):</span>
+	      <span class="k">return</span> <span class="n">Vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
+
+	<span class="n">v1</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+	<span class="n">v2</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+	<span class="k">print</span> <span class="n">v1</span> <span class="o">+</span> <span class="n">v2</span> <span class="c">#This prints &#39;Vector(7,8)&#39;</span></code></pre></div>
+
+</section>
+<section>
+<h5>Override Example</h5>
+Write an override that compares two Vectors to see if they are the same by comparing the coordinates.
+</section>
+<section>
+	<h5>Determine the Classes Example</h5>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 
 </div></div>
@@ -212,12 +354,21 @@
 
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
+<<<<<<< HEAD
 			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
 			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+=======
+			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 		]
 	});
 </script>

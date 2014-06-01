@@ -1,14 +1,10 @@
 ---
 layout: presentation
 year: 2014
+title: Best Practices
+instructors:
+ - Jonathon
 ---
-<section markdown="block">
-<h3 style="text-align:center">Software Engineering Best Practices</h3>
-<h5 style="text-align:center">Prerequisites: OOP, Testing, Debugging</h5>
-<dt>Jonathon Parker</dt><dd>Employed at iBASEt</dd>
-<dt>Somebody</dt><dd>Some university</dd>
-</section>
-
 <section markdown="block">
 <p style="text-align:center">What are "Best Practices"?</p>
 
@@ -43,7 +39,7 @@ You can have conventions for:
 * Indent style
 * Naming
 * Programming practices
-  
+
 <br />
 
 I will not cover all of these today.  I would like to cover Common Naming Conventions.
@@ -80,7 +76,7 @@ def main():
   base_dir = sys.argv[1]
   posts = []
   global_dist = nltk.FreqDist()
-  
+
   for path, sub_dirs, file_path in os.walk(base_dir):
     for sub_dir in sub_dirs:
 
@@ -142,7 +138,7 @@ Sometimes you *do* need to repeat yourself.  It can happen that implementing DRY
 
 <section markdown="block">
 <h5 style="text-align:center">For Object Oriented Programming (OOP)</h5>  
-  
+
 There are many good practices for OOP.  Two are discussed here.
 </section>
 
@@ -187,5 +183,3 @@ Two poorly designed code modules will be provided.  This is not a debugging exer
 (d) Be prepared to justify your modifications.
 
 </section>
-
-

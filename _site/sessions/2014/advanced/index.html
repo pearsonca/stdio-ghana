@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<<<<<<< HEAD
   <title></title>
   <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
   <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
@@ -9,10 +10,21 @@
   <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
   <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
+=======
+  <title>Python Advanced</title>
+  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
+  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
+  <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </head>
 <body>
 <div class="reveal"><div class="slides">
 <section>
+<<<<<<< HEAD
 <h2></h2>	
 </section>
 <section>
@@ -65,6 +77,159 @@
 		Objects are either <i>mutable</i> or <i>immutable</i>. An immutable object will not allow changes to it after it is created. Examples of immutable objects are numbers, booleans, strings, tuples, and frozensets.
 	</p>
 </section>
+=======
+<h2>Python Advanced</h2>
+
+Seifu, Deanne
+</section>
+<section>
+	<h3>Python Basics Recap</h3>
+	<ol>
+		<li>Make a list of three employees named &quot;bob&quot;, &quot;sue&quot;,  and &quot;rick&quot;</li>
+		<li>Make a dictionary of three employees named &quot;bob&quot;, &quot;sue&quot;,  and &quot;rick&quot; that have a position [waiter, host, cook] and a salary [3, 4, 8].</li>
+		<li>Using the dictionary from above, raise the employees&#39; salaries by 10%.</li>
+		<li>Write a function that will output every employees information.</li>
+	</ol>
+</section>
+<section>
+	<h3>Variable Scope</h3>
+
+	Important to know where variables have values and when!
+
+	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">MenuItem</span><span class="p">:</span>
+<span class="s">&#39;Common base for all food items&#39;</span>
+
+	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">price</span><span class="p">):</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">price</span> <span class="o">=</span> <span class="n">price</span>
+	<span class="k">def</span> <span class="nf">displayMenuItem</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="k">print</span> <span class="s">&quot;Name: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;, Price: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">price</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+	<span class="n">item1</span> <span class="o">=</span> <span class="n">MenuItem</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span> <span class="s">&quot;foodType&quot;</span><span class="p">,</span> <span class="s">&quot;price&quot;</span><span class="p">)</span>
+	<span class="n">item1</span><span class="o">.</span><span class="n">displayMenuItem</span><span class="p">()</span></code></pre></div>
+
+</section>
+
+
+<section>
+	<h3>Exception Handling</h3>
+	Defending against code that may raise an exception.
+	<ul>
+		<li>try, except, else</li>
+		<li>try, except, else, finally</li>
+	</ul>
+
+	<aside class ="notes" markdown="block">
+	An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the program�s instructions. When you are uncertain if your code will raise an exception you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
+	</aside>
+</section>
+
+
+<section>
+
+	<div class="highlight"><pre><code class="py"><span class="k">try</span><span class="p">:</span>
+		<span class="c">#You do your operations here</span>
+	<span class="k">except</span> <span class="n">ExceptionI</span><span class="p">:</span>
+		<span class="c">#If there is ExceptionI, then execute this block</span>
+	<span class="k">except</span> <span class="n">ExceptionII</span><span class="p">:</span>
+		<span class="c">#If there is ExceptionII, then execute this block</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="c">#If there is no exception then execute this block</span></code></pre></div>
+</section>
+<section>
+
+	<div class="highlight"><pre><code class="py"><span class="k">try</span><span class="p">:</span>
+		<span class="n">fh</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;testfile&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span>
+		<span class="n">fh</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;this is my test file for exception handling&quot;</span><span class="p">)</span>
+	<span class="k">except</span> <span class="ne">IOError</span><span class="p">:</span>
+		<span class="k">print</span> <span class="s">&quot;Error: can</span><span class="se">\&#39;</span><span class="s">t find file or read data&quot;</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="k">print</span> <span class="s">&quot;Written content in the file successfully&quot;</span>
+		<span class="n">fh</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div>
+</section>
+<section>
+
+	<div class="highlight"><pre><code class="py"><span class="k">try</span><span class="p">:</span>
+		<span class="c">#You do your operations here</span>
+		<span class="c">#If an exception occurs you skip remaining code</span>
+	<span class="k">finally</span><span class="p">:</span>
+		<span class="c">#This is always exectued</span></code></pre></div>
+</section>
+
+<section>
+
+	<h5>Problem:</h5>
+<p>Write a script that sets a variable to any string. Next write a try-except block to convert the string to an integer using the in() function or print that &quot;The argument does not contain numbers&#92n&quot;</p>
+</section>
+
+<section>
+	<h3>Comprehensions</h3>
+Concise way to create lists. Great way to make a list from a list.
+	<div class="highlight"><pre><code class="py"><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="n">expression</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">old_list</span> <span class="k">if</span> <span class="nb">filter</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span></code></pre></div>
+<aside class="notes" block="markdown">E.g. I have a list of employees and want to make a list of only male employees.</aside>
+</section>
+
+<section>
+	Basic Example
+	<div class="highlight"><pre><code class="py"><span class="c"># You can either use loops:</span>
+	<span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
+	<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+	    <span class="n">squares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+	<span class="c"># Or you can use list comprehensions to get the same result:</span>
+	<span class="n">squares2</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span></code></pre></div>
+	Nested Example
+	<div class="highlight"><pre><code class="py"><span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">50</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">]]</span>
+	<span class="c">#[30, 50, 70, 50, 70, 90, 70, 90, 110]</span></code></pre></div>
+		<p>Example using a filter (if)</p>
+	<div class="highlight"><pre><code class="py"><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+	 <span class="c">#[&#39;0&#39;, &#39;2&#39;, &#39;4&#39;, &#39;6&#39;, &#39;8&#39;]</span></code></pre></div>
+	<aside class="notes" block="markdown">
+	Explain on the board the first one.
+	Depending on time/understanding explain next two on board via help.
+	</aside>
+</section>
+
+<section>
+	<h5>Exercises</h5>
+	<ol>
+		<li>Build a list of squares from 0 to 9 called S</li>
+		<li>Build a list of powers of two from 0 to 12 called V</li>
+		<li>Build a list where the number is in S and is even called M</li>
+		<li>Make a list of all of the primes from 2 to 50</li>
+		<li>Make a list of strings that has UPPER, lower, and length of word for /n &quot;The quick brown fox jumps over the lazy dog&quot;</li>
+	</ol>
+	<aside class = "notes" block = "markdown">
+	S=[x**2 for x in range(10)]
+	V=[2**i for i in range(13)]
+	M = [x for x in S if x % 2 == 0 ]
+	Noprimes = [j for k in range(2,8) for j in range(k*2, 50, k)]
+	Primes = [x for x in range(2, 50) if x not in noprimes]
+	Words = "The quick brown fox jumps over the lazy dog".split()
+	Stuff = [[w.upper(), w.lower(), len(w)] for w in words]
+	</aside>
+</section>
+
+
+<section>
+	<h3>Object Mutabilitiy</h3>
+	<p>
+		Objects are either <i>mutable</i> or <i>immutable</i>. An immutable object will not allow changes to it after it is created.</br></br>Examples of <u>immutable</u> objects are
+	</p>
+	<ul><li>numbers</li><li>Booleans</li><li>strings</li><li>tuples</li><li>frozensets</li></ul>
+</section>
+<section>
+<h3>Why do we need mutability?</h3>
+<div class="highlight"><pre><code class="py"><span class="n">myStr</span> <span class="o">=</span> <span class="s">&#39;hello&#39;</span>
+<span class="n">mystr</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;O&#39;</span> <span class="c">#error!</span></code></pre></div>
+<aside class = "notes" block = "markdown">
+Don't change certain defaults like numbers, strings, or true/false
+Mutable types can be changed in place. Immutable types can not change in place. That's the way python sees the world.
+</aside>
+</section>
+<!--
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 <section>
 	<h3>Class Mutability</h3>
 	<p>Classes are mutable in general. To mimic immutability you can do something like this:</p>
@@ -77,6 +242,7 @@
          		<span class="c"># we can no longer use self.value = value to store the instance data</span>
          		<span class="c"># so we must explicitly call the superclass</span>
          		<span class="nb">super</span><span class="p">(</span><span class="n">Immutable</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__setattr__</span><span class="p">(</span><span class="s">&#39;value&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></pre></div>
+<<<<<<< HEAD
 </section>
 <section>
 	<h5>Mutability Exercise</h5>
@@ -86,21 +252,157 @@
 </section>
 <section>
 	<h5>Arguments Example 1</h5>
+=======
+</section>-->
+<section>
+	<h5>Mutability Exercises 1</h5>
+	<div class="highlight"><pre><code class="py"><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+	<span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
+	<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+	<span class="c">#What is the value of x? y?</span>
+	<span class="k">del</span> <span class="n">x</span>
+	<span class="c">#What is the value of y now?</span></code></pre></div>
+	<aside class="notes">
+		Answers: 6, 3; 3
+	</aside>
+</section>
+
+<section>
+	<h5>Mutability Exercises 2</h5>
+	<div class="highlight"><pre><code class="py"><span class="n">mystr1</span> <span class="o">=</span> <span class="s">&#39;hello world&#39;</span>
+	<span class="n">mystr2</span> <span class="o">=</span> <span class="n">mystr1</span>
+	<span class="n">mystr1</span> <span class="o">=</span> <span class="n">mystr1</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+	<span class="c">#What is the value of mystr1? mystr2?</span>
+	<span class="k">del</span> <span class="n">mystr1</span>
+	<span class="c">#What is the value of mystr2 now?</span></code></pre></div>
+	<aside class="notes">
+		Answers: hello worl, hello world; hello world
+	</aside>
+</section>
+
+<section>
+	<h5>Mutability Exercises 3</h5>
+	<div class="highlight"><pre><code class="py"><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;water&#39;</span><span class="p">,</span> <span class="s">&#39;juice&#39;</span><span class="p">,</span> <span class="s">&#39;soda&#39;</span><span class="p">]</span>
+	<span class="n">list2</span> <span class="o">=</span> <span class="n">list1</span>
+	<span class="n">list1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;beer&#39;</span><span class="p">)</span>
+	<span class="c">#What are list1 and list2 now?</span>
+	<span class="k">del</span> <span class="n">list1</span>
+	<span class="c">#What are list1 and list2 now?</span></code></pre></div>
+	<aside class="notes">
+		Answers: ['water', 'juice', 'soda', 'beer']
+		['water', 'juice', 'soda', 'beer']
+		['water', 'juice', 'soda', 'beer']
+	</aside>
+</section>
+<section>
+	<h5>Mutability Exercises 4</h5>
+	<div class="highlight"><pre><code class="py"><span class="n">mytuple</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">)</span>
+	<span class="n">mytyple</span> <span class="o">=</span> <span class="s">&#39;b&#39;</span>
+	<span class="n">mytuple</span> <span class="o">=</span> <span class="n">mytyple</span>
+	<span class="c">#what is the type of mytuple? What is the value?</span></code></pre></div>
+	<aside class="notes">
+		Answers: string, b
+	</aside>
+</section>
+<section>
+<h5>Mutability Exercises 5</h5>
+<div class="highlight"><pre><code class="py"><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="n">val</span> <span class="o">+=</span> <span class="s">&#39;bar&#39;</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="s">&#39;foo&#39;</span>
+<span class="k">print</span> <span class="n">x</span> <span class="c">#what does it print?</span>
+<span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">x</span> <span class="c">#what does it print?</span></code></pre></div>
+</section>
+<section>
+
+	<h5>Creating Classes</h5>
+	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
+	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
+		<span class="c">#Optional class documentation string</span>
+		<span class="n">class_suite</span></code></pre></div>
+
+</section>
+<section>
+	<h5>Class Example</h5>
+	<p>Using what you know develop an Employee class with two properties (name and salary) and a displayEmployee property that prints &quot;Name: &quot;, self.name, &quot;, Salary: &quot;, self.salary</p>
+	<p>Test it by making two employees named emp1 and emp2 with salaries 20 and 25.</p>
+</section>
+<section>
+	<h3>Optional/Default Arguments in Functions</h3>
+	<aside class="notes">
+		<p>Before covering optional, briefly mention arguments.</p>
+	</aside>
+</section>
+<section>
+	<h5>Arguments Example 1</h5>
+	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">Employee</span><span class="p">:</span>
+	    <span class="s">&#39;Common base for all employees&#39;</span>
+
+	    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span> <span class="o">=</span> <span class="mi">20</span><span class="p">):</span>
+	        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+	        <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
+
+	    <span class="k">def</span> <span class="nf">displayEmployee</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	        <span class="k">print</span> <span class="s">&quot;Name: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;, Salary: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">salary</span>
+
+	<span class="n">emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">&#39;name&#39;</span><span class="p">)</span>
+	<span class="n">emp1</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span>
+	<span class="n">emp2</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">&#39;name2&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+	<span class="n">emp2</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span></code></pre></div>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 <section>
 	<h3>Variable-length Arguments</h3>
 </section>
 <section>
 	<h5>Arguments Example 2</h5>
+<<<<<<< HEAD
+=======
+	<div class="highlight"><pre><code class="py"><span class="n">Class</span> <span class="n">Employee</span><span class="p">:</span>
+	    <span class="s">&#39;Common base for all employees&#39;</span>
+
+	    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">salary</span> <span class="o">=</span> <span class="mi">20</span><span class="p">):</span>
+	        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+	        <span class="bp">self</span><span class="o">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
+
+	    <span class="k">def</span> <span class="nf">displayEmployee</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	        <span class="k">print</span> <span class="s">&quot;Name: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;, Salary: &quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">salary</span>
+
+	<span class="k">def</span> <span class="nf">printEmployees</span><span class="p">(</span><span class="o">*</span><span class="n">varEmployees</span><span class="p">):</span>
+	    <span class="k">for</span> <span class="n">emp</span> <span class="ow">in</span> <span class="n">varEmployees</span><span class="p">:</span>
+	        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">emp</span><span class="p">,</span> <span class="n">Employee</span><span class="p">):</span>
+	            <span class="n">emp</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span>
+
+	<span class="n">emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">&#39;name&#39;</span><span class="p">)</span>
+	<span class="n">emp2</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">&#39;name2&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+	<span class="n">printEmployees</span><span class="p">(</span><span class="n">emp1</span><span class="p">,</span> <span class="n">emp2</span><span class="p">)</span></code></pre></div>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 <section>
 	<h3>Anonymous Functions and Uses</h3>
 </section>
 <section>
 	<h5>Functions Examples</h5>
+<<<<<<< HEAD
 </section>
 
 
+=======
+	<div class="highlight"><pre><code class="py"><span class="k">def</span> <span class="nf">f</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+	<span class="k">print</span> <span class="n">f</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+	<span class="c">#or</span>
+	<span class="n">g</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+	<span class="k">print</span> <span class="n">g</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+
+	<span class="c">#guess the output here then try it!</span>
+	<span class="k">def</span> <span class="nf">make_incrementor</span> <span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="k">return</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span> <span class="o">+</span><span class="n">n</span>
+	<span class="n">f</span> <span class="o">=</span> <span class="n">make_incrementor</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+	<span class="n">g</span> <span class="o">=</span> <span class="n">make_incrementor</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+	<span class="k">print</span> <span class="n">f</span><span class="p">(</span><span class="mi">42</span><span class="p">),</span> <span class="n">g</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+	<span class="k">print</span> <span class="n">make_incrementor</span><span class="p">(</span><span class="mi">22</span><span class="p">)(</span><span class="mi">33</span><span class="p">)</span></code></pre></div>
+</section>
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 
 </div></div>
 <script>
@@ -121,12 +423,21 @@
 
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
+<<<<<<< HEAD
 			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
 			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+=======
+			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 		]
 	});
 </script>

@@ -45,6 +45,27 @@
 .main a:hover {
   background-color: #0a0a0a;
 }
+<<<<<<< HEAD
+=======
+.main .instructor img {
+  margin-bottom: 1em;
+}
+.main .instructor:nth-of-type(even) {
+  text-align: left;
+}
+.main .instructor:nth-of-type(even) img {
+  float: right;
+}
+.main .instructor:nth-of-type(odd) {
+  text-align: right;
+}
+.main .instructor:nth-of-type(odd) img {
+  float: left;
+}
+.main .instructor + hr {
+  clear: both;
+}
+>>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 body {
   background-color: black;
   font-family: sans-serif;

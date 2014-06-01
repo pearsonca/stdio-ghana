@@ -63,6 +63,28 @@
     }
   }
 
+  .instructor {
+    img {
+      margin-bottom: 1em;
+    }
+    &:nth-of-type(even) {
+      img {
+        float: right;
+      }
+      text-align: left;
+    }
+    &:nth-of-type(odd) {
+      img {
+        float: left;
+      }
+      text-align: right;
+    }
+
+  }
+
+  .instructor + hr {
+    clear: both;
+  }
 }
 
 body {
