@@ -1,60 +1,73 @@
-<!doctype html>
-<html>
-<head>
-  <title>Python Basics</title>
-  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
-</head>
-<body>
-<div class="reveal"><div class="slides">
 <section>
-<h2>Python Basics</h2>
+	<h2>Why use Python?</h2>
+</section>
+<section>
+	<h2>
+		print "Hello World!"
+	</h2>
+</section>
 
-Deanne, Seifu
-</section>
-<section>
-	<p1>Why use Python?</p1>
-</section>
 <section>
 	<h2>Basic Syntax</h2>
-	<div class="highlight"><pre><code class="py"><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">localtime</span>
+	{% highlight py%}
+	from time import localtime
 
-	<span class="n">activities</span> <span class="o">=</span> <span class="p">{</span><span class="mi">8</span><span class="p">:</span> <span class="s">&#39;Sleeping&#39;</span><span class="p">,</span>
-        	      <span class="mi">9</span><span class="p">:</span> <span class="s">&#39;Commuting&#39;</span><span class="p">,</span>
-        	      <span class="mi">17</span><span class="p">:</span> <span class="s">&#39;Working&#39;</span><span class="p">,</span>
-        	      <span class="mi">18</span><span class="p">:</span> <span class="s">&#39;Commuting&#39;</span><span class="p">,</span>
-        	      <span class="mi">20</span><span class="p">:</span> <span class="s">&#39;Eating&#39;</span><span class="p">,</span>
-        	      <span class="mi">22</span><span class="p">:</span> <span class="s">&#39;Resting&#39;</span> <span class="p">}</span>
+	activities = {8: 'Sleeping',
+        	      9: 'Commuting',
+        	      17: 'Working',
+        	      18: 'Commuting',
+        	      20: 'Eating',
+        	      22: 'Resting' }
 
-	<span class="n">time_now</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
-	<span class="n">hour</span> <span class="o">=</span> <span class="n">time_now</span><span class="o">.</span><span class="n">tm_hour</span>
+	time_now = localtime()
+	hour = time_now.tm_hour
 
-	<span class="k">for</span> <span class="n">activity_time</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">activities</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
-    	<span class="k">if</span> <span class="n">hour</span> <span class="o">&lt;</span> <span class="n">activity_time</span><span class="p">:</span>
-        	<span class="k">print</span> <span class="n">activities</span><span class="p">[</span><span class="n">activity_time</span><span class="p">]</span>
-        	<span class="k">break</span>
-	<span class="k">else</span><span class="p">:</span>
-    	<span class="k">print</span> <span class="s">&#39;Unknown or sleeping!&#39;</span></code></pre></div>
+	for activity_time in sorted(activities.keys()):
+    		if hour < activity_time:
+        		print activities[activity_time]
+        	break
+		else:
+    			print 'Unknown or sleeping!'
+    	{% endhighlight %}
 </section>
+
 <section>
-	<h2> Just testing</h2>
-</section>
-<section>
-	<h2>Variable Types</h2>
+	<h2>Variables: Numbers and Strings</h2>
 	<ul>
-		<li>Numbers: Integer, Float, Boolean, Long, Complex</li>
-		<li>String</li>
-		<li>List</li>
+		<h3>Numbers and Strings</h3>
+		<p1>Change the code to create a string "hello" and floating number 10 and an integer of 20</p1>
+		{% highlight py%}
+		#change this code
+		mystring = None
+		myfloat = None
+		myint = None
+
+		#testing code
+		if mystring == "hello":
+			print "String: %s" %mystring
+		if isinstance(myfloat, float) and myfloat == 10.0:
+			print "Float: %d" % myfloat
+		if isinstance (myint, int) and myint == 20:
+			print "integer: %d" % myint
+		{% endhighlight %}
+	</ul>
+</section>
+
+<section>
+	<h2>Variable: List</h2>
+
 		<li>Tuple</li>
 		<li>Dictionary</li>
-	</ul>
-
 </section>
+
+<section>
+	<h2>Variable: Tuple</h2>
+</section>
+
+<section>
+	<h2>Variable: Dictionary</h2>
+</section>
+
 <section>
 	<h2>Basic Operators</h2>
 
@@ -90,49 +103,24 @@ Deanne, Seifu
 <section>
 	<h3>Introduction to Functions</h3>
 	<p>A function includes the 'def' keyword </p>
-	<div class="highlight"><pre><code class="python"><span class="s">&#39;Arguments are optional in the function&#39;</span>
-	<span class="k">def</span> <span class="nf">functionName</span> <span class="p">(</span><span class="n">optArg1</span><span class="p">,</span><span class="n">optArg2</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
-		<span class="s">&#39;set 	something&#39;</span>
-		<span class="s">&#39;return something&#39;</span>
-		<span class="s">&#39;print 	something&#39;</span></code></pre></div>
+	{% highlight python %}
+	'Arguments are optional in the function'
+	def functionName (optArg1,optArg2, ...):
+		'set 	something'
+		'return something'
+		'print 	something'
+	{% endhighlight %}
 </section>
 <section>
 	<h3>Some examples</h3>
-	<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">printFunction</span> <span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">greeting</span><span class="p">):</span>
-		<span class="k">print</span> <span class="s">&quot;Hello, </span><span class="si">%s</span><span class="s">, From My Function, I wish you </span><span class="si">%s</span><span class="s">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">greeting</span><span class="p">)</span><span class="s">&quot;</span></code></pre></div>
+	{% highlight python %}
+	def printFunction (username, greeting):
+		print "Hello, %s, From My Function, I wish you %s"%(username, greeting)"
+	{% endhighlight %}
 	<br>
-	<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">sumFunction</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-		<span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span></code></pre></div>
+	{% highlight python %}
+	def sumFunction (x,y):
+		return x + y
+	{% endhighlight %}
 
 </section>
-
-</div></div>
-<script>
-	// Full list of configuration options available here:
-	// https://github.com/hakimel/reveal.js#configuration
-	Reveal.initialize({
-		controls: true,
-		progress: true,
-		history: true,
-		center: true,
-
-		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-		// Parallax scrolling
-		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-		// parallaxBackgroundSize: '2100px 900px',
-
-		// Optional libraries used to extend on reveal.js
-		dependencies: [
-			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
-	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-		]
-	});
-</script>
-</body>
-</html>
