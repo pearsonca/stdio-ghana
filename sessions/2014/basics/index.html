@@ -1,14 +1,12 @@
----
-layout: presentation
-year: 2014
-title: Python Basics
-instructors:
- - Deanne
- - Seifu
----
 <section>
-	<p1>Why use Python?</p1>
+	<h2>Why use Python?</h2>
 </section>
+<section>
+	<h2>
+		print "Hello World!"
+	</h2>
+</section>
+
 <section>
 	<h2>Basic Syntax</h2>
 	{% highlight py%}
@@ -25,27 +23,51 @@ instructors:
 	hour = time_now.tm_hour
 
 	for activity_time in sorted(activities.keys()):
-    	if hour < activity_time:
-        	print activities[activity_time]
+    		if hour < activity_time:
+        		print activities[activity_time]
         	break
-	else:
-    	print 'Unknown or sleeping!'
+		else:
+    			print 'Unknown or sleeping!'
     	{% endhighlight %}
 </section>
+
 <section>
-	<h2> Just testing</h2>
-</section>
-<section>
-	<h2>Variable Types</h2>
+	<h2>Variables: Numbers and Strings</h2>
 	<ul>
-		<li>Numbers: Integer, Float, Boolean, Long, Complex</li>
-		<li>String</li>
-		<li>List</li>
+		<h3>Numbers and Strings</h3>
+		<p1>Change the code to create a string "hello" and floating number 10 and an integer of 20</p1>
+		{% highlight py%}
+		#change this code
+		mystring = None
+		myfloat = None
+		myint = None
+
+		#testing code
+		if mystring == "hello":
+			print "String: %s" %mystring
+		if isinstance(myfloat, float) and myfloat == 10.0:
+			print "Float: %d" % myfloat
+		if isinstance (myint, int) and myint == 20:
+			print "integer: %d" % myint
+		{% endhighlight %}
+	</ul>
+</section>
+
+<section>
+	<h2>Variable: List</h2>
+
 		<li>Tuple</li>
 		<li>Dictionary</li>
-	</ul>
-
 </section>
+
+<section>
+	<h2>Variable: Tuple</h2>
+</section>
+
+<section>
+	<h2>Variable: Dictionary</h2>
+</section>
+
 <section>
 	<h2>Basic Operators</h2>
 
