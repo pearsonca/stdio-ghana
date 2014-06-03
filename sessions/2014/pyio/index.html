@@ -106,7 +106,7 @@ instructors:
 	import csv
 	import sys
 
-	f = open(sys.argv[1], 'wt')
+	f = open('file path', 'w')
 	try:
 	    fieldnames = ('Title 1', 'Title 2', 'Title 3')
 	    writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -120,6 +120,6 @@ instructors:
 	finally:
 	    f.close()
 
-	print open(sys.argv[1], 'rt').read()
-	{%end highlight %}
+	print open('file path', 'r').read()
+	{% end highlight %}
 </section>
