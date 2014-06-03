@@ -37,11 +37,9 @@ instructors:
 </section>
 <section>
 	<h2>Numbers and Strings</h2>
-	<li>
-		floating point: 3.14159
-		integer: 4
-		string: "This is a string"
-	</li>
+	<li>floating point: 3.14159</li>
+	<li>integer: 4</li>
+	<li>string: "This is a string"</li>
 </section>
 
 <section>
@@ -88,8 +86,22 @@ instructors:
 	<p>
 	Add numbers 1, 2, 3 to the numbers list
 	Add hello and world to the strings variable
-	Fill in variable second_name with teh second names in the names list
+	Fill in variable second_name with the second names in the names list
 	</p>
+	{% highlight py %}
+	numbers = []
+	strings = []
+	names = ["John", "Eric", "Jessica"]
+
+	# write your code here
+	second_name = None
+
+
+	# this code should write out the filled arrays and the second name in the names list (Eric).
+	print(numbers)
+	print(strings)
+	print("The second name on the names list is %s" % second_name)
+	{% endhighlight %}
 	
 </section>
 <section>
@@ -162,22 +174,17 @@ instructors:
 	{% endhighlight %}
 </section>
 <section>
-	<h2>Comparison</h2>
+	<h3>Comparison</h3>
 	<p>Often used with if, for and while statements</p>
-	<li>
-		==, !=, <>, >, <, <=, >= 
+	<li>==, !=, <>, >, <, <=, >= </li>
 		{% highlight py %}
 		if isinstance (myint, int) and myint == 20:
 				print "integer: %d" % myint
 		{% endhighlight %}
-	</li>
-	
-	<h2>Assignment</h2>
+	<h3>Assignment</h3>
 	<p>For simplifying code</p>
-	<li>
-		=, +=, -=,*=, /=, %=, **=, //=
-		a = a%b is equivalent to a %=b 
-	</li>
+	<li>=, +=, -=,*=, /=, %=, **=, //=</li>
+	<li>a = a%b is equivalent to a %=b</li>
 </section>
 
 <section>
