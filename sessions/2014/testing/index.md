@@ -7,12 +7,6 @@ instructors:
  - Jonathon
 ---
 <section markdown="block">
-# Testing
-
-### Instructors: Carl, Jonathon
-</section>
-
-<section markdown="block">
 ## How Do You Test Code?
 
 <aside class="notes">
@@ -50,12 +44,17 @@ also a way to communicate with other developers
 </section>
 
 <section markdown="block">
-##Python Unit Testing
+###Standard Library Unit Testing
 [unittest](https://docs.python.org/3.4/library/unittest.html)
 and [unittest.mock](https://docs.python.org/3.4/library/unittest.mock.html)
 
-<aside class="notes">
-exercise using those
+###External Library / Tool
+[py.test](http://pytest.org/latest/)
+
+<aside class="notes" markdown="block">
+
+[exercise using those](sessions/2014/testing/exercises.html)
+
 </aside>
 </section>
 
@@ -100,5 +99,12 @@ useful crash messages rather than basically random junk
 - pen-and-paper: write down what you expect to observe, try the software
 why write it down? forces you to commit your expectations
 </aside>
+
+</section>
+
+<section>
+##Interesting Resources
+
+- [PythonTesting.net](http://pythontesting.net/)
 
 </section>
