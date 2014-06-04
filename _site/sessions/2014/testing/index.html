@@ -1,16 +1,6 @@
 <!doctype html>
 <html>
 <head>
-<<<<<<< HEAD
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
-  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
-  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
-=======
   <title>Testing</title>
   <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
   <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
@@ -19,25 +9,14 @@
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </head>
 <body>
 <div class="reveal"><div class="slides">
 <section>
-<<<<<<< HEAD
-<h2></h2>	
-=======
 <h2>Testing</h2>
 
 Carl, Jonathon
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
-<section>
-  <h1 id="testing">Testing</h1>
-
-  <h3 id="instructors-carl-jonathon">Instructors: Carl, Jonathon</h3>
-</section>
-
 <section>
   <h2 id="how-do-you-test-code">How Do You Test Code?</h2>
 
@@ -80,13 +59,18 @@ also a way to communicate with other developers</li>
 </section>
 
 <section>
-  <h2 id="python-unit-testing">Python Unit Testing</h2>
+  <h3 id="standard-library-unit-testing">Standard Library Unit Testing</h3>
   <p><a href="https://docs.python.org/3.4/library/unittest.html">unittest</a>
 and <a href="https://docs.python.org/3.4/library/unittest.mock.html">unittest.mock</a></p>
 
+  <h3 id="external-library--tool">External Library / Tool</h3>
+  <p><a href="http://pytest.org/latest/">py.test</a></p>
+
   <aside class="notes">
-exercise using those
-</aside>
+
+    <p><a href="sessions/2014/testing/exercises.html">exercise using those</a></p>
+
+  </aside>
 </section>
 
 <section>
@@ -141,6 +125,13 @@ why write it down? forces you to commit your expectations</li>
 
 </section>
 
+<section>
+##Interesting Resources
+
+- [PythonTesting.net](http://pythontesting.net/)
+
+</section>
+
 </div></div>
 <script>
 	// Full list of configuration options available here:
@@ -160,21 +151,12 @@ why write it down? forces you to commit your expectations</li>
 
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
-<<<<<<< HEAD
-			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
-	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-=======
 			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 		]
 	});
 </script>

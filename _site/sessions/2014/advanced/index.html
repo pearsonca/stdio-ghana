@@ -1,16 +1,6 @@
 <!doctype html>
 <html>
 <head>
-<<<<<<< HEAD
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
-  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
-  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
-=======
   <title>Python Advanced</title>
   <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
   <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
@@ -19,65 +9,10 @@
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </head>
 <body>
 <div class="reveal"><div class="slides">
 <section>
-<<<<<<< HEAD
-<h2></h2>	
-</section>
-<section>
-	<h1>STDIO Ghana</h1>
-	<h3><i>a course on</i></h3>
-	<h3>Software Engineering</h3>
-	<p>supported by ONR Global, Univ. of Ghana, Univ. of Florida, Penn. State. Univ., US Naval Academy</p>
-</section>
-<section>
-	<h1>Python advanced</h1>
-</section>
-<section>
-	<h2>Instructors</h2>
-	<dl>
-		<dt>Deanne McPherson</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
-		<dt>Seifu Chonde</dt><dd>PhD Candidate, Industrial Engineering and Operations Research, Penn State University</dd>
-	</dl>
-</section>
-<section>
-	<h3>Python Basics Recap</h3>
-</section>
-<section>
-	<h3>Variable Scope</h3>
-</section>
-<section>
-	<h3>Exception Handling</h3>
-	<ul>
-		<li>try, except, while</li>
-		<li>try, except, else, finally</li>
-	</ul>
-</section>
-<section>
-	<h3>Comprehensions</h3>
-</section>
-<section>
-	
-	<h5>Creating Classes</h5>
-	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
-	<div class="highlight"><pre><code class="py"><span class="k">class</span> <span class="nc">ClassName</span><span class="p">:</span>
-		<span class="c">#Optional class documentation string</span>
-		<span class="n">class_suite</span></code></pre></div>
-	
-</section>
-<section>
-	<h3>Methods and Functions</h3>
-</section>
-<section>
-	<h3>Object Mutabilitiy</h3>
-	<p>
-		Objects are either <i>mutable</i> or <i>immutable</i>. An immutable object will not allow changes to it after it is created. Examples of immutable objects are numbers, booleans, strings, tuples, and frozensets.
-	</p>
-</section>
-=======
 <h2>Python Advanced</h2>
 
 Seifu, Deanne
@@ -229,7 +164,6 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 </aside>
 </section>
 <!--
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 <section>
 	<h3>Class Mutability</h3>
 	<p>Classes are mutable in general. To mimic immutability you can do something like this:</p>
@@ -242,17 +176,6 @@ Mutable types can be changed in place. Immutable types can not change in place. 
          		<span class="c"># we can no longer use self.value = value to store the instance data</span>
          		<span class="c"># so we must explicitly call the superclass</span>
          		<span class="nb">super</span><span class="p">(</span><span class="n">Immutable</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__setattr__</span><span class="p">(</span><span class="s">&#39;value&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code></pre></div>
-<<<<<<< HEAD
-</section>
-<section>
-	<h5>Mutability Exercise</h5>
-</section>
-<section>
-	<h3>Optional/Deafult Arguments in Functions</h3>
-</section>
-<section>
-	<h5>Arguments Example 1</h5>
-=======
 </section>-->
 <section>
 	<h5>Mutability Exercises 1</h5>
@@ -350,15 +273,12 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 	<span class="n">emp1</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span>
 	<span class="n">emp2</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">&#39;name2&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
 	<span class="n">emp2</span><span class="o">.</span><span class="n">displayEmployee</span><span class="p">()</span></code></pre></div>
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 <section>
 	<h3>Variable-length Arguments</h3>
 </section>
 <section>
 	<h5>Arguments Example 2</h5>
-<<<<<<< HEAD
-=======
 	<div class="highlight"><pre><code class="py"><span class="n">Class</span> <span class="n">Employee</span><span class="p">:</span>
 	    <span class="s">&#39;Common base for all employees&#39;</span>
 
@@ -377,18 +297,12 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 	<span class="n">emp1</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">&#39;name&#39;</span><span class="p">)</span>
 	<span class="n">emp2</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s">&#39;name2&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
 	<span class="n">printEmployees</span><span class="p">(</span><span class="n">emp1</span><span class="p">,</span> <span class="n">emp2</span><span class="p">)</span></code></pre></div>
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 <section>
 	<h3>Anonymous Functions and Uses</h3>
 </section>
 <section>
 	<h5>Functions Examples</h5>
-<<<<<<< HEAD
-</section>
-
-
-=======
 	<div class="highlight"><pre><code class="py"><span class="k">def</span> <span class="nf">f</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 	<span class="k">print</span> <span class="n">f</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
 	<span class="c">#or</span>
@@ -402,7 +316,6 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 	<span class="k">print</span> <span class="n">f</span><span class="p">(</span><span class="mi">42</span><span class="p">),</span> <span class="n">g</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 	<span class="k">print</span> <span class="n">make_incrementor</span><span class="p">(</span><span class="mi">22</span><span class="p">)(</span><span class="mi">33</span><span class="p">)</span></code></pre></div>
 </section>
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 
 </div></div>
 <script>
@@ -423,21 +336,12 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
-<<<<<<< HEAD
-			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
-	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-=======
 			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 		]
 	});
 </script>

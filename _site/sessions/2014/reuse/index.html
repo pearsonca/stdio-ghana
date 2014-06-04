@@ -1,16 +1,6 @@
 <!doctype html>
 <html>
 <head>
-<<<<<<< HEAD
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="http://pearsonca.github.io/css/site.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://pearsonca.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://pearsonca.github.io/js/site.js"></script>
-  <script type="text/javascript" src="http://pearsonca.github.io/js/head.min.js"></script>
-  <script type="text/javascript" src="http://pearsonca.github.io/js/reveal.min.js"></script>
-=======
   <title>Software Engineering Reuse</title>
   <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
   <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
@@ -19,36 +9,10 @@
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </head>
 <body>
 <div class="reveal"><div class="slides">
 <section>
-<<<<<<< HEAD
-<h2></h2>	
-</section>
-<section>
-  <h3 style="text-align:center">Software Engineering Reuse</h3>
-  <h5 style="text-align:center">Prerequisites: Object Oriented Programming</h5>
-  <dt>Jonathon Parker</dt>
-  <dd>Employed at iBASEt</dd>
-  <dt>Dane Brown</dt>
-  <dd>Professor of Practice, USNA</dd>
-</section>
-
-<section>
-  <h5 style="text-align:center">Why Reuse?</h5>
-  <p>When you sit down to write a module of code, there is a very strong probability that you are NOT the first person in the world to need that module.  In most of these cases, the functionality you need has already been written and available for you to use.  This saves you time and the module usually has been rigorously tested for errors.</p>
-</section>
-
-<section>
-  <h5 style="text-align:center">Types of Reuse</h5>
-  <p>Libraries - The programming language authors or a third party has built the functionality into the language or a module of code you can reference.</p>
-
-  <p>Code Reuse - A module of code written by you or a member on your team can be reused with little or no modification to solve a new problem.</p>
-
-  <p>Pattern Reuse - The type of problem you are trying to solve has been solved before.  The strategy used to solve it can be reused and implemented in any programming language.</p>
-=======
 <h2>Software Engineering Reuse</h2>
 
 Jonathon, Dane
@@ -78,7 +42,6 @@ Jonathon, Dane
     <dd>The type of problem you are trying to solve has been solved before.  The strategy used to solve it can be reused and implemented in any programming language.</dd>
   </dl>
 
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 
 <section>
@@ -100,11 +63,7 @@ Jonathon, Dane
     <li>File System interaction</li>
     <li>Data Archiving and Persistence</li>
     <li>Communications (especially Internet protocols)</li>
-<<<<<<< HEAD
-    <li>And much, much more!	</li>
-=======
     <li>And much, much more!</li>
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
   </ul>
 </section>
 
@@ -113,29 +72,16 @@ Jonathon, Dane
 
   <p>The math module documentation provides the following information:</p>
 
-<<<<<<< HEAD
-  <pre><code>math.fabs(x)
-Return the absolute value of x.
-</code></pre>
-=======
   <div class="highlight"><pre><code class="python"><span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="c"># Return the absolute value of x.</span></code></pre></div>
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 
   <p>Which you access by importing the module by typing the important statement in the header of your Python script
 and later in your code call fabs(x) with:</p>
 
-<<<<<<< HEAD
-  <pre><code>import math
-...  
-y = math.fabs(x)
-</code></pre>
-=======
   <div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">math</span>
 <span class="o">...</span>  
 <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></div>
 
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </section>
 
 <section>
@@ -268,11 +214,7 @@ The strategy pattern allows the behavior of an function to be changeable at runt
 
   <p>Some code to get you started.  It might need modification as you discover useful library modules:</p>
 
-<<<<<<< HEAD
-  <pre><code>class Employee():
-=======
   <pre><code class="language-python">class Employee():
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
     def __init__(self, name, start_date):
         self.name = name
 	self.start_date = start_date
@@ -291,18 +233,10 @@ Edith = Employee("Edith", "2010/07/04")
 
   <p>Search PyPi for at least three useful packages that might assist you.</p>
 
-<<<<<<< HEAD
-  <p><span style="opacity:0.0">python-twitter1.3.1, nltk, pykml 0.1.0</span></p>
-
-</section>
-
-
-=======
   <p class="fragment">python-twitter1.3.1, nltk, pykml 0.1.0</p>
 
 </section>
 
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 </div></div>
 <script>
 	// Full list of configuration options available here:
@@ -322,21 +256,12 @@ Edith = Employee("Edith", "2010/07/04")
 
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
-<<<<<<< HEAD
-			{ src: 'http://pearsonca.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'http://pearsonca.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'http://pearsonca.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://pearsonca.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
-	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			{ src: 'http://pearsonca.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-=======
 			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 		]
 	});
 </script>

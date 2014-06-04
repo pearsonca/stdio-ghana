@@ -45,8 +45,6 @@
 .main a:hover {
   background-color: #0a0a0a;
 }
-<<<<<<< HEAD
-=======
 .main .instructor img {
   margin-bottom: 1em;
 }
@@ -65,7 +63,6 @@
 .main .instructor + hr {
   clear: both;
 }
->>>>>>> 272f526bdd67fbd128f96664e0cf7e8046080d4e
 body {
   background-color: black;
   font-family: sans-serif;
