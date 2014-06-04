@@ -16,7 +16,7 @@ instructors:
 	myStr = input("Enter your input: ")
 	print "Your answer is: "
 	{% endhighlight %}
-	
+
 </section>
 <section>
 	<h2>File object</h2>
@@ -38,17 +38,17 @@ instructors:
 	{% highlight py %}
 	import csv
 	import sys
-	
+
 	# Write a file
 	out_file = open("test.txt", "w")
 	out_file.write("This Text is going to out file\nLook at it and see!")
 	out_file.close()
- 
+
 	# Read a file
 	in_file = open("test.txt", "r")
 	text = in_file.read()
 	in_file.close()
- 
+
 	print text
 	{% endhighlight %}
 </section>
@@ -72,7 +72,7 @@ instructors:
 	{% highlight py %}
 	import csv
 	import sys
-	
+
 	f = open('file path', 'w')  #input the file path for the PracticeFile.csv
 	try:
 	    writer = csv.writer(f)
@@ -122,5 +122,5 @@ instructors:
 	    f.close()
 
 	print open('file path', 'r').read()
-	{% end highlight %}
+	{% endhighlight %}
 </section>
