@@ -37,4 +37,7 @@ elements:
    uri: distrib
  - name: Parallel Python
    uri: pymp
+ - name: Warmups
+   uri: warmups
+   local: true
 ---
