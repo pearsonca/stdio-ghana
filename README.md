@@ -15,9 +15,10 @@ main session slides
 necessary header and footer material for the slides (e.g., the doctype, opening
 html/head/body elements, closing elements) via the layout value
  4. so to add / edit slides, just add / edit the section elements.
- 5. for non-slide content (e.g., if you need the students to download some
+ 5. slide [demo here](http://lab.hakim.se/reveal-js/#/); more directions [here](https://github.com/hakimel/reveal.js)
+ 6. for non-slide content (e.g., if you need the students to download some
 prepared content for an exercise), add it to this directory as well.
- 6. for markdown slides: we are using the [kramdown](http://kramdown.gettalong.org/syntax.html) engine; detailed documentation in the link
+ 7. for markdown slides: we are using the [kramdown](http://kramdown.gettalong.org/syntax.html) engine; detailed documentation in the link
 
 To run the site locally, install jekyll according to GH instructions, then clone
 the repository.  In the root of the clone, call
