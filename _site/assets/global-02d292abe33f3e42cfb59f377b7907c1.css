@@ -45,22 +45,22 @@
 .main a:hover {
   background-color: #0a0a0a;
 }
-.main .instructor img {
+.main .blurb img {
   margin-bottom: 1em;
 }
-.main .instructor:nth-of-type(even) {
+.main .blurb:nth-of-type(even) {
   text-align: left;
 }
-.main .instructor:nth-of-type(even) img {
+.main .blurb:nth-of-type(even) img {
   float: right;
 }
-.main .instructor:nth-of-type(odd) {
+.main .blurb:nth-of-type(odd) {
   text-align: right;
 }
-.main .instructor:nth-of-type(odd) img {
+.main .blurb:nth-of-type(odd) img {
   float: left;
 }
-.main .instructor + hr {
+.main .blurb + hr {
   clear: both;
 }
 body {

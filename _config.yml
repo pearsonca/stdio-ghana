@@ -6,16 +6,19 @@ activeClass: class="active"
 highlighter: pygments
 encoding: utf-8
 navPages:
+ - schedule
  - instructors
  - sessions
- - reports
+ - students
  - projects
- - schedule
  - misc
+ - reports
 exclude:
  - run.sh
  - INSTALL.md
  - README.md
 collections:
   instructors:
+    output: true
+  students:
     output: true

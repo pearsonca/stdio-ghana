@@ -1,12 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Python IO</title>
-  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
+<link href='/assets/global-c08ecb66bafa86fd2bc430c47bc662dc.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -17,27 +12,109 @@
 
 Deanne
 </section>
+
 <section>
-	<h2>Basics</h2>
-	<p>File object</p>
-	<p><dt>open and/or create file</dt></p>
-	<p><i>close file</i></p>
-	<p><i>Reading file</i></p>
-	<p><i>Read line by line of a txt file</i></p>
+	<h2>Keyboard input</h2>
+	<div class="highlight"><pre><code class="py"><span class="n">myStr</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Enter your input: &quot;</span><span class="p">)</span>
+	<span class="k">print</span> <span class="s">&quot;Your input is: &quot;</span><span class="p">,</span> <span class="n">myString</span></code></pre></div>
+	<br>
+	<div class="highlight"><pre><code class="py"><span class="n">myStr</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter your input: &quot;</span><span class="p">)</span>
+	<span class="k">print</span> <span class="s">&quot;Your answer is: &quot;</span></code></pre></div>
+
 </section>
 <section>
-	<h2>Examples</h1>
-	<h3><i>To include basic text file</i></h3>
-	<h3><i>Include a csv file</i></h3>
-	<h3><include excel file<i></include></h3>
-	<h3><i>Dealing with column headers</i></h3>
+	<h2>File object</h2>
+	<p>open function creates a Pythong file object which links to a file on your machine</p>
+	<p>Once open, strings of data can transferred to and from the file</p>
+	<p>To open a file:</p>
+	<div class="highlight"><pre><code class="py"><span class="n">afile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span>
+	<span class="n">afile</span><span class="o">.</span><span class="n">method</span></code></pre></div>
+	<p>The <i>mode</i> can be 'r' for read, 'w' for write, or 'a' to append</p>
 </section>
 <section>
-	<h2>File management</h2>
-	<h3><i>Splitting and joining files</i></h3>
+	<h3>Common file operations</h3>
+	<img src="fileOperations.jpg" WIDTH=513 HEIGHT=594>
 </section>
 <section>
-	<h2>Application</h2>
+	<h2>Experiment</h2>
+	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+	<span class="kn">import</span> <span class="nn">sys</span>
+
+	<span class="c"># Write a file</span>
+	<span class="n">out_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span>
+	<span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;This Text is going to out file</span><span class="se">\n</span><span class="s">Look at it and see!&quot;</span><span class="p">)</span>
+	<span class="n">out_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+	<span class="c"># Read a file</span>
+	<span class="n">in_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;test.txt&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
+	<span class="n">text</span> <span class="o">=</span> <span class="n">in_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+	<span class="n">in_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+	<span class="k">print</span> <span class="n">text</span></code></pre></div>
+</section>
+<section>
+	<h2>Reading csv files</h2>
+	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+	<span class="kn">import</span> <span class="nn">sys</span>
+
+	<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;file path&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span> <span class="c">#input the file path for the PracticeFile.csv</span>
+	<span class="k">try</span><span class="p">:</span>
+	    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+	    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+	        <span class="k">print</span> <span class="n">row</span>
+	<span class="k">finally</span><span class="p">:</span>
+	    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div>
+</section>
+<section>
+	<h2>Writing to csv files</h2>
+	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+	<span class="kn">import</span> <span class="nn">sys</span>
+
+	<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;file path&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>  <span class="c">#input the file path for the PracticeFile.csv</span>
+	<span class="k">try</span><span class="p">:</span>
+	    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+	    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span> <span class="p">(</span><span class="s">&#39;Title 1&#39;</span><span class="p">,</span> <span class="s">&#39;Title 2&#39;</span><span class="p">,</span> <span class="s">&#39;Title 3&#39;</span><span class="p">)</span> <span class="p">)</span>
+	    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+	        <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">i</span><span class="p">),</span> <span class="s">&#39;08/</span><span class="si">%02d</span><span class="s">/07&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span> <span class="p">)</span>
+	<span class="k">finally</span><span class="p">:</span>
+	    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+	<span class="k">print</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;file path&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>  <span class="c">#input the file path for the PracticeFile.csv</span></code></pre></div>
+</section>
+
+<section>
+	<h2>Reading csv as dictionary</h2>
+	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+	<span class="kn">import</span> <span class="nn">sys</span>
+
+	<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;file path&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+	<span class="k">try</span><span class="p">:</span>
+	    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+	    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+	        <span class="k">print</span> <span class="n">row</span>
+	<span class="k">finally</span><span class="p">:</span>
+	    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></code></pre></div>
+</section>
+<section>
+	<h2>Writing dictionary to csv</h2>
+	<div class="highlight"><pre><code class="py"><span class="kn">import</span> <span class="nn">csv</span>
+	<span class="kn">import</span> <span class="nn">sys</span>
+
+	<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;file path&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+	<span class="k">try</span><span class="p">:</span>
+	    <span class="n">fieldnames</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;Title 1&#39;</span><span class="p">,</span> <span class="s">&#39;Title 2&#39;</span><span class="p">,</span> <span class="s">&#39;Title 3&#39;</span><span class="p">)</span>
+	    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">fieldnames</span><span class="o">=</span><span class="n">fieldnames</span><span class="p">)</span>
+	    <span class="n">headers</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">fieldnames</span> <span class="p">)</span>
+	    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">headers</span><span class="p">)</span>
+	    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+	        <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">({</span> <span class="s">&#39;Title 1&#39;</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span>
+	                          <span class="s">&#39;Title 2&#39;</span><span class="p">:</span><span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="n">i</span><span class="p">),</span>
+	                          <span class="s">&#39;Title 3&#39;</span><span class="p">:</span><span class="s">&#39;08/</span><span class="si">%02d</span><span class="s">/07&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span>
+	                          <span class="p">})</span>
+	<span class="k">finally</span><span class="p">:</span>
+	    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+	<span class="k">print</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;file path&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span></code></pre></div>
 </section>
 
 </div></div>
@@ -70,3 +147,4 @@ Deanne
 </script>
 </body>
 </html>
+

@@ -1,12 +1,19 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/site.css">
-  <link rel="stylesheet" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/reveal.min.css">
-  <link rel="stylesheet" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="{{ site.absoluteurl }}{{ site.baseurl }}/js/site.js"></script>
+{% css_asset_tag global %}
+- /_assets/site.css.less
+- /_assets/reveal.min.css
+- /_assets/theme/default.css
+- /_assets/syntax.css.less
+{% endcss_asset_tag %}
   <script type="text/javascript" src="{{ site.absoluteurl }}{{ site.baseurl }}/js/head.min.js"></script>
   <script type="text/javascript" src="{{ site.absoluteurl }}{{ site.baseurl }}/js/reveal.min.js"></script>
 </head>
 <body>
 <div class="reveal"><div class="slides">
+<section>
+<h2>{{ page.title }}</h2>
+{% if page.subtitle %}<h3><em>{{ page.subtitle }}</em></h3>{% endif %}
+{% if page.instructors %}{{ page.instructors | join: ', ' }}{% endif %}
+</section>

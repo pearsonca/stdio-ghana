@@ -1,12 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
+<link href='/assets/global-c08ecb66bafa86fd2bc430c47bc662dc.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -17,6 +12,7 @@
 
 
 </section>
+
 <section>this is index.html
 	<h3>Software Engineering Reuse</h3>
 	<h5>Prerequisites: Object Oriented Programming</h5>
@@ -268,3 +264,4 @@ Use code module, libraries and a design pattern to solve a programming problem.
 </script>
 </body>
 </html>
+
