@@ -1,10 +1,11 @@
 ---
-layout: blurb
+layout: instructor_blurb
 name: Deanne B. McPherson
 affiliation: Pennsylvania State University
 title: PhD Candidate
 imagetype: jpg
-status: current
+role: Instructor
+github: dbmcpherson
 ---
 Deanne is a PhD candidate in Industrial Engineering and Operations Research at
 Penn State University.

@@ -1,11 +1,12 @@
 ---
-layout: blurb
+layout: instructor_blurb
 name: Jonathon K. Parker
 affiliation: iBASEt
 title: Computer Scientist
 email: arkerpay.ghana@gmail.com
 imagetype: jpg
-status: current
+role: Instructor
+github: arkerpay
 ---
 Has over a decade of experience as a software engineer and computer scientist
 and received a Ph. D. in Computer Science and Engineering from the University
