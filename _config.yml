@@ -17,6 +17,7 @@ exclude:
  - run.sh
  - INSTALL.md
  - README.md
+ - Rakefile
 collections:
   instructors:
     output: true
