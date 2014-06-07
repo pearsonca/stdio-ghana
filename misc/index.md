@@ -12,7 +12,8 @@ and email us the username.
 The course will be held in the University of Ghana Computing Systems Center, and
 lodging provided in Francis Sey Hall.  Directions from Francis Sey to the UGCS
 are available [here](https://goo.gl/maps/YVqLg), though there are some obvious
-detours to take from the main roads to speed up the walk.
+detours to take from the main roads to speed up the walk.  The class starts
+promptly at 9 AM and runs until 5 PM in the evening.
 
 During the course, we will use the lab computers exclusively during the day (no
 personal computers are necessary, or should be brought to the lab).  These will
