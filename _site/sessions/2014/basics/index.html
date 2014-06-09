@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<link href='/assets/presentation-682143edecc7ffcf26b1d8c4d2005fe6.css' rel='stylesheet' type='text/css' />
+<link href='/assets/presentation-2b9193322cdabb4e477efd5bf5042528.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -17,7 +17,7 @@ Deanne, Seifu
 	<h2>Why use Python?</h2>
 </section>
 <section>
-	<h2>print "Hello World!"</h2>
+	<h2>print ("Hello World!")</h2>
 </section>
 
 <section>
@@ -45,9 +45,9 @@ Deanne, Seifu
 </section>
 <section>
 	<h2>Numbers and Strings</h2>
-	<li>floating point: 3.14159</li>
-	<li>integer: 4</li>
-	<li>string: "This is a string"</li>
+	<li align="left">floating point: 3.14159</li>
+	<li align="left">integer: 4</li>
+	<li align="left">string: "This is a string"</li>
 </section>
 
 <section>
@@ -61,25 +61,30 @@ Deanne, Seifu
 
 		<span class="c">#testing code</span>
 		<span class="k">if</span> <span class="n">mystring</span> <span class="o">==</span> <span class="s">&quot;hello&quot;</span><span class="p">:</span>
-			<span class="k">print</span> <span class="s">&quot;String: </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span><span class="n">mystring</span>
+			<span class="k">print</span> <span class="p">(</span><span class="s">&quot;String: </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span><span class="n">mystring</span><span class="p">)</span>
 		<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">myfloat</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span> <span class="ow">and</span> <span class="n">myfloat</span> <span class="o">==</span> <span class="mf">10.0</span><span class="p">:</span>
-			<span class="k">print</span> <span class="s">&quot;Float: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">myfloat</span>
+			<span class="k">print</span> <span class="p">(</span><span class="s">&quot;Float: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">myfloat</span><span class="p">)</span>
 		<span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">myint</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="n">myint</span> <span class="o">==</span> <span class="mi">20</span><span class="p">:</span>
-			<span class="k">print</span> <span class="s">&quot;integer: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">myint</span></code></pre></div>
+			<span class="k">print</span> <span class="p">(</span><span class="s">&quot;integer: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">myint</span><span class="p">)</span></code></pre></div>
 	</ul>
 </section>
 
 <section>
 	<h2>Lists</h2>
 		<div class="highlight"><pre><code class="py"><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="s">&#39;spam&#39;</span><span class="p">,</span> <span class="mf">1.23</span><span class="p">]</span>
-		<span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
-		<span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-		<span class="n">L</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-		<span class="n">L</span> <span class="o">+</span> <span class="p">[</span><span class="mf">4.5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
-		<span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;NI&#39;</span><span class="p">)</span>
-		<span class="n">L</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 
-		<span class="n">M</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+		<span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+
+		<span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+		<span class="n">L</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+		<span class="n">L</span> <span class="o">+</span> <span class="p">[</span><span class="mf">4.5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+
+		<span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;NI&#39;</span><span class="p">)</span>
+		<span class="n">L</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span></code></pre></div>
+	<br>
+		<div class="highlight"><pre><code class="py"><span class="n">M</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
 		    <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
 		    <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]</span>
 		<span class="n">M</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -93,42 +98,51 @@ Deanne, Seifu
 	Fill in variable second_name with the second names in the names list
 	</p>
 	<div class="highlight"><pre><code class="py"><span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">strings</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;John&quot;</span><span class="p">,</span> <span class="s">&quot;Eric&quot;</span><span class="p">,</span> <span class="s">&quot;Jessica&quot;</span><span class="p">]</span>
+<span class="n">strings</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;John&quot;</span><span class="p">,</span> <span class="s">&quot;Eric&quot;</span><span class="p">,</span> <span class="s">&quot;Jessica&quot;</span><span class="p">]</span>
 
-	<span class="c"># write your code here</span>
-	<span class="n">second_name</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="c"># write your code here</span>
+<span class="n">second_name</span> <span class="o">=</span> <span class="bp">None</span>
 
 
-	<span class="c"># this code should write out the filled arrays and the second name in the names list (Eric).</span>
-	<span class="k">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-	<span class="k">print</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span>
-	<span class="k">print</span><span class="p">(</span><span class="s">&quot;The second name on the names list is </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">second_name</span><span class="p">)</span></code></pre></div>
+<span class="c"># this code should write out the filled arrays and the second name in the names list (Eric).</span>
+<span class="k">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;The second name on the names list is </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">second_name</span><span class="p">)</span></code></pre></div>
 
 </section>
 <section>
 	<h2>Tuples</h2>
-	<div class="highlight"><pre><code class="py"><span class="n">T</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-	<span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
-	<span class="n">T</span> <span class="o">+</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-	<span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-	<span class="n">T</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-	<span class="n">T</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight"><pre><code class="py"><span class="n">T</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 
-	<span class="n">T</span> <span class="o">=</span> <span class="s">&#39;spam&#39;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span>
-	<span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-	<span class="n">T</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span></code></pre></div>
+<span class="nb">len</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+
+<span class="n">T</span> <span class="o">+</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+
+<span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">T</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">T</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span></code></pre></div>
+<br>
+	<div class="highlight"><pre><code class="py"><span class="n">T</span> <span class="o">=</span> <span class="s">&#39;spam&#39;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span>
+
+<span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">T</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span></code></pre></div>
 </section>
 
 <section>
 	<h2>Dictionary</h2>
 	<p> Creating a dictionary</p>
-	<div class="highlight"><pre><code class="py"><span class="n">emp1</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="s">&#39;Bob&#39;</span><span class="p">,</span> <span class="s">&#39;job&#39;</span><span class="p">:</span> <span class="s">&#39;waiter&#39;</span><span class="p">,</span> <span class="s">&#39;salary&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
-	<span class="n">emp1</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">&#39;Bob&#39;</span><span class="p">,</span> <span class="n">j</span>
-	<span class="n">emp1</span> <span class="o">=</span> <span class="p">{}</span>
-	<span class="n">emp1</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span><span class="s">&#39;Bob&#39;</span>
-	<span class="n">emp1</span><span class="p">[</span><span class="s">&#39;job&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;waiter&#39;</span>
-	<span class="n">emp1</span><span class="p">[</span><span class="s">&#39;salary&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span></code></pre></div>
+	<div class="highlight"><pre><code class="py"><span class="n">emp1</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="s">&#39;Bob&#39;</span><span class="p">,</span> <span class="s">&#39;job&#39;</span><span class="p">:</span> <span class="s">&#39;waiter&#39;</span><span class="p">,</span> <span class="s">&#39;salary&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span></code></pre></div>
+<br>
+	<div class="highlight"><pre><code class="py"><span class="n">emp1</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">&#39;Bob&#39;</span><span class="p">,</span> <span class="n">job</span><span class="o">=</span><span class="s">&#39;waiter&#39;</span><span class="p">,</span><span class="n">salary</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span></code></pre></div>
+<br>
+	<div class="highlight"><pre><code class="py"><span class="n">emp1</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">emp1</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span><span class="s">&#39;Bob&#39;</span>
+<span class="n">emp1</span><span class="p">[</span><span class="s">&#39;job&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;waiter&#39;</span>
+<span class="n">emp1</span><span class="p">[</span><span class="s">&#39;salary&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span></code></pre></div>
 	<p>Nesting in a dictionary</p>
 	<div class="highlight"><pre><code class="py"><span class="n">emp1</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s">&#39;first&#39;</span><span class="p">:</span> <span class="s">&#39;Bob&#39;</span><span class="p">,</span> <span class="s">&#39;last&#39;</span><span class="p">:</span> <span class="s">&#39;Smith&#39;</span><span class="p">},</span> <span class="s">&#39;jobs&#39;</span><span class="p">:[</span><span class="s">&#39;waiter&#39;</span><span class="p">,</span> <span class="s">&#39;host&#39;</span><span class="p">],</span> <span class="s">&#39;salary&#39;</span><span class="p">:</span> <span class="mi">3</span></code></pre></div>
 </section>
@@ -137,19 +151,19 @@ Deanne, Seifu
 	<h2>Dictionary Exercise</h2>
 	<p>Add "Jake" to the phonebook with the phone number 938273443, and remove Jill from the phonebook</p>
 	<div class="highlight"><pre><code class="py"><span class="n">phonebook</span> <span class="o">=</span> <span class="p">{</span>
-    		<span class="s">&quot;John&quot;</span> <span class="p">:</span> <span class="mi">938477566</span><span class="p">,</span>
-    		<span class="s">&quot;Jack&quot;</span> <span class="p">:</span> <span class="mi">938377264</span><span class="p">,</span>
-    		<span class="s">&quot;Jill&quot;</span> <span class="p">:</span> <span class="mi">947662781</span>
-	<span class="p">}</span>
+    <span class="s">&quot;John&quot;</span> <span class="p">:</span> <span class="mi">938477566</span><span class="p">,</span>
+    <span class="s">&quot;Jack&quot;</span> <span class="p">:</span> <span class="mi">938377264</span><span class="p">,</span>
+    <span class="s">&quot;Jill&quot;</span> <span class="p">:</span> <span class="mi">947662781</span>
+    <span class="p">}</span>
 
-	<span class="c"># write your code here</span>
+<span class="c"># write your code here</span>
 
 
-	<span class="c"># testing code</span>
-	<span class="k">if</span> <span class="s">&quot;Jake&quot;</span> <span class="ow">in</span> <span class="n">phonebook</span><span class="p">:</span>
-	    <span class="k">print</span> <span class="s">&quot;Jake is listed in the phonebook.&quot;</span>
-	<span class="k">if</span> <span class="s">&quot;Jill&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">phonebook</span><span class="p">:</span>
-	    <span class="k">print</span> <span class="s">&quot;Jill is not listed in the phonebook.&quot;</span></code></pre></div>
+<span class="c"># testing code</span>
+<span class="k">if</span> <span class="s">&quot;Jake&quot;</span> <span class="ow">in</span> <span class="n">phonebook</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">&quot;Jake is listed in the phonebook.&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="s">&quot;Jill&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">phonebook</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">&quot;Jill is not listed in the phonebook.&quot;</span><span class="p">)</span></code></pre></div>
 </section>
 
 <section>
@@ -157,40 +171,40 @@ Deanne, Seifu
 	<h3>Numbers</h3>
 	<p>Follows basic order of operations</p>
 	<div class="highlight"><pre><code class="py"><span class="n">x</span> <span class="o">=</span> <span class="mi">40</span>
-	<span class="n">x</span><span class="o">/</span><span class="mi">20</span> <span class="o">+</span> <span class="mi">17</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">2</span></code></pre></div>
+<span class="n">x</span><span class="o">/</span><span class="mi">20</span> <span class="o">+</span> <span class="mi">17</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">2</span></code></pre></div>
 	<h3>Strings</h3>
 	<div class="highlight"><pre><code class="py"><span class="n">myStr</span> <span class="o">=</span> <span class="s">&quot;Hello world!&quot;</span>
-	<span class="k">print</span> <span class="n">myStr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-	<span class="k">print</span> <span class="n">myStr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span></code></pre></div>
+<span class="k">print</span> <span class="p">(</span><span class="n">myStr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span> <span class="p">(</span><span class="n">myStr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span></code></pre></div>
 </section>
 <section>
 	<h3>Comparison</h3>
 	<p>Often used with if, for and while statements</p>
-	<li>==, !=, <>, >, <, <=, >= </li>
+	<li align="left">==, !=, <>, >, <, <=, >= </li>
 		<div class="highlight"><pre><code class="py"><span class="k">if</span> <span class="nb">isinstance</span> <span class="p">(</span><span class="n">myint</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="n">myint</span> <span class="o">==</span> <span class="mi">20</span><span class="p">:</span>
 				<span class="k">print</span> <span class="s">&quot;integer: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">myint</span></code></pre></div>
 	<h3>Assignment</h3>
 	<p>For simplifying code</p>
-	<li>=, +=, -=,*=, /=, %=, **=, //=</li>
-	<li>a = a%b is equivalent to a %=b</li>
+	<li align="left">=, +=, -=,*=, /=, %=, **=, //=</li>
+	<li align="left">a = a%b is equivalent to a %=b</li>
 </section>
 
 <section>
 	<h3>Introduction to Functions</h3>
 	<p>A function includes the 'def' keyword </p>
 	<div class="highlight"><pre><code class="python"><span class="s">&#39;Arguments are optional in the function&#39;</span>
-	<span class="k">def</span> <span class="nf">functionName</span> <span class="p">(</span><span class="n">optArg1</span><span class="p">,</span><span class="n">optArg2</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
-		<span class="s">&#39;set 	something&#39;</span>
-		<span class="s">&#39;return something&#39;</span>
-		<span class="s">&#39;print 	something&#39;</span></code></pre></div>
+<span class="k">def</span> <span class="nf">functionName</span> <span class="p">(</span><span class="n">optArg1</span><span class="p">,</span><span class="n">optArg2</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+    <span class="s">&#39;set something&#39;</span>
+    <span class="s">&#39;return something&#39;</span>
+    <span class="s">&#39;print something&#39;</span></code></pre></div>
 </section>
 <section>
 	<h3>Some examples</h3>
 	<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">printFunction</span> <span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">greeting</span><span class="p">):</span>
-		<span class="k">print</span> <span class="s">&quot;Hello, </span><span class="si">%s</span><span class="s">, From My Function, I wish you </span><span class="si">%s</span><span class="s">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">greeting</span><span class="p">)</span><span class="s">&quot;</span></code></pre></div>
+    <span class="k">print</span> <span class="p">(</span><span class="s">&quot;Hello, </span><span class="si">%s</span><span class="s">, From My Function, I wish you </span><span class="si">%s</span><span class="s">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">greeting</span><span class="p">)</span><span class="s">&quot;)</span></code></pre></div>
 	<br>
 	<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">sumFunction</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-		<span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span></code></pre></div>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span></code></pre></div>
 
 </section>
 
