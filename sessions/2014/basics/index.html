@@ -67,13 +67,21 @@ instructors:
 	<h2>Lists</h2>
 		{%highlight py%}
 		L = [123, 'spam', 1.23]
-		len(L)
-		L[0]
-		L[:-1]
-		L + [4.5,6]
-		L.append('NI')
-		L.pop(2)
 		
+		len(L)
+		
+		L[0]
+		
+		L[:-1]
+		
+		L + [4.5,6]
+		
+		L.append('NI')
+		
+		L.pop(2)
+		{% endhighlight %}
+	<br>
+		{% highlight py %}
 		M = [[1, 2, 3],
 		    [4, 5, 6],
 		    [7, 8, 9]]
@@ -118,7 +126,9 @@ T[0]
 T.index(4)
 
 T.count(4)
+	{% endhighlight %}
 <br>  	
+	{% highlight py %}
 T = 'spam', 3.0, [11, 22, 33]
 
 T[1]
@@ -132,9 +142,13 @@ T[2][1]
 	<p> Creating a dictionary</p>
 	{% highlight py %}
 emp1 = {'name': 'Bob', 'job': 'waiter', 'salary': 3}
+	{% endhighlight %}
 <br>
+	{% highlight py %}
 emp1 = dict(name='Bob', job='waiter',salary=3)
+	{% endhighlight %}
 <br>
+	{% highlight py %}
 emp1 = {}
 emp1['name'] ='Bob'
 emp1['job'] = 'waiter'
