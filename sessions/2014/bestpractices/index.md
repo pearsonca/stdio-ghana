@@ -59,7 +59,7 @@ Always use descriptive names unless name is for a short temporary variable.
 </section>
 
 <section markdown="block">
-~~~
+{% highlight python %}
 import os
 import sys
 import subprocess
@@ -88,7 +88,7 @@ def main():
     keys = p.processed_posts.keys()
     for k in keys:
       if weighted_terms.has_key(k):
-~~~
+{% endhighlight %}
 </section>
 
 <section markdown="block">
@@ -175,7 +175,9 @@ Code defensively - Think about what can go wrong and apply good practices approp
 <section markdown="block">
 <h5 style="text-align:center">Assignment</h5>
 
-Two poorly designed code modules will be provided.  This is not a debugging exercise.  The code runs and if there is a defect, it is due to design issues.  For each code module:
+Two poorly designed code modules will be provided.  This is not a debugging
+exercise.  The code runs and if there is a defect, it is due to design issues.
+For each code module:
 
 (a) Identify all design flaws.  
 (b) Explain what problems the flaws can cause.  
