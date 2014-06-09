@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<link href='/assets/presentation-2b9193322cdabb4e477efd5bf5042528.css' rel='stylesheet' type='text/css' />
+<link href='/assets/presentation-588ac8836a98ebec239c86dbbfc7790f.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -71,35 +71,36 @@ i, j, k are often used as integers; c, d, e are often used as characters; s is o
 </section>
 
 <section>
-  <pre><code>import os
-import sys
-import subprocess
-import nltk
-import plain
 
-class ProcessedPost(object):
-  def __init__(self, file_name=None, raw_dist=None):
-  self.file_name = file_name
-  self.raw_dist = raw_dist
-  self.processed = nltk.FreqDist()
+  <div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">import</span> <span class="nn">plain</span>
 
-def main():
-  base_dir = sys.argv[1]
-  posts = []
-  global_dist = nltk.FreqDist()
+<span class="k">class</span> <span class="nc">ProcessedPost</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">raw_dist</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">file_name</span> <span class="o">=</span> <span class="n">file_name</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">raw_dist</span> <span class="o">=</span> <span class="n">raw_dist</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">processed</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">()</span>
 
-  for path, sub_dirs, file_path in os.walk(base_dir):
-    for sub_dir in sub_dirs:
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+  <span class="n">base_dir</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+  <span class="n">posts</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">global_dist</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">FreqDist</span><span class="p">()</span>
 
-...
+  <span class="k">for</span> <span class="n">path</span><span class="p">,</span> <span class="n">sub_dirs</span><span class="p">,</span> <span class="n">file_path</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">base_dir</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">sub_dir</span> <span class="ow">in</span> <span class="n">sub_dirs</span><span class="p">:</span>
 
-  weighted_terms = dict()
+<span class="o">...</span>
 
-  for p in posts:
-    keys = p.processed_posts.keys()
-    for k in keys:
-      if weighted_terms.has_key(k):
-</code></pre>
+  <span class="n">weighted_terms</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+  <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">posts</span><span class="p">:</span>
+    <span class="n">keys</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">processed_posts</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">weighted_terms</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="n">k</span><span class="p">):</span></code></pre></div>
+
 </section>
 
 <section>
@@ -186,7 +187,9 @@ to.  As a side benefit, it can also expose defects in the coding.</p>
 <section>
   <h5 style="text-align:center">Assignment</h5>
 
-  <p>Two poorly designed code modules will be provided.  This is not a debugging exercise.  The code runs and if there is a defect, it is due to design issues.  For each code module:</p>
+  <p>Two poorly designed code modules will be provided.  This is not a debugging
+exercise.  The code runs and if there is a defect, it is due to design issues.
+For each code module:</p>
 
   <p>(a) Identify all design flaws.<br />
 (b) Explain what problems the flaws can cause.<br />

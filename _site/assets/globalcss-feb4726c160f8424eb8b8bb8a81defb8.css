@@ -1,0 +1,277 @@
+.top_nav li {
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
+  color: #c5b358;
+  border-radius: 5px;
+}
+.top_nav li:hover {
+  background-color: #fff44f;
+  color: #191970;
+}
+.top_nav li.active {
+  color: #fff44f;
+  background-color: #191970;
+}
+.top_nav li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5em;
+  display: block;
+}
+.top_nav {
+  text-align: center;
+  background-color: #313157;
+  padding: 0px;
+  font-size: 1.5em;
+}
+.main {
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  color: #ffffff;
+  background-color: #1a1a1a;
+  border-width: 4px;
+  border-color: #0a0a0a;
+  border-style: solid;
+  border-radius: 5px;
+}
+.main a {
+  color: inherit;
+}
+.main a:hover {
+  background-color: #0a0a0a;
+}
+.main .blurb {
+  text-align: left;
+}
+.main .blurb img {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  margin-top: 0em;
+}
+.main .blurb:nth-of-type(even) img {
+  float: right;
+}
+.main .blurb:nth-of-type(odd) img {
+  float: left;
+}
+.main .blurb + hr {
+  clear: both;
+}
+body {
+  background-color: black;
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+.highlight {
+  background: #111111;
+  color: #f8f8f2;
+  padding: 0.2em 0.9em;
+  margin-bottom: 1em;
+  font: normal normal normal 115% normal 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace !important;
+  line-height: 1.1em;
+  overflow: auto;
+  font-size: 1.0em;
+  border: 1px solid #CCC;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  /* unused? */
+  /* Comment,
+     Comment.Multiline,
+     Comment.Single,
+     Comment.Special */
+  /* Comment.Preproc,
+     Comment.Special
+   */
+  /* Keyword,
+     Keyword.Constant
+     Keyword.Declaration,
+     Keyword.Type,
+     Keyword.Pseudo */
+  /* Keyword.Namespace */
+  /* Keyword.Reserved */
+  /* Error */
+  /* Name.Tag,
+     Operator.Word,
+     Operator */
+  /* Generic.Emph */
+  /* Generic.Strong */
+  /* Literal,
+     Literal.Number
+     Literal.Number.Float
+     Literal.Number.Hex
+     Literal.Number.Integer
+     Literal.Number.Oct
+     Literal.Number.Integer.Long */
+  /* Literal.String
+     Literal.String.Backtick,
+     Literal.String.Char,
+     Literal.String.Doc,
+     Literal.String.Double,
+     Literal.String.Heredoc
+     Literal.String.Interpol
+     Literal.String.Other,
+     Literal.String.Regex,
+     Literal.String.Single */
+  /* Literal.String.Escape */
+  /* Literal.String.Symbol */
+  /* Literal.Date */
+  /* Name.Variable,
+     Name.Variable.Class,
+     Name.Variable.Global,
+     Name.Variable.Instance */
+  /* Name.Attribute,
+     Name.Class,
+     Name.Decorator,
+     Name.Exception,
+     Name.Function,
+     Name.Other */
+  /* Name.Builtin */
+  /* Name.Builtin.Pseudo */
+  /* Name.Constant,
+     Name.Entity,
+     Name.Namespace */
+}
+.highlight span {
+  font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
+  font-size: 1em;
+}
+.highlight .hll {
+  background-color: #49483e;
+}
+.highlight .c,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+  color: #75715e;
+  font-style: italic;
+}
+.highlight .cp,
+.highlight .cs {
+  font-weight: bold;
+}
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kt,
+.highlight .kp {
+  color: #66d9ef;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kr {
+  color: #6600cc;
+}
+.highlight .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+.highlight .nt,
+.highlight .ow,
+.highlight .o {
+  color: #f92672;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .l,
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #990073;
+}
+.highlight .ld {
+  color: #e6db74;
+}
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+  color: #00ff00;
+}
+.highlight .na,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .nx {
+  color: #a6e22e;
+}
+.highlight .nb {
+  color: #ff66ff;
+}
+.highlight .bp {
+  color: #3030ff;
+}
+.highlight .no,
+.highlight .ni,
+.highlight .nn {
+  color: #663300;
+}
+p > code,
+p > a > code,
+li > code,
+h3 > code {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #C5CBD0;
+  /*color: white*/
+  background-image: url(/images/opaque_20.png);
+  font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+  font-size: 1.1em;
+  /*height: 0px;
+image-rendering: auto;
+left: auto;
+list-style-type: disc;*/
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  text-decoration: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+}
+p > a > code {
+  color: #95be7d;
+}
+code,
+pre {
+  font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;
+  font-size: 0.95em;
+  margin: 1em 0 1.5em 0;
+}
