@@ -1,10 +1,11 @@
 ---
-layout: blurb
+layout: instructor_blurb
 name: Tom J. Hladish
 affiliation: University of Florida
 title: Post-doctoral Researcher
 imagetype: png
-status: past
+role: Curriculum Development, Past Instructor
+github: tjhladish
 ---
 Tom is interested in developing computational solutions to practical problems.
 Recently, his work has focused on dengue, a mosquito-spread disease endemic in

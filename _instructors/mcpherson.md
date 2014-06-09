@@ -1,16 +1,17 @@
 ---
-layout: blurb
+layout: instructor_blurb
 name: Deanne B. McPherson
 affiliation: Pennsylvania State University
 title: PhD Candidate
 imagetype: jpg
-status: current
+role: Instructor
+github: dbmcpherson
 ---
 Deanne is a PhD candidate in Industrial Engineering and Operations Research at
 Penn State University.
 
-In addition to focusing her research in the area of big data analysis on social
-networks.In addition to being a student, she works as a graduate researcher at
+Her research focuses on big data analysis with social
+networks. She also works as a graduate researcher at
 the Applied Research Laboratory with emphasis on long range shipyard capacity
 planning.
 

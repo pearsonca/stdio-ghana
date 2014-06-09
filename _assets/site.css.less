@@ -63,26 +63,28 @@
     }
   }
 
-  .instructor {
+  .blurb {
+    text-align: left;
     img {
+      margin-left: 1em;
+      margin-right: 1em;
       margin-bottom: 1em;
+      margin-top: 0em;
     }
     &:nth-of-type(even) {
       img {
         float: right;
       }
-      text-align: left;
     }
     &:nth-of-type(odd) {
       img {
         float: left;
       }
-      text-align: right;
     }
 
   }
 
-  .instructor + hr {
+  .blurb + hr {
     clear: both;
   }
 }

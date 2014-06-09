@@ -6,24 +6,121 @@ instructors:
  - Deanne
 ---
 <section>
-	<h2>Basics</h2>
-	<p>File object</p>
-	<p><dt>open and/or create file</dt></p>
-	<p><i>close file</i></p>
-	<p><i>Reading file</i></p>
-	<p><i>Read line by line of a txt file</i></p>
+	<h2>Keyboard input</h2>
+	{% highlight py %}
+	myStr = raw_input("Enter your input: ")
+	print "Your input is: ", myString
+	{% endhighlight %}
+	<br>
+	{% highlight py %}
+	myStr = input("Enter your input: ")
+	print "Your answer is: "
+	{% endhighlight %}
+
 </section>
 <section>
-	<h2>Examples</h1>
-	<h3><i>To include basic text file</i></h3>
-	<h3><i>Include a csv file</i></h3>
-	<h3><include excel file<i></include></h3>
-	<h3><i>Dealing with column headers</i></h3>
+	<h2>File object</h2>
+	<p>open function creates a Pythong file object which links to a file on your machine</p>
+	<p>Once open, strings of data can transferred to and from the file</p>
+	<p>To open a file:</p>
+	{% highlight py %}
+	afile = open(filename, mode)
+	afile.method
+	{% endhighlight %}
+	<p>The <i>mode</i> can be 'r' for read, 'w' for write, or 'a' to append</p>
 </section>
 <section>
-	<h2>File management</h2>
-	<h3><i>Splitting and joining files</i></h3>
+	<h3>Common file operations</h3>
+	<img src="fileOperations.jpg" WIDTH=513 HEIGHT=594>
 </section>
 <section>
-	<h2>Application</h2>
+	<h2>Experiment</h2>
+	{% highlight py %}
+	import csv
+	import sys
+
+	# Write a file
+	out_file = open("test.txt", "w")
+	out_file.write("This Text is going to out file\nLook at it and see!")
+	out_file.close()
+
+	# Read a file
+	in_file = open("test.txt", "r")
+	text = in_file.read()
+	in_file.close()
+
+	print text
+	{% endhighlight %}
+</section>
+<section>
+	<h2>Reading csv files</h2>
+	{% highlight py %}
+	import csv
+	import sys
+
+	f = open('file path', 'r') #input the file path for the PracticeFile.csv
+	try:
+	    reader = csv.reader(f)
+	    for row in reader:
+	        print row
+	finally:
+	    f.close()
+	{% endhighlight %}
+</section>
+<section>
+	<h2>Writing to csv files</h2>
+	{% highlight py %}
+	import csv
+	import sys
+
+	f = open('file path', 'w')  #input the file path for the PracticeFile.csv
+	try:
+	    writer = csv.writer(f)
+	    writer.writerow( ('Title 1', 'Title 2', 'Title 3') )
+	    for i in range(10):
+	        writer.writerow( (i+1, chr(ord('a') + i), '08/%02d/07' % (i+1)) )
+	finally:
+	    f.close()
+
+	print open('file path', 'r').read()  #input the file path for the PracticeFile.csv
+	{% endhighlight %}
+</section>
+
+<section>
+	<h2>Reading csv as dictionary</h2>
+	{% highlight py%}
+	import csv
+	import sys
+
+	f = open('file path', 'r')
+	try:
+	    reader = csv.DictReader(f)
+	    for row in reader:
+	        print row
+	finally:
+	    f.close()
+	{% endhighlight %}
+</section>
+<section>
+	<h2>Writing dictionary to csv</h2>
+	{% highlight py %}
+	import csv
+	import sys
+
+	f = open('file path', 'w')
+	try:
+	    fieldnames = ('Title 1', 'Title 2', 'Title 3')
+	    writer = csv.DictWriter(f, fieldnames=fieldnames)
+	    headers = dict( (n,n) for n in fieldnames )
+	    writer.writerow(headers)
+	    for i in range(10):
+	        writer.writerow({ 'Title 1':i+1,
+	                          'Title 2':chr(ord('a') + i),
+	                          'Title 3':'08/%02d/07' % (i+1),
+	                          })
+	finally:
+	    f.close()
+
+	print open('file path', 'r').read()
+	{% endhighlight %}
 </section>

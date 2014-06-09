@@ -9,39 +9,44 @@ instructors:
 	<h2>Why use Python?</h2>
 </section>
 <section>
-	<h2>
-		print "Hello World!"
-	</h2>
+	<h2>print ("Hello World!")</h2>
 </section>
 
 <section>
 	<h2>Basic Syntax</h2>
-	{% highlight py%}
-	from time import localtime
+{% highlight py %}
+from time import localtime
 
-	activities = {8: 'Sleeping',
-        	      9: 'Commuting',
-        	      17: 'Working',
-        	      18: 'Commuting',
-        	      20: 'Eating',
-        	      22: 'Resting' }
+activities = {
+  8: 'Sleeping',
+  9: 'Commuting',
+  17: 'Working',
+  18: 'Commuting',
+  20: 'Eating',
+  22: 'Resting'
+}
 
-	time_now = localtime()
-	hour = time_now.tm_hour
+time_now = localtime()
+hour = time_now.tm_hour
 
-	for activity_time in sorted(activities.keys()):
-    		if hour < activity_time:
-        		print activities[activity_time]
-        	break
-		else:
-    			print 'Unknown or sleeping!'
-    	{% endhighlight %}
+for activity_time in sorted(activities.keys()):
+  if hour < activity_time:
+    print(activities[activity_time])
+    break
+  else:
+    print('Unknown or sleeping!')
+{% endhighlight %}
+</section>
+<section>
+	<h2>Numbers and Strings</h2>
+	<li align="left">floating point: 3.14159</li>
+	<li align="left">integer: 4</li>
+	<li align="left">string: "This is a string"</li>
 </section>
 
 <section>
-	<h2>Variables: Numbers and Strings</h2>
+	<h2>Numbers and Strings Exercise</h2>
 	<ul>
-		<h3>Numbers and Strings</h3>
 		<p1>Change the code to create a string "hello" and floating number 10 and an integer of 20</p1>
 		{% highlight py%}
 		#change this code
@@ -51,83 +56,182 @@ instructors:
 
 		#testing code
 		if mystring == "hello":
-			print "String: %s" %mystring
+			print ("String: %s" %mystring)
 		if isinstance(myfloat, float) and myfloat == 10.0:
-			print "Float: %d" % myfloat
+			print ("Float: %d" % myfloat)
 		if isinstance (myint, int) and myint == 20:
-			print "integer: %d" % myint
+			print ("integer: %d" % myint)
 		{% endhighlight %}
 	</ul>
 </section>
 
 <section>
-	<h2>Variable: List</h2>
+	<h2>Lists</h2>
+		{%highlight py%}
+		L = [123, 'spam', 1.23]
 
-		<li>Tuple</li>
-		<li>Dictionary</li>
+		len(L)
+
+		L[0]
+
+		L[:-1]
+
+		L + [4.5,6]
+
+		L.append('NI')
+		L.pop(2)
+		{% endhighlight %}
+	<br>
+		{% highlight py %}
+		M = [[1, 2, 3],
+		    [4, 5, 6],
+		    [7, 8, 9]]
+		M[1]
+		M[1][2]
+		{% endhighlight %}
+</section>
+<section>
+	<h2>List Exercise</h2>
+	<p>
+	Add numbers 1, 2, 3 to the numbers list
+	Add hello and world to the strings variable
+	Fill in variable second_name with the second names in the names list
+	</p>
+	{% highlight py %}
+numbers = []
+strings = []
+names = ["John", "Eric", "Jessica"]
+
+# write your code here
+second_name = None
+
+
+# this code should write out the filled arrays and the second name in the names list (Eric).
+print(numbers)
+print(strings)
+print("The second name on the names list is %s" % second_name)
+	{% endhighlight %}
+
+</section>
+<section>
+	<h2>Tuples</h2>
+{% highlight py %}
+T = (1, 2, 3, 4)
+
+len(T)
+
+T + (5, 6)
+
+T[0]
+
+T.index(4)
+
+T.count(4)
+	{% endhighlight %}
+<br>
+	{% highlight py %}
+T = 'spam', 3.0, [11, 22, 33]
+
+T[1]
+
+T[2][1]
+{% endhighlight %}
 </section>
 
 <section>
-	<h2>Variable: Tuple</h2>
+	<h2>Dictionary</h2>
+	<p> Creating a dictionary</p>
+	{% highlight py %}
+emp1 = {'name': 'Bob', 'job': 'waiter', 'salary': 3}
+	{% endhighlight %}
+<br>
+	{% highlight py %}
+emp1 = dict(name='Bob', job='waiter',salary=3)
+	{% endhighlight %}
+<br>
+	{% highlight py %}
+emp1 = {}
+emp1['name'] ='Bob'
+emp1['job'] = 'waiter'
+emp1['salary'] = 3
+	{% endhighlight %}
+	<p>Nesting in a dictionary</p>
+	{% highlight py %}
+emp1 = {'name': {'first': 'Bob', 'last': 'Smith'}, 'jobs':['waiter', 'host'], 'salary': 3
+	{% endhighlight %}
 </section>
 
 <section>
-	<h2>Variable: Dictionary</h2>
+	<h2>Dictionary Exercise</h2>
+	<p>Add "Jake" to the phonebook with the phone number 938273443, and remove Jill from the phonebook</p>
+	{% highlight py %}
+phonebook = {
+    "John" : 938477566,
+    "Jack" : 938377264,
+    "Jill" : 947662781
+    }
+
+# write your code here
+
+
+# testing code
+if "Jake" in phonebook:
+    print ("Jake is listed in the phonebook.")
+if "Jill" not in phonebook:
+    print ("Jill is not listed in the phonebook.")
+	{% endhighlight %}
 </section>
 
 <section>
 	<h2>Basic Operators</h2>
-
-	<h2>Numbers</h2>
-	<p>+, -, *, /, %, **, //</p>
-	<h2>Strings</h2>
-	<h5>Comparison</h5>
-	<p>==, !=, <>, >, <, <=, >= </p>
-	<h5>Assignment</h5>
-	<p>=, +=, -=,*=, /=, %=, **=, //=</p>
-
+	<h3>Numbers</h3>
+	<p>Follows basic order of operations</p>
+	{% highlight py %}
+x = 40
+x/20 + 17*10**2
+	{% endhighlight %}
+	<h3>Strings</h3>
+	{% highlight py %}
+myStr = "Hello world!"
+print (myStr[0])
+print (myStr[0:3])
+	{% endhighlight %}
 </section>
 <section>
-	<h2>If, else, nested ifs</h2>
-
+	<h3>Comparison</h3>
+	<p>Often used with if, for and while statements</p>
+	<li align="left">==, !=, <>, >, <, <=, >= </li>
+		{% highlight py %}
+		if isinstance (myint, int) and myint == 20:
+				print "integer: %d" % myint
+		{% endhighlight %}
+	<h3>Assignment</h3>
+	<p>For simplifying code</p>
+	<li align="left">=, +=, -=,*=, /=, %=, **=, //=</li>
+	<li align="left">a = a%b is equivalent to a %=b</li>
 </section>
-<section>
-	<h3>While loops for loops</h3>
 
-	<h3>nested loops</h3>
-
-	<h3>loop control</h3>
-
-</section>
-<section>
-	<h3>Lists</h3>
-
-</section>
-<section>
-	<h3>Dictionary</h3>
-
-</section>
 <section>
 	<h3>Introduction to Functions</h3>
 	<p>A function includes the 'def' keyword </p>
 	{% highlight python %}
-	'Arguments are optional in the function'
-	def functionName (optArg1,optArg2, ...):
-		'set 	something'
-		'return something'
-		'print 	something'
+'Arguments are optional in the function'
+def functionName (optArg1,optArg2, ...):
+    'set something'
+    'return something'
+    'print something'
 	{% endhighlight %}
 </section>
 <section>
 	<h3>Some examples</h3>
 	{% highlight python %}
-	def printFunction (username, greeting):
-		print "Hello, %s, From My Function, I wish you %s"%(username, greeting)"
+def printFunction (username, greeting):
+    print ("Hello, %s, From My Function, I wish you %s"%(username, greeting)")
 	{% endhighlight %}
 	<br>
 	{% highlight python %}
-	def sumFunction (x,y):
-		return x + y
+def sumFunction (x,y):
+    return x + y
 	{% endhighlight %}
 
 </section>

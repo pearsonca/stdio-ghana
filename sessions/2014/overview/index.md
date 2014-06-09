@@ -112,13 +112,13 @@ Warmup
 : Command Line Tricks
 
 Language Session
-: [Python IO](/sessions/{{ year }}/pyio/)
+: [Python OOP Syntax](/sessions/{{ year }}/pyoop/)
 
 Engineering Session
-: [Reuse](/sessions/{{ year }}/reuse/)
+: [Effective OOP](/sessions/{{ year }}/effoop/)
 
 Team Task
-: identify libraries useful to project
+: rough out objects for project
 
 Social
 : Movie Night
@@ -132,13 +132,13 @@ Warmup
 : Security
 
 Language Session
-: [Python OOP Syntax](/sessions/{{ year }}/pyoop/)
+: [Python IO](/sessions/{{ year }}/pyio/)
 
 Engineering Session
-: [Effective OOP](/sessions/{{ year }}/effoop/)
+: [Reuse](/sessions/{{ year }}/reuse/)
 
 Team Task
-: self-directed project implementation from here on
+: identify libraries useful to project
 
 Social
 : Football, then Ghana v. US World Cup game
@@ -218,11 +218,14 @@ What would we doing in a typical day in one of your other classes?
 
 Make clear our expectations in this class:
 
- - "audience" questions will asked regularly: you need to try to answer, and be honest
- about your knowledge; okay to be wrong, not okay to try to hide it
- - the instructors will disagree: most of these points, there isn't a "right"
- answer
- - there will be lots of doing
+- "audience" questions will asked regularly: you need to try to answer, and be honest
+about your knowledge; okay to be wrong, not okay to try to hide it
+- the instructors will disagree: most of these points, there isn't a "right"
+answer
+- there will be lots of doing
+- speak up!
+- lots of team activity - make sure to participate, and to work with others
+(not for them, nor them working for you)
 
 </aside>
 
@@ -231,7 +234,7 @@ Make clear our expectations in this class:
 <section markdown="block">
 ###Tell Everyone Your Name, and One Thing About Yourself
 
-####Then: ask us anything
+####Then: ask us anything{:.fragment}
 </section>
 
 <section markdown="block">

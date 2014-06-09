@@ -1,5 +1,10 @@
 <head>
   <title>STDIO Ghana{% if page.title %} - {{ page.title }}{% endif %}</title>
-  <link rel="stylesheet" type="text/css" href="{{ site.absoluteurl }}{{ site.baseurl }}/css/site.css">
-  <script type="text/javascript" src="{{ site.absoluteurl }}{{ site.baseurl }}/js/site.js"></script>
+{% css_asset_tag globalcss %}
+- /_assets/site.css.less
+- /_assets/syntax.css.less
+{% endcss_asset_tag %}
+{% javascript_asset_tag globaljs %}
+- /_assets/site.js
+{% endjavascript_asset_tag %}
 </head>

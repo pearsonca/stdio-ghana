@@ -1,6 +1,9 @@
-<div class="instructor" markdown="block">
-![{{ page.name }}]({{ page.url | replace:'html', page.imagetype }}){: width="180px"}
-{{ page.name }}: {{ page.title }}, {{ page.affiliation }}
+<div class="blurb" markdown="block">
+{% if page.imagetype %}![{{ page.name }}]({{ page.url | replace:'html', page.imagetype }}){: width="180px"}{% else %}![no image]({{ site.absoluteurl }}/404.jpg){% endif %}
+
+###{{ page.name }}
+
+####{{ page.affiliation }}, [@{{ page.github }}](http://github.com/{{ page.github }})
 
 {{ content }}
 </div>
