@@ -6,22 +6,21 @@ subtitle: Giving your programs a sense of direction
 instructors:
  - Dane
 ---
-<section>
-	<h2>Branching</h2>
-	<table>
-	<tbody>
-		<tr><td>if</td></tr>
-		<tr><td>else</td></tr>
-		<tr><td>elif [Nesting]</td></tr>
-	</tbody>
-	</table>
+<section markdown="block">
+##Branching
+
+|:--:|
+| if |
+| else |
+| elif [Nesting] |
+
 </section>
 <section>
 	<h1>Indentation Matters!</h1>
 </section>
 <section>
-	<h1>Scenario</h1>
-	<img width=500 height=500 data-src="tables.png">
+	<h2>Scenario</h2>
+	<img width="500" height="500" src="tables.png">
 </section>
 <section>
 	<section><h1><a href="ex1.py">Activity 1</a></h1></section>
