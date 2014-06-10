@@ -19,6 +19,14 @@ tables[7] = {"max":2,"status":"occupied","number":7}
 tables[8] = {"max":2,"status":"occupied","number":8}
 tables[9] = {"max":2,"status":"occupied","number":9}
 
+# Function to check table availability.
+def CheckTables():
+	avail = []
+	for place in tables:
+		if place["max"] - size in (0,1) and place["status"] is "available":
+			avail.append(place["number"])
+	return avail
+
 # This Dictionary will keep track of waiting patrons
 wait = {}
 
@@ -38,10 +46,9 @@ while 1:
 		sys.exit(0)	
 	
 	# Check if this party will fit with any table availability
-	avail_tables = []
-	for place in tables:
-		if place["max"] - size in (0,1) and place["status"] is "available":
-			avail_tables.append(place["number"])
+	########################## MODIFY CODE HERE!! #################################
+	# Discern availability of tables inside a function
+	avail_tables = CheckTables()
 			
 	# If yes - let them know they will be seated
 	# If no - let them know how long they must wait

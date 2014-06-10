@@ -19,7 +19,7 @@ table9 = {"max":2,"status":"available"}
 
 
 # Ask the user how many are in their party
-size = input("Akwaba! How many people are in your party?")
+size = input("\nAkwaba! How many people are in your party?")
 size = int(size)
 
 # Check if this party will fit with the table 9 availability

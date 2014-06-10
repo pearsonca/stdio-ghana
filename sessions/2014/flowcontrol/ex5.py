@@ -38,6 +38,8 @@ while 1:
 		sys.exit(0)	
 	
 	# Check if this party will fit with any table availability
+	########################## MODIFY CODE HERE!! #################################
+	# Discern availability of tables inside a function
 	avail_tables = []
 	for place in tables:
 		if place["max"] - size in (0,1) and place["status"] is "available":

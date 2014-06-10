@@ -22,7 +22,7 @@ table_list = [table0,table1,table2,table3,table4,table5,table6,table7,table8,tab
 wait = {}
 
 # Ask the user how many are in their party
-size = input("Akwaba! How many people are in your party? ")
+size = input("\nAkwaba! How many people are in your party? ")
 
 # Handle the exception of a user entering a non-number
 #YOUR CODE HERE!!!
