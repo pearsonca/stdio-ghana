@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<link href='/assets/presentation-54f745603b95ee982b8862501c7c9609.css' rel='stylesheet' type='text/css' />
+<link href='/assets/presentation-c66a0db8956fece113874fe6bcacf2c9.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -28,19 +28,17 @@ Dane
    </section>
    <section>
 	<h2><a href="syntax.py">Syntax Error</a></h2>
-	<pre><code>
-#!/usr/bin/python3
-#This program divides two numbers
-# The function below calculates and returns the division result
-def div(x,y,z)
-	q = x//y
-	return q
-# Main portion of program to set up the problem
-a = int(input("Enter the first operand: "))
-b = int(input("Enter the second operand: "))
-c = div(a,b)
-print("\nYour answer is %f\n" % c)
-	</code></pre>
+<div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
+<span class="c"># This program divides two numbers</span>
+<span class="c"># The function below calculates and returns the division result</span>
+<span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
+	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">//</span><span class="n">y</span>
+	<span class="k">return</span> <span class="n">q</span>
+<span class="c"># Main portion of program to set up the problem</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
    </section>
 </section>
 <section>
@@ -52,19 +50,17 @@ print("\nYour answer is %f\n" % c)
    </section>
    <section>
 	<h2><a href="runtime.py">Runtime Error</a></h2>
-	<pre><code>
-#!/usr/bin/python3
-#This program divides two numbers
-# The function below calculates and returns the division result
-def div(x,y,z):
-	q = x//y
-	return q
-# Main portion of program to set up the problem
-a = int(input("Enter the first operand: "))
-b = int(input("Enter the second operand: "))
-c = div(a,b)
-print("\nYour answer is %f\n" % c)
-	</code></pre>
+<div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
+<span class="c"># This program divides two numbers</span>
+<span class="c"># The function below calculates and returns the division result</span>
+<span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">):</span>
+	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">//</span><span class="n">y</span>
+	<span class="k">return</span> <span class="n">q</span>
+<span class="c"># Main portion of program to set up the problem</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
    </section>
 </section>
 <section>
@@ -75,19 +71,17 @@ print("\nYour answer is %f\n" % c)
    </section>
    <section>
 	<h2><a href="logical.py">Logical Error</a></h2>
-	<pre><code>
-#!/usr/bin/python3
-#This program divides two numbers
-# The function below calculates and returns the division result
-def div(x,y)
-	q = x//y
-	return q
-# Main portion of program to set up the problem
-a = int(input("Enter the first operand: "))
-b = int(input("Enter the second operand: "))
-c = div(a,b)
-print("\nYour answer is %f\n" % c)
-	</code></pre>
+<div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
+<span class="c"># This program divides two numbers</span>
+<span class="c"># The function below calculates and returns the division result</span>
+<span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">//</span><span class="n">y</span>
+	<span class="k">return</span> <span class="n">q</span>
+<span class="c"># Main portion of program to set up the problem</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
    </section>
 </section>
 <section>
@@ -98,19 +92,17 @@ print("\nYour answer is %f\n" % c)
    </section>
    <section>
 	<h2><a href="invalid.py">Input Validation</a></h2>
-	<pre><code>
-#!/usr/bin/python3
-#This program divides two numbers
-# The function below calculates and returns the division result
-def div(x,y,z)
-	q = x/y
-	return q
-# Main portion of program to set up the problem
-a = int(input("Enter the first operand: "))
-b = int(input("Enter the second operand: "))
-c = div(a,b)
-print("\nYour answer is %f\n" % c)
-	</code></pre>
+<div class="highlight"><pre><code class="python"><span class="c">#!/usr/bin/python3</span>
+<span class="c"># This program divides two numbers</span>
+<span class="c"># The function below calculates and returns the division result</span>
+<span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
+	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
+	<span class="k">return</span> <span class="n">q</span>
+<span class="c"># Main portion of program to set up the problem</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
    </section>
 </section>
 <!-- Use the given example after each type above -->
