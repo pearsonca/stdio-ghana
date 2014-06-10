@@ -22,7 +22,7 @@ table_list = [table0,table1,table2,table3,table4,table5,table6,table7,table8,tab
 wait = {}
 
 # Ask the user how many are in their party
-size = input("Akwaba! How many people are in your party? ")
+size = input("\nAkwaba! How many people are in your party? ")
 size = int(size)
 
 # Check if this party will fit with the table 9 availability

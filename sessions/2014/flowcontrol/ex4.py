@@ -28,7 +28,7 @@ wait = {}
 # Don't forget to indent properly!!!
 
 # Ask the user how many are in their party
-size = input("Akwaba! How many people are in your party? ")
+size = input("\nAkwaba! How many people are in your party? ")
 
 # Handle the exception of a user entering a non-number
 try: 

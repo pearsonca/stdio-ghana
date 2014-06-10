@@ -53,3 +53,6 @@ instructors:
 <section>
 	<h2>Functions</h2>
 </section>
+<section>
+	<h1><a href="ex5.py">Activity 5</a></h1>
+</section>
