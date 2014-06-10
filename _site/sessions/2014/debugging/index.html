@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<link href='/assets/presentation-0136dda8b3b2be47047a8bfc283d8063.css' rel='stylesheet' type='text/css' />
+<link href='/assets/presentation-54f745603b95ee982b8862501c7c9609.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -20,21 +20,98 @@ Dane
 	<p>Logical Error</p>
 </section>
 <section>
+   <section>
 	<h2>Syntax Error</h2>
 	<p>Typo or improper use of code.</p>
 	<p>Compiler or interpreter will alert you prior to execution.</p>
-	<p>ie. Wrong number of arguments to a function</p>
+	<p>ie. Missing colon for a definition</p>
+   </section>
+   <section>
+	<h2><a href="syntax.py">Syntax Error</a></h2>
+	<pre><code>
+#!/usr/bin/python3
+#This program divides two numbers
+# The function below calculates and returns the division result
+def div(x,y,z)
+	q = x//y
+	return q
+# Main portion of program to set up the problem
+a = int(input("Enter the first operand: "))
+b = int(input("Enter the second operand: "))
+c = div(a,b)
+print("\nYour answer is %f\n" % c)
+	</code></pre>
+   </section>
 </section>
 <section>
+   <section>
 	<h2>Runtime Error</h2>
 	<p>Illegal implementation of code or routine, though syntactically correct.</p>
 	<p>Caught during execution, program will immediately crash or exit.</p>
 	<p>ie. Divide by 0</p>
+   </section>
+   <section>
+	<h2><a href="runtime.py">Runtime Error</a></h2>
+	<pre><code>
+#!/usr/bin/python3
+#This program divides two numbers
+# The function below calculates and returns the division result
+def div(x,y,z):
+	q = x//y
+	return q
+# Main portion of program to set up the problem
+a = int(input("Enter the first operand: "))
+b = int(input("Enter the second operand: "))
+c = div(a,b)
+print("\nYour answer is %f\n" % c)
+	</code></pre>
+   </section>
 </section>
 <section>
+   <section>
 	<h2>Logical Error</h2>
 	<p>Execution completes without error, but behavior or results are unexpected.</p>
 	<p>ie. Wrong format string identifier</p>
+   </section>
+   <section>
+	<h2><a href="logical.py">Logical Error</a></h2>
+	<pre><code>
+#!/usr/bin/python3
+#This program divides two numbers
+# The function below calculates and returns the division result
+def div(x,y)
+	q = x//y
+	return q
+# Main portion of program to set up the problem
+a = int(input("Enter the first operand: "))
+b = int(input("Enter the second operand: "))
+c = div(a,b)
+print("\nYour answer is %f\n" % c)
+	</code></pre>
+   </section>
+</section>
+<section>
+   <section>
+	<h2>Input Validation</h2>
+	<p>Execution completes without error, but behavior or results are unexpected.</p>
+	<p>ie. Wrong format string identifier</p>
+   </section>
+   <section>
+	<h2><a href="invalid.py">Input Validation</a></h2>
+	<pre><code>
+#!/usr/bin/python3
+#This program divides two numbers
+# The function below calculates and returns the division result
+def div(x,y,z)
+	q = x/y
+	return q
+# Main portion of program to set up the problem
+a = int(input("Enter the first operand: "))
+b = int(input("Enter the second operand: "))
+c = div(a,b)
+print("\nYour answer is %f\n" % c)
+	</code></pre>
+   </section>
 </section>
 <!-- Use the given example after each type above -->
 <!-- Use a different example below, but re-use for each analysis type -->
