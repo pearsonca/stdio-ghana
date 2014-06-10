@@ -7,106 +7,118 @@ instructors:
  - Deanne
 ---
 <section>
-	<h3>Python Basics Recap</h3>
-	<ol>
-		<li>Make a list of three employees named &quot;bob&quot;, &quot;sue&quot;,  and &quot;rick&quot;</li>
-		<li>Make a dictionary of three employees named &quot;bob&quot;, &quot;sue&quot;,  and &quot;rick&quot; that have a position [waiter, host, cook] and a salary [3, 4, 8].</li>
-		<li>Using the dictionary from above, raise the employees&#39; salaries by 10%.</li>
-		<li>Write a function that will output every employees information.</li>
-	</ol>
+    <h3>Python Basics Recap</h3>
+    <ol>
+        <li>Make a list of three employees named &quot;bob&quot;, &quot;sue&quot;,  and &quot;rick&quot;</li>
+        <li>Make a dictionary of three employees named &quot;bob&quot;, &quot;sue&quot;,  and &quot;rick&quot; that have a position [waiter, host, cook] and a salary [3, 4, 8].</li>
+        <li>Using the dictionary from above, raise the employees&#39; salaries by 10%.</li>
+        <li>Write a function that will output every employees information.</li>
+    </ol>
 </section>
 <section>
-	<h3>Variable Scope</h3>
+    <h3>Variable Scope</h3>
 
-	Important to know where variables have values and when!
+    Important to know where variables have values and when!
 
-	{% highlight py %}
+    {% highlight py %}
 class MenuItem:
-'Common base for all food items'
-
-	def __init__(self, name, price):
-		self.name = name
-		self.price = price
-	def displayMenuItem(self):
-		print "Name: ", self.name, ", Price: ", self.price
+    'Common base for all food items'
+    def __init__(self, name, price):
+            self.name = name
+            self.price = price
+    def displayMenuItem(self):
+            print ("Name: ", self.name, ", Price: ", self.price)
 
 if __name__ == "__main__":
-	item1 = MenuItem("name", "foodType", "price")
-	item1.displayMenuItem()
-	{% endhighlight %}
+    item1 = MenuItem("Rice",5)
+    item1.displayMenuItem()
+    {% endhighlight %}
 
 </section>
 
 
 <section>
-	<h3>Exception Handling</h3>
-	Defending against code that may raise an exception.
-	<ul>
-		<li>try, except, else</li>
-		<li>try, except, else, finally</li>
-	</ul>
+    <h3>Exception Handling</h3>
+    Defending against code that may raise an exception.
+    <ul>
+        <li>try, except, else</li>
+        <li>try, except, else, finally</li>
+    </ul>
 
-	<aside class ="notes" markdown="block">
-	An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the programs instructions. When you are uncertain if your code will raise an exception you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
-	</aside>
+    <aside class ="notes" markdown="block">
+    An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the programs instructions. When you are uncertain if your code will raise an exception you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
+    </aside>
 </section>
 
 
 <section>
 
-	{% highlight py %}
+    {% highlight py %}
 try:
-	#You do your operations here
+    #You do your operations here
 except ExceptionI:
-	#If there is ExceptionI, then execute this block
+    #If there is ExceptionI, then execute this block
 except ExceptionII:
-	#If there is ExceptionII, then execute this block
+    #If there is ExceptionII, then execute this block
 else:
-	#If there is no exception then execute this block
-	{% endhighlight %}
+    #If there is no exception then execute this block
+    {% endhighlight %}
 </section>
 <section>
 
-	{% highlight py %}
+    {% highlight py %}
 try:
-	fh = open("testfile", "w")
-	fh.write("this is my test file for exception handling")
+    fh = open("testfile", "w")
+    fh.write("this is my test file for exception handling")
 except IOError:
-	print "Error: can\'t find file or read data"
+    print ("Error: can\'t find file or read data")
 else:
-	print "Written content in the file successfully"
-	fh.close()
-	{% endhighlight %}
+    print ("Written content in the file successfully")
+    fh.close()
+    {% endhighlight %}
 </section>
 <section>
 
-	{% highlight py %}
+    {% highlight py %}
 try:
-	#You do your operations here
-	#If an exception occurs you skip remaining code
+    #You do your operations here
+    #If an exception occurs you skip remaining code
 finally:
-	#This is always exectued
-	{% endhighlight %}
+    #This is always exectued
+    {% endhighlight %}
 </section>
 
 <section>
 
-	<h5>Problem:</h5>
-<p>Write a script that sets a variable to any string. Next write a try-except block to convert the string to an integer using the in() function or print that &quot;The argument does not contain numbers&#92n&quot;</p>
+    <h5>Problem:</h5>
+<p>Write a script that sets a variable to any string. Next write a try-except block to convert the string to an integer using the int() function or print that &quot;The argument does not contain numbers&#92n&quot;</p>
+
+<aside class="notes" block="markdown">
+    # Define a function here.
+def temp_convert(var):
+   try:
+      return int(var)
+   except ValueError as err:
+      print ("The argument does not contain numbers\n", err)
+
+# Call above function here.
+temp_convert("xyz");
+
+</aside>
 </section>
 
 <section>
-	<h3>Comprehensions</h3>
+    <h3>Comprehensions</h3>
 Concise way to create lists. Great way to make a list from a list.
-	{% highlight py %}
+    {% highlight py %}
 mylist = [expression(i) for i in old_list if filter(i)]
-	{% endhighlight %}
+    {% endhighlight %}
 <aside class="notes" block="markdown">E.g. I have a list of employees and want to make a list of only male employees.</aside>
 </section>
 
 <section>
-	<p>Basic Example</p>
-	{% highlight py %}
+    <p>Basic Example</p>
+    {% highlight py %}
 # You can either use loops:
 squares = []
 for x in range(10):
@@ -115,49 +127,49 @@ for x in range(10):
 # Or you can use list comprehensions to get the same result:
 squares2 = [x**2 for x in range(10)]
 {% endhighlight %}
-	<p>Nested Example</p>
+    <p>Nested Example</p>
 {% highlight py %}
 [x+y for x in [10,30,50] for y in [20,40,60]]
 #[30, 50, 70, 50, 70, 90, 70, 90, 110]
 {% endhighlight %}
-	<p>Example using a filter (if)</p>
+    <p>Example using a filter (if)</p>
 {% highlight py %}
  [str(x) for x in range(9) if x%2 == 0]
  #['0', '2', '4', '6', '8']
-	{% endhighlight %}
-	<aside class="notes" block="markdown">
-	Explain on the board the first one.
-	Depending on time/understanding explain next two on board via help.
-	</aside>
+    {% endhighlight %}
+    <aside class="notes" block="markdown">
+    Explain on the board the first one.
+    Depending on time/understanding explain next two on board via help.
+    </aside>
 </section>
 
 <section>
-	<h5>Exercises</h5>
-	<ol>
-		<li>Build a list of squares from 0 to 9 called S</li>
-		<li>Build a list of powers of two from 0 to 12 called V</li>
-		<li>Build a list where the number is in S and is even called M</li>
-		<li>Make a list of all of the primes from 2 to 50</li>
-		<li>Make a list of strings that has UPPER, lower, and length of word for /n &quot;The quick brown fox jumps over the lazy dog&quot;</li>
-	</ol>
-	<aside class = "notes" block = "markdown">
-	S=[x**2 for x in range(10)]
-	V=[2**i for i in range(13)]
-	M = [x for x in S if x % 2 == 0 ]
-	Noprimes = [j for k in range(2,8) for j in range(k*2, 50, k)]
-	Primes = [x for x in range(2, 50) if x not in noprimes]
-	Words = "The quick brown fox jumps over the lazy dog".split()
-	Stuff = [[w.upper(), w.lower(), len(w)] for w in words]
-	</aside>
+    <h5>Exercises</h5>
+    <ol>
+        <li>Build a list of squares from 0 to 9 called S</li>
+        <li>Build a list of powers of two from 0 to 12 called V</li>
+        <li>Build a list where the number is in S and is even called M</li>
+        <li>Make a list of all of the primes from 2 to 50</li>
+        <li>Make a list of strings that has UPPER, lower, and length of word for /n &quot;The quick brown fox jumps over the lazy dog&quot;</li>
+    </ol>
+    <aside class = "notes" block = "markdown">
+    S=[x**2 for x in range(10)]
+    V=[2**i for i in range(13)]
+    M = [x for x in S if x % 2 == 0 ]
+    Noprimes = [j for k in range(2,8) for j in range(k*2, 50, k)]
+    Primes = [x for x in range(2, 50) if x not in noprimes]
+    Words = "The quick brown fox jumps over the lazy dog".split()
+    Stuff = [[w.upper(), w.lower(), len(w)] for w in words]
+    </aside>
 </section>
 
 
 <section>
-	<h3>Object Mutabilitiy</h3>
-	<p>
-		Objects are either <i>mutable</i> or <i>immutable</i>. An immutable object will not allow changes to it after it is created.</br></br>Examples of <u>immutable</u> objects are
-	</p>
-	<ul><li>numbers</li><li>Booleans</li><li>strings</li><li>tuples</li><li>frozensets</li></ul>
+    <h3>Object Mutabilitiy</h3>
+    <p>
+        Objects are either <i>mutable</i> or <i>immutable</i>. An immutable object will not allow changes to it after it is created.</br></br>Examples of <u>immutable</u> objects are
+    </p>
+    <ul><li>numbers</li><li>Booleans</li><li>strings</li><li>tuples</li><li>frozensets</li></ul>
 </section>
 <section>
 <h3>Why do we need mutability?</h3>
@@ -172,22 +184,22 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 </section>
 <!--
 <section>
-	<h3>Class Mutability</h3>
-	<p>Classes are mutable in general. To mimic immutability you can do something like this:</p>
-	{% highlight py %}
-	class Immutable(object):
-     		"""An immutable class with a single attribute 'value'."""
-     		def __setattr__(self, *args):
-         		raise TypeError("can't modify immutable instance")
-		 __delattr__ = __setattr__
-     		def __init__(self, value):
-         		# we can no longer use self.value = value to store the instance data
-         		# so we must explicitly call the superclass
-         		super(Immutable, self).__setattr__('value', value)
+    <h3>Class Mutability</h3>
+    <p>Classes are mutable in general. To mimic immutability you can do something like this:</p>
+    {% highlight py %}
+    class Immutable(object):
+             """An immutable class with a single attribute 'value'."""
+             def __setattr__(self, *args):
+                 raise TypeError("can't modify immutable instance")
+         __delattr__ = __setattr__
+             def __init__(self, value):
+                 # we can no longer use self.value = value to store the instance data
+                 # so we must explicitly call the superclass
+                 super(Immutable, self).__setattr__('value', value)
          {% endhighlight %}
 </section>-->
 <section>
-	<h5>Mutability Exercises 1</h5>
+    <h5>Mutability Exercises 1</h5>
 {% highlight py %}
 x = 3
 y = x
@@ -196,13 +208,13 @@ x = x + y
 del x
 #What is the value of y now?
 {% endhighlight %}
-	<aside class="notes">
-		Answers: 6, 3; 3
-	</aside>
+    <aside class="notes" block="markdown">
+        Answers: 6, 3; 3
+    </aside>
 </section>
 
 <section>
-	<h5>Mutability Exercises 2</h5>
+    <h5>Mutability Exercises 2</h5>
 {% highlight py %}
 mystr1 = 'hello world'
 mystr2 = mystr1
@@ -211,13 +223,13 @@ mystr1 = mystr1[:-1]
 del mystr1
 #What is the value of mystr2 now?
 {% endhighlight %}
-	<aside class="notes">
-		Answers: hello worl, hello world; hello world
-	</aside>
+    <aside class="notes" block="markdown">
+        Answers: hello worl, hello world; hello world
+    </aside>
 </section>
 
 <section>
-	<h5>Mutability Exercises 3</h5>
+    <h5>Mutability Exercises 3</h5>
 {% highlight py %}
 list1 = ['water', 'juice', 'soda']
 list2 = list1
@@ -226,61 +238,67 @@ list1.append('beer')
 del list1
 #What are list1 and list2 now?
 {% endhighlight %}
-	<aside class="notes">
-		Answers: ['water', 'juice', 'soda', 'beer']
-		['water', 'juice', 'soda', 'beer']
-		['water', 'juice', 'soda', 'beer']
-	</aside>
+    <aside class="notes" block="markdown">
+        Answers: ['water', 'juice', 'soda', 'beer']
+        ['water', 'juice', 'soda', 'beer']
+        ['water', 'juice', 'soda', 'beer']
+    </aside>
 </section>
 <section>
-	<h5>Mutability Exercises 4</h5>
+    <h5>Mutability Exercises 4</h5>
 {% highlight py %}
 mytuple = ('a', 'b', 'c')
 mytyple = 'b'
 mytuple = mytyple
 #what is the type of mytuple? What is the value?
 {% endhighlight %}
-	<aside class="notes">
-		Answers: string, b
-	</aside>
+    <aside class="notes" block="markdown">
+        Answers: string, b
+    </aside>
 </section>
 <section>
 <h5>Mutability Exercises 5</h5>
 {% highlight py %}
-def func(val):
+def myfunc(val):
     val += 'bar'
+    print(val)
+    return val
 
 x = 'foo'
-print x #what does it print?
-func(x)
-print x #what does it print?
+print (x) #what does it print?
+x=myfunc(x)
+print(val) #what does it print?
+print (x) #what does it print?
 {% endhighlight %}
+<aside class ="notes" block="markdown"> 
+	'foo' error 'foobar'
+</aside>
 </section>
 <section>
 
-	<h5>Creating Classes</h5>
-	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
-	{% highlight py %}
-	class ClassName:
-		#Optional class documentation string
-		class_suite
-	{% endhighlight %}
+    <h5>Creating Classes</h5>
+    <p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
+    {% highlight py %}
+    class ClassName:
+        #Optional class documentation string
+        class_suite
+    {% endhighlight %}
 
 </section>
 <section>
-	<h5>Class Example</h5>
-	<p>Using what you know develop an Employee class with two properties (name and salary) and a displayEmployee property that prints &quot;Name: &quot;, self.name, &quot;, Salary: &quot;, self.salary</p>
-	<p>Test it by making two employees named emp1 and emp2 with salaries 20 and 25.</p>
+    <h5>Class Example</h5>
+    <p>Using what you know develop an Employee class with two properties (name and salary) and a displayEmployee property that prints &quot;Name: &quot;, self.name, &quot;, Salary: &quot;, self.salary</p>
+    <p>Test it by making two employees named emp1 and emp2 with salaries 20 and 25.</p>
 </section>
 <section>
-	<h3>Optional/Default Arguments in Functions</h3>
-	<aside class="notes">
-		<p>Before covering optional, briefly mention arguments.</p>
-	</aside>
+    <h3>Optional/Default Arguments in Functions</h3>
+    <aside class="notes">
+        <p>Before covering optional, briefly mention arguments.</p>
+    </aside>
 </section>
 <section>
-	<h5>Arguments Example 1</h5>
-	{% highlight py %}
+    <h5>Arguments Example 1</h5>
+    {% highlight py %}
 class Employee:
     'Common base for all employees'
 
@@ -292,18 +310,18 @@ class Employee:
         print "Name: ", self.name, ", Salary: ", self.salary
 
 if __name__ == "__main__":
-	emp1 = Employee('name')
-	emp1.displayEmployee()
-	emp2 = Employee('name2', 25)
-	emp2.displayEmployee()
-	{% endhighlight %}
+    emp1 = Employee('name')
+    emp1.displayEmployee()
+    emp2 = Employee('name2', 25)
+    emp2.displayEmployee()
+    {% endhighlight %}
 </section>
 <section>
-	<h3>Variable-length Arguments</h3>
+    <h3>Variable-length Arguments</h3>
 </section>
 <section>
-	<h5>Arguments Example 2</h5>
-	{% highlight py %}
+    <h5>Arguments Example 2</h5>
+    {% highlight py %}
 Class Employee:
     'Common base for all employees'
 
@@ -311,25 +329,25 @@ Class Employee:
         self.name = name
         self.salary = salary
     def displayEmployee(self):
-        print "Name: ", self.name, ", Salary: ", self.salary
+        print ("Name: ", self.name, ", Salary: ", self.salary)
 
 def printEmployees(*varEmployees):
     for emp in varEmployees:
         if isinstance(emp, Employee):
             emp.displayEmployee()
 if __name__ == "__main__":
-	emp1 = Employee('name')
-	emp2 = Employee('name2', 25)
-	printEmployees(emp1, emp2)
-	{% endhighlight %}
+    emp1 = Employee('name')
+    emp2 = Employee('name2', 25)
+    printEmployees(emp1, emp2)
+    {% endhighlight %}
 </section>
 <section>
-	<h3>Anonymous Functions and Uses</h3>
-	Some insights from the instructors.
+    <h3>Anonymous Functions and Uses</h3>
+    Some insights from the instructors.
 </section>
 <section>
-	<h5>Functions Examples</h5>
-	{% highlight py %}
+    <h5>Functions Examples</h5>
+    {% highlight py %}
 def f (x): return x**2
 print f(8)
 #or
@@ -342,5 +360,5 @@ f = make_incrementor(2)
 g = make_incrementor(6)
 print f(42), g(42)
 print make_incrementor(22)(33)
-	{% endhighlight %}
+    {% endhighlight %}
 </section>
