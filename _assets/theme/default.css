@@ -164,4 +164,16 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: #13daec; }
+  color: #13daec;
+}
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal table {
+  border-collapse: collapse;
+}
+
+.reveal td, .reveal .th {
+  border-bottom: solid 1px #eeeeee;
+}
