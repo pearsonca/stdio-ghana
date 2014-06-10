@@ -21,7 +21,7 @@ instructors:
 	Important to know where variables have values and when!
 
 	{% highlight py %}
-	class MenuItem:
+class MenuItem:
 'Common base for all food items'
 
 	def __init__(self, name, price):
@@ -47,7 +47,7 @@ if __name__ == "__main__":
 	</ul>
 
 	<aside class ="notes" markdown="block">
-	An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the program�s instructions. When you are uncertain if your code will raise an exception you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
+	An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the programs instructions. When you are uncertain if your code will raise an exception you can defend your program by placing the suspicious code in a try: block. After the try: block, include an except: statement, followed by a block of code which handles the problem as elegantly as possible.
 	</aside>
 </section>
 
@@ -55,37 +55,37 @@ if __name__ == "__main__":
 <section>
 
 	{% highlight py %}
-	try:
-		#You do your operations here
-	except ExceptionI:
-		#If there is ExceptionI, then execute this block
-	except ExceptionII:
-		#If there is ExceptionII, then execute this block
-	else:
-		#If there is no exception then execute this block
+try:
+	#You do your operations here
+except ExceptionI:
+	#If there is ExceptionI, then execute this block
+except ExceptionII:
+	#If there is ExceptionII, then execute this block
+else:
+	#If there is no exception then execute this block
 	{% endhighlight %}
 </section>
 <section>
 
 	{% highlight py %}
-	try:
-		fh = open("testfile", "w")
-		fh.write("this is my test file for exception handling")
-	except IOError:
-		print "Error: can\'t find file or read data"
-	else:
-		print "Written content in the file successfully"
-		fh.close()
+try:
+	fh = open("testfile", "w")
+	fh.write("this is my test file for exception handling")
+except IOError:
+	print "Error: can\'t find file or read data"
+else:
+	print "Written content in the file successfully"
+	fh.close()
 	{% endhighlight %}
 </section>
 <section>
 
 	{% highlight py %}
-	try:
-		#You do your operations here
-		#If an exception occurs you skip remaining code
-	finally:
-		#This is always exectued
+try:
+	#You do your operations here
+	#If an exception occurs you skip remaining code
+finally:
+	#This is always exectued
 	{% endhighlight %}
 </section>
 
@@ -99,31 +99,31 @@ if __name__ == "__main__":
 	<h3>Comprehensions</h3>
 Concise way to create lists. Great way to make a list from a list.
 	{% highlight py %}
-	mylist = [expression(i) for i in old_list if filter(i)]
+mylist = [expression(i) for i in old_list if filter(i)]
 	{% endhighlight %}
 <aside class="notes" block="markdown">E.g. I have a list of employees and want to make a list of only male employees.</aside>
 </section>
 
 <section>
-	Basic Example
+	<p>Basic Example</p>
 	{% highlight py %}
-	# You can either use loops:
-	squares = []
-	for x in range(10):
-	    squares.append(x**2)
+# You can either use loops:
+squares = []
+for x in range(10):
+    squares.append(x**2)
 
-	# Or you can use list comprehensions to get the same result:
-	squares2 = [x**2 for x in range(10)]
-	{% endhighlight %}
-	Nested Example
-	{% highlight py %}
-	[x+y for x in [10,30,50] for y in [20,40,60]]
-	#[30, 50, 70, 50, 70, 90, 70, 90, 110]
-	{% endhighlight %}
-		<p>Example using a filter (if)</p>
-	{% highlight py %}
-	 [str(x) for x in range(9) if x%2 == 0]
-	 #['0', '2', '4', '6', '8']
+# Or you can use list comprehensions to get the same result:
+squares2 = [x**2 for x in range(10)]
+{% endhighlight %}
+	<p>Nested Example</p>
+{% highlight py %}
+[x+y for x in [10,30,50] for y in [20,40,60]]
+#[30, 50, 70, 50, 70, 90, 70, 90, 110]
+{% endhighlight %}
+	<p>Example using a filter (if)</p>
+{% highlight py %}
+ [str(x) for x in range(9) if x%2 == 0]
+ #['0', '2', '4', '6', '8']
 	{% endhighlight %}
 	<aside class="notes" block="markdown">
 	Explain on the board the first one.
@@ -188,14 +188,14 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 </section>-->
 <section>
 	<h5>Mutability Exercises 1</h5>
-	{% highlight py %}
-	x = 3
-	y = x
-	x = x + y
-	#What is the value of x? y?
-	del x
-	#What is the value of y now?
-	{% endhighlight %}
+{% highlight py %}
+x = 3
+y = x
+x = x + y
+#What is the value of x? y?
+del x
+#What is the value of y now?
+{% endhighlight %}
 	<aside class="notes">
 		Answers: 6, 3; 3
 	</aside>
@@ -203,14 +203,14 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 
 <section>
 	<h5>Mutability Exercises 2</h5>
-	{% highlight py %}
-	mystr1 = 'hello world'
-	mystr2 = mystr1
-	mystr1 = mystr1[:-1]
-	#What is the value of mystr1? mystr2?
-	del mystr1
-	#What is the value of mystr2 now?
-	{% endhighlight %}
+{% highlight py %}
+mystr1 = 'hello world'
+mystr2 = mystr1
+mystr1 = mystr1[:-1]
+#What is the value of mystr1? mystr2?
+del mystr1
+#What is the value of mystr2 now?
+{% endhighlight %}
 	<aside class="notes">
 		Answers: hello worl, hello world; hello world
 	</aside>
@@ -218,14 +218,14 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 
 <section>
 	<h5>Mutability Exercises 3</h5>
-	{% highlight py %}
-	list1 = ['water', 'juice', 'soda']
-	list2 = list1
-	list1.append('beer')
-	#What are list1 and list2 now?
-	del list1
-	#What are list1 and list2 now?
-	{% endhighlight %}
+{% highlight py %}
+list1 = ['water', 'juice', 'soda']
+list2 = list1
+list1.append('beer')
+#What are list1 and list2 now?
+del list1
+#What are list1 and list2 now?
+{% endhighlight %}
 	<aside class="notes">
 		Answers: ['water', 'juice', 'soda', 'beer']
 		['water', 'juice', 'soda', 'beer']
@@ -234,12 +234,12 @@ Mutable types can be changed in place. Immutable types can not change in place. 
 </section>
 <section>
 	<h5>Mutability Exercises 4</h5>
-	{% highlight py %}
-	mytuple = ('a', 'b', 'c')
-	mytyple = 'b'
-	mytuple = mytyple
-	#what is the type of mytuple? What is the value?
-	{% endhighlight %}
+{% highlight py %}
+mytuple = ('a', 'b', 'c')
+mytyple = 'b'
+mytuple = mytyple
+#what is the type of mytuple? What is the value?
+{% endhighlight %}
 	<aside class="notes">
 		Answers: string, b
 	</aside>
@@ -281,16 +281,17 @@ print x #what does it print?
 <section>
 	<h5>Arguments Example 1</h5>
 	{% highlight py %}
-	class Employee:
-	    'Common base for all employees'
+class Employee:
+    'Common base for all employees'
 
-	    def __init__(self, name, salary = 20):
-	        self.name = name
-	        self.salary = salary
+    def __init__(self, name, salary = 20):
+        self.name = name
+        self.salary = salary
 
-	    def displayEmployee(self):
-	        print "Name: ", self.name, ", Salary: ", self.salary
+    def displayEmployee(self):
+        print "Name: ", self.name, ", Salary: ", self.salary
 
+if __name__ == "__main__":
 	emp1 = Employee('name')
 	emp1.displayEmployee()
 	emp2 = Employee('name2', 25)
@@ -303,21 +304,20 @@ print x #what does it print?
 <section>
 	<h5>Arguments Example 2</h5>
 	{% highlight py %}
-	Class Employee:
-	    'Common base for all employees'
+Class Employee:
+    'Common base for all employees'
 
-	    def __init__(self, name, salary = 20):
-	        self.name = name
-	        self.salary = salary
+    def __init__(self, name, salary = 20):
+        self.name = name
+        self.salary = salary
+    def displayEmployee(self):
+        print "Name: ", self.name, ", Salary: ", self.salary
 
-	    def displayEmployee(self):
-	        print "Name: ", self.name, ", Salary: ", self.salary
-
-	def printEmployees(*varEmployees):
-	    for emp in varEmployees:
-	        if isinstance(emp, Employee):
-	            emp.displayEmployee()
-
+def printEmployees(*varEmployees):
+    for emp in varEmployees:
+        if isinstance(emp, Employee):
+            emp.displayEmployee()
+if __name__ == "__main__":
 	emp1 = Employee('name')
 	emp2 = Employee('name2', 25)
 	printEmployees(emp1, emp2)
@@ -325,21 +325,22 @@ print x #what does it print?
 </section>
 <section>
 	<h3>Anonymous Functions and Uses</h3>
+	Some insights from the instructors.
 </section>
 <section>
 	<h5>Functions Examples</h5>
 	{% highlight py %}
-	def f (x): return x**2
-	print f(8)
-	#or
-	g = lambda x: x**2
-	print g(8)
+def f (x): return x**2
+print f(8)
+#or
+g = lambda x: x**2
+print g(8)
 
-	#guess the output here then try it!
-	def make_incrementor (n): return lambda x:x +n
-	f = make_incrementor(2)
-	g = make_incrementor(6)
-	print f(42), g(42)
-	print make_incrementor(22)(33)
+#guess the output here then try it!
+def make_incrementor (n): return lambda x:x +n
+f = make_incrementor(2)
+g = make_incrementor(6)
+print f(42), g(42)
+print make_incrementor(22)(33)
 	{% endhighlight %}
 </section>
