@@ -4,11 +4,11 @@ year: 2014
 title: Python OOP
 instructors:
  - Seifu
- - Deanne
+ - Jonathon
 ---
 <section>
 	<h5>Activity</h5>
-	Make lists of main dishes, side dishes, and drinks. (beef, pork, goat, sheep, chicken, fish); (akple, kenkey/dokonu, fufu, omo tuo); (water, juice, soda). Make a dictionary that has the type of food, name, and amount inventory.
+	Make lists of main dishes, side dishes, and drinks. (beef, pork, goat, sheep, chicken, fish); (akple, kenkey/dokonu, fufu, omo tuo); (water, juice, soda).
 </section>
 
 <section>
@@ -30,7 +30,7 @@ instructors:
 		<li><b>Instance:</b>An individual object of a certain class.</li>
 	</ul>
 
-	<aside class="notes">
+	<aside class="notes" block="markdown">
 	 	<li><b>Class:</b>A user-defined prototype for an object that gives the object some attributes defined for any object of the class. The attributes are data members (class variables and instance variables) and methods. Methods are accessed via dot programming notation.</li>
 		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
 		<li><b>Instance:</b>An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.</li>
@@ -45,12 +45,12 @@ instructors:
 	<h5>Creating Classes</h5>
 	<p>The <i>class</i> syntax will create a new class. The name of the class is preceeded immediately by the keyword class</p>
 	{% highlight py %}
-	class ClassName:
-		#Optional class documentation string
-		class_suite
+class ClassName:
+	#Optional class documentation string
+	class_suite
 	{% endhighlight %}
 
-	<aside class="notes">
+	<aside class="notes" block="markdown">
 		class: ClassName
 		Inheritance: class_suite
 	</aside>
@@ -60,27 +60,27 @@ instructors:
 
 	<h5>Employee Class Example</h5>
 	{% highlight python %}
-	class Employee:
-	   #Common base class for all employees
-	   empCount = 0 #this is a class variable accessed by Employee.empCount
+class Employee:
+   #Common base class for all employees
+   empCount = 0 #this is a class variable accessed by Employee.empCount
 
-	   def __init__(self, name, salary):
-	      #this is the class constructor/initialization method called
-	      #when an instance is created
-	      self.name = name
-	      self.salary = salary
-	      Employee.empCount += 1
+   def __init__(self, name, salary):
+      #this is the class constructor/initialization method called
+      #when an instance is created
+      self.name = name
+      self.salary = salary
+      Employee.empCount += 1
 
-	   def displayCount(self):
-	     #all methods start with self as an argument;however, when
-	     #you call a method python adds self to your list
-	     print "Total Employee %d" % Employee.empCount
+   def displayCount(self):
+     #all methods start with self as an argument;however, when
+     #you call a method python adds self to your list
+     print "Total Employee %d" % Employee.empCount
 
-	   def displayEmployee(self):
-	      print "Name : ", self.name,  ", Salary: ", self.salary
+   def displayEmployee(self):
+      print "Name : ", self.name,  ", Salary: ", self.salary
 	 {% endhighlight %}
 
-	<aside class="notes">
+	<aside class="notes" block="markdown">
 	 	<li><b>Class:</b>A user-defined prototype for an object that gives the object some attributes defined for any object of the class. The attributes are data members (class variables and instance variables) and methods. Methods are accessed via dot programming notation.</li>
 		<li><b>Inheritance:</b>The creation of an instance of a class.</li>
 		<li><b>Instance:</b>An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.</li>
@@ -94,8 +94,8 @@ instructors:
 	<h5>Creating an object instance</h5>
 	<p>Simply create instances of a class by calling the class name and passing whatever arguements __init__ accepts</p>
 	{% highlight python %}
-	#Create an Employee named Carl with a salary of 20
-	emp1 = Employee("Carl",20)
+#Create an Employee named Carl with a salary of 20
+emp1 = Employee("Carl",20)
 	{% endhighlight %}
 </section>
 
@@ -103,9 +103,9 @@ instructors:
 	<h5>Using a class</h5>
 	<p>You can invoke an internal method of an instantiated object using the dot operator</p>
 	{% highlight python %}
-	#This executes print Name : , self.name,  , Salary: , self.salary
-	emp1.displayEmployee()
-	print "total Employee %d" % Employee.empCount
+#This executes print Name : , self.name,  , Salary: , self.salary
+emp1.displayEmployee()
+print "total Employee %d" % Employee.empCount
 	{% endhighlight %}
 
 </section>
@@ -132,66 +132,67 @@ instructors:
 	<li>__doc__ documentation string</li>
 	<li>__module__ name in which class is defined</li>
 	</ul></p>
+	<a href="sessions/2014/pyoop/index.html">Example</a>
 </section>
 <section>
 	<h5>Inheritance and Subclassing</h5>
 	<p>In many programs it will be useful to have parent classes that can be used in child classes. The new, child class will inherit the methods and attributes of its parents class. Additionally, the child may include overrides. Let's look at an example.</p>
 	{% highlight python %}
-	class SubClassName (ParentClass1[,ParentClass2, ...]):
-		#Optional class documentation string#
-		class_suite
+class SubClassName (ParentClass1[,ParentClass2, ...]):
+	#Optional class documentation string#
+	class_suite
 	{% endhighlight %}
 	<p>Derived classes are written similar to their base classes</p>
 </section>
 
 <section>
 	{% highlight python %}
-	class Employee:
-	    'Common base for all employees'
-	    empCount = 0
+class Employee:
+    'Common base for all employees'
+    empCount = 0
 
-	    def __init__(self, name, salary, isWorking):
-	        self.name = name
-	        self.salary = salary
-	        self.isWorking = isWorking
-	        Employee.empCount += 1
+    def __init__(self, name, salary, isWorking):
+        self.name = name
+        self.salary = salary
+        self.isWorking = isWorking
+        Employee.empCount += 1
 
-	class Cook(Employee):
-	    'Common base for all cooks'
-	    cookCount
+class Cook(Employee):
+    'Common base for all cooks'
+    cookCount
 
-	    def __init__(self,name,salary,isWorking, specialty):
-	        Employee.__init__(self,name, salary,isWorking)
-	        self.specialty=specialty
-	        Cook.cookCount += 1
+    def __init__(self,name,salary,isWorking, specialty):
+        Employee.__init__(self,name, salary,isWorking)
+        self.specialty=specialty
+        Cook.cookCount += 1
 
-	    def displayCook(self):
-	        print "Name: ", self.name, ", Salary: ", self.salary, ", Is Working: ", self.isWorking, ", Specialty: ", self.specialty
+    def displayCook(self):
+        print "Name: ", self.name, ", Salary: ", self.salary, ", Is Working: ", self.isWorking, ", Specialty: ", self.specialty
 
-	cook1 = Cook("bob", "salary", False, "specialty")
-	cook1.displayCook()
-	emp1 = Employee(“emp1”, “salary”, False)
-	emp1.displayCook()
+cook1 = Cook("bob", "salary", False, "specialty")
+cook1.displayCook()
+emp1 = Employee(“emp1”, “salary”, False)
+emp1.displayCook()
 	{% endhighlight %}
 
 </section>
 <section>
 	<p>Overriding methods can be useful</p>
 	{% highlight python %}
-	class Vector:
-	   def __init__(self, a, b):
-	      self.a = a
-	      self.b = b
+class Vector:
+   def __init__(self, a, b):
+      self.a = a
+      self.b = b
 
-	   def __str__(self):
-	      return 'Vector (%d, %d)' % (self.a, self.b)
+   def __str__(self):
+      return 'Vector (%d, %d)' % (self.a, self.b)
 
-	   def __add__(self,other):
-	      return Vector(self.a + other.a, self.b + other.b)
+   def __add__(self,other):
+      return Vector(self.a + other.a, self.b + other.b)
 
-	v1 = Vector(2,10)
-	v2 = Vector(5,-2)
-	print v1 + v2 #This prints 'Vector(7,8)'
+v1 = Vector(2,10)
+v2 = Vector(5,-2)
+print v1 + v2 #This prints 'Vector(7,8)'
 	{% endhighlight %}
 
 </section>
@@ -200,5 +201,5 @@ instructors:
 Write an override that compares two Vectors to see if they are the same by comparing the coordinates.
 </section>
 <section>
-	<h5>Determine the Classes Example</h5>
+	<h5><a href="sessions/2014/softwarerequirements/restaurant.md">Determine the Classes Example</a></h5>
 </section>
