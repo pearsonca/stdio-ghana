@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<link href='/assets/presentation-6f560d89136f44150fb3a9070ec52046.css' rel='stylesheet' type='text/css' />
+<link href='/assets/presentation-210b2ed9898ef503126321f51230a24e.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -32,13 +32,13 @@ Dane
 <span class="c"># This program divides two numbers</span>
 <span class="c"># The function below calculates and returns the division result</span>
 <span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">)</span>
-	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">//</span><span class="n">y</span>
+	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
 	<span class="k">return</span> <span class="n">q</span>
 <span class="c"># Main portion of program to set up the problem</span>
 <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
    </section>
 </section>
 <section>
@@ -46,7 +46,7 @@ Dane
 	<h2>Runtime Error</h2>
 	<p>Illegal implementation of code or routine, though syntactically correct.</p>
 	<p>Caught during execution, program will immediately crash or exit.</p>
-	<p>ie. Divide by 0</p>
+	<p>ie. Wrong number of function arguments</p>
    </section>
    <section>
 	<h2><a href="runtime.py">Runtime Error</a></h2>
@@ -54,13 +54,13 @@ Dane
 <span class="c"># This program divides two numbers</span>
 <span class="c"># The function below calculates and returns the division result</span>
 <span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="p">):</span>
-	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">//</span><span class="n">y</span>
+	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
 	<span class="k">return</span> <span class="n">q</span>
 <span class="c"># Main portion of program to set up the problem</span>
 <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
    </section>
 </section>
 <section>
@@ -75,20 +75,21 @@ Dane
 <span class="c"># This program divides two numbers</span>
 <span class="c"># The function below calculates and returns the division result</span>
 <span class="k">def</span> <span class="nf">div</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">//</span><span class="n">y</span>
+	<span class="n">q</span> <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
 	<span class="k">return</span> <span class="n">q</span>
 <span class="c"># Main portion of program to set up the problem</span>
 <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the first operand: &quot;</span><span class="p">))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;Enter the second operand: &quot;</span><span class="p">))</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">div</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%f</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Your answer is </span><span class="si">%d</span><span class="se">\n</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">c</span><span class="p">)</span></code></pre></div>
    </section>
 </section>
 <section>
    <section>
 	<h2>Input Validation</h2>
-	<p>Execution completes without error, but behavior or results are unexpected.</p>
-	<p>ie. Wrong format string identifier</p>
+	<p>A user may type whatever they like into a keyboard.</p>
+	<p>If their input is of an unexpected form, errors may occur</p>
+	<p>ie. Failure to account for user malice</p>
    </section>
    <section>
 	<h2><a href="invalid.py">Input Validation</a></h2>
@@ -117,6 +118,11 @@ Dane
 	<p>Source Code Review</p>
 </section>
 <section>
+	<h2>Save My Restaurant</h2>
+	<p>Some hacker has messed up my beautiful restaurant seating <a href="hostEX.py">program!</a></p>
+	<p>Please, find all the bugs and make our business operational again!</p>
+</section>
+<section>
 	<h2>White Box</h2>
 	<p>Print Statements</p>
 </section>
@@ -138,15 +144,15 @@ Dane
 	<h2>Black Box</h2>
 	<p>Static Analysis</p>
 	<p>...on binary</p>
-	decompile .pyc files
+	<p>decompile .pyc files</p>
 </section>
 <section>
 	<h2>Black Box</h2>
 	<p>Fuzzing</p>
 </section>
 <section>
-	<h2>Tom's Article</h2>
-	<p>High Points</p>
+	<h2><a href="http://ericlippert.com/2014/03/05/how-to-debug-small-programs/">Tom's Article</a></h2>
+	<p>Discuss!</p>
 </section>
 <!-- End with big example as a challenge -->
 
