@@ -7,7 +7,7 @@ instructors:
  - Jonathon
 ---
 <section markdown="block">
-## How Do You Test Code?
+###How Do You Test Code?
 
 <aside class="notes">
 QA: what they think testing means in software.  How does that relate to
@@ -17,20 +17,22 @@ testing in other contexts?
 
 <section>
 <section markdown="block">
-##Why Test?
+###Why Test?
+
 <aside class="notes">
-fundamentally not about proving software works, but rather finding that it doesn't work
-for conditions people care about.
+fundamentally not about proving software works: but rather finding that it
+doesn't work for conditions people care about.
 </aside>
 </section>
 
 <section markdown="block">
 ###Compare:
 
-- automated checking
-- testing
 - debugging
-- error handling
+- static analysis
+- testing
+- compiler / interpreter errors
+- runtime error handling (`try/catch` blocks)
 
 <aside class="notes" markdown="block">
 - automated: interpreter driven, only about syntax,
@@ -102,7 +104,7 @@ why write it down? forces you to commit your expectations
 
 </section>
 
-<section>
+<section markdown="block">
 ##Interesting Resources
 
 - [PythonTesting.net](http://pythontesting.net/)

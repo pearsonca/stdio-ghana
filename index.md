@@ -19,8 +19,4 @@ days earlier to ensure the facilities are properly set up.
 
 contact email: [stdio {dot} ghana {at} gmail {dot} com](mailto:stdio.ghana@gmail.com)
 
-[Application site for 2014](http://goo.gl/d68nbg)
-
-This site is still in development.  [The 2013 course site may also be useful](https://sites.google.com/site/stdiosyllabus/).
-
 The repository for this site is also [openly available](https://github.com/stdio-ghana/stdio-ghana.github.io).

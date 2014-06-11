@@ -1,12 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>STDIO Ghana</title>
-  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
+<link href='/assets/presentation-cc897f9d2bbaf84ef08a4e37d760c7a3.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -17,6 +12,7 @@
 <h3><em>a course on Software Engineering</em></h3>
 Carl, Dane, Deanne, Jonathon, Seifu
 </section>
+
 <section>
   <h2 id="overview">Overview</h2>
 
@@ -113,11 +109,11 @@ Carl, Dane, Deanne, Jonathon, Seifu
     <dt>Warmup</dt>
     <dd>Command Line Tricks</dd>
     <dt>Language Session</dt>
-    <dd><a href="/sessions//pyio/">Python IO</a></dd>
+    <dd><a href="/sessions//pyoop/">Python OOP Syntax</a></dd>
     <dt>Engineering Session</dt>
-    <dd><a href="/sessions//reuse/">Reuse</a></dd>
+    <dd><a href="/sessions//effoop/">Effective OOP</a></dd>
     <dt>Team Task</dt>
-    <dd>identify libraries useful to project</dd>
+    <dd>rough out objects for project</dd>
     <dt>Social</dt>
     <dd>Movie Night</dd>
   </dl>
@@ -131,11 +127,11 @@ Carl, Dane, Deanne, Jonathon, Seifu
     <dt>Warmup</dt>
     <dd>Security</dd>
     <dt>Language Session</dt>
-    <dd><a href="/sessions//pyoop/">Python OOP Syntax</a></dd>
+    <dd><a href="/sessions//pyio/">Python IO</a></dd>
     <dt>Engineering Session</dt>
-    <dd><a href="/sessions//effoop/">Effective OOP</a></dd>
+    <dd><a href="/sessions//reuse/">Reuse</a></dd>
     <dt>Team Task</dt>
-    <dd>self-directed project implementation from here on</dd>
+    <dd>identify libraries useful to project</dd>
     <dt>Social</dt>
     <dd>Football, then Ghana v. US World Cup game</dd>
   </dl>
@@ -214,10 +210,13 @@ Carl, Dane, Deanne, Jonathon, Seifu
 
     <ul>
       <li>“audience” questions will asked regularly: you need to try to answer, and be honest
- about your knowledge; okay to be wrong, not okay to try to hide it</li>
+about your knowledge; okay to be wrong, not okay to try to hide it</li>
       <li>the instructors will disagree: most of these points, there isn’t a “right”
- answer</li>
+answer</li>
       <li>there will be lots of doing</li>
+      <li>speak up!</li>
+      <li>lots of team activity - make sure to participate, and to work with others
+(not for them, nor them working for you)</li>
     </ul>
 
   </aside>
@@ -227,7 +226,7 @@ Carl, Dane, Deanne, Jonathon, Seifu
 <section>
   <h3 id="tell-everyone-your-name-and-one-thing-about-yourself">Tell Everyone Your Name, and One Thing About Yourself</h3>
 
-  <h4 id="then-ask-us-anything">Then: ask us anything</h4>
+  <h4 id="then-ask-us-anythingfragment">Then: ask us anything{:.fragment}</h4>
 </section>
 
 <section>
@@ -256,9 +255,9 @@ Carl, Dane, Deanne, Jonathon, Seifu
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
 			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 		]
@@ -266,3 +265,4 @@ Carl, Dane, Deanne, Jonathon, Seifu
 </script>
 </body>
 </html>
+

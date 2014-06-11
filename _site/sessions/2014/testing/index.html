@@ -1,12 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Testing</title>
-  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
+<link href='/assets/presentation-cc897f9d2bbaf84ef08a4e37d760c7a3.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -17,8 +12,9 @@
 
 Carl, Jonathon
 </section>
+
 <section>
-  <h2 id="how-do-you-test-code">How Do You Test Code?</h2>
+  <h3 id="how-do-you-test-code">How Do You Test Code?</h3>
 
   <aside class="notes">
 QA: what they think testing means in software.  How does that relate to
@@ -28,10 +24,11 @@ testing in other contexts?
 
 <section>
 <section>
-    <h2 id="why-test">Why Test?</h2>
+    <h3 id="why-test">Why Test?</h3>
+
     <aside class="notes">
-fundamentally not about proving software works, but rather finding that it doesn't work
-for conditions people care about.
+fundamentally not about proving software works: but rather finding that it
+doesn't work for conditions people care about.
 </aside>
   </section>
 
@@ -39,10 +36,11 @@ for conditions people care about.
     <h3 id="compare">Compare:</h3>
 
     <ul>
-      <li>automated checking</li>
-      <li>testing</li>
       <li>debugging</li>
-      <li>error handling</li>
+      <li>static analysis</li>
+      <li>testing</li>
+      <li>compiler / interpreter errors</li>
+      <li>runtime error handling (<code>try/catch</code> blocks)</li>
     </ul>
 
     <aside class="notes">
@@ -126,9 +124,11 @@ why write it down? forces you to commit your expectations</li>
 </section>
 
 <section>
-##Interesting Resources
+  <h2 id="interesting-resources">Interesting Resources</h2>
 
-- [PythonTesting.net](http://pythontesting.net/)
+  <ul>
+    <li><a href="http://pythontesting.net/">PythonTesting.net</a></li>
+  </ul>
 
 </section>
 
@@ -152,9 +152,9 @@ why write it down? forces you to commit your expectations</li>
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
 			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 		]
@@ -162,3 +162,4 @@ why write it down? forces you to commit your expectations</li>
 </script>
 </body>
 </html>
+

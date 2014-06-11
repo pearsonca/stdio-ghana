@@ -14,26 +14,28 @@ instructors:
 
 <section>
 	<h2>Basic Syntax</h2>
-	{% highlight py%}
-	from time import localtime
+{% highlight py %}
+from time import localtime
 
-	activities = {8: 'Sleeping',
-        	      9: 'Commuting',
-        	      17: 'Working',
-        	      18: 'Commuting',
-        	      20: 'Eating',
-        	      22: 'Resting' }
+activities = {
+  8: 'Sleeping',
+  9: 'Commuting',
+  17: 'Working',
+  18: 'Commuting',
+  20: 'Eating',
+  22: 'Resting'
+}
 
-	time_now = localtime()
-	hour = time_now.tm_hour
+time_now = localtime()
+hour = time_now.tm_hour
 
-	for activity_time in sorted(activities.keys()):
-    		if hour < activity_time:
-        		print activities[activity_time]
-        	break
-		else:
-    			print ('Unknown or sleeping!')
-    	{% endhighlight %}
+for activity_time in sorted(activities.keys()):
+  if hour < activity_time:
+    print(activities[activity_time])
+    break
+  else:
+    print('Unknown or sleeping!')
+{% endhighlight %}
 </section>
 <section>
 	<h2>Numbers and Strings</h2>
@@ -67,17 +69,16 @@ instructors:
 	<h2>Lists</h2>
 		{%highlight py%}
 		L = [123, 'spam', 1.23]
-		
+
 		len(L)
-		
+
 		L[0]
-		
+
 		L[:-1]
-		
+
 		L + [4.5,6]
-		
+
 		L.append('NI')
-		
 		L.pop(2)
 		{% endhighlight %}
 	<br>
@@ -110,11 +111,11 @@ print(numbers)
 print(strings)
 print("The second name on the names list is %s" % second_name)
 	{% endhighlight %}
-	
+
 </section>
 <section>
 	<h2>Tuples</h2>
-	{% highlight py %}
+{% highlight py %}
 T = (1, 2, 3, 4)
 
 len(T)
@@ -127,14 +128,14 @@ T.index(4)
 
 T.count(4)
 	{% endhighlight %}
-<br>  	
+<br>
 	{% highlight py %}
 T = 'spam', 3.0, [11, 22, 33]
 
 T[1]
 
 T[2][1]
-	{% endhighlight %}
+{% endhighlight %}
 </section>
 
 <section>

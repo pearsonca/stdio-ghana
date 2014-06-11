@@ -1,12 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Flow Control</title>
-  <link rel="stylesheet" type="text/css" href="http://stdio-ghana.github.io/css/site.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/reveal.min.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/syntax.css">
-  <link rel="stylesheet" href="http://stdio-ghana.github.io/css/theme/default.css" id="theme">
-  <script type="text/javascript" src="http://stdio-ghana.github.io/js/site.js"></script>
+<link href='/assets/presentation-cc897f9d2bbaf84ef08a4e37d760c7a3.css' rel='stylesheet' type='text/css' />
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/head.min.js"></script>
   <script type="text/javascript" src="http://stdio-ghana.github.io/js/reveal.min.js"></script>
 </head>
@@ -17,41 +12,65 @@
 <h3><em>Giving your programs a sense of direction</em></h3>
 Dane
 </section>
+
 <section>
-	<h2>Branching</h2>
-	<br>
-	<p>if</p>
-	<p>else</p>
-	<p>else if (nesting)</p>
+  <h2 id="branching">Branching</h2>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>if</td>
+      </tr>
+      <tr>
+        <td>else</td>
+      </tr>
+      <tr>
+        <td>elif [Nesting]</td>
+      </tr>
+    </tbody>
+  </table>
+
 </section>
 <section>
 	<h1>Indentation Matters!</h1>
 </section>
 <section>
-	<h1>Activity 1</h1>
+	<h2>Scenario</h2>
+	<img width="500" height="500" src="tables.png" />
+</section>
+<section>
+	<section><h1><a href="ex1.py">Activity 1</a></h1></section>
+	<section><h1><a href="ex2.py">Activity 2</a></h1></section>
 </section>
 <section>
 	<h2>Error Handling</h2>
 	<p>try</p>
-	<p>catch</p>
+	<p>except</p>
 </section>
 <section>
-	<h1>Activity 2</h1>
+	<h1><a href="ex3.py">Activity 3</a></h1>
 </section>
 <section>
 	<h2>Looping</h2>
-	<p>for</p>
-	<p>while</p>
-	<br>
-	<p>break</p>
-	<p>continue</p>
-	<p>else</p>
+	<table>
+	<tbody>
+		<tr><td>for</td></tr>
+		<tr><td>while</td></tr>
+		<tr><td></td></tr>
+		<tr><td>break</td></tr>
+		<tr><td>continue</td></tr>
+		<tr><td>else</td></tr>
+	</tbody>
+	</table>
 </section>
 <section>
-	<h1>Activity 3</h1>
+	<h1><a href="ex4.py">Activity 4</a></h1>
 </section>
 <section>
-	<h2>Functions?</h2>
+	<h2>Functions</h2>
+</section>
+<section>
+	<h1><a href="ex5.py">Activity 5</a></h1>
 </section>
 
 </div></div>
@@ -74,9 +93,9 @@ Dane
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
 			{ src: 'http://stdio-ghana.github.io/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-			{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } } //,
+	//		{ src: 'http://stdio-ghana.github.io/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	//		{ src: 'http://stdio-ghana.github.io/js/highlight/pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 	//		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 			{ src: 'http://stdio-ghana.github.io/js/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 		]
@@ -84,3 +103,4 @@ Dane
 </script>
 </body>
 </html>
+
