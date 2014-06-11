@@ -185,3 +185,24 @@ For each code module:
 (d) Be prepared to justify your modifications.
 
 </section>
+
+<section>
+<section markdown="block">
+[Exercise 1](badcode1.py)
+</section>
+<section markdown="block">
+[Solution](badcode1.answers.py)
+</section>
+</section>
+
+<section>
+<section markdown="block">
+[Exercise 2](badcode2.py)
+</section>
+<section markdown="block">
+[Solution](badcode2.answers.py)
+</section>
+</section>
+
+
+
