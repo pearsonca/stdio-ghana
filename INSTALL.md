@@ -19,6 +19,10 @@ For smartgit and pycharm, you may instead want to download those images once,
 burn them to a dvd, and then install from the disk rather than download the few
 hundred meg installers several times.
 
+~~~ bash
+sudo apt-get install python3-pytest python3-pytest-instafail
+~~~
+
 * * *
 
 #Tom's Notes
