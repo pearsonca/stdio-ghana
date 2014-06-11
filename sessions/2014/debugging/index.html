@@ -25,13 +25,13 @@ instructors:
 # This program divides two numbers
 # The function below calculates and returns the division result
 def div(x,y,z)
-	q = x//y
+	q = x/y
 	return q
 # Main portion of program to set up the problem
 a = int(input("Enter the first operand: "))
 b = int(input("Enter the second operand: "))
 c = div(a,b)
-print("\nYour answer is %f\n" % c)
+print("\nYour answer is %d\n" % c)
 {% endhighlight %}
    </section>
 </section>
@@ -40,7 +40,7 @@ print("\nYour answer is %f\n" % c)
 	<h2>Runtime Error</h2>
 	<p>Illegal implementation of code or routine, though syntactically correct.</p>
 	<p>Caught during execution, program will immediately crash or exit.</p>
-	<p>ie. Divide by 0</p>
+	<p>ie. Wrong number of function arguments</p>
    </section>
    <section>
 	<h2><a href="runtime.py">Runtime Error</a></h2>
@@ -49,13 +49,13 @@ print("\nYour answer is %f\n" % c)
 # This program divides two numbers
 # The function below calculates and returns the division result
 def div(x,y,z):
-	q = x//y
+	q = x/y
 	return q
 # Main portion of program to set up the problem
 a = int(input("Enter the first operand: "))
 b = int(input("Enter the second operand: "))
 c = div(a,b)
-print("\nYour answer is %f\n" % c)
+print("\nYour answer is %d\n" % c)
 {% endhighlight %}
    </section>
 </section>
@@ -72,21 +72,22 @@ print("\nYour answer is %f\n" % c)
 # This program divides two numbers
 # The function below calculates and returns the division result
 def div(x,y)
-	q = x//y
+	q = x/y
 	return q
 # Main portion of program to set up the problem
 a = int(input("Enter the first operand: "))
 b = int(input("Enter the second operand: "))
 c = div(a,b)
-print("\nYour answer is %f\n" % c)
+print("\nYour answer is %d\n" % c)
 {% endhighlight %}
    </section>
 </section>
 <section>
    <section>
 	<h2>Input Validation</h2>
-	<p>Execution completes without error, but behavior or results are unexpected.</p>
-	<p>ie. Wrong format string identifier</p>
+	<p>A user may type whatever they like into a keyboard.</p>
+	<p>If their input is of an unexpected form, errors may occur</p>
+	<p>ie. Failure to account for user malice</p>
    </section>
    <section>
 	<h2><a href="invalid.py">Input Validation</a></h2>
