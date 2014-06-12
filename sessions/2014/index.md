@@ -19,16 +19,16 @@ elements:
    uri: testing
  - name: Debugging
    uri: debugging
+ - name: Python OOP
+   uri: pyoop
  - name: Best Practices
    uri: bestpractices
+ - name: Effective OOP
+   uri: effoop
  - name: Python IO
    uri: pyio
  - name: Reuse
    uri: reuse
- - name: Python OOP
-   uri: pyoop
- - name: Effective OOP
-   uri: effoop
  - name: Python + C++
    uri: pycpp
  - name: User Interfaces

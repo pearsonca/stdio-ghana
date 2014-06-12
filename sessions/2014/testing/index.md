@@ -51,13 +51,14 @@ also a way to communicate with other developers
 and [unittest.mock](https://docs.python.org/3.4/library/unittest.mock.html)
 
 ###External Library / Tool
-[py.test](http://pytest.org/latest/)
+[py.test](http://pytest.org/latest/) => [integrate with Pycharm](http://stackoverflow.com/questions/6397063/how-do-i-configure-pycharm-to-run-py-test-tests)
 
-<aside class="notes" markdown="block">
+</section>
 
-[exercise using those](sessions/2014/testing/exercises.html)
+<section markdown="block">
 
-</aside>
+[Exercises!](sessions/2014/testing/exercises.html)
+
 </section>
 
 <section markdown="block">
