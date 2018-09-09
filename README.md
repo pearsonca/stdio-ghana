@@ -7,9 +7,9 @@
 ##Instructor Guidance
 
 To edit / create sessions:
- 1. go the the sessions/YYYY/$session folder
- 2. the `index.html` or `index.md` (html vs markdown; markdown will supersede
-html, and is necessary to have the content parsed as markdown) file is the
+ 1. go to the sessions/YYYY/$session folder
+ 2. the `index.html` or `index.md` (html vs markdown; markdown will supercede
+html, and it is necessary to have the content parsed as markdown) file is the
 main session slides
  3. the yaml header material (the content between the `---`s) specifies all the
 necessary header and footer material for the slides (e.g., the doctype, opening
@@ -40,7 +40,7 @@ serve the site.
 Notes on making session slides:
 - if you use `<section markdown="block">` for slides + `.md` instead of `.html`
 extension, [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) syntax should just work.
-- may need to wary of mixing that with code highlighting
+- may need to be wary of mixing that with code highlighting
 - if you use `<aside class="notes"> ... </aside>`, you can write notes
 - the notes may also use markdown, if you add the `markdown="block"` attribute
 to the aside element.
